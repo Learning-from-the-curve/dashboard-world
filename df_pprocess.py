@@ -1,15 +1,12 @@
 import warnings
 warnings.filterwarnings("ignore")
 
-import time
 import pickle
 import json
 import pandas as pd
 import numpy as np
 from pathlib import Path
 from functions import *
-
-t0 = time.time()
 
 ######################################
 # Retrieve data
@@ -426,10 +423,14 @@ for country in list(df_confirmed_t):
     df_tab_right.at['Population in 2019', country] = pop_t[country][0]
 
 
-
+set_countries_JH = open('input/set_countries_JH.txt', 'wb')
+pickle.dump(set(df_confirmed['Country/Region']), set_countries_JH)
+set_countries_JH.close()
 # PICKLIFYCATION TIME
 def picklify(dataframe, name):
-    pd.to_pickle(dataframe, f"./pickles_jar/{name}.pkl")
+    file_write = open(f"./pickles_jar/{name}.pkl", 'wb')
+    pickle.dump(dataframe, file_write)
+    file_write.close()
 
 
 dataframe_list = [
@@ -462,7 +463,3 @@ dataframe_list = [
 
 for dataframe, name in dataframe_list:
     picklify(dataframe, name)
-
-t1 = time.time()
-
-print(t1-t0)

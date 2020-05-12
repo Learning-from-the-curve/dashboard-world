@@ -1,8 +1,6 @@
 import warnings
 warnings.filterwarnings("ignore")
 
-import time
-t0 = time.time()
 import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
@@ -20,10 +18,7 @@ from pathlib import Path
 
 # Custom functions
 from functions import *
-t1 = time.time()
 
-print(t1-t0)
-t2 = time.time()
 path_input = Path.cwd() / 'input'
 Path.mkdir(path_input, exist_ok = True)
 #path_policy = Path.cwd() / 'input' / 'policy.csv'
@@ -77,7 +72,10 @@ pickles_list = [
 pickle_files = [str(pickle_path) + os.sep + x + '.pkl' for x in pickles_list]
 
 def unpicklify(path):
-    return pd.read_pickle(path)
+    file_read = open(path, 'rb')
+    dataframe = pickle.load(file_read)
+    file_read.close()
+    return dataframe
 
 
 df_confirmed_t = unpicklify(pickle_files[0])
@@ -104,8 +102,7 @@ daily_deaths_EU28 = unpicklify(pickle_files[20])
 top_4 = unpicklify(pickle_files[21])
 available_variables = unpicklify(pickle_files[22])
 available_indicators = unpicklify(pickle_files[23])
-t3 = time.time()
-print(t3-t2)
+
 #for pickle_file in pickle_files:
 #    df = unpicklify(pickle_file)
 
