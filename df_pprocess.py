@@ -422,10 +422,6 @@ for country in list(df_confirmed_t):
     df_tab_right.at['Stringency Index', country] = df_policy_index.iloc[-1][country]
     df_tab_right.at['Population in 2019', country] = pop_t[country][0]
 
-
-set_countries_JH = open('input/set_countries_JH.txt', 'wb')
-pickle.dump(set(df_confirmed['Country/Region']), set_countries_JH)
-set_countries_JH.close()
 # PICKLIFYCATION TIME
 def picklify(dataframe, name):
     file_write = open(f"./pickles_jar/{name}.pkl", 'wb')
