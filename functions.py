@@ -1,3 +1,6 @@
+import numpy as np
+import pandas as pd
+
 def growth_rate(data, window):
     df_sub = data.copy()
     df_sub = df_sub.apply(lambda x: x - x.shift(periods = 1))

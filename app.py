@@ -67,6 +67,7 @@ pickles_list = [
     'top_4',
     'available_variables',
     'available_indicators',
+    'ISO',
     ]
     
 pickle_files = [str(pickle_path) + os.sep + x + '.pkl' for x in pickles_list]
@@ -102,6 +103,7 @@ daily_deaths_EU28 = unpicklify(pickle_files[20])
 top_4 = unpicklify(pickle_files[21])
 available_variables = unpicklify(pickle_files[22])
 available_indicators = unpicklify(pickle_files[23])
+ISO = unpicklify(pickle_files[24])
 
 #for pickle_file in pickle_files:
 #    df = unpicklify(pickle_file)
@@ -329,7 +331,7 @@ def draw_mortality_fatality(df_confirmed_t, df_deaths_t, pop_t, variable, x_grap
                     ISO_legend = ISO['alpha-3'].loc[ISO['name'] == country].to_list()[0]
                 except:
                     ISO_legend = country
-                temp_confirmed = df_confirmed_t.loc[df_confirmed_t[country] >= 1].copy()
+                temp_confirmed = df_confirmed_t.loc[df_confirmed_t[country] > 0].copy()
                 df_confirmed_GR = growth_rate(temp_confirmed, 4)
                 x = [x for x in range(len(df_confirmed_GR))]
                 fig.add_trace(go.Scatter(x =  x, y = df_confirmed_GR[country],
@@ -344,7 +346,10 @@ def draw_mortality_fatality(df_confirmed_t, df_deaths_t, pop_t, variable, x_grap
                     ISO_legend = ISO['alpha-3'].loc[ISO['name'] == country].to_list()[0]
                 except:
                     ISO_legend = country
-                temp_deaths = df_deaths_t.loc[df_deaths_t[country] >= 1].copy()
+                if df_deaths_t[country].max() == 0:
+                    temp_deaths = df_deaths_t.copy()
+                else:
+                    temp_deaths = df_deaths_t.loc[df_deaths_t[country] > 0].copy()
                 df_deaths_GR = growth_rate(temp_deaths, 4)
                 x = [x for x in range(len(df_deaths_GR))]
                 fig.add_trace(go.Scatter(x =  x, y = df_deaths_GR[country],
@@ -390,7 +395,7 @@ def draw_singleCountry_Epicurve(df_confirmed_t, df_deaths_t, df_policy_index, df
                                     mode='lines+markers',
                                     name=ISO_legend,
                                     line=dict(width=3), marker = dict(size = 3, line = dict(width = 1,color = 'DarkSlateGrey')), connectgaps = True, hoverinfo = "text",
-                                    hovertext = [f"Country/Region: {country} <br>Confirmed: {df_confirmed_t.iloc[indice][country]:,} <br>Pct. of total cases (3-day MA): {np.exp(df_epic_confirmed.iloc[indice][country]):.3f}% <br>Days: {df_epic_days_confirmed.iloc[indice][country]} <br>Date: {df_epic_confirmed.reset_index().iloc[indice]['index'].date()}" for indice in range(len(df_confirmed_t))]))
+                                    hovertext = [f"Country/Region: {country} <br>Confirmed: {df_confirmed_t.iloc[indice][country]:,} <br>3-day MA of ln of the % of total cases: {np.exp(df_epic_confirmed.iloc[indice][country]):.3f}% <br>Days: {df_epic_days_confirmed.iloc[indice][country]} <br>Date: {df_epic_confirmed.reset_index().iloc[indice]['index'].date()}" for indice in range(len(df_confirmed_t))]))
             fig.update_layout(title = 'Epidemic curve confirmed cases')
             fig.update_yaxes(tickvals = [-6.9, -4.6, -2.3, 0, 2.30258], ticktext = [f'{np.exp(-6.9):.3f}%', f'{np.exp(-4.6):.3f}%', f'{np.exp(-2.3):.3f}%', f'{np.exp(0):.3f}%', f'{np.exp(2.30258):.3f}%'])
         else:
@@ -403,7 +408,7 @@ def draw_singleCountry_Epicurve(df_confirmed_t, df_deaths_t, df_policy_index, df
                                     mode='lines+markers',
                                     name=ISO_legend,
                                     line=dict(width=3), marker = dict(size = 3, line = dict(width = 1,color = 'DarkSlateGrey')), connectgaps = True, hoverinfo = "text",
-                                    hovertext = [f"Country/Region: {country} <br>Deaths: {df_deaths_t.iloc[indice][country]:,} <br>Pct. of deaths (3-day MA): {np.exp(df_epic_deaths.iloc[indice][country]):.3f}% <br>Days: {df_epic_days_deaths.iloc[indice][country]} <br>Date: {df_epic_deaths.reset_index().iloc[indice]['index'].date()}" for indice in range(len(df_confirmed_t))]))
+                                    hovertext = [f"Country/Region: {country} <br>Deaths: {df_deaths_t.iloc[indice][country]:,} <br>3-day MA of ln of the % of total deaths: {np.exp(df_epic_deaths.iloc[indice][country]):.3f}% <br>Days: {df_epic_days_deaths.iloc[indice][country]} <br>Date: {df_epic_deaths.reset_index().iloc[indice]['index'].date()}" for indice in range(len(df_confirmed_t))]))
             fig.update_layout(title= 'Epidemic curve deaths')
             fig.update_yaxes(tickvals = [-6.9, -4.6, -2.3, 0, 2.30258], ticktext = [f'{np.exp(-6.9):.3f}%', f'{np.exp(-4.6):.3f}%', f'{np.exp(-2.3):.3f}%', f'{np.exp(0):.3f}%', f'{np.exp(2.30258):.3f}%'])
     if plot == 'Stringency index':
@@ -575,11 +580,11 @@ The dashboard is updated daily following new daily releases of data from the dat
 ''')
 
 markdown_relevant_info = dcc.Markdown('''
-This dashboard is part of a larger set of dashboards available on our website. In particular, here we focus on the global COVID-19 pandemic.
+We focus on this dashboard on the global COVID-19 pandemic. This dashboard is part of a larger set of dashboards available [on our website](https://www.learningfromthecurve.net/dashboards/).
 
-Our dashboard focusing on Belgium can be found here.
+Articles by members of the Learning from the Curve team reporting daily information on COVID-19 are available [here](https://www.learningfromthecurve.net/commentaries/).
 
-Articles reporting daily information on COVID-19 are available here.
+Please, report any bug at the following contact address: learningfromthecurve@gmail.com.
 ''')
 
 ############################
@@ -808,7 +813,7 @@ app.layout = html.Div([ #Main Container
                             "When displaying the logarithmic scale, the horizontal axis reports the count from the day of the first confirmed case (or death)."
                         ],),],
                         target="graph-line",
-                        style= {'opacity': '0.8'}
+                        style= {'opacity': '0.9'}
                     ),
                 ],
                 className='card-body text-center'
@@ -847,13 +852,13 @@ app.layout = html.Div([ #Main Container
                 ),
                 dbc.Tooltip(children = [
                     html.P([
-                        'Epidemic curve: Reports the fraction of cases or deaths out of the total numbers up until today. For each selected country the date with the largest fraction of new registered cases or deaths is considered as day 0, defined also as the "turning point".'
+                        'Epidemic curve: Reports the fraction of cases or deaths out of the total numbers up until today. For each selected country the date with the largest 3-day MA of log of percentage of total cases or deaths is considered as day 0, defined also as the "turning point".'
                     ],),
                     html.P([
                         "Stringency Index: This index ranges between 0 (no policy) to 100 (maximum measures) and combines 13 indicators of government responses, including school closures, travel bans, and fiscal or monetary measures."
                     ],),],
                     target="epidemic_and_policy_variables",
-                    style= {'opacity': '0.8'}
+                    style= {'opacity': '0.9'}
                 ),
                 html.Div([
                     dcc.Dropdown(
@@ -908,7 +913,7 @@ app.layout = html.Div([ #Main Container
                         "Growth rate confirmed cases (deaths): Day-to-day percentage changes in confirmed cases or deaths. We take a 3-day simple moving average to account for fluctuations."
                     ],),],
                 target="other_variables_tooltip",
-                style= {'opacity': '0.8'}
+                style= {'opacity': '0.9'}
                 ),
                 html.Div([
                     dbc.RadioItems(
@@ -928,7 +933,7 @@ app.layout = html.Div([ #Main Container
                             "Days: Sets the horizonal axis to be the count from the day of the first confirmed case (or death) for each selected country."
                         ],),],
                         target="x-var",
-                        style= {'opacity': '0.8'}
+                        style= {'opacity': '0.9'}
                     ),
                     dcc.Dropdown(
                         id='variable-dropdown',
@@ -965,11 +970,11 @@ app.layout = html.Div([ #Main Container
                 dbc.Tabs([
                     dbc.Tab(tab_confirmed_left, label="Cases"),
                     dbc.Tab(tab_deaths_left, label="Deaths"),
-                    dbc.Tab(tab_confirmed_increase_left, label="New cas."),
-                    dbc.Tab(tab_deaths_increase_left, label="New dea.")
+                    dbc.Tab(tab_confirmed_increase_left, label="Daily cases"),
+                    dbc.Tab(tab_deaths_increase_left, label="Daily deaths")
                 ],
                 className="nav-justified"
-                )
+                ),
             ],
             className="card my-2 shadow",
             id="worldStats",
@@ -982,7 +987,7 @@ app.layout = html.Div([ #Main Container
         html.Div([
             html.Div([
                 dbc.Tabs([
-                    dbc.Tab(tab_right, label="Country statistics(*)"),
+                    dbc.Tab(tab_right, label="Country statistics" + u"\U0001F6C8"),
                 ],
                 className="nav-justified",
                 id = 'info_tab_right'
@@ -999,7 +1004,7 @@ app.layout = html.Div([ #Main Container
                     "All the reported statistics are updated to the current day."
                 ],),],
                 target="info_tab_right",
-                style= {'opacity': '0.8'}
+                style= {'opacity': '0.9'}
             ),
         ],
         className="col-md-3 order-md-3",
@@ -1018,25 +1023,41 @@ className="container-fluid"
 
 @app.callback(
     [Output('line-graph-confirmed', 'figure'),
-    Output('line-graph-deaths', 'figure'),
-    Output('line-graph-multiple', 'figure'),
-    Output('line-graph-epicurve', 'figure'),
-    Output('line-graph-policy', 'figure')],
+    Output('line-graph-deaths', 'figure')],
     [Input('demo-dropdown', 'value'),
-    Input('graph-line', 'value'),
-    Input('x-var', 'value'),
-    Input('variable-dropdown', 'value'),
-    Input('variable-dropdown-epic', 'value')])
-def line_selection(dropdown, graph_line, x_choice, variable, plots_epic_policy):
+    Input('graph-line', 'value')])
+def line_selection(dropdown, graph_line):
     if len(dropdown) == 0:
         for country in top_4:
             dropdown.append(country)
     fig1 = draw_singleCountry_Scatter(df_confirmed_t, df_deaths_t, 'confirmed', graph_line, selected_country = dropdown)
     fig2 = draw_singleCountry_Scatter(df_confirmed_t, df_deaths_t, 'deaths', graph_line, selected_country = dropdown)
-    fig3 = draw_mortality_fatality(df_confirmed_t, df_deaths_t, pop_t, variable = variable, x_graph = x_choice, selected_country = dropdown)
-    fig4 = draw_singleCountry_Epicurve(df_confirmed_t, df_deaths_t, df_policy_index, df_epic_confirmed, df_epic_days_confirmed, df_epic_deaths, df_epic_days_deaths, 'confirmed', plot = plots_epic_policy, selected_country = dropdown)
-    fig5 = draw_singleCountry_Epicurve(df_confirmed_t, df_deaths_t, df_policy_index, df_epic_confirmed, df_epic_days_confirmed, df_epic_deaths, df_epic_days_deaths, 'deaths', plot = plots_epic_policy, selected_country = dropdown)
-    return fig1, fig2, fig3, fig4, fig5
+    return fig1, fig2
+
+@app.callback(
+    Output('line-graph-multiple', 'figure'),
+    [Input('demo-dropdown', 'value'),
+    Input('x-var', 'value'),
+    Input('variable-dropdown', 'value')])
+def line_selection(dropdown, x_choice, variable):
+    if len(dropdown) == 0:
+        for country in top_4:
+            dropdown.append(country)
+    fig1 = draw_mortality_fatality(df_confirmed_t, df_deaths_t, pop_t, variable = variable, x_graph = x_choice, selected_country = dropdown)
+    return fig1
+
+@app.callback(
+    [Output('line-graph-epicurve', 'figure'),
+    Output('line-graph-policy', 'figure')],
+    [Input('demo-dropdown', 'value'),
+    Input('variable-dropdown-epic', 'value')])
+def line_selection(dropdown, plots_epic_policy):
+    if len(dropdown) == 0:
+        for country in top_4:
+            dropdown.append(country)
+    fig1 = draw_singleCountry_Epicurve(df_confirmed_t, df_deaths_t, df_policy_index, df_epic_confirmed, df_epic_days_confirmed, df_epic_deaths, df_epic_days_deaths, 'confirmed', plot = plots_epic_policy, selected_country = dropdown)
+    fig2 = draw_singleCountry_Epicurve(df_confirmed_t, df_deaths_t, df_policy_index, df_epic_confirmed, df_epic_days_confirmed, df_epic_deaths, df_epic_days_deaths, 'deaths', plot = plots_epic_policy, selected_country = dropdown)
+    return fig1, fig2
 
 
 @app.callback(
