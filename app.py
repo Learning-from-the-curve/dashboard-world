@@ -15,6 +15,7 @@ import pickle
 import os
 from dash.dependencies import Input, Output, State
 from pathlib import Path
+from scout_apm.flask import ScoutApm
 
 # Custom functions
 from functions import *
@@ -33,6 +34,13 @@ external_stylesheets = [dbc.themes.FLATLY]
 app = dash.Dash(__name__, external_stylesheets = external_stylesheets)
 
 app.title = 'COVID-19 - World dashboard'
+
+app.config.suppress_callback_exceptions = True
+flask_app = app.server
+
+ScoutApm(flask_app)
+
+flask_app.config["SCOUT_NAME"] = "COVID-19 - World dashboard"
 
 #for heroku to run correctly
 server = app.server
