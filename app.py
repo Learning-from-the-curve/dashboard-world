@@ -403,7 +403,7 @@ def draw_singleCountry_Epicurve(df_confirmed_t, df_deaths_t, df_policy_index, df
                                     mode='lines+markers',
                                     name=ISO_legend,
                                     line=dict(width=3), marker = dict(size = 3, line = dict(width = 1,color = 'DarkSlateGrey')), connectgaps = True, hoverinfo = "text",
-                                    hovertext = [f"Country/Region: {country} <br>Confirmed: {df_confirmed_t.iloc[indice][country]:,} <br>3-day MA of ln of the % of total cases: {np.exp(df_epic_confirmed.iloc[indice][country]):.3f}% <br>Days: {df_epic_days_confirmed.iloc[indice][country]} <br>Date: {df_epic_confirmed.reset_index().iloc[indice]['index'].date()}" for indice in range(len(df_confirmed_t))]))
+                                    hovertext = [f"Country/Region: {country} <br>Confirmed: {df_confirmed_t.iloc[indice][country]:,} <br>ln % of total cases (3-day MA): {np.exp(df_epic_confirmed.iloc[indice][country]):.3f}% <br>Days: {df_epic_days_confirmed.iloc[indice][country]} <br>Date: {df_epic_confirmed.reset_index().iloc[indice]['index'].date()}" for indice in range(len(df_confirmed_t))]))
             fig.update_layout(title = 'Epidemic curve confirmed cases')
             fig.update_yaxes(tickvals = [-6.9, -4.6, -2.3, 0, 2.30258], ticktext = [f'{np.exp(-6.9):.3f}%', f'{np.exp(-4.6):.3f}%', f'{np.exp(-2.3):.3f}%', f'{np.exp(0):.3f}%', f'{np.exp(2.30258):.3f}%'])
         else:
@@ -416,7 +416,7 @@ def draw_singleCountry_Epicurve(df_confirmed_t, df_deaths_t, df_policy_index, df
                                     mode='lines+markers',
                                     name=ISO_legend,
                                     line=dict(width=3), marker = dict(size = 3, line = dict(width = 1,color = 'DarkSlateGrey')), connectgaps = True, hoverinfo = "text",
-                                    hovertext = [f"Country/Region: {country} <br>Deaths: {df_deaths_t.iloc[indice][country]:,} <br>3-day MA of ln of the % of total deaths: {np.exp(df_epic_deaths.iloc[indice][country]):.3f}% <br>Days: {df_epic_days_deaths.iloc[indice][country]} <br>Date: {df_epic_deaths.reset_index().iloc[indice]['index'].date()}" for indice in range(len(df_confirmed_t))]))
+                                    hovertext = [f"Country/Region: {country} <br>Deaths: {df_deaths_t.iloc[indice][country]:,} <br>ln % of total deaths (3-day MA): {np.exp(df_epic_deaths.iloc[indice][country]):.3f}% <br>Days: {df_epic_days_deaths.iloc[indice][country]} <br>Date: {df_epic_deaths.reset_index().iloc[indice]['index'].date()}" for indice in range(len(df_confirmed_t))]))
             fig.update_layout(title= 'Epidemic curve deaths')
             fig.update_yaxes(tickvals = [-6.9, -4.6, -2.3, 0, 2.30258], ticktext = [f'{np.exp(-6.9):.3f}%', f'{np.exp(-4.6):.3f}%', f'{np.exp(-2.3):.3f}%', f'{np.exp(0):.3f}%', f'{np.exp(2.30258):.3f}%'])
     if plot == 'Stringency index':
@@ -860,7 +860,7 @@ app.layout = html.Div([ #Main Container
                 ),
                 dbc.Tooltip(children = [
                     html.P([
-                        'Epidemic curve: Reports the fraction of cases or deaths out of the total numbers up until today. For each selected country the date with the largest 3-day MA of log of percentage of total cases or deaths is considered as day 0, defined also as the "turning point".'
+                        'Epidemic curve: Reports the fraction of cases or deaths out of the total numbers up until today. For each selected country the date with the largest log of the 3-day MA of percentage of total cases or deaths is considered as day 0, defined also as the "turning point".'
                     ],),
                     html.P([
                         "Stringency Index: This index ranges between 0 (no policy) to 100 (maximum measures) and combines 13 indicators of government responses, including school closures, travel bans, and fiscal or monetary measures."
