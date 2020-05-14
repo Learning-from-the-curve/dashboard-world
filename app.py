@@ -491,7 +491,7 @@ tab_confirmed_left = dbc.Card(
         className='list-unstyled'
         ),
     ],
-    style={ "height": "600px" },
+    style={ "height": "275px" },
     className="overflow-auto"
     ),
 className="border-0",
@@ -516,7 +516,7 @@ tab_deaths_left = dbc.Card(
         className='list-unstyled'
         ),
     ],
-    style={ "height": "600px" },
+    style={ "height": "275px" },
     className="overflow-auto"
     ),
 className="border-0",
@@ -541,7 +541,7 @@ tab_confirmed_increase_left = dbc.Card(
         className='list-unstyled'
         ),
     ],
-    style={ "height": "600px" },
+    style={ "height": "275px" },
     className="overflow-auto"
     ),
 className="border-0",
@@ -566,7 +566,7 @@ tab_deaths_increase_left = dbc.Card(
         className='list-unstyled'
         ),
     ],
-    style={ "height": "600px" },
+    style={ "height": "275px" },
     className="overflow-auto"
     ),
 className="border-0",
@@ -594,6 +594,45 @@ Articles by members of the Learning from the Curve team reporting daily informat
 
 Please, report any bug at the following contact address: learningfromthecurve.info@gmail.com.
 ''')
+
+# Accordion countries
+def make_item(available_indicators, top_4):
+    return dbc.Card(
+        [
+            dbc.CardHeader(
+                dbc.Button(
+                    "Discover more",
+                    color="primary",
+                    id="temp_prova_accordion",
+                    block = True,
+                    active = True
+                ),
+            ),
+            dbc.Collapse(
+                dbc.CardBody(
+                    [html.Div([
+                        dbc.Button("World Map", href="#worldMap", external_link=True),
+                        dbc.Button("World Stats", href="#worldStats", external_link=True),
+                        dbc.Button("Countries Stats", href="#countriesStats", external_link=True),
+                    ],
+                    className='text-center d-md-none'                        
+                    ),
+                    html.H4(
+                        children='Add or remove countries to compare',
+                        style={},
+                        className='text-center my-2'
+                    ),
+                    dcc.Dropdown(
+                        id='demo-dropdown',
+                        options=[{'label': i, 'value': i} for i in available_indicators],
+                        multi=True,
+                        value = top_4,
+                        placeholder = 'Select countries to plot - Default to top 4 countries by confirmed cases'
+                    ),], className = "pt-1 pb-0"),
+                id="temp_prova_collapse",
+            ),
+        ], className = "my-2 shadow", style = {"overflow": "visible"}
+        )
 
 ############################
 # Bootstrap Grid Layout
@@ -774,34 +813,13 @@ app.layout = html.Div([ #Main Container
             ],
             className='my-2 shadow'
             ),
-            #Country select Dropdown
-            html.Div([
-                html.Div([
-                    html.Div([
-                        dbc.Button("World Map", href="#worldMap", external_link=True),
-                        dbc.Button("World Stats", href="#worldStats", external_link=True),
-                        dbc.Button("Countries Stats", href="#countriesStats", external_link=True),
-                    ],
-                    className='text-center d-md-none'                        
-                    ),
-                    html.H4(
-                        children='Add or remove countries to compare',
-                        style={},
-                        className='text-center my-2'
-                    ),
-                    dcc.Dropdown(
-                        id='demo-dropdown',
-                        options=[{'label': i, 'value': i} for i in available_indicators],
-                        multi=True,
-                        value = top_4,
-                        placeholder = 'Select countries to plot - Default to top 4 countries by confirmed cases'
-                    ),
-                ],
-                className='card-body pt-1 pb-0'
-                ),
-            ],
-            className='card my-2 shadow sticky-top'
+
+            html.Div(
+                    [make_item(available_indicators, top_4)], className="accordion sticky-top"
             ),
+
+            #Country select Dropdown
+
             html.Div([
                 html.Div([
                     dbc.Label("Select a scale:", html_for="graph-line"),
@@ -978,6 +996,15 @@ app.layout = html.Div([ #Main Container
                 dbc.Tabs([
                     dbc.Tab(tab_confirmed_left, label="Cases"),
                     dbc.Tab(tab_deaths_left, label="Deaths"),
+                ],
+                className="nav-justified"
+                ),
+            ],
+            className="card my-2 shadow",
+            id="worldStats",
+            ),
+            html.Div([
+                dbc.Tabs([
                     dbc.Tab(tab_confirmed_increase_left, label="Daily cases"),
                     dbc.Tab(tab_deaths_increase_left, label="Daily deaths")
                 ],
@@ -985,7 +1012,7 @@ app.layout = html.Div([ #Main Container
                 ),
             ],
             className="card my-2 shadow",
-            id="worldStats",
+            id="worldStats_daily",
             )
         ],
         className="col-md-3 order-md-1"
@@ -1124,6 +1151,20 @@ def toggle_modal(n1, n2, is_open):
     if n1 or n2:
         return not is_open
     return is_open
+
+@app.callback(
+    Output("temp_prova_collapse", "is_open"),
+    [Input("temp_prova_accordion", "n_clicks"),],
+    [State("temp_prova_collapse", "is_open")],)
+def toggle_accordion(n1, is_open1):
+    ctx = dash.callback_context
+    if not ctx.triggered:
+        return ""
+    else:
+        button_id = ctx.triggered[0]["prop_id"].split(".")[0]
+    if button_id == "temp_prova_accordion" and n1:
+        return not is_open1
+    return is_open1
 
 if __name__ == '__main__':
     app.run_server(debug=False)
