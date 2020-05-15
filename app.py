@@ -468,7 +468,9 @@ def draw_singleCountry_Epicurve(df_confirmed_t, df_deaths_t, df_policy_index, df
     )
     fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='lightgrey')
     fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='lightgrey')
-    fig.update_yaxes(zeroline=True, zerolinewidth=2, zerolinecolor='black')
+    fig.update_yaxes(zeroline=True, zerolinewidth=1, zerolinecolor='lightgrey')
+    fig.update_xaxes(zeroline=True, zerolinewidth=1, zerolinecolor='black')
+
 
     return fig
 
