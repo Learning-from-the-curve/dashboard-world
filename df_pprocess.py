@@ -95,8 +95,8 @@ def moving_average(data, window):
     for country in list(df_MA):
         if data[country].iloc[-1] != 0:
             df_MA[country] = (df_MA[country]/data[country].iloc[-1])*100
-            df_MA[country] = df_MA[country].rolling(window).mean()
             df_MA[country] = df_MA[country].astype('float64').apply(np.log)
+            df_MA[country] = df_MA[country].rolling(window).mean()
         else:
             df_MA[country] = np.nan
     df_centered_date = df_MA.copy()
