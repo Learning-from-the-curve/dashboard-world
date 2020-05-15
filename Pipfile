@@ -14,6 +14,7 @@ gunicorn = "*"
 numpy = "*"
 xlrd = "*"
 dash-bootstrap-components = "*"
+scout-apm = "*"
 
 [requires]
 python_version = "3.8"
