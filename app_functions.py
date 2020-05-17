@@ -1,7 +1,13 @@
 import numpy as np
-import pandas as pd
 
 def growth_rate(data, window):
+    '''
+    input: 
+    dataframe containing the information for each country for each date
+    # of days 
+    output:
+    dataframe containing the growth rate for each country for each date
+    '''
     df_sub = data.copy()
     df_sub = df_sub.apply(lambda x: x - x.shift(periods = 1))
     df_sub.iloc[0] = data.iloc[0]
@@ -13,12 +19,20 @@ def growth_rate(data, window):
         df_GR[country] = df_GR[country].rolling(window).mean()
     return df_GR
 
-def ticks_log(df, selected_country):
+def ticks_log(df, selected_countries):
+    '''
+    input: 
+    dataframe containing the information for each country for each date
+    list of countries 
+    output:
+    list of values for the ticks of y axis
+    list of strings for the ticks of y axis
+    '''
     temp_max = 0
     label_max = []
     text_label_max = []
     tick = 1
-    for country in selected_country:
+    for country in selected_countries:
         if temp_max < df[country].max():
             temp_max = df[country].max()
     while tick < temp_max*(0.50):
