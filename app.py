@@ -1,6 +1,7 @@
 import warnings
 warnings.filterwarnings("ignore")
 
+import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
 import datetime
@@ -12,13 +13,12 @@ import dash_bootstrap_components as dbc
 import dash_table as dt
 import pickle
 import os
-from pathlib import Path
 from dash.dependencies import Input, Output, State
+from pathlib import Path
 from scout_apm.flask import ScoutApm
 
 # Custom functions
-from app_functions import *
-from pickle_functions import unpicklify
+from functions import *
 
 path_input = Path.cwd() / 'input'
 Path.mkdir(path_input, exist_ok = True)
@@ -49,6 +49,7 @@ server = app.server
 # UNPICKLIFICATION TIME 
 #############################################################################
 
+pickle_path = Path.cwd() / 'pickles_jar'
 pickles_list = [
     'df_confirmed_t',
     'df_deaths_t',
@@ -77,8 +78,13 @@ pickles_list = [
     'ISO',
     ]
     
-pickle_files = [ x for x in pickles_list]
+pickle_files = [str(pickle_path) + os.sep + x + '.pkl' for x in pickles_list]
 
+def unpicklify(path):
+    file_read = open(path, 'rb')
+    dataframe = pickle.load(file_read)
+    file_read.close()
+    return dataframe
 
 
 df_confirmed_t = unpicklify(pickle_files[0])
@@ -1070,7 +1076,7 @@ def line_selection(dropdown, graph_line):
     [Input('demo-dropdown', 'value'),
     Input('x-var', 'value'),
     Input('variable-dropdown', 'value')])
-def line_selection2(dropdown, x_choice, variable):
+def line_selection(dropdown, x_choice, variable):
     if len(dropdown) == 0:
         for country in top_4:
             dropdown.append(country)
@@ -1082,7 +1088,7 @@ def line_selection2(dropdown, x_choice, variable):
     Output('line-graph-policy', 'figure')],
     [Input('demo-dropdown', 'value'),
     Input('variable-dropdown-epic', 'value')])
-def line_selection3(dropdown, plots_epic_policy):
+def line_selection(dropdown, plots_epic_policy):
     if len(dropdown) == 0:
         for country in top_4:
             dropdown.append(country)
@@ -1095,6 +1101,7 @@ def line_selection3(dropdown, plots_epic_policy):
     Output('selected-countries-tab', 'children'),
     [Input('demo-dropdown', 'value')])
 def tab_right_countries(dropdown):
+    newline = '\n'
     if len(dropdown) == 0:
         for country in top_4:
             dropdown.append(country)
@@ -1126,7 +1133,8 @@ def tab_right_countries(dropdown):
     ],
     style={ "height": "600px" },
     className="overflow-auto"
-    )
+    ),
+    className="border-0",
 
 @app.callback(
     Output("modal-centered-left", "is_open"),
@@ -1141,6 +1149,10 @@ def toggle_modal(n1, n2, is_open):
     Output("modal-centered-right", "is_open"),
     [Input("open-centered-right", "n_clicks"), Input("close-centered-right", "n_clicks")],
     [State("modal-centered-right", "is_open")],)
+def toggle_modal(n1, n2, is_open):
+    if n1 or n2:
+        return not is_open
+    return is_open
 
 @app.callback(
     Output("temp_prova_collapse", "is_open"),
