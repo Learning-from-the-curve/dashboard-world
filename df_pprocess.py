@@ -7,7 +7,7 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 from process_functions import adjust_names, aggregate_countries, moving_average
-from pickle_functions import *
+from pickle_functions import picklify, unpicklify
 
 ######################################
 # Retrieve data
@@ -45,15 +45,15 @@ eu28 = ['Austria',	'Italy', 'Belgium',	'Latvia', 'Bulgaria', 'Lithuania', 'Croat
             'France', 'Slovakia', 'Germany', 'Slovenia', 'Greece', 'Spain', 'Hungary', 'Sweden', 'Ireland', 'United Kingdom']
 
 
-
+#filter the countries' names to fit our list of names
 df_confirmed = adjust_names(df_confirmed)
 df_deaths = adjust_names(df_deaths)
-
 df_confirmed = aggregate_countries(df_confirmed, graph = 'scatter')
 df_deaths = aggregate_countries(df_deaths, graph = 'scatter')
 
 # Create a dataframe for the world with the date as columns, keep the Province/State column to rename it below
 df_world = df_confirmed[0:0].drop(columns = ['Country/Region', 'Lat', 'Long']).copy()
+
 # Create dataframes for EU28 for each variable
 df_EU28_confirmed = df_confirmed.set_index('Country/Region').loc[eu28].copy()
 df_EU28_confirmed = df_EU28_confirmed.drop(columns = ['Lat', 'Long'])
