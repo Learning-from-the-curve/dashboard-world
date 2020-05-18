@@ -1,13 +1,20 @@
 import numpy as np 
 from pickle_functions import unpicklify
+import plotly.graph_objects as go
+import dash_core_components as dcc
+import dash_html_components as html
+import dash_bootstrap_components as dbc
+import dash_table as dt
+from dash.dependencies import Input, Output, State
+from app_functions import *
+from pickle_functions import unpicklify
 
 def gen_map(map_data,zoom,lat,lon):
-    coord_df = unpicklify('coord_df')
+    mapbox_access_token = 'pk.eyJ1IjoiZmVkZWdhbGwiLCJhIjoiY2s5azJwaW80MDQxeTNkcWh4bGhjeTN2NyJ9.twKWO-W5wPLX6m9OfrpZCw'
     return {
         "data": [{
-            "type": "choroplethmapbox",  #specify the type of data to generate, in this case, scatter map box is used
-            "locations": list(map_data['Country/Region']),
-            "geojson": coord_df,
+            "type": "choropleth",  #specify the type of data to generate, in this case, scatter map box is used
+            'locations' : map_data['alpha-3'],
             "featureidkey": 'properties.ADMIN',
             "z": np.log(list(map_data['Confirmed'])),
             "hoverinfo": "text",         
@@ -46,7 +53,7 @@ def map_selection(data):
     zoom = 1
     return gen_map(aux,zoom,41.89193,12.51133)
 
-def draw_singleCountry_Scatter(df_confirmed_t, df_deaths_t, variable, graph_line, selected_country):
+def draw_singleCountry_Scatter(df_confirmed_t, df_deaths_t, variable, graph_line, selected_country,ISO):
     fig = go.Figure()
     if variable == 'confirmed':
         label_max, text_label_max = ticks_log(df_confirmed_t, selected_country)
@@ -125,7 +132,7 @@ def draw_singleCountry_Scatter(df_confirmed_t, df_deaths_t, variable, graph_line
 
     return fig
 
-def draw_mortality_fatality(df_confirmed_t, df_deaths_t, pop_t, variable, x_graph, selected_country):
+def draw_mortality_fatality(df_confirmed_t, df_deaths_t, pop_t, variable, x_graph, selected_country,ISO):
     fig = go.Figure()
     if x_graph == 'Date':
         if variable == 'Mortality rate':
@@ -269,7 +276,7 @@ def draw_mortality_fatality(df_confirmed_t, df_deaths_t, pop_t, variable, x_grap
 
     return fig
 
-def draw_singleCountry_Epicurve(df_confirmed_t, df_deaths_t, df_policy_index, df_epic_confirmed, df_epic_days_confirmed, df_epic_deaths, df_epic_days_deaths, variable, plot, selected_country):
+def draw_singleCountry_Epicurve(df_confirmed_t, df_deaths_t, df_policy_index, df_epic_confirmed, df_epic_days_confirmed, df_epic_deaths, df_epic_days_deaths, variable, plot, selected_country,ISO):
     fig = go.Figure()
     if plot == 'Epidemic curves':
         if variable == 'confirmed':
