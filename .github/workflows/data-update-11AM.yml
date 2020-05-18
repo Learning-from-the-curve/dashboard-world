@@ -26,6 +26,9 @@ jobs:
     - name: Run df_pprocess
       run: |
         python df_pprocess.py
+    - name: Run countries_check
+      run: |
+        python countries_check.py    
     - name: Writing the pickles jar
       uses: actions/upload-artifact@v1
       with:
