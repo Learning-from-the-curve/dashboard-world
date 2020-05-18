@@ -2,7 +2,8 @@ import pandas as pd
 import numpy as np
 import pickle
 
-from process_functions import adjust_names, aggregate_countries, picklify
+from process_functions import adjust_names, aggregate_countries
+from pickle_functions import picklify
 from pathlib import Path
 
 #download, filter and stores the updated list of countries present in the john hopkins files

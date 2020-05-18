@@ -16,7 +16,7 @@ from pickle_functions import picklify, unpicklify
 # Paths
 
 path_UN = Path.cwd() / 'input' / 'world_population_2020.csv'
-path_geo = Path.cwd() / 'input'/ 'countries.geojson'
+#path_geo = Path.cwd() / 'input'/ 'countries.geojson'
 
 # get data directly from github. The data source provided by Johns Hopkins University.
 url_confirmed = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv'
@@ -146,6 +146,7 @@ pop_t['EU28'] = int(EU28_population)
 #map_data['Confirmed_24hr']=df_confirmed.iloc[:,-1] - df_confirmed.iloc[:,-2]
 #map_data.sort_values(by='Confirmed', ascending=False, inplace=True)
 
+'''
 with open(path_geo) as f:
         coord_df = json.load(f)
 
@@ -176,6 +177,7 @@ for i in range(len(coord_df['features'])):
 
     temp_list.append(coord_df['features'][i]['properties']['ADMIN'])
 temp_list.sort()
+'''
 
 # The code below prints the countries for which we have COVID-19 data but a mismatch/lack of geo data
 '''
@@ -364,7 +366,6 @@ dataframe_list = [
     [df_epic_days_deaths, 'df_epic_days_deaths'],
     [df_tab_right, 'df_tab_right'],
     [pop_t, 'pop_t'],
-    [coord_df, 'coord_df'],
     [map_data, 'map_data'],
     [df_world, 'df_world'],
     [df_EU28, 'df_EU28'],

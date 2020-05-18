@@ -59,7 +59,6 @@ pickles_list = [
     'df_epic_days_deaths',
     'df_tab_right',
     'pop_t',
-    'coord_df',
     'map_data',
     'df_world',
     'df_EU28',
@@ -90,22 +89,21 @@ df_epic_deaths = unpicklify(pickle_files[5])
 df_epic_days_deaths = unpicklify(pickle_files[6])
 df_tab_right = unpicklify(pickle_files[7])
 pop_t = unpicklify(pickle_files[8])
-coord_df = unpicklify(pickle_files[9])
-map_data = unpicklify(pickle_files[10])
-df_world = unpicklify(pickle_files[11])
-df_EU28 = unpicklify(pickle_files[12])
-df_left_list_confirmed_t = unpicklify(pickle_files[13])
-df_left_list_deaths_t = unpicklify(pickle_files[14])
-df_left_list_daily_confirmed_increase = unpicklify(pickle_files[15])
-df_left_list_daily_deaths_increase = unpicklify(pickle_files[16])
-daily_confirmed_world = unpicklify(pickle_files[17])
-daily_deaths_world = unpicklify(pickle_files[18])
-daily_confirmed_EU28 = unpicklify(pickle_files[19])
-daily_deaths_EU28 = unpicklify(pickle_files[20])
-top_4 = unpicklify(pickle_files[21])
-available_variables = unpicklify(pickle_files[22])
-available_indicators = unpicklify(pickle_files[23])
-ISO = unpicklify(pickle_files[24])
+map_data = unpicklify(pickle_files[9])
+df_world = unpicklify(pickle_files[10])
+df_EU28 = unpicklify(pickle_files[11])
+df_left_list_confirmed_t = unpicklify(pickle_files[12])
+df_left_list_deaths_t = unpicklify(pickle_files[13])
+df_left_list_daily_confirmed_increase = unpicklify(pickle_files[14])
+df_left_list_daily_deaths_increase = unpicklify(pickle_files[15])
+daily_confirmed_world = unpicklify(pickle_files[16])
+daily_deaths_world = unpicklify(pickle_files[17])
+daily_confirmed_EU28 = unpicklify(pickle_files[18])
+daily_deaths_EU28 = unpicklify(pickle_files[19])
+top_4 = unpicklify(pickle_files[20])
+available_variables = unpicklify(pickle_files[21])
+available_indicators = unpicklify(pickle_files[22])
+ISO = unpicklify(pickle_files[23])
 
 #############################################################################
 # mapbox_access_token keys, not all mapbox function require token to function. 
