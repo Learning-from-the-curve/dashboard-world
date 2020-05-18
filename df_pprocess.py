@@ -246,7 +246,7 @@ df_deaths_t['World'] = df_world_t['deaths']
 df_confirmed_t['EU28'] = df_EU28_t['confirmed']
 df_deaths_t['EU28'] = df_EU28_t['deaths']
 
-# Define the variable names for the dropdown manu used for to choose variables
+# set the variable names for the dropdown manu used for to choose variables
 available_variables = ['Mortality rate', 'Share of infected population', 'Growth rate confirmed cases', 'Growth rate deaths']
 
 # Part to adjust data for plots with Stringency Index

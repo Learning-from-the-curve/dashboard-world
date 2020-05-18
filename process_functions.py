@@ -1,8 +1,5 @@
 import numpy as np
 import pandas as pd
-import pickle
-from pathlib import Path
-import os
 
 def center_date(row, max_MA_index, country):
     '''
@@ -103,26 +100,3 @@ def moving_average(data, window):
             df_temp = df_temp.set_index('index')
             df_centered_date[country] = df_temp[country].copy()
     return df_MA, df_centered_date
-
-def picklify(data, name):
-    '''
-    writes a pickle file in the pickles_jar folder with name = 'name' and content = dataframe
-    input:
-    generic data type containing information
-    string containing the name of the file
-    '''
-    file_write = open(f"./pickles_jar/{name}.pkl", 'wb')
-    pickle.dump(data, file_write)
-    file_write.close()
-
-
-def unpicklify(name):
-    '''
-    loads a pickle file from the pickles_jar folder with name = 'name'
-    input:
-    string containing the name of the file
-    '''
-    file_read = open(Path.cwd() / 'pickles_jar' + os.sep + name + '.pkl', 'rb')
-    dataframe = pickle.load(file_read)
-    file_read.close()
-    return dataframe

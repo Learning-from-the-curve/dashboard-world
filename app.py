@@ -107,22 +107,22 @@ available_variables = unpicklify(pickle_files[22])
 available_indicators = unpicklify(pickle_files[23])
 ISO = unpicklify(pickle_files[24])
 
-#for pickle_file in pickle_files:
-#    df = unpicklify(pickle_file)
-
 #############################################################################
 # mapbox_access_token keys, not all mapbox function require token to function. 
 #############################################################################
 
+
+iso_j=ISO[['name','alpha-3']]
+map_data= map_data.set_index('Country/Region').join(iso_j.set_index('name'))
+map_data= map_data.reset_index()
 
 mapbox_access_token = 'pk.eyJ1IjoiZmVkZWdhbGwiLCJhIjoiY2s5azJwaW80MDQxeTNkcWh4bGhjeTN2NyJ9.twKWO-W5wPLX6m9OfrpZCw'
 
 def gen_map(map_data,zoom,lat,lon):
     return {
         "data": [{
-            "type": "choroplethmapbox",  #specify the type of data to generate, in this case, scatter map box is used
-            "locations": list(map_data['Country/Region']),
-            "geojson": coord_df,
+            "type": "choropleth",  #specify the type of data to generate, in this case, scatter map box is used
+            'locations' : map_data['alpha-3'],
             "featureidkey": 'properties.ADMIN',
             "z": np.log(list(map_data['Confirmed'])),
             "hoverinfo": "text",         
@@ -156,6 +156,7 @@ def gen_map(map_data,zoom,lat,lon):
         ),
     }
 
+    
 def map_selection(data):
     aux = data
     zoom = 1
@@ -1132,7 +1133,7 @@ def tab_right_countries(dropdown):
     Output("modal-centered-left", "is_open"),
     [Input("open-centered-left", "n_clicks"), Input("close-centered-left", "n_clicks")],
     [State("modal-centered-left", "is_open")],)
-def toggle_modal(n1, n2, is_open):
+def toggle_modal_left(n1, n2, is_open):
     if n1 or n2:
         return not is_open
     return is_open
@@ -1141,6 +1142,10 @@ def toggle_modal(n1, n2, is_open):
     Output("modal-centered-right", "is_open"),
     [Input("open-centered-right", "n_clicks"), Input("close-centered-right", "n_clicks")],
     [State("modal-centered-right", "is_open")],)
+def toggle_modal_right(n1, n2, is_open):
+    if n1 or n2:
+        return not is_open
+    return is_open
 
 @app.callback(
     Output("temp_prova_collapse", "is_open"),
@@ -1157,4 +1162,4 @@ def toggle_accordion(n1, is_open1):
     return is_open1
 
 if __name__ == '__main__':
-    app.run_server(debug=False)
+   app.run_server(debug=False)
