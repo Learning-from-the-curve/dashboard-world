@@ -1,7 +1,6 @@
 import warnings
 warnings.filterwarnings("ignore")
 
-import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
 import datetime
@@ -13,12 +12,13 @@ import dash_bootstrap_components as dbc
 import dash_table as dt
 import pickle
 import os
-from dash.dependencies import Input, Output, State
 from pathlib import Path
+from dash.dependencies import Input, Output, State
 from scout_apm.flask import ScoutApm
 
 # Custom functions
-from functions import *
+from app_functions import *
+from pickle_functions import unpicklify
 
 path_input = Path.cwd() / 'input'
 Path.mkdir(path_input, exist_ok = True)
@@ -49,7 +49,6 @@ server = app.server
 # UNPICKLIFICATION TIME 
 #############################################################################
 
-pickle_path = Path.cwd() / 'pickles_jar'
 pickles_list = [
     'df_confirmed_t',
     'df_deaths_t',
@@ -60,7 +59,6 @@ pickles_list = [
     'df_epic_days_deaths',
     'df_tab_right',
     'pop_t',
-    'coord_df',
     'map_data',
     'df_world',
     'df_EU28',
@@ -78,13 +76,8 @@ pickles_list = [
     'ISO',
     ]
     
-pickle_files = [str(pickle_path) + os.sep + x + '.pkl' for x in pickles_list]
+pickle_files = [ x for x in pickles_list]
 
-def unpicklify(path):
-    file_read = open(path, 'rb')
-    dataframe = pickle.load(file_read)
-    file_read.close()
-    return dataframe
 
 
 df_confirmed_t = unpicklify(pickle_files[0])
@@ -96,39 +89,38 @@ df_epic_deaths = unpicklify(pickle_files[5])
 df_epic_days_deaths = unpicklify(pickle_files[6])
 df_tab_right = unpicklify(pickle_files[7])
 pop_t = unpicklify(pickle_files[8])
-coord_df = unpicklify(pickle_files[9])
-map_data = unpicklify(pickle_files[10])
-df_world = unpicklify(pickle_files[11])
-df_EU28 = unpicklify(pickle_files[12])
-df_left_list_confirmed_t = unpicklify(pickle_files[13])
-df_left_list_deaths_t = unpicklify(pickle_files[14])
-df_left_list_daily_confirmed_increase = unpicklify(pickle_files[15])
-df_left_list_daily_deaths_increase = unpicklify(pickle_files[16])
-daily_confirmed_world = unpicklify(pickle_files[17])
-daily_deaths_world = unpicklify(pickle_files[18])
-daily_confirmed_EU28 = unpicklify(pickle_files[19])
-daily_deaths_EU28 = unpicklify(pickle_files[20])
-top_4 = unpicklify(pickle_files[21])
-available_variables = unpicklify(pickle_files[22])
-available_indicators = unpicklify(pickle_files[23])
-ISO = unpicklify(pickle_files[24])
-
-#for pickle_file in pickle_files:
-#    df = unpicklify(pickle_file)
+map_data = unpicklify(pickle_files[9])
+df_world = unpicklify(pickle_files[10])
+df_EU28 = unpicklify(pickle_files[11])
+df_left_list_confirmed_t = unpicklify(pickle_files[12])
+df_left_list_deaths_t = unpicklify(pickle_files[13])
+df_left_list_daily_confirmed_increase = unpicklify(pickle_files[14])
+df_left_list_daily_deaths_increase = unpicklify(pickle_files[15])
+daily_confirmed_world = unpicklify(pickle_files[16])
+daily_deaths_world = unpicklify(pickle_files[17])
+daily_confirmed_EU28 = unpicklify(pickle_files[18])
+daily_deaths_EU28 = unpicklify(pickle_files[19])
+top_4 = unpicklify(pickle_files[20])
+available_variables = unpicklify(pickle_files[21])
+available_indicators = unpicklify(pickle_files[22])
+ISO = unpicklify(pickle_files[23])
 
 #############################################################################
 # mapbox_access_token keys, not all mapbox function require token to function. 
 #############################################################################
 
 
+iso_j=ISO[['name','alpha-3']]
+map_data= map_data.set_index('Country/Region').join(iso_j.set_index('name'))
+map_data= map_data.reset_index()
+
 mapbox_access_token = 'pk.eyJ1IjoiZmVkZWdhbGwiLCJhIjoiY2s5azJwaW80MDQxeTNkcWh4bGhjeTN2NyJ9.twKWO-W5wPLX6m9OfrpZCw'
 
 def gen_map(map_data,zoom,lat,lon):
     return {
         "data": [{
-            "type": "choroplethmapbox",  #specify the type of data to generate, in this case, scatter map box is used
-            "locations": list(map_data['Country/Region']),
-            "geojson": coord_df,
+            "type": "choropleth",  #specify the type of data to generate, in this case, scatter map box is used
+            'locations' : map_data['alpha-3'],
             "featureidkey": 'properties.ADMIN',
             "z": np.log(list(map_data['Confirmed'])),
             "hoverinfo": "text",         
@@ -162,6 +154,7 @@ def gen_map(map_data,zoom,lat,lon):
         ),
     }
 
+    
 def map_selection(data):
     aux = data
     zoom = 1
@@ -1076,7 +1069,7 @@ def line_selection(dropdown, graph_line):
     [Input('demo-dropdown', 'value'),
     Input('x-var', 'value'),
     Input('variable-dropdown', 'value')])
-def line_selection(dropdown, x_choice, variable):
+def line_selection2(dropdown, x_choice, variable):
     if len(dropdown) == 0:
         for country in top_4:
             dropdown.append(country)
@@ -1088,7 +1081,7 @@ def line_selection(dropdown, x_choice, variable):
     Output('line-graph-policy', 'figure')],
     [Input('demo-dropdown', 'value'),
     Input('variable-dropdown-epic', 'value')])
-def line_selection(dropdown, plots_epic_policy):
+def line_selection3(dropdown, plots_epic_policy):
     if len(dropdown) == 0:
         for country in top_4:
             dropdown.append(country)
@@ -1101,7 +1094,6 @@ def line_selection(dropdown, plots_epic_policy):
     Output('selected-countries-tab', 'children'),
     [Input('demo-dropdown', 'value')])
 def tab_right_countries(dropdown):
-    newline = '\n'
     if len(dropdown) == 0:
         for country in top_4:
             dropdown.append(country)
@@ -1133,14 +1125,13 @@ def tab_right_countries(dropdown):
     ],
     style={ "height": "600px" },
     className="overflow-auto"
-    ),
-    className="border-0",
+    )
 
 @app.callback(
     Output("modal-centered-left", "is_open"),
     [Input("open-centered-left", "n_clicks"), Input("close-centered-left", "n_clicks")],
     [State("modal-centered-left", "is_open")],)
-def toggle_modal(n1, n2, is_open):
+def toggle_modal_left(n1, n2, is_open):
     if n1 or n2:
         return not is_open
     return is_open
@@ -1149,7 +1140,7 @@ def toggle_modal(n1, n2, is_open):
     Output("modal-centered-right", "is_open"),
     [Input("open-centered-right", "n_clicks"), Input("close-centered-right", "n_clicks")],
     [State("modal-centered-right", "is_open")],)
-def toggle_modal(n1, n2, is_open):
+def toggle_modal_right(n1, n2, is_open):
     if n1 or n2:
         return not is_open
     return is_open
@@ -1169,4 +1160,4 @@ def toggle_accordion(n1, is_open1):
     return is_open1
 
 if __name__ == '__main__':
-    app.run_server(debug=False)
+   app.run_server(debug=False)
