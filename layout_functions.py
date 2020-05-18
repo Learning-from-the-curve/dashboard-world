@@ -10,19 +10,17 @@ from app_functions import *
 from pickle_functions import unpicklify
 
 def gen_map(map_data,zoom,lat,lon):
-    mapbox_access_token = 'pk.eyJ1IjoiZmVkZWdhbGwiLCJhIjoiY2s5azJwaW80MDQxeTNkcWh4bGhjeTN2NyJ9.twKWO-W5wPLX6m9OfrpZCw'
+    #mapbox_access_token = 'pk.eyJ1IjoiZmVkZWdhbGwiLCJhIjoiY2s5azJwaW80MDQxeTNkcWh4bGhjeTN2NyJ9.twKWO-W5wPLX6m9OfrpZCw'
     return {
         "data": [{
             "type": "choropleth",  #specify the type of data to generate, in this case, scatter map box is used
             'locations' : map_data['alpha-3'],
-            "featureidkey": 'properties.ADMIN',
             "z": np.log(list(map_data['Confirmed'])),
             "hoverinfo": "text",         
             "hovertext": [f"Country/Region: {map_data.iloc[indice]['Country/Region']} <br>Confirmed: {map_data.iloc[indice]['Confirmed']:,} <br>Deaths: {map_data.iloc[indice]['Deaths']:,}" for indice in range(len(map_data['Country/Region']))],
-            'colorbar': dict(thickness=20, ticklen=3),
             'colorscale': 'Geyser',
             'autocolorscale': False,
-            'showscale': False,
+            'showscale' : False
         },
         ],
         "layout": dict(
@@ -34,17 +32,7 @@ def gen_map(map_data,zoom,lat,lon):
                 r=0,
                 b=0,
                 t=0
-            ),
-            hovermode="closest",
-            mapbox=dict(
-                accesstoken=mapbox_access_token,
-                style='mapbox://styles/mapbox/light-v10',
-                center=dict(
-                    lon=lon,
-                    lat=lat,
-                ),
-                zoom=zoom,
-            )
+            ),            
         ),
     }
 
@@ -366,7 +354,7 @@ def make_item(available_indicators, top_4):
         [
             dbc.CardHeader(
                 dbc.Button(
-                    "Discover more",
+                    "Hide/Show Bar",
                     color="primary",
                     id="temp_prova_accordion",
                     block = True,
@@ -376,9 +364,11 @@ def make_item(available_indicators, top_4):
             dbc.Collapse(
                 dbc.CardBody(
                     [html.Div([
-                        dbc.Button("World Map", href="#worldMap", external_link=True),
-                        dbc.Button("World Stats", href="#worldStats", external_link=True),
-                        dbc.Button("Countries Stats", href="#countriesStats", external_link=True),
+                         dbc.ButtonGroup(
+                            [dbc.Button("World Map", href="#worldMap", external_link=True),
+                            dbc.Button("World Stats", href="#worldStats", external_link=True),
+                            dbc.Button("Countries Stats", href="#countriesStats", external_link=True),],
+                        ),
                     ],
                     className='text-center d-md-none'                        
                     ),
@@ -393,7 +383,7 @@ def make_item(available_indicators, top_4):
                         multi=True,
                         value = top_4,
                         placeholder = 'Select countries to plot - Default to top 4 countries by confirmed cases'
-                    ),], className = "pt-1 pb-0"),
+                    ),], className = "py-1"),
                 id="temp_prova_collapse",
             ),
         ], className = "my-2 shadow", style = {"overflow": "visible"}

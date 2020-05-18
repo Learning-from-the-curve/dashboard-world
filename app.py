@@ -74,8 +74,6 @@ pickles_list = [
     
 pickle_files = [ x for x in pickles_list]
 
-
-
 df_confirmed_t = unpicklify(pickle_files[0])
 df_deaths_t = unpicklify(pickle_files[1])
 df_policy_index = unpicklify(pickle_files[2])
@@ -105,15 +103,12 @@ ISO = unpicklify(pickle_files[23])
 # mapbox_access_token keys, not all mapbox function require token to function. 
 #############################################################################
 
-
+#add to the dataframe map_data the column with ISO codes for each country
 iso_j=ISO[['name','alpha-3']]
 map_data= map_data.set_index('Country/Region').join(iso_j.set_index('name'))
 map_data= map_data.reset_index()
 
-
-
-
-
+#tab_confirmed_left
 tab_confirmed_left = dbc.Card(
     html.Div([
         html.Ul([
@@ -139,6 +134,7 @@ tab_confirmed_left = dbc.Card(
 className="border-0",
 )
 
+#tab_deaths_left
 tab_deaths_left = dbc.Card(
     html.Div([
         html.Ul([
@@ -164,6 +160,7 @@ tab_deaths_left = dbc.Card(
 className="border-0",
 )
 
+#tab_confirmed_increase_left
 tab_confirmed_increase_left = dbc.Card(
     html.Div([
         html.Ul([
@@ -189,6 +186,7 @@ tab_confirmed_increase_left = dbc.Card(
 className="border-0",
 )
 
+#tab_deaths_increase_left
 tab_deaths_increase_left = dbc.Card(
     html.Div([
         html.Ul([
@@ -214,6 +212,7 @@ tab_deaths_increase_left = dbc.Card(
 className="border-0",
 )
 
+#tab_right
 tab_right = dbc.Card(id ='selected-countries-tab')
 
 markdown_data_info = dcc.Markdown('''
@@ -761,7 +760,7 @@ def toggle_modal_right(n1, n2, is_open):
 def toggle_accordion(n1, is_open1):
     ctx = dash.callback_context
     if not ctx.triggered:
-        return ""
+        return True
     else:
         button_id = ctx.triggered[0]["prop_id"].split(".")[0]
     if button_id == "temp_prova_accordion" and n1:
