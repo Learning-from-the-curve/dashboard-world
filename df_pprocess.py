@@ -46,10 +46,10 @@ eu28 = ['Austria',	'Italy', 'Belgium',	'Latvia', 'Bulgaria', 'Lithuania', 'Croat
 
 
 #filter the countries' names to fit our list of names
-df_confirmed = adjust_names(df_confirmed)
-df_deaths = adjust_names(df_deaths)
-df_confirmed = aggregate_countries(df_confirmed, graph = 'scatter')
-df_deaths = aggregate_countries(df_deaths, graph = 'scatter')
+df_confirmed = adjust_names(df_confirmed.copy())
+df_deaths = adjust_names(df_deaths.copy())
+df_confirmed = aggregate_countries(df_confirmed.copy(), graph = 'scatter')
+df_deaths = aggregate_countries(df_deaths.copy(), graph = 'scatter')
 
 # Create a dataframe for the world with the date as columns, keep the Province/State column to rename it below
 df_world = df_confirmed[0:0].drop(columns = ['Country/Region', 'Lat', 'Long']).copy()

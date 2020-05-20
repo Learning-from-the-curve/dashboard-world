@@ -31,18 +31,19 @@ def adjust_names(data):
     output:
     updated dataframe with correct country names
     '''
-    data['Country/Region'].loc[data['Country/Region'] == 'Burma'] = 'Myanmar'
-    data['Country/Region'].loc[data['Country/Region'] == 'Cabo Verde'] = 'Cape Verde'
-    data['Country/Region'].loc[data['Country/Region'] == 'Congo (Brazzaville)'] = 'Republic of Congo'
-    data['Country/Region'].loc[data['Country/Region'] == 'Congo (Kinshasa)'] = 'Democratic Republic of the Congo'
-    data['Country/Region'].loc[data['Country/Region'] == 'Czechia'] = 'Czech Republic'
-    data['Country/Region'].loc[data['Country/Region'] == 'Eswatini'] = 'Swaziland'
-    data['Country/Region'].loc[data['Country/Region'] == 'Korea, South'] = 'South Korea'
-    data['Country/Region'].loc[data['Country/Region'] == 'Taiwan*'] = 'Taiwan'
-    data['Country/Region'].loc[data['Country/Region'] == 'Timor-Leste'] = 'East Timor'
-    data['Country/Region'].loc[data['Country/Region'] == 'US'] = 'United States of America'
-    data['Country/Region'].loc[data['Country/Region'] == 'West Bank and Gaza'] = 'Palestine'
-    data['Province/State'].loc[data['Province/State'] == 'Falkland Islands (Malvinas)'] = 'Falkland Islands'
+    data.at[data['Country/Region'] == 'Burma', 'Country/Region'] = 'Myanmar'
+    data.at[data['Country/Region'] == 'Cabo Verde', 'Country/Region'] = 'Cape Verde'
+    data.at[data['Country/Region'] == 'Congo (Brazzaville)', 'Country/Region']  = 'Republic of Congo'
+    data.at[data['Country/Region'] == 'Congo (Kinshasa)', 'Country/Region'] = 'Democratic Republic of the Congo'
+    data.at[data['Country/Region'] == 'Czechia', 'Country/Region'] = 'Czech Republic'
+    data.at[data['Country/Region'] == 'Eswatini', 'Country/Region'] = 'Swaziland'
+    data.at[data['Country/Region'] == 'Korea, South', 'Country/Region'] = 'South Korea'
+    data.at[data['Country/Region'] == 'Taiwan*', 'Country/Region'] = 'Taiwan'
+    data.at[data['Country/Region'] == 'Timor-Leste', 'Country/Region'] = 'East Timor'
+    data.at[data['Country/Region'] == 'US', 'Country/Region'] = 'United States of America'
+    data.at[data['Country/Region'] == 'West Bank and Gaza', 'Country/Region'] = 'Palestine'
+    data.at[data['Province/State'] == 'Falkland Islands (Malvinas)', 'Province/State'] = 'Falkland Islands'
+    print(list(data['Country/Region']))
     return data
 
 def aggregate_countries(data, graph):
@@ -53,18 +54,20 @@ def aggregate_countries(data, graph):
     output:
     updated dataframe with aggregated provinces and states in a country
     '''
+
     # For countries that have disaggregated data sum them
     if graph == "map":
         data = data.set_index('Country/Region')
-        data['Confirmed'] = data.groupby(level = 0)['Confirmed'].sum()
-        data['Deaths'] = data.groupby(level = 0)['Deaths'].sum()
+        data.at['Confirmed'] = data.groupby(level = 0)['Confirmed'].sum()
+        data.at['Deaths'] = data.groupby(level = 0)['Deaths'].sum()
     else:
-        data['Country/Region'][(data['Country/Region'] == 'France') & (data['Province/State'].isna() == False)] = data['Province/State']
-        data['Country/Region'][(data['Country/Region'] == 'United Kingdom') & (data['Province/State'].isna() == False)] = data['Province/State']
-        data['Country/Region'][(data['Country/Region'] == 'Netherlands') & (data['Province/State'].isna() == False)] = data['Province/State']
-        data['Country/Region'][(data['Country/Region'] == 'Denmark') & (data['Province/State'].isna() == False)] = data['Province/State']
+        data.at[(data['Country/Region'] == 'France') & (data['Province/State'].isna() == False),'Country/Region'] = data['Province/State'].copy()
+        data.at[(data['Country/Region'] == 'United Kingdom') & (data['Province/State'].isna() == False), 'Country/Region'] = data['Province/State'].copy()
+        data.at[(data['Country/Region'] == 'Netherlands') & (data['Province/State'].isna() == False), 'Country/Region'] = data['Province/State'].copy()
+        data.at[(data['Country/Region'] == 'Denmark') & (data['Province/State'].isna() == False), 'Country/Region'] = data['Province/State'].copy()
         data = data.set_index('Country/Region')
         data = data.groupby(level = 0).sum()
+
     data = data.groupby(level = 0).first()
     data = data.reset_index()
     return data
