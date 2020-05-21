@@ -22,18 +22,13 @@ path_UN = Path.cwd() / 'input' / 'world_population_2020.csv'
 url_confirmed = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv'
 url_deaths = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv'
 url_policy = 'https://raw.githubusercontent.com/OxCGRT/covid-policy-tracker/master/data/OxCGRT_latest.csv'
-url_ISO = 'https://raw.githubusercontent.com/lukes/ISO-3166-Countries-with-Regional-Codes/master/all/all.csv'
 
-# Data can also be saved locally and read from local drive
-# url_confirmed = 'time_series_covid19_confirmed_global.csv'
-# url_deaths = 'time_series_covid19_deaths_global.csv'
-# url_recovered = 'time_series_covid19_recovered_global.csv'
 
 df_confirmed = pd.read_csv(url_confirmed)
 df_deaths = pd.read_csv(url_deaths)
 pop = pd.read_csv(path_UN)
 policy = pd.read_csv(url_policy)
-ISO = pd.read_csv(url_ISO)
+
 
 #########################################################################################
 # Data preprocessing for getting useful data and shaping data compatible to plotly plot
@@ -147,45 +142,7 @@ pop_t['EU28'] = int(EU28_population)
 #map_data['Confirmed_24hr']=df_confirmed.iloc[:,-1] - df_confirmed.iloc[:,-2]
 #map_data.sort_values(by='Confirmed', ascending=False, inplace=True)
 
-'''
-with open(path_geo) as f:
-        coord_df = json.load(f)
 
-temp_list = []
-for i in range(len(coord_df['features'])):
-    if coord_df['features'][i]['properties']['ADMIN'] == 'The Bahamas':
-        coord_df['features'][i]['properties']['ADMIN'] = 'Bahamas'
-    elif coord_df['features'][i]['properties']['ADMIN'] == 'Vatican':
-        coord_df['features'][i]['properties']['ADMIN'] = 'Holy See'
-    elif coord_df['features'][i]['properties']['ADMIN'] == 'Jersey':
-        coord_df['features'][i]['properties']['ADMIN'] = 'Channel Islands'
-    elif coord_df['features'][i]['properties']['ADMIN'] == 'Guernsey':
-        coord_df['features'][i]['properties']['ADMIN'] = 'Channel Islands'
-    elif coord_df['features'][i]['properties']['ADMIN'] == 'Ivory Coast':
-        coord_df['features'][i]['properties']['ADMIN'] = "Cote d'Ivoire"
-    elif coord_df['features'][i]['properties']['ADMIN'] == 'CuraÃ§ao':
-        coord_df['features'][i]['properties']['ADMIN'] = "Curacao"
-    elif coord_df['features'][i]['properties']['ADMIN'] == 'Guinea Bissau':
-        coord_df['features'][i]['properties']['ADMIN'] = "Guinea-Bissau"
-    elif coord_df['features'][i]['properties']['ADMIN'] == 'Saint Martin':
-        coord_df['features'][i]['properties']['ADMIN'] = "St Martin"
-    elif coord_df['features'][i]['properties']['ADMIN'] == 'Macedonia':
-        coord_df['features'][i]['properties']['ADMIN'] = "North Macedonia"
-    elif coord_df['features'][i]['properties']['ADMIN'] == 'Republic of Serbia':
-        coord_df['features'][i]['properties']['ADMIN'] = "Serbia"
-    elif coord_df['features'][i]['properties']['ADMIN'] == 'United Republic of Tanzania':
-        coord_df['features'][i]['properties']['ADMIN'] = "Tanzania"
-
-    temp_list.append(coord_df['features'][i]['properties']['ADMIN'])
-temp_list.sort()
-'''
-
-# The code below prints the countries for which we have COVID-19 data but a mismatch/lack of geo data
-'''
-for i in list(map_data['Country/Region']):
-    if i not in temp_list:
-        print(i)
-'''
 #create utility df transposed without lat and lon
 df_confirmed_t=df_confirmed.drop(['Lat','Long'],axis=1).T
 df_deaths_t=df_deaths.drop(['Lat','Long'],axis=1).T
@@ -258,43 +215,6 @@ policy = policy[['CountryName', 'Date', 'StringencyIndexForDisplay']]
 
 # List with first 4 countries by cases
 top_4 = df_confirmed.sort_values(by=df_confirmed.columns[-1], ascending = False)['Country/Region'].head(4).to_list()
-
-# Fix ISO codes dictionary
-ISO['name'].loc[ISO['name'] == 'Bolivia (Plurinational State of)'] = "Bolivia"
-ISO['name'].loc[ISO['name'] == 'Brunei Darussalam'] = "Brunei"
-ISO['name'].loc[ISO['name'] == 'Cabo Verde'] = "Cape Verde"
-ISO['name'].loc[ISO['name'] == 'Congo, Democratic Republic of the'] = "Democratic Republic of the Congo"
-ISO['name'].loc[ISO['name'] == 'Congo'] = "Republic of Congo"
-ISO['name'].loc[ISO['name'] == "Côte d'Ivoire"] = "Cote d'Ivoire"
-ISO['name'].loc[ISO['name'] == "Curaçao"] = "Curacao"
-ISO['name'].loc[ISO['name'] == "Czechia"] = "Czech Republic"
-ISO['name'].loc[ISO['name'] == "Eswatini"] = "Swaziland"
-ISO['name'].loc[ISO['name'] == "Falkland Islands (Malvinas)"] = "Falkland Islands"
-ISO['name'].loc[ISO['name'] == "Iran (Islamic Republic of)"] = "Iran"
-ISO['name'].loc[ISO['name'] == "Korea, Republic of"] = "South Korea"
-ISO['name'].loc[ISO['name'] == "Lao People's Democratic Republic"] = "Laos"
-ISO['name'].loc[ISO['name'] == "Virgin Islands (British)"] = "British Virgin Islands"
-ISO['name'].loc[ISO['name'] == "Timor-Leste"] = "East Timor"
-ISO['name'].loc[ISO['name'] == "Moldova, Republic of"] = "Moldova"
-ISO['name'].loc[ISO['name'] == "Palestine, State of"] = "Palestine"
-ISO['name'].loc[ISO['name'] == "Réunion"] = "Reunion"
-ISO['name'].loc[ISO['name'] == "Russian Federation"] = "Russia"
-ISO['name'].loc[ISO['name'] == "Saint Barthélemy"] = "Saint Barthelemy"
-ISO['name'].loc[ISO['name'] == "Sint Maarten (Dutch part)"] = "Sint Maarten"
-ISO['name'].loc[ISO['name'] == "Saint Martin (French part)"] = "St Martin"
-ISO['name'].loc[ISO['name'] == "Syrian Arab Republic"] = "Syria"
-ISO['name'].loc[ISO['name'] == "Taiwan, Province of China"] = "Taiwan"
-ISO['name'].loc[ISO['name'] == "Tanzania, United Republic of"] = "Tanzania"
-ISO['name'].loc[ISO['name'] == "United Kingdom of Great Britain and Northern Ireland"] = "United Kingdom"
-ISO['name'].loc[ISO['name'] == "Venezuela (Bolivarian Republic of)"] = "Venezuela"
-ISO['name'].loc[ISO['name'] == "Viet Nam"] = "Vietnam"
-
-'''
-for country in list(df_confirmed_t):
-    if country not in ISO['name'].to_list():
-        print(country)
-print(ISO['name'].to_list())
-'''
 
 #adjust the policy df to fit other dfs
 policy = policy.rename(columns = {'CountryName': 'name', 'StringencyIndexForDisplay': 'Stringency Index'})
@@ -385,7 +305,7 @@ dataframe_list = [
     [top_4, 'top_4'],
     [available_variables, 'available_variables'],
     [available_indicators, 'available_indicators'],
-    [ISO, 'ISO'],
+    #[ISO, 'ISO'],
     ]
 
 
