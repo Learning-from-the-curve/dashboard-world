@@ -9,11 +9,14 @@ from dash.dependencies import Input, Output, State
 from app_functions import *
 from pickle_functions import unpicklify
 
-def gen_map(map_data,zoom,lat,lon):
+def gen_map(map_data):
+    '''
+    Function to generate and plot the world map with the # of confirmed cases for each country as the Z parameter
+    '''
     #mapbox_access_token = 'pk.eyJ1IjoiZmVkZWdhbGwiLCJhIjoiY2s5azJwaW80MDQxeTNkcWh4bGhjeTN2NyJ9.twKWO-W5wPLX6m9OfrpZCw'
     return {
         "data": [{
-            "type": "choropleth",  #specify the type of data to generate, in this case, scatter map box is used
+            "type": "choropleth",  
             'locations' : map_data['alpha-3'],
             "z": np.log(list(map_data['Confirmed'])),
             "hoverinfo": "text",         
@@ -36,12 +39,11 @@ def gen_map(map_data,zoom,lat,lon):
         ),
     }
 
-def map_selection(data):
-    aux = data
-    zoom = 1
-    return gen_map(aux,zoom,41.89193,12.51133)
-
 def draw_singleCountry_Scatter(df_confirmed_t, df_deaths_t, variable, graph_line, selected_country,ISO):
+    '''
+    Function to generate and plot a scatterplot for confirmed/deaths with linear or log scale for the selected countries
+    '''
+    #FIXME: ancora da controllare e correggere
     fig = go.Figure()
     if variable == 'confirmed':
         label_max, text_label_max = ticks_log(df_confirmed_t, selected_country)
@@ -121,6 +123,11 @@ def draw_singleCountry_Scatter(df_confirmed_t, df_deaths_t, variable, graph_line
     return fig
 
 def draw_mortality_fatality(df_confirmed_t, df_deaths_t, pop_t, variable, x_graph, selected_country,ISO):
+    '''
+    Function to generate and plot a scatterplot for mortality rate/Share of infected population/Growth rate confirmed cases/Growth rate deaths
+    with date or days scale for the selected countries
+    '''
+    #FIXME: ancora da controllare e correggere
     fig = go.Figure()
     if x_graph == 'Date':
         if variable == 'Mortality rate':
@@ -265,6 +272,10 @@ def draw_mortality_fatality(df_confirmed_t, df_deaths_t, pop_t, variable, x_grap
     return fig
 
 def draw_singleCountry_Epicurve(df_confirmed_t, df_deaths_t, df_policy_index, df_epic_confirmed, df_epic_days_confirmed, df_epic_deaths, df_epic_days_deaths, variable, plot, selected_country,ISO):
+    '''
+    Function to generate and plot a scatterplot for Epidemic curve and policy index for confirmed/deaths for the selected countries
+    '''
+    #FIXME: ancora da controllare e correggere
     fig = go.Figure()
     if plot == 'Epidemic curves':
         if variable == 'confirmed':
@@ -350,6 +361,9 @@ def draw_singleCountry_Epicurve(df_confirmed_t, df_deaths_t, df_policy_index, df
 
 # Accordion countries
 def make_item(available_indicators, top_4):
+    '''
+    Function to create the Accordion to click to show/hide the dropdown menù of the countries
+    '''
     return dbc.Card(
         [
             dbc.CardHeader(

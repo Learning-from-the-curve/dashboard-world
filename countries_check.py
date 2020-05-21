@@ -13,8 +13,8 @@ url_confirmed = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/maste
 df_confirmed = pd.read_csv(url_confirmed)
 
 #filter the countries' names to fit our list of names
-df_confirmed = adjust_names(df_confirmed)
-df_confirmed = aggregate_countries(df_confirmed, graph = 'scatter')
+df_confirmed = adjust_names(df_confirmed.copy())
+df_confirmed = aggregate_countries(df_confirmed.copy(), graph = 'scatter')
 
 #store in pickle files
-picklify(set(df_confirmed['Country/Region']), 'set_countries_JH')
+picklify(set(df_confirmed['Country/Region'].copy()), 'set_countries_JH')

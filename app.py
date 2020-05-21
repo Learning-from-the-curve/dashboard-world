@@ -1,6 +1,3 @@
-import warnings
-warnings.filterwarnings("ignore")
-
 import datetime
 import json
 import dash
@@ -16,7 +13,7 @@ from dash.dependencies import Input, Output, State
 
 import dash_bootstrap_components as dbc
 # Custom functions
-from layout_functions import map_selection, draw_singleCountry_Scatter, draw_mortality_fatality, draw_singleCountry_Epicurve, make_item
+from layout_functions import gen_map, draw_singleCountry_Scatter, draw_mortality_fatality, draw_singleCountry_Epicurve, make_item
 from pickle_functions import unpicklify
 path_input = Path.cwd() / 'input'
 Path.mkdir(path_input, exist_ok = True)
@@ -42,7 +39,7 @@ flask_app.config["SCOUT_NAME"] = "COVID-19 - World dashboard"
 server = app.server
 
 #############################################################################
-# UNPICKLIFICATION TIME 
+# UNPICKLIFICATION TIME - load the datasets in the variables
 #############################################################################
 
 pickles_list = [
@@ -71,37 +68,32 @@ pickles_list = [
     'available_indicators',
     'ISO',
     ]
-    
-pickle_files = [ x for x in pickles_list]
 
-df_confirmed_t = unpicklify(pickle_files[0])
-df_deaths_t = unpicklify(pickle_files[1])
-df_policy_index = unpicklify(pickle_files[2])
-df_epic_confirmed = unpicklify(pickle_files[3])
-df_epic_days_confirmed = unpicklify(pickle_files[4])
-df_epic_deaths = unpicklify(pickle_files[5])
-df_epic_days_deaths = unpicklify(pickle_files[6])
-df_tab_right = unpicklify(pickle_files[7])
-pop_t = unpicklify(pickle_files[8])
-map_data = unpicklify(pickle_files[9])
-df_world = unpicklify(pickle_files[10])
-df_EU28 = unpicklify(pickle_files[11])
-df_left_list_confirmed_t = unpicklify(pickle_files[12])
-df_left_list_deaths_t = unpicklify(pickle_files[13])
-df_left_list_daily_confirmed_increase = unpicklify(pickle_files[14])
-df_left_list_daily_deaths_increase = unpicklify(pickle_files[15])
-daily_confirmed_world = unpicklify(pickle_files[16])
-daily_deaths_world = unpicklify(pickle_files[17])
-daily_confirmed_EU28 = unpicklify(pickle_files[18])
-daily_deaths_EU28 = unpicklify(pickle_files[19])
-top_4 = unpicklify(pickle_files[20])
-available_variables = unpicklify(pickle_files[21])
-available_indicators = unpicklify(pickle_files[22])
-ISO = unpicklify(pickle_files[23])
+df_confirmed_t = unpicklify(pickles_list[0])
+df_deaths_t = unpicklify(pickles_list[1])
+df_policy_index = unpicklify(pickles_list[2])
+df_epic_confirmed = unpicklify(pickles_list[3])
+df_epic_days_confirmed = unpicklify(pickles_list[4])
+df_epic_deaths = unpicklify(pickles_list[5])
+df_epic_days_deaths = unpicklify(pickles_list[6])
+df_tab_right = unpicklify(pickles_list[7])
+pop_t = unpicklify(pickles_list[8])
+map_data = unpicklify(pickles_list[9])
+df_world = unpicklify(pickles_list[10])
+df_EU28 = unpicklify(pickles_list[11])
+df_left_list_confirmed_t = unpicklify(pickles_list[12])
+df_left_list_deaths_t = unpicklify(pickles_list[13])
+df_left_list_daily_confirmed_increase = unpicklify(pickles_list[14])
+df_left_list_daily_deaths_increase = unpicklify(pickles_list[15])
+daily_confirmed_world = unpicklify(pickles_list[16])
+daily_deaths_world = unpicklify(pickles_list[17])
+daily_confirmed_EU28 = unpicklify(pickles_list[18])
+daily_deaths_EU28 = unpicklify(pickles_list[19])
+top_4 = unpicklify(pickles_list[20])
+available_variables = unpicklify(pickles_list[21])
+available_indicators = unpicklify(pickles_list[22])
+ISO = unpicklify(pickles_list[23])
 
-#############################################################################
-# mapbox_access_token keys, not all mapbox function require token to function. 
-#############################################################################
 
 #add to the dataframe map_data the column with ISO codes for each country
 iso_j=ISO[['name','alpha-3']]
@@ -408,7 +400,7 @@ app.layout = html.Div([ #Main Container
             #Map, Table
             html.Div([
                 html.Div([
-                    dcc.Graph(id='global_map', figure = map_selection(map_data))
+                    dcc.Graph(id='global_map', figure = gen_map(map_data = map_data))
                 ],
                 className='',
                 id="worldMap",
@@ -659,6 +651,7 @@ app.layout = html.Div([ #Main Container
 className="container-fluid"
 )
 
+# draw the two graphs under the map for confirmed cases and deaths
 @app.callback(
     [Output('line-graph-confirmed', 'figure'),
     Output('line-graph-deaths', 'figure')],
@@ -672,6 +665,7 @@ def line_selection(dropdown, graph_line):
     fig2 = draw_singleCountry_Scatter(df_confirmed_t, df_deaths_t, 'deaths', graph_line, selected_country = dropdown,ISO = ISO)
     return fig1, fig2
 
+# draw the graph for the selected statistic from mortality rate/Share of infected population/Growth rate confirmed cases/Growth rate deaths
 @app.callback(
     Output('line-graph-multiple', 'figure'),
     [Input('demo-dropdown', 'value'),
@@ -684,6 +678,7 @@ def line_selection2(dropdown, x_choice, variable):
     fig1 = draw_mortality_fatality(df_confirmed_t, df_deaths_t, pop_t, variable = variable, x_graph = x_choice, selected_country = dropdown, ISO = ISO)
     return fig1
 
+# draw the two graphs regarding the epicurve for confirmed cases and deaths
 @app.callback(
     [Output('line-graph-epicurve', 'figure'),
     Output('line-graph-policy', 'figure')],
@@ -697,7 +692,7 @@ def line_selection3(dropdown, plots_epic_policy):
     fig2 = draw_singleCountry_Epicurve(df_confirmed_t, df_deaths_t, df_policy_index, df_epic_confirmed, df_epic_days_confirmed, df_epic_deaths, df_epic_days_deaths, 'deaths', plot = plots_epic_policy, selected_country = dropdown, ISO = ISO)
     return fig1, fig2
 
-
+# draw the right tab with the statistics specific for each country selected in the dropdown menù
 @app.callback(
     Output('selected-countries-tab', 'children'),
     [Input('demo-dropdown', 'value')])
@@ -735,6 +730,7 @@ def tab_right_countries(dropdown):
     className="overflow-auto"
     )
 
+# open/close the left modal
 @app.callback(
     Output("modal-centered-left", "is_open"),
     [Input("open-centered-left", "n_clicks"), Input("close-centered-left", "n_clicks")],
@@ -744,6 +740,7 @@ def toggle_modal_left(n1, n2, is_open):
         return not is_open
     return is_open
 
+# open/close the right modal
 @app.callback(
     Output("modal-centered-right", "is_open"),
     [Input("open-centered-right", "n_clicks"), Input("close-centered-right", "n_clicks")],
@@ -753,6 +750,7 @@ def toggle_modal_right(n1, n2, is_open):
         return not is_open
     return is_open
 
+# open/close the accordion
 @app.callback(
     Output("temp_prova_collapse", "is_open"),
     [Input("temp_prova_accordion", "n_clicks"),],

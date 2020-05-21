@@ -46,10 +46,10 @@ eu28 = ['Austria',	'Italy', 'Belgium',	'Latvia', 'Bulgaria', 'Lithuania', 'Croat
 
 
 #filter the countries' names to fit our list of names
-df_confirmed = adjust_names(df_confirmed)
-df_deaths = adjust_names(df_deaths)
-df_confirmed = aggregate_countries(df_confirmed, graph = 'scatter')
-df_deaths = aggregate_countries(df_deaths, graph = 'scatter')
+df_confirmed = adjust_names(df_confirmed.copy())
+df_deaths = adjust_names(df_deaths.copy())
+df_confirmed = aggregate_countries(df_confirmed.copy(), graph = 'scatter')
+df_deaths = aggregate_countries(df_deaths.copy(), graph = 'scatter')
 
 # Create a dataframe for the world with the date as columns, keep the Province/State column to rename it below
 df_world = df_confirmed[0:0].drop(columns = ['Country/Region', 'Lat', 'Long']).copy()
@@ -75,12 +75,13 @@ df_deaths_total = df_deaths.drop(columns = ['Country/Region', 'Lat', 'Long']).il
 df_world = df_world.append([df_confirmed_total, df_deaths_total] , ignore_index=True)
 df_EU28 = df_EU28.append([df_confirmed_EU28, df_deaths_EU28] , ignore_index=True)
 
-
+#add a column to explicitly define the the row for confirmed cases and for deaths
 df_EU28.insert(loc=0, column='cases', value=['confirmed', 'deaths'])
 df_world.insert(loc=0, column='cases', value=['confirmed', 'deaths'])
 
+#check if the dataframe is consistent
+#TODO: expand
 old_JH_countries = unpicklify('set_countries_JH')
-
 new_JH_countries = set(df_confirmed['Country/Region'])
 if old_JH_countries != new_JH_countries:
     diff_old_from_new = old_JH_countries.difference(new_JH_countries)
@@ -96,7 +97,6 @@ else:
     #print('No update in the set of countries')
 
 # Compute the increment from the previous day for the latest available data
-
 daily_confirmed_world = df_world.iloc[0, -1] - df_world.iloc[0, -2]
 daily_deaths_world = df_world.iloc[1, -1] - df_world.iloc[1, -2]
 
@@ -108,8 +108,11 @@ map_data = df_confirmed[["Country/Region", "Lat", "Long"]]
 map_data['Confirmed'] = df_confirmed.loc[:, df_confirmed.columns[-1]]
 map_data['Deaths'] = df_deaths.loc[:, df_deaths.columns[-1]]
 
+#aggregate the data of countries divided in provinces
 map_data = aggregate_countries(map_data , graph = 'map')
 
+#adjust some names of countries in the population dataframe
+#TODO: sostituire con la corretta formula con .at
 pop['pop2019'] = pop['pop2019'] * 1000
 pop['name'].loc[pop['name'] == 'United States'] = 'United States of America'
 pop = pop[['name', 'pop2019']]
@@ -124,18 +127,16 @@ pop['name'].loc[pop['name'] == 'Saint Martin'] = "St Martin"
 
 temp_pop_names = list(pop['name'])
 
+#create a list with the names of countries in the cases df not present in the population df
 not_matched_countries = []
-
 for i in list(df_confirmed['Country/Region'].unique()):
     if i not in temp_pop_names:
         not_matched_countries.append(i)
 
-pop_world = pop[0:0].copy()
+#add the total world and eu28 population to the population df
 world_population = pop.drop(columns = ['name']).iloc[:, :].sum(axis=0)
-
 pop_EU28 = pop.set_index('name').loc[eu28].copy()
 EU28_population = pop_EU28.reset_index().drop(columns = ['name']).iloc[:, :].sum(axis=0)
-
 pop = pop.set_index('name')
 pop_t = pop.T.astype(int)
 pop_t['World'] = int(world_population)
@@ -185,23 +186,13 @@ for i in list(map_data['Country/Region']):
     if i not in temp_list:
         print(i)
 '''
-
+#create utility df transposed without lat and lon
 df_confirmed_t=df_confirmed.drop(['Lat','Long'],axis=1).T
 df_deaths_t=df_deaths.drop(['Lat','Long'],axis=1).T
-
 df_confirmed_t.columns = df_confirmed_t.iloc[0]
 df_confirmed_t = df_confirmed_t.iloc[1:]
 df_deaths_t.columns = df_deaths_t.iloc[0]
 df_deaths_t = df_deaths_t.iloc[1:]
-
-# Remove countries for which we lack population data from the UN
-df_confirmed_t = df_confirmed_t.drop(not_matched_countries, axis = 1)
-df_deaths_t = df_deaths_t.drop(not_matched_countries, axis = 1)
-
-# Set the countries available as choices in the dropdown menu
-available_indicators = ['World', 'EU28']
-for i in list(df_confirmed_t):
-    available_indicators.append(i)
 
 
 df_world_t = df_world.T
@@ -212,6 +203,17 @@ df_world_t = df_world_t.iloc[1:]
 df_EU28_t = df_EU28.T
 df_EU28_t.columns = df_EU28_t.iloc[0]
 df_EU28_t = df_EU28_t.iloc[1:]
+
+
+# Remove countries for which we lack population data from the UN
+df_confirmed_t = df_confirmed_t.drop(not_matched_countries, axis = 1)
+df_deaths_t = df_deaths_t.drop(not_matched_countries, axis = 1)
+
+# Set the countries available as choices in the dropdown menu
+available_indicators = ['World', 'EU28']
+for i in list(df_confirmed_t):
+    available_indicators.append(i)
+
 
 
 df_confirmed_t.index=pd.to_datetime(df_confirmed_t.index)
@@ -294,9 +296,11 @@ for country in list(df_confirmed_t):
 print(ISO['name'].to_list())
 '''
 
+#adjust the policy df to fit other dfs
 policy = policy.rename(columns = {'CountryName': 'name', 'StringencyIndexForDisplay': 'Stringency Index'})
 date_max_policy = str(policy['Date'].max())
 
+#
 if str(df_confirmed_t.reset_index()['index'].iloc[-1])[:10] != (date_max_policy[:4] + '-' + date_max_policy[4:6] + '-' + date_max_policy[6:]):
     policy = policy[(policy['Date'] >= 20200122) & (policy['Date'] != policy['Date'].max())]
 else:
@@ -313,16 +317,16 @@ policy['Date'] = pd.to_datetime(policy['Date'], format='%Y-%m-%d')
 
 df_policy_index = df_confirmed_t.copy().astype('float64')
 
-temp_list_2 = []
-
+#store the countries without policy index
+countries_w_o_policy = []
 for i in list(df_confirmed_t):
     if i not in set(policy['name']):
-        temp_list_2.append(i)
+        countries_w_o_policy.append(i)
     df_policy_index[i] = np.nan
 
 # Missing Spain data for May 2
 for country in list(df_policy_index):
-    if country not in temp_list_2:
+    if country not in countries_w_o_policy:
         temp_policy = policy[policy['name'] == country]
         for date in df_policy_index.index:
             try: 
@@ -331,10 +335,11 @@ for country in list(df_policy_index):
             except:
                 df_policy_index.at[date, country] = np.nan
 
+# create the df with moving_average
 df_epic_confirmed, df_epic_days_confirmed = moving_average(df_confirmed_t, 3)
 df_epic_deaths, df_epic_days_deaths = moving_average(df_deaths_t, 3)
 
-
+#store the statistics for the right tab countries
 df_tab_right = df_confirmed_t[0:0].copy()
 for country in list(df_confirmed_t):
     df_tab_right.at['Confirmed cases', country] = df_confirmed_t.iloc[-1][country]
@@ -355,7 +360,7 @@ for country in list(df_confirmed_t):
     df_tab_right.at['Population in 2019', country] = pop_t[country][0]
 
 
-
+#store the pickles for all the df needed
 dataframe_list = [
     [df_confirmed_t, 'df_confirmed_t'],
     [df_deaths_t, 'df_deaths_t'],
