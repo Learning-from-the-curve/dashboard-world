@@ -1,6 +1,3 @@
-import warnings
-warnings.filterwarnings("ignore")
-
 import datetime
 import json
 import dash
@@ -16,7 +13,7 @@ from dash.dependencies import Input, Output, State
 
 import dash_bootstrap_components as dbc
 # Custom functions
-from layout_functions import map_selection, draw_singleCountry_Scatter, draw_mortality_fatality, draw_singleCountry_Epicurve, make_item
+from layout_functions import gen_map, draw_singleCountry_Scatter, draw_mortality_fatality, draw_singleCountry_Epicurve, make_item
 from pickle_functions import unpicklify
 path_input = Path.cwd() / 'input'
 Path.mkdir(path_input, exist_ok = True)
@@ -403,7 +400,7 @@ app.layout = html.Div([ #Main Container
             #Map, Table
             html.Div([
                 html.Div([
-                    dcc.Graph(id='global_map', figure = map_selection(map_data))
+                    dcc.Graph(id='global_map', figure = gen_map(map_data = map_data))
                 ],
                 className='',
                 id="worldMap",
@@ -654,6 +651,7 @@ app.layout = html.Div([ #Main Container
 className="container-fluid"
 )
 
+# draw the two graphs under the map for confirmed cases and deaths
 @app.callback(
     [Output('line-graph-confirmed', 'figure'),
     Output('line-graph-deaths', 'figure')],
@@ -667,6 +665,7 @@ def line_selection(dropdown, graph_line):
     fig2 = draw_singleCountry_Scatter(df_confirmed_t, df_deaths_t, 'deaths', graph_line, selected_country = dropdown,ISO = ISO)
     return fig1, fig2
 
+# draw the graph for the selected statistic from mortality rate/Share of infected population/Growth rate confirmed cases/Growth rate deaths
 @app.callback(
     Output('line-graph-multiple', 'figure'),
     [Input('demo-dropdown', 'value'),
@@ -679,6 +678,7 @@ def line_selection2(dropdown, x_choice, variable):
     fig1 = draw_mortality_fatality(df_confirmed_t, df_deaths_t, pop_t, variable = variable, x_graph = x_choice, selected_country = dropdown, ISO = ISO)
     return fig1
 
+# draw the two graphs regarding the epicurve for confirmed cases and deaths
 @app.callback(
     [Output('line-graph-epicurve', 'figure'),
     Output('line-graph-policy', 'figure')],
@@ -692,7 +692,7 @@ def line_selection3(dropdown, plots_epic_policy):
     fig2 = draw_singleCountry_Epicurve(df_confirmed_t, df_deaths_t, df_policy_index, df_epic_confirmed, df_epic_days_confirmed, df_epic_deaths, df_epic_days_deaths, 'deaths', plot = plots_epic_policy, selected_country = dropdown, ISO = ISO)
     return fig1, fig2
 
-
+# draw the right tab with the statistics specific for each country selected in the dropdown menù
 @app.callback(
     Output('selected-countries-tab', 'children'),
     [Input('demo-dropdown', 'value')])
@@ -730,6 +730,7 @@ def tab_right_countries(dropdown):
     className="overflow-auto"
     )
 
+# open/close the left modal
 @app.callback(
     Output("modal-centered-left", "is_open"),
     [Input("open-centered-left", "n_clicks"), Input("close-centered-left", "n_clicks")],
@@ -739,6 +740,7 @@ def toggle_modal_left(n1, n2, is_open):
         return not is_open
     return is_open
 
+# open/close the right modal
 @app.callback(
     Output("modal-centered-right", "is_open"),
     [Input("open-centered-right", "n_clicks"), Input("close-centered-right", "n_clicks")],
@@ -748,6 +750,7 @@ def toggle_modal_right(n1, n2, is_open):
         return not is_open
     return is_open
 
+# open/close the accordion
 @app.callback(
     Output("temp_prova_collapse", "is_open"),
     [Input("temp_prova_accordion", "n_clicks"),],

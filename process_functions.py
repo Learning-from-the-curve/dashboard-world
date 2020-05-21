@@ -43,7 +43,6 @@ def adjust_names(data):
     data.at[data['Country/Region'] == 'US', 'Country/Region'] = 'United States of America'
     data.at[data['Country/Region'] == 'West Bank and Gaza', 'Country/Region'] = 'Palestine'
     data.at[data['Province/State'] == 'Falkland Islands (Malvinas)', 'Province/State'] = 'Falkland Islands'
-    print(list(data['Country/Region']))
     return data
 
 def aggregate_countries(data, graph):
