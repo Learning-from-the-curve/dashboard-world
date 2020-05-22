@@ -6,7 +6,7 @@ import json
 import pandas as pd
 import numpy as np
 from pathlib import Path
-from process_functions import adjust_names, aggregate_countries, moving_average
+from process_functions import adjust_names, aggregate_countries, moving_average, write_log
 from pickle_functions import picklify, unpicklify
 
 ######################################
@@ -14,8 +14,10 @@ from pickle_functions import picklify, unpicklify
 ######################################
 
 # Paths
-
 path_UN = Path.cwd() / 'input' / 'world_population_2020.csv'
+path_confirmed = Path.cwd() / 'input' / 'df_confirmed.csv'
+path_deaths = Path.cwd() / 'input' / 'df_deaths.csv'
+path_policy = Path.cwd() / 'input' / 'df_policy.csv'
 #path_geo = Path.cwd() / 'input'/ 'countries.geojson'
 
 # get data directly from github. The data source provided by Johns Hopkins University.
@@ -23,11 +25,84 @@ url_confirmed = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/maste
 url_deaths = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv'
 url_policy = 'https://raw.githubusercontent.com/OxCGRT/covid-policy-tracker/master/data/OxCGRT_latest.csv'
 
-
-df_confirmed = pd.read_csv(url_confirmed)
-df_deaths = pd.read_csv(url_deaths)
+#df.to_csv(r'C:/Users/John\Desktop/export_dataframe.csv', index = None)
 pop = pd.read_csv(path_UN)
-policy = pd.read_csv(url_policy)
+
+#load old data
+df_confirmed_backup = pd.read_csv(path_confirmed)
+old_df_confirmed = df_confirmed_backup[['Province/State','Country/Region']]
+df_deaths_backup = pd.read_csv(path_deaths)
+old_df_deaths = df_deaths_backup[['Province/State','Country/Region']]
+df_policy_backup = pd.read_csv(path_policy)
+old_names_df_policy = set(df_policy_backup['CountryName'])
+old_dates_df_policy = set(df_policy_backup['Date'])
+#load new data
+df_confirmed = pd.read_csv(url_confirmed)
+new_df_confirmed = df_confirmed[['Province/State','Country/Region']]
+df_deaths = pd.read_csv(url_deaths)
+new_df_deaths = df_confirmed[['Province/State','Country/Region']]
+df_policy = pd.read_csv(url_policy)
+new_names_df_policy = set(df_policy['CountryName'])
+new_dates_df_policy = set(df_policy['Date'])
+
+#compute difference of rows and columns
+confirmed_country_diff = new_df_confirmed[~new_df_confirmed.apply(tuple,1).isin(old_df_confirmed.apply(tuple,1))]
+confirmed_date_diff = set(df_confirmed.columns).symmetric_difference(set(df_confirmed_backup.columns))
+deaths_country_diff = new_df_deaths[~new_df_deaths.apply(tuple,1).isin(old_df_deaths.apply(tuple,1))]
+deaths_date_diff = set(df_deaths.columns).symmetric_difference(set(df_deaths_backup.columns))
+policy_country_diff = new_names_df_policy.symmetric_difference(old_names_df_policy)
+policy_date_diff = new_dates_df_policy.symmetric_difference(old_dates_df_policy)
+
+#write log and load the backup df if there are new countries until the next update
+#for confirmed
+write_log('--- confirmed cases file check'.upper())
+if confirmed_country_diff.empty:
+    write_log('no new countries added')
+else:
+    write_log('new countries added:\n' + str(confirmed_country_diff))
+    df_confirmed = df_confirmed_backup
+
+if len(confirmed_date_diff) > 1:
+    write_log('multiple new dates added: ' + str(confirmed_date_diff))
+elif len(confirmed_date_diff) == 1:
+    write_log('new date added: ' + str(confirmed_date_diff))
+else:
+    write_log('no new date added')
+
+#for deaths
+write_log('--- deaths file check'.upper())
+if deaths_country_diff.empty:
+    write_log('no new countries added')
+else:
+    write_log('new countries added:\n' + str(deaths_country_diff))
+    df_deaths = df_deaths_backup
+
+if len(confirmed_date_diff) > 1:
+    write_log('multiple new dates added: ' + str(deaths_date_diff))
+elif len(confirmed_date_diff) == 1:
+    write_log('new date added: ' + str(deaths_date_diff))
+else:
+    write_log('no new date added')
+
+#for policy
+write_log('--- policy file check'.upper())
+if not bool(policy_country_diff):
+    write_log('no new countries added')
+else:
+    write_log('new countries added:\n' + str(policy_country_diff))
+    df_policy = df_policy_backup
+
+if len(policy_date_diff) > 1:
+    write_log('multiple new dates added: ' + str(policy_date_diff))
+elif len(policy_date_diff) == 1:
+    write_log('new date added: ' + str(policy_date_diff))
+else:
+    write_log('no new date added')
+
+
+df_confirmed.to_csv(path_confirmed, index = None)
+df_deaths.to_csv(path_deaths, index = None)
+df_policy.to_csv(path_policy, index = None)
 
 
 #########################################################################################
@@ -211,46 +286,47 @@ df_deaths_t['EU28'] = df_EU28_t['deaths']
 available_variables = ['Mortality rate', 'Share of infected population', 'Growth rate confirmed cases', 'Growth rate deaths']
 
 # Part to adjust data for plots with Stringency Index
-policy = policy[['CountryName', 'Date', 'StringencyIndexForDisplay']]
+df_policy = df_policy[['CountryName', 'Date', 'StringencyIndexForDisplay']]
 
 # List with first 4 countries by cases
 top_4 = df_confirmed.sort_values(by=df_confirmed.columns[-1], ascending = False)['Country/Region'].head(4).to_list()
 
 #adjust the policy df to fit other dfs
-policy = policy.rename(columns = {'CountryName': 'name', 'StringencyIndexForDisplay': 'Stringency Index'})
-date_max_policy = str(policy['Date'].max())
+df_policy = df_policy.rename(columns = {'CountryName': 'name', 'StringencyIndexForDisplay': 'Stringency Index'})
+date_max_policy = str(df_policy['Date'].max())
 
 #
 if str(df_confirmed_t.reset_index()['index'].iloc[-1])[:10] != (date_max_policy[:4] + '-' + date_max_policy[4:6] + '-' + date_max_policy[6:]):
-    policy = policy[(policy['Date'] >= 20200122) & (policy['Date'] != policy['Date'].max())]
+    df_policy = df_policy[(df_policy['Date'] >= 20200122) & (df_policy['Date'] != df_policy['Date'].max())]
 else:
-    policy = policy[policy['Date'] >= 20200122]
+    df_policy = df_policy[df_policy['Date'] >= 20200122]
 
-policy['name'].loc[policy['name'] == 'Kyrgyz Republic'] = 'Kyrgyzstan'
-policy['name'].loc[policy['name'] == 'Democratic Republic of Congo'] = 'Democratic Republic of the Congo'
-policy['name'].loc[policy['name'] == 'United States'] = 'United States of America'
-policy['name'].loc[policy['name'] == 'Eswatini'] = 'Swaziland'
-policy['name'].loc[policy['name'] == 'Slovak Republic'] = 'Slovakia'
+df_policy['name'].loc[df_policy['name'] == 'Kyrgyz Republic'] = 'Kyrgyzstan'
+df_policy['name'].loc[df_policy['name'] == 'Democratic Republic of Congo'] = 'Democratic Republic of the Congo'
+df_policy['name'].loc[df_policy['name'] == 'United States'] = 'United States of America'
+df_policy['name'].loc[df_policy['name'] == 'Eswatini'] = 'Swaziland'
+df_policy['name'].loc[df_policy['name'] == 'Slovak Republic'] = 'Slovakia'
 
-policy['Date'] = policy['Date'].astype('str')
-policy['Date'] = pd.to_datetime(policy['Date'], format='%Y-%m-%d')
+df_policy['Date'] = df_policy['Date'].astype('str')
+df_policy['Date'] = pd.to_datetime(df_policy['Date'], format='%Y-%m-%d')
 
 df_policy_index = df_confirmed_t.copy().astype('float64')
 
 #store the countries without policy index
 countries_w_o_policy = []
 for i in list(df_confirmed_t):
-    if i not in set(policy['name']):
+    if i not in set(df_policy['name']):
         countries_w_o_policy.append(i)
     df_policy_index[i] = np.nan
 
-# Missing Spain data for May 2
+# Missing Spain data for May 2 
+# fill the gaps for consistency and create the df for the stringency index
 for country in list(df_policy_index):
     if country not in countries_w_o_policy:
-        temp_policy = policy[policy['name'] == country]
+        temp_policy = df_policy[df_policy['name'] == country]
         for date in df_policy_index.index:
             try: 
-                temp_value = float(temp_policy[policy['Date'] == date]['Stringency Index'])
+                temp_value = float(temp_policy[df_policy['Date'] == date]['Stringency Index'])
                 df_policy_index.at[date, country] = temp_value
             except:
                 df_policy_index.at[date, country] = np.nan
