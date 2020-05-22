@@ -1,0 +1,9 @@
+[22/05/2020 17:14:29] --- CONFIRMED CASES FILE CHECK
+[22/05/2020 17:14:29] no new countries added
+[22/05/2020 17:14:29] no new date added
+[22/05/2020 17:14:29] --- DEATHS FILE CHECK
+[22/05/2020 17:14:29] no new countries added
+[22/05/2020 17:14:29] no new date added
+[22/05/2020 17:14:29] --- POLICY FILE CHECK
+[22/05/2020 17:14:29] no new countries added
+[22/05/2020 17:14:29] no new date added
