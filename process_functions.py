@@ -34,7 +34,6 @@ def center_date(row, max_MA_index, country):
     row[country] = final_string
     return row
 
-
 def adjust_names(data):
     '''
     Adjust countries' names. Still problems with most French overseas territories and Channel Islands
