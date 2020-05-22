@@ -359,7 +359,6 @@ def draw_singleCountry_Epicurve(df_confirmed_t, df_deaths_t, df_policy_index, df
 
     return fig
 
-# Accordion countries
 def make_item(available_indicators, top_4):
     '''
     Function to create the Accordion to click to show/hide the dropdown menù of the countries
