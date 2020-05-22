@@ -68,8 +68,6 @@ def aggregate_countries(data, graph):
     # For countries that have disaggregated data sum them
     if graph == "map":
         data = data.set_index('Country/Region')
-        data.at['Confirmed'] = data.groupby(level = 0)['Confirmed'].sum()
-        data.at['Deaths'] = data.groupby(level = 0)['Deaths'].sum()
     else:
         data.at[(data['Country/Region'] == 'France') & (data['Province/State'].isna() == False),'Country/Region'] = data['Province/State'].copy()
         data.at[(data['Country/Region'] == 'United Kingdom') & (data['Province/State'].isna() == False), 'Country/Region'] = data['Province/State'].copy()
@@ -98,6 +96,7 @@ def moving_average(data, window):
     df_MA = df_sub.copy()
     for country in list(df_MA):
         if data[country].iloc[-1] != 0:
+            df_MA.at[df_MA[country]== 0 , country] = np.nan
             df_MA[country] = (df_MA[country]/data[country].iloc[-1])*100
             df_MA[country] = df_MA[country].astype('float64').apply(np.log)
             df_MA[country] = df_MA[country].rolling(window).mean()

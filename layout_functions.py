@@ -8,17 +8,22 @@ import dash_table as dt
 from dash.dependencies import Input, Output, State
 from app_functions import *
 from pickle_functions import unpicklify
+from process_functions import write_log
 
 def gen_map(map_data):
     '''
     Function to generate and plot the world map with the # of confirmed cases for each country as the Z parameter
     '''
+    wrong_values= sum(n < 1 for n in list(map_data['Confirmed']))
+    if wrong_values > 0:
+        write_log('cannot compute the log of '.upper() + str(wrong_values) + 'values')
+    z_value = np.log(list(map_data['Confirmed']))
     #mapbox_access_token = 'pk.eyJ1IjoiZmVkZWdhbGwiLCJhIjoiY2s5azJwaW80MDQxeTNkcWh4bGhjeTN2NyJ9.twKWO-W5wPLX6m9OfrpZCw'
     return {
         "data": [{
             "type": "choropleth",  
             'locations' : map_data['alpha-3'],
-            "z": np.log(list(map_data['Confirmed'])),
+            "z": z_value,
             "hoverinfo": "text",         
             "hovertext": [f"Country/Region: {map_data.iloc[indice]['Country/Region']} <br>Confirmed: {map_data.iloc[indice]['Confirmed']:,} <br>Deaths: {map_data.iloc[indice]['Deaths']:,}" for indice in range(len(map_data['Country/Region']))],
             'colorscale': 'Geyser',
