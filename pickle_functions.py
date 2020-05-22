@@ -2,6 +2,8 @@ import pickle
 from pathlib import Path
 import os
 
+#The pickle functions are used by other scripts to store and load data in/from the pickles_jar.
+
 def picklify(data, name):
     '''
     writes a pickle file in the pickles_jar folder with name = 'name' and content = dataframe
@@ -12,7 +14,6 @@ def picklify(data, name):
     file_write = open(f"./pickles_jar/{name}.pkl", 'wb')
     pickle.dump(data, file_write)
     file_write.close()
-
 
 def unpicklify(name):
     '''

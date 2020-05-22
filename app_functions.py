@@ -2,6 +2,7 @@ import numpy as np
 
 def growth_rate(data, window):
     '''
+    Compute the moving average for the grow rate plots
     input: 
     dataframe containing the information for each country for each date
     # of days 
@@ -21,6 +22,7 @@ def growth_rate(data, window):
 
 def ticks_log(df, selected_countries):
     '''
+    Used to adjust the max tick (y-axis) for the plots with logarithmic scale
     input: 
     dataframe containing the information for each country for each date
     list of countries 

@@ -84,6 +84,7 @@ def aggregate_countries(data, graph):
 
 def moving_average(data, window):
     '''
+    Compute the moving average for the epidemic curves
     input:
     dataframe containing the information for each country for each date
     # of days
