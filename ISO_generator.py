@@ -1,10 +1,12 @@
 import pandas as pd
-import numpy as np
 import pickle
-
-from process_functions import adjust_names, aggregate_countries
 from pickle_functions import picklify
-from pathlib import Path
+
+#***************************************************************#
+# this is the code to generate the ISO pickle used in app.py    #
+# used once, because it doesn't need updates.                   #
+# don't delete, "just in case"                                  #
+#***************************************************************#
 
 #download the ISO codes
 url_ISO = 'https://raw.githubusercontent.com/lukes/ISO-3166-Countries-with-Regional-Codes/master/all/all.csv'
