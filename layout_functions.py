@@ -16,7 +16,7 @@ def gen_map(map_data):
     '''
     wrong_values= sum(n < 1 for n in list(map_data['Confirmed']))
     if wrong_values > 0:
-        write_log('cannot compute the log of '.upper() + str(wrong_values) + 'values')
+        write_log('***cannot compute the log of '.upper() + str(wrong_values) + 'values***')
     z_value = np.log(list(map_data['Confirmed']))
     #mapbox_access_token = 'pk.eyJ1IjoiZmVkZWdhbGwiLCJhIjoiY2s5azJwaW80MDQxeTNkcWh4bGhjeTN2NyJ9.twKWO-W5wPLX6m9OfrpZCw'
     return {
@@ -141,7 +141,11 @@ def draw_mortality_fatality(df_confirmed_t, df_deaths_t, pop_t, variable, x_grap
                     ISO_legend = ISO['alpha-3'].loc[ISO['name'] == country].to_list()[0]
                 except:
                     ISO_legend = country
-                y = (df_deaths_t[country])/(pop_t[country][0]).copy()
+                if pop_t[country][0] > 0:
+                    y = (df_deaths_t[country])/(pop_t[country][0]).copy()
+                else:
+                    y = np.nan
+                    write_log("***division by zero in pop_t[country][0]***")
                 fig.add_trace(go.Scatter(x =  df_deaths_t.index, y = y,
                                         mode='lines+markers',
                                         name=ISO_legend,

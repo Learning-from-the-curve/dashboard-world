@@ -348,8 +348,16 @@ for country in list(df_confirmed_t):
         df_tab_right.at['Share of population infected', country] = (df_confirmed_t.iloc[-1][country])/(pop_t[country][0])
     else:
         df_tab_right.at['Share of population infected', country] = np.nan
-    df_tab_right.at['Share of global confirmed cases', country] = (df_confirmed_t.iloc[-1][country]/df_confirmed_t.iloc[-1]['World'])
-    df_tab_right.at['Share of global deaths', country] = (df_deaths_t.iloc[-1][country]/df_deaths_t.iloc[-1]['World'])
+    if df_confirmed_t.iloc[-1]['World'] > 0:
+        df_tab_right.at['Share of global confirmed cases', country] = (df_confirmed_t.iloc[-1][country]/df_confirmed_t.iloc[-1]['World'])
+    else:
+        df_tab_right.at['Share of global confirmed cases', country] = np.nan
+        write_log("***division by zero in df_confirmed_t.iloc[-1]['World']***")
+    if df_deaths_t.iloc[-1]['World'] > 0:
+        df_tab_right.at['Share of global deaths', country] = (df_deaths_t.iloc[-1][country]/df_deaths_t.iloc[-1]['World'])
+    else:
+        df_tab_right.at['Share of global deaths', country] = np.nan
+        write_log("***division by zero in df_deaths_t.iloc[-1]['World']***")
     df_tab_right.at['Date of 1st confirmed case', country] = str(df_confirmed_t[country][df_confirmed_t[country] > 0].first_valid_index())[0:10]
     df_tab_right.at['Date of 1st confirmed death', country] = str(df_deaths_t[country][df_deaths_t[country] > 0].first_valid_index())[0:10]
     df_tab_right.at['Stringency Index', country] = df_policy_index.iloc[-1][country]
