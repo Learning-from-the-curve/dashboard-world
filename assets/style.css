@@ -1,0 +1,16 @@
+.divBorder{
+    border: 5px solid transparent;
+   }
+body {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #2C3E50;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: blue
+}
+/*#2C3E50
+  #00FF8D
+  #4DDDDD
+  #E62E4A
+  #1EA674
