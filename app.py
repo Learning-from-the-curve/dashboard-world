@@ -661,8 +661,8 @@ def line_selection(dropdown, graph_line):
     if len(dropdown) == 0:
         for country in top_4:
             dropdown.append(country)
-    fig1 = draw_singleCountry_Scatter(df_confirmed_t, df_deaths_t, 'confirmed', graph_line, selected_country = dropdown, ISO = ISO)
-    fig2 = draw_singleCountry_Scatter(df_confirmed_t, df_deaths_t, 'deaths', graph_line, selected_country = dropdown,ISO = ISO)
+    fig1 = draw_singleCountry_Scatter(df_confirmed_t, 'confirmed cases', graph_line, selected_country = dropdown, ISO = ISO)
+    fig2 = draw_singleCountry_Scatter(df_deaths_t, 'deaths', graph_line, selected_country = dropdown,ISO = ISO)
     return fig1, fig2
 
 # draw the graph for the selected statistic from mortality rate/Share of infected population/Growth rate confirmed cases/Growth rate deaths
@@ -688,8 +688,8 @@ def line_selection3(dropdown, plots_epic_policy):
     if len(dropdown) == 0:
         for country in top_4:
             dropdown.append(country)
-    fig1 = draw_singleCountry_Epicurve(df_confirmed_t, df_deaths_t, df_policy_index, df_epic_confirmed, df_epic_days_confirmed, df_epic_deaths, df_epic_days_deaths, 'confirmed', plot = plots_epic_policy, selected_country = dropdown, ISO = ISO)
-    fig2 = draw_singleCountry_Epicurve(df_confirmed_t, df_deaths_t, df_policy_index, df_epic_confirmed, df_epic_days_confirmed, df_epic_deaths, df_epic_days_deaths, 'deaths', plot = plots_epic_policy, selected_country = dropdown, ISO = ISO)
+    fig1 = draw_singleCountry_Epicurve(df_confirmed_t, df_policy_index, df_epic_confirmed, df_epic_days_confirmed, 'confirmed cases', plot = plots_epic_policy, selected_country = dropdown, ISO = ISO)
+    fig2 = draw_singleCountry_Epicurve(df_deaths_t, df_policy_index, df_epic_deaths, df_epic_days_deaths, 'deaths', plot = plots_epic_policy, selected_country = dropdown, ISO = ISO)
     return fig1, fig2
 
 # draw the right tab with the statistics specific for each country selected in the dropdown menù
