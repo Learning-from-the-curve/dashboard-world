@@ -25,3 +25,13 @@
 [23/05/2020 11:31:25] --- POLICY FILE CHECK
 [23/05/2020 11:31:25] no new countries added
 [23/05/2020 11:31:25] no new date added
+[24/05/2020 03:34:07] --- CONFIRMED CASES FILE CHECK
+[24/05/2020 03:34:07] no new countries added
+[24/05/2020 03:34:07] new date added: {'5/23/20'}
+[24/05/2020 03:34:07] --- DEATHS FILE CHECK
+[24/05/2020 03:34:07] no new countries added
+[24/05/2020 03:34:07] new date added: {'5/23/20'}
+[24/05/2020 03:34:07] --- POLICY FILE CHECK
+[24/05/2020 03:34:07] new countries added:
+{'Timor'}
+[24/05/2020 03:34:07] new date added: {20200524}
