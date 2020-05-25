@@ -55,3 +55,12 @@
 [25/05/2020 03:34:34] new countries added:
 {'Timor'}
 [25/05/2020 03:34:34] multiple new dates added: {20200524, 20200525}
+[25/05/2020 11:31:48] --- CONFIRMED CASES FILE CHECK
+[25/05/2020 11:31:48] no new countries added
+[25/05/2020 11:31:48] no new date added
+[25/05/2020 11:31:48] --- DEATHS FILE CHECK
+[25/05/2020 11:31:48] no new countries added
+[25/05/2020 11:31:48] no new date added
+[25/05/2020 11:31:48] --- POLICY FILE CHECK
+[25/05/2020 11:31:48] no new countries added
+[25/05/2020 11:31:48] no new date added
