@@ -149,23 +149,6 @@ df_EU28 = df_EU28.append([df_confirmed_EU28, df_deaths_EU28] , ignore_index=True
 df_EU28.insert(loc=0, column='cases', value=['confirmed', 'deaths'])
 df_world.insert(loc=0, column='cases', value=['confirmed', 'deaths'])
 
-#check if the dataframe is consistent
-#TODO: expand
-old_JH_countries = unpicklify('set_countries_JH')
-new_JH_countries = set(df_confirmed['Country/Region'])
-if old_JH_countries != new_JH_countries:
-    diff_old_from_new = old_JH_countries.difference(new_JH_countries)
-    diff_new_from_old = new_JH_countries.difference(old_JH_countries)
-    if len(diff_old_from_new) != 0:
-        pass
-        #print(diff_old_from_new)
-    if len(diff_new_from_old) != 0:
-        pass
-        #print(diff_new_from_old)
-else:
-    pass
-    #print('No update in the set of countries')
-
 # Compute the increment from the previous day for the latest available data
 daily_confirmed_world = df_world.iloc[0, -1] - df_world.iloc[0, -2]
 daily_deaths_world = df_world.iloc[1, -1] - df_world.iloc[1, -2]
@@ -182,18 +165,17 @@ map_data['Deaths'] = df_deaths.loc[:, df_deaths.columns[-1]]
 map_data = aggregate_countries(map_data , graph = 'map')
 
 #adjust some names of countries in the population dataframe
-#TODO: sostituire con la corretta formula con .at
-pop['pop2019'] = pop['pop2019'] * 1000
-pop['name'].loc[pop['name'] == 'United States'] = 'United States of America'
 pop = pop[['name', 'pop2019']]
-pop['name'].loc[pop['name'] == 'Ivory Coast'] = "Cote d'Ivoire"
-pop['name'].loc[pop['name'] == 'Republic of the Congo'] = "Republic of Congo"
-pop['name'].loc[pop['name'] == 'DR Congo'] = "Democratic Republic of the Congo"
-pop['name'].loc[pop['name'] == 'Timor-Leste'] = "East Timor"
-pop['name'].loc[pop['name'] == 'Vatican City'] = "Holy See"
-pop['name'].loc[pop['name'] == 'Macedonia'] = "North Macedonia"
-pop['name'].loc[pop['name'] == 'Saint Barthélemy'] = "Saint Barthelemy"
-pop['name'].loc[pop['name'] == 'Saint Martin'] = "St Martin"
+pop['pop2019'] = pop['pop2019'] * 1000
+pop.at[pop['name'] == 'United States','name'] = 'United States of America'
+pop.at[pop['name'] == 'Ivory Coast','name'] = "Cote d'Ivoire"
+pop.at[pop['name'] == 'Republic of the Congo','name'] = "Republic of Congo"
+pop.at[pop['name'] == 'DR Congo','name'] = "Democratic Republic of the Congo"
+pop.at[pop['name'] == 'Timor-Leste','name'] = "East Timor"
+pop.at[pop['name'] == 'Vatican City','name'] = "Holy See"
+pop.at[pop['name'] == 'Macedonia','name'] = "North Macedonia"
+pop.at[pop['name'] == 'Saint Barthélemy','name'] = "Saint Barthelemy"
+pop.at[pop['name'] == 'Saint Martin','name'] = "St Martin"
 
 temp_pop_names = list(pop['name'])
 
@@ -301,11 +283,13 @@ if str(df_confirmed_t.reset_index()['index'].iloc[-1])[:10] != (date_max_policy[
 else:
     df_policy = df_policy[df_policy['Date'] >= 20200122]
 
-df_policy['name'].loc[df_policy['name'] == 'Kyrgyz Republic'] = 'Kyrgyzstan'
-df_policy['name'].loc[df_policy['name'] == 'Democratic Republic of Congo'] = 'Democratic Republic of the Congo'
-df_policy['name'].loc[df_policy['name'] == 'United States'] = 'United States of America'
-df_policy['name'].loc[df_policy['name'] == 'Eswatini'] = 'Swaziland'
-df_policy['name'].loc[df_policy['name'] == 'Slovak Republic'] = 'Slovakia'
+df_policy.at[df_policy['name'] == 'Kyrgyz Republic','name'] = 'Kyrgyzstan'
+df_policy.at[df_policy['name'] == 'Democratic Republic of Congo','name'] = 'Democratic Republic of the Congo'
+df_policy.at[df_policy['name'] == 'United States','name'] = 'United States of America'
+df_policy.at[df_policy['name'] == 'Eswatini','name'] = 'Swaziland'
+df_policy.at[df_policy['name'] == 'Slovak Republic','name'] = 'Slovakia'
+df_policy.at[df_policy['name'] == 'Timor','name'] = 'East Timor'
+df_policy.at[df_policy['name'] == 'Congo','name'] = "Republic of Congo"
 
 df_policy['Date'] = df_policy['Date'].astype('str')
 df_policy['Date'] = pd.to_datetime(df_policy['Date'], format='%Y-%m-%d')
