@@ -74,3 +74,13 @@
 [26/05/2020 03:34:35] new countries added:
 {'Guinea'}
 [26/05/2020 03:34:35] new date added: {20200526}
+[26/05/2020 11:31:36] --- CONFIRMED CASES FILE CHECK
+[26/05/2020 11:31:36] no new countries added
+[26/05/2020 11:31:36] no new date added
+[26/05/2020 11:31:36] --- DEATHS FILE CHECK
+[26/05/2020 11:31:36] no new countries added
+[26/05/2020 11:31:36] no new date added
+[26/05/2020 11:31:36] --- POLICY FILE CHECK
+[26/05/2020 11:31:36] new countries added:
+{'Guinea'}
+[26/05/2020 11:31:36] new date added: {20200526}
