@@ -64,3 +64,13 @@
 [25/05/2020 11:31:48] --- POLICY FILE CHECK
 [25/05/2020 11:31:48] no new countries added
 [25/05/2020 11:31:48] no new date added
+[26/05/2020 03:34:35] --- CONFIRMED CASES FILE CHECK
+[26/05/2020 03:34:35] no new countries added
+[26/05/2020 03:34:35] new date added: {'5/25/20'}
+[26/05/2020 03:34:35] --- DEATHS FILE CHECK
+[26/05/2020 03:34:35] no new countries added
+[26/05/2020 03:34:35] new date added: {'5/25/20'}
+[26/05/2020 03:34:35] --- POLICY FILE CHECK
+[26/05/2020 03:34:35] new countries added:
+{'Guinea'}
+[26/05/2020 03:34:35] new date added: {20200526}
