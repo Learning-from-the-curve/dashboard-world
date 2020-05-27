@@ -99,10 +99,10 @@ elif len(policy_date_diff) == 1:
 else:
     write_log('no new date added')
 
-
 df_confirmed.to_csv(path_confirmed, index = None)
 df_deaths.to_csv(path_deaths, index = None)
 df_policy.to_csv(path_policy, index = None)
+
 
 
 #########################################################################################
@@ -296,13 +296,25 @@ df_policy['Date'] = pd.to_datetime(df_policy['Date'], format='%Y-%m-%d')
 
 df_policy_index = df_confirmed_t.copy().astype('float64')
 
+#print(list(df_confirmed_t))
+#print(set(df_policy['name']))
 #store the countries without policy index
 countries_w_o_policy = []
 for i in list(df_confirmed_t):
     if i not in set(df_policy['name']):
         countries_w_o_policy.append(i)
     df_policy_index[i] = np.nan
-
+#
+#print(countries_w_o_policy)
+#
+#store the countries without policy index
+#countries_w_policy = []
+#for i in set(df_policy['name']):
+#    if i not in list(df_confirmed_t):
+#        countries_w_policy.append(i)
+#
+#print(countries_w_policy)
+#
 # Missing Spain data for May 2 
 # fill the gaps for consistency and create the df for the stringency index
 for country in list(df_policy_index):
