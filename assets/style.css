@@ -1,16 +1,22 @@
 .divBorder{
     border: 5px solid transparent;
+    /*flex-direction: column;*/
+    height: 100%;
+   }
+.divRow{
+    flex-direction: row;
    }
 body {
     font-family: Helvetica, sans-serif;
     font-weight: bold;
-    background-color: #2C3E50;
+    background-color: rgb(194, 224, 255);
 }
 h1, h2, h3, h4, h5, h6 {
-    color: blue
+    color: #2C3E50
 }
 /*#2C3E50
   #00FF8D
   #4DDDDD
   #E62E4A
   #1EA674
+  */

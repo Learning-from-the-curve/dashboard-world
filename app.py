@@ -221,7 +221,7 @@ The dashboard is updated daily following new daily releases of data from the dat
 ''')
 
 markdown_relevant_info = dcc.Markdown('''
-We focus on this dashboard on the global COVID-19 pandemic. This dashboard is part of a larger set of dashboards available [on our website](https://www.learningfromthecurve.net/dashboards/).
+The focus of this dashboard is the global COVID-19 pandemic. This is part of a larger set of dashboards available [on our website](https://www.learningfromthecurve.net/dashboards/).
 
 Articles by members of the Learning from the Curve team reporting daily information on COVID-19 are available [here](https://www.learningfromthecurve.net/commentaries/).
 
@@ -233,14 +233,59 @@ Please, report any bug at the following contact address: learningfromthecurve.in
 # Bootstrap Grid Layout
 ############################
 
+#Main Container   
 app.layout = html.Div([
+    #Header TITLE
     dbc.Row([
-        dbc.Col(html.Div(dbc.Alert("One of two columns"),className='divBorder'), width=1),
-        dbc.Col(html.H1("Bootstrap Grid System Example",className="text-center"), width=10),
-        dbc.Col(html.Div(dbc.Alert("One of two columns"),className='divBorder'), width=1),
-        ])
-    
-, html.H4("no_gutters = False")
+        dbc.Col(
+            #Info Modal Button LEFT
+            html.Div([
+                dbc.Button("Relevant info", block=True, id="open-centered-left"),
+                dbc.Modal([
+                    dbc.ModalHeader("Relevant information"),
+                    dbc.ModalBody(children = markdown_relevant_info),
+                    dbc.ModalFooter(
+                        dbc.Button("Close", id="close-centered-left", className="ml-auto")
+                    ),
+                ],
+                id="modal-centered-left",
+                centered=True,
+                ),
+            ],
+            className='divBorder'
+            ), 
+        width=1
+        ),
+        dbc.Col(
+            #H1 Title
+            html.Div(dbc.Alert(html.H1('COVID-19 Dashboard')),
+            className='divBorder'), width=10),
+        dbc.Col(        
+            #Info Modal Button RIGHT
+            html.Div(        #Info Modal Button RIGHT
+            [
+                    dbc.Button("Datasets info", block=True, id="open-centered-right"),
+                    dbc.Modal(
+                        [
+                            dbc.ModalHeader("Information on datasets used"),
+                            dbc.ModalBody(children = markdown_data_info),
+                            dbc.ModalFooter(
+                                dbc.Button(
+                                    "Close", id="close-centered-right", className="ml-auto"
+                                )
+                            ),
+                        ],
+                        id="modal-centered-right",
+                        centered=True,
+                    ),
+                ],
+            className='divBorder'
+            ), width=1
+        )
+    ],
+    className = 'divRow'
+    ),
+html.H4("no_gutters = False")
 , dbc.Row([
     dbc.Col(html.Div(dbc.Alert("One of two columns")), width=3),
     dbc.Col(html.Div(dbc.Alert("One of two columns")), width=3),

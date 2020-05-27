@@ -21,24 +21,11 @@ html.Div([ #Main Container
             children='COVID-19 Dashboard',
             className="text-center",
         ),
-        #Info Modal Button RIGHT
-        dbc.Button("Datasets info", id="open-centered-right", className="btn-sm"),
-        dbc.Modal(
-            [
-                dbc.ModalHeader("Information on datasets used"),
-                dbc.ModalBody(children = markdown_data_info),
-                dbc.ModalFooter(
-                    dbc.Button(
-                        "Close", id="close-centered-right", className="ml-auto"
-                    )
-                ),
-            ],
-            id="modal-centered-right",
-            centered=True,
-        ),
-    ],
-    className="d-flex justify-content-md-between my-2"
-    ),
+
+
+
+
+
     
     #First Row CARDS 3333
     html.Div([
