@@ -121,3 +121,13 @@
 [28/05/2020 11:31:32] --- POLICY FILE CHECK
 [28/05/2020 11:31:32] no new countries added
 [28/05/2020 11:31:32] no new date added
+[29/05/2020 03:34:19] --- CONFIRMED CASES FILE CHECK
+[29/05/2020 03:34:19] no new countries added
+[29/05/2020 03:34:19] new date added: {'5/28/20'}
+[29/05/2020 03:34:19] --- DEATHS FILE CHECK
+[29/05/2020 03:34:19] no new countries added
+[29/05/2020 03:34:19] new date added: {'5/28/20'}
+[29/05/2020 03:34:19] --- POLICY FILE CHECK
+[29/05/2020 03:34:19] new countries added:
+{'Tajikistan'}
+[29/05/2020 03:34:19] new date added: {20200529}
