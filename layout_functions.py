@@ -1,4 +1,5 @@
 import numpy as np 
+import pandas as pd
 from pickle_functions import unpicklify
 import plotly.graph_objects as go
 import dash_core_components as dcc
@@ -9,6 +10,21 @@ from dash.dependencies import Input, Output, State
 from app_functions import *
 from pickle_functions import unpicklify
 from process_functions import write_log
+
+def list_item(opening, data, ending):
+    '''
+    input: 
+    info data about a statistic for a country
+    a string describing it
+    a string of eventual text after data
+    output: 
+    if the data is valid returns an item, otherwise nothing
+    '''
+    if pd.isna(data) or data == 'None' or data == 0:
+        return
+    else:
+        return dbc.ListGroupItemText(f'{opening}{data}{ending}')
+
 
 def gen_map(map_data):
     '''
