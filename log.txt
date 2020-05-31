@@ -170,3 +170,12 @@
 [30/05/2020 18:58:09] --- POLICY FILE CHECK
 [30/05/2020 18:58:09] no new countries added
 [30/05/2020 18:58:09] no new date added
+[31/05/2020 03:34:26] --- CONFIRMED CASES FILE CHECK
+[31/05/2020 03:34:26] no new countries added
+[31/05/2020 03:34:26] new date added: {'5/30/20'}
+[31/05/2020 03:34:26] --- DEATHS FILE CHECK
+[31/05/2020 03:34:26] no new countries added
+[31/05/2020 03:34:26] new date added: {'5/30/20'}
+[31/05/2020 03:34:26] --- POLICY FILE CHECK
+[31/05/2020 03:34:26] no new countries added
+[31/05/2020 03:34:26] no new date added
