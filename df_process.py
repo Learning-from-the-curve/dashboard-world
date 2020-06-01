@@ -99,10 +99,10 @@ elif len(policy_date_diff) == 1:
 else:
     write_log('no new date added')
 
-
 df_confirmed.to_csv(path_confirmed, index = None)
 df_deaths.to_csv(path_deaths, index = None)
 df_policy.to_csv(path_policy, index = None)
+
 
 
 #########################################################################################
@@ -288,19 +288,32 @@ df_policy.at[df_policy['name'] == 'Democratic Republic of Congo','name'] = 'Demo
 df_policy.at[df_policy['name'] == 'United States','name'] = 'United States of America'
 df_policy.at[df_policy['name'] == 'Eswatini','name'] = 'Swaziland'
 df_policy.at[df_policy['name'] == 'Slovak Republic','name'] = 'Slovakia'
-df_policy.at[df_policy['name'] == 'Timor','name'] = 'East Timor'
+df_policy.at[df_policy['name'] == 'Timor-Leste','name'] = 'East Timor'
+df_policy.at[df_policy['name'] == 'Congo','name'] = "Republic of Congo"
 
 df_policy['Date'] = df_policy['Date'].astype('str')
 df_policy['Date'] = pd.to_datetime(df_policy['Date'], format='%Y-%m-%d')
 
 df_policy_index = df_confirmed_t.copy().astype('float64')
 
+#print(list(df_confirmed_t))
+#print(set(df_policy['name']))
 #store the countries without policy index
 countries_w_o_policy = []
 for i in list(df_confirmed_t):
     if i not in set(df_policy['name']):
         countries_w_o_policy.append(i)
     df_policy_index[i] = np.nan
+#
+#print(countries_w_o_policy)
+#
+#store the countries without policy index
+#countries_w_policy = []
+#for i in set(df_policy['name']):
+#    if i not in list(df_confirmed_t):
+#        countries_w_policy.append(i)
+#
+#print(countries_w_policy)
 
 # Missing Spain data for May 2 
 # fill the gaps for consistency and create the df for the stringency index
@@ -343,9 +356,12 @@ for country in list(df_confirmed_t):
         write_log("***division by zero in df_deaths_t.iloc[-1]['World']***")
     df_tab_right.at['Date of 1st confirmed case', country] = str(df_confirmed_t[country][df_confirmed_t[country] > 0].first_valid_index())[0:10]
     df_tab_right.at['Date of 1st confirmed death', country] = str(df_deaths_t[country][df_deaths_t[country] > 0].first_valid_index())[0:10]
-    df_tab_right.at['Stringency Index', country] = df_policy_index.iloc[-1][country]
+    #take the last non-null value
+    ind = len(df_policy_index[country])-1
+    while ind >=0 and pd.isna(df_policy_index.iloc[ind][country]):
+        ind-=1
+    df_tab_right.at['Stringency Index', country] = df_policy_index.iloc[ind][country]
     df_tab_right.at['Population in 2019', country] = pop_t[country][0]
-
 
 #store the pickles for all the df needed
 dataframe_list = [

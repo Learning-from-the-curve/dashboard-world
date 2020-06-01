@@ -35,3 +35,184 @@
 [24/05/2020 03:34:07] new countries added:
 {'Timor'}
 [24/05/2020 03:34:07] new date added: {20200524}
+[24/05/2020 11:31:36] --- CONFIRMED CASES FILE CHECK
+[24/05/2020 11:31:36] no new countries added
+[24/05/2020 11:31:36] no new date added
+[24/05/2020 11:31:36] --- DEATHS FILE CHECK
+[24/05/2020 11:31:36] no new countries added
+[24/05/2020 11:31:36] no new date added
+[24/05/2020 11:31:36] --- POLICY FILE CHECK
+[24/05/2020 11:31:36] new countries added:
+{'Timor'}
+[24/05/2020 11:31:36] new date added: {20200524}
+[25/05/2020 03:34:34] --- CONFIRMED CASES FILE CHECK
+[25/05/2020 03:34:34] no new countries added
+[25/05/2020 03:34:34] new date added: {'5/24/20'}
+[25/05/2020 03:34:34] --- DEATHS FILE CHECK
+[25/05/2020 03:34:34] no new countries added
+[25/05/2020 03:34:34] new date added: {'5/24/20'}
+[25/05/2020 03:34:34] --- POLICY FILE CHECK
+[25/05/2020 03:34:34] new countries added:
+{'Timor'}
+[25/05/2020 03:34:34] multiple new dates added: {20200524, 20200525}
+[25/05/2020 11:31:48] --- CONFIRMED CASES FILE CHECK
+[25/05/2020 11:31:48] no new countries added
+[25/05/2020 11:31:48] no new date added
+[25/05/2020 11:31:48] --- DEATHS FILE CHECK
+[25/05/2020 11:31:48] no new countries added
+[25/05/2020 11:31:48] no new date added
+[25/05/2020 11:31:48] --- POLICY FILE CHECK
+[25/05/2020 11:31:48] no new countries added
+[25/05/2020 11:31:48] no new date added
+[26/05/2020 03:34:35] --- CONFIRMED CASES FILE CHECK
+[26/05/2020 03:34:35] no new countries added
+[26/05/2020 03:34:35] new date added: {'5/25/20'}
+[26/05/2020 03:34:35] --- DEATHS FILE CHECK
+[26/05/2020 03:34:35] no new countries added
+[26/05/2020 03:34:35] new date added: {'5/25/20'}
+[26/05/2020 03:34:35] --- POLICY FILE CHECK
+[26/05/2020 03:34:35] new countries added:
+{'Guinea'}
+[26/05/2020 03:34:35] new date added: {20200526}
+[26/05/2020 11:31:36] --- CONFIRMED CASES FILE CHECK
+[26/05/2020 11:31:36] no new countries added
+[26/05/2020 11:31:36] no new date added
+[26/05/2020 11:31:36] --- DEATHS FILE CHECK
+[26/05/2020 11:31:36] no new countries added
+[26/05/2020 11:31:36] no new date added
+[26/05/2020 11:31:36] --- POLICY FILE CHECK
+[26/05/2020 11:31:36] new countries added:
+{'Guinea'}
+[26/05/2020 11:31:36] new date added: {20200526}
+[27/05/2020 03:34:28] --- CONFIRMED CASES FILE CHECK
+[27/05/2020 03:34:28] no new countries added
+[27/05/2020 03:34:28] new date added: {'5/26/20'}
+[27/05/2020 03:34:28] --- DEATHS FILE CHECK
+[27/05/2020 03:34:28] no new countries added
+[27/05/2020 03:34:28] new date added: {'5/26/20'}
+[27/05/2020 03:34:28] --- POLICY FILE CHECK
+[27/05/2020 03:34:28] new countries added:
+{'Guinea'}
+[27/05/2020 03:34:28] multiple new dates added: {20200526, 20200527}
+[27/05/2020 11:31:22] --- CONFIRMED CASES FILE CHECK
+[27/05/2020 11:31:22] no new countries added
+[27/05/2020 11:31:22] no new date added
+[27/05/2020 11:31:22] --- DEATHS FILE CHECK
+[27/05/2020 11:31:22] no new countries added
+[27/05/2020 11:31:22] no new date added
+[27/05/2020 11:31:22] --- POLICY FILE CHECK
+[27/05/2020 11:31:22] no new countries added
+[27/05/2020 11:31:22] no new date added
+[28/05/2020 03:34:09] --- CONFIRMED CASES FILE CHECK
+[28/05/2020 03:34:09] no new countries added
+[28/05/2020 03:34:09] new date added: {'5/27/20'}
+[28/05/2020 03:34:09] --- DEATHS FILE CHECK
+[28/05/2020 03:34:09] no new countries added
+[28/05/2020 03:34:09] new date added: {'5/27/20'}
+[28/05/2020 03:34:09] --- POLICY FILE CHECK
+[28/05/2020 03:34:09] no new countries added
+[28/05/2020 03:34:09] new date added: {20200528}
+[28/05/2020 11:31:32] --- CONFIRMED CASES FILE CHECK
+[28/05/2020 11:31:32] no new countries added
+[28/05/2020 11:31:32] no new date added
+[28/05/2020 11:31:32] --- DEATHS FILE CHECK
+[28/05/2020 11:31:32] no new countries added
+[28/05/2020 11:31:32] no new date added
+[28/05/2020 11:31:32] --- POLICY FILE CHECK
+[28/05/2020 11:31:32] no new countries added
+[28/05/2020 11:31:32] no new date added
+[29/05/2020 03:34:19] --- CONFIRMED CASES FILE CHECK
+[29/05/2020 03:34:19] no new countries added
+[29/05/2020 03:34:19] new date added: {'5/28/20'}
+[29/05/2020 03:34:19] --- DEATHS FILE CHECK
+[29/05/2020 03:34:19] no new countries added
+[29/05/2020 03:34:19] new date added: {'5/28/20'}
+[29/05/2020 03:34:19] --- POLICY FILE CHECK
+[29/05/2020 03:34:19] new countries added:
+{'Tajikistan'}
+[29/05/2020 03:34:19] new date added: {20200529}
+[29/05/2020 11:31:28] --- CONFIRMED CASES FILE CHECK
+[29/05/2020 11:31:28] no new countries added
+[29/05/2020 11:31:28] no new date added
+[29/05/2020 11:31:28] --- DEATHS FILE CHECK
+[29/05/2020 11:31:28] no new countries added
+[29/05/2020 11:31:28] no new date added
+[29/05/2020 11:31:28] --- POLICY FILE CHECK
+[29/05/2020 11:31:28] new countries added:
+{'Tajikistan'}
+[29/05/2020 11:31:28] new date added: {20200529}
+[30/05/2020 03:34:19] --- CONFIRMED CASES FILE CHECK
+[30/05/2020 03:34:19] no new countries added
+[30/05/2020 03:34:19] new date added: {'5/29/20'}
+[30/05/2020 03:34:19] --- DEATHS FILE CHECK
+[30/05/2020 03:34:19] no new countries added
+[30/05/2020 03:34:19] new date added: {'5/29/20'}
+[30/05/2020 03:34:19] --- POLICY FILE CHECK
+[30/05/2020 03:34:19] new countries added:
+{'Tajikistan'}
+[30/05/2020 03:34:19] multiple new dates added: {20200529, 20200530}
+[30/05/2020 11:31:29] --- CONFIRMED CASES FILE CHECK
+[30/05/2020 11:31:29] no new countries added
+[30/05/2020 11:31:29] no new date added
+[30/05/2020 11:31:29] --- DEATHS FILE CHECK
+[30/05/2020 11:31:29] no new countries added
+[30/05/2020 11:31:29] no new date added
+[30/05/2020 11:31:29] --- POLICY FILE CHECK
+[30/05/2020 11:31:29] new countries added:
+{'Tajikistan'}
+[30/05/2020 11:31:29] multiple new dates added: {20200529, 20200530}
+[30/05/2020 18:58:09] --- CONFIRMED CASES FILE CHECK
+[30/05/2020 18:58:09] no new countries added
+[30/05/2020 18:58:09] no new date added
+[30/05/2020 18:58:09] --- DEATHS FILE CHECK
+[30/05/2020 18:58:09] no new countries added
+[30/05/2020 18:58:09] no new date added
+[30/05/2020 18:58:09] --- POLICY FILE CHECK
+[30/05/2020 18:58:09] no new countries added
+[30/05/2020 18:58:09] no new date added
+[31/05/2020 13:22:02] --- CONFIRMED CASES FILE CHECK
+[31/05/2020 13:22:02] no new countries added
+[31/05/2020 13:22:02] no new date added
+[31/05/2020 13:22:02] --- DEATHS FILE CHECK
+[31/05/2020 13:22:02] no new countries added
+[31/05/2020 13:22:02] no new date added
+[31/05/2020 13:22:02] --- POLICY FILE CHECK
+[31/05/2020 13:22:02] no new countries added
+[31/05/2020 13:22:02] no new date added
+[31/05/2020 11:31:26] --- CONFIRMED CASES FILE CHECK
+[31/05/2020 11:31:26] no new countries added
+[31/05/2020 11:31:26] no new date added
+[31/05/2020 11:31:26] --- DEATHS FILE CHECK
+[31/05/2020 11:31:26] no new countries added
+[31/05/2020 11:31:26] no new date added
+[31/05/2020 11:31:26] --- POLICY FILE CHECK
+[31/05/2020 11:31:26] new countries added:
+{'Timor-Leste', 'Timor'}
+[31/05/2020 11:31:26] new date added: {20200531}
+[31/05/2020 19:59:56] --- CONFIRMED CASES FILE CHECK
+[31/05/2020 19:59:56] no new countries added
+[31/05/2020 19:59:56] no new date added
+[31/05/2020 19:59:56] --- DEATHS FILE CHECK
+[31/05/2020 19:59:56] no new countries added
+[31/05/2020 19:59:56] no new date added
+[31/05/2020 19:59:56] --- POLICY FILE CHECK
+[31/05/2020 19:59:56] no new countries added
+[31/05/2020 19:59:56] no new date added
+[01/06/2020 03:34:32] --- CONFIRMED CASES FILE CHECK
+[01/06/2020 03:34:32] no new countries added
+[01/06/2020 03:34:32] new date added: {'5/31/20'}
+[01/06/2020 03:34:32] --- DEATHS FILE CHECK
+[01/06/2020 03:34:32] no new countries added
+[01/06/2020 03:34:32] new date added: {'5/31/20'}
+[01/06/2020 03:34:32] --- POLICY FILE CHECK
+[01/06/2020 03:34:32] no new countries added
+[01/06/2020 03:34:32] new date added: {20200601}
+[01/06/2020 11:31:24] --- CONFIRMED CASES FILE CHECK
+[01/06/2020 11:31:24] no new countries added
+[01/06/2020 11:31:24] no new date added
+[01/06/2020 11:31:24] --- DEATHS FILE CHECK
+[01/06/2020 11:31:24] no new countries added
+[01/06/2020 11:31:24] no new date added
+[01/06/2020 11:31:24] --- POLICY FILE CHECK
+[01/06/2020 11:31:24] no new countries added
+[01/06/2020 11:31:24] no new date added

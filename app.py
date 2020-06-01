@@ -13,7 +13,7 @@ from dash.dependencies import Input, Output, State
 
 import dash_bootstrap_components as dbc
 # Custom functions
-from layout_functions import gen_map, draw_singleCountry_Scatter, draw_mortality_fatality, draw_singleCountry_Epicurve, make_item
+from layout_functions import gen_map, draw_singleCountry_Scatter, draw_mortality_fatality, draw_singleCountry_Epicurve, make_item, list_item
 from pickle_functions import unpicklify
 path_input = Path.cwd() / 'input'
 Path.mkdir(path_input, exist_ok = True)
@@ -397,22 +397,24 @@ def tab_right_countries(dropdown):
     if len(dropdown) == 0:
         for country in top_4:
             dropdown.append(country)
+
     return html.Div([
         html.Ul([
             html.Li([
                 html.Div([
                         dbc.ListGroupItem([
                             dbc.ListGroupItemHeading(f'{country}:'),
-                            dbc.ListGroupItemText(f'Confirmed cases: {df_tab_right.iloc[0][country]:,}', color = 'info'),
-                            dbc.ListGroupItemText(f'Deaths: {df_tab_right.iloc[1][country]:,}', color = 'danger'),
-                            dbc.ListGroupItemText(f'Mortality rate: {df_tab_right.iloc[2][country]*100:.2f}%', color = 'warning'),
-                            dbc.ListGroupItemText(f'Share of infected population: {df_tab_right.iloc[3][country]*100:.2f}%', color = 'warning'),
-                            dbc.ListGroupItemText(f'Share out of global confirmed cases: {df_tab_right.iloc[4][country]*100:.4f}%', color = 'info'),
-                            dbc.ListGroupItemText(f'Share out of global deaths: {df_tab_right.iloc[5][country]*100:.4f}%', color = 'danger'),
-                            dbc.ListGroupItemText(f'Date of 1st confirmed case: {df_tab_right.iloc[6][country]}', color = 'info'),
-                            dbc.ListGroupItemText(f'Date of 1st confirmed death: {df_tab_right.iloc[7][country]}', color = 'danger'),
-                            dbc.ListGroupItemText(f'Stringency Index: {df_tab_right.iloc[8][country]}', color = 'success'),
-                            dbc.ListGroupItemText(f'Population in 2019: {df_tab_right.iloc[9][country]:,}', color = 'success'),], className="border-top-0 border-left-0 border-right-0") for country in dropdown
+                            dbc.ListGroupItemText(f'Confirmed cases: {df_tab_right.iloc[0][country]:,}'),
+                            dbc.ListGroupItemText(f'Deaths: {df_tab_right.iloc[1][country]:,}'),
+                            list_item('Mortality rate: ', float('%.2f'%(df_tab_right.iloc[2][country]*100)), '%'),
+                            dbc.ListGroupItemText(f'Share of infected population: {df_tab_right.iloc[3][country]*100:.2f}%'),
+                            dbc.ListGroupItemText(f'Share out of global confirmed cases: {df_tab_right.iloc[4][country]*100:.4f}%'),
+                            list_item('Share out of global deaths: ', float('%.4f'%(df_tab_right.iloc[5][country]*100)), '%'),
+                            dbc.ListGroupItemText(f'Date of 1st confirmed case: {df_tab_right.iloc[6][country]}'),
+                            list_item('Date of 1st confirmed death: ', df_tab_right.iloc[7][country], ''),
+                            list_item('Stringency Index: ', df_tab_right.iloc[8][country], ''),
+                            dbc.ListGroupItemText(f'Population in 2019: {df_tab_right.iloc[9][country]:,}'),
+                            ], className="border-top-0 border-left-0 border-right-0") for country in dropdown
                 ],
                 className='media-body border-0'
                 ),
