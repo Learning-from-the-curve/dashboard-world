@@ -60,64 +60,36 @@ def gen_map(map_data):
         ),
     }
 
-def draw_singleCountry_Scatter(df_confirmed_t, df_deaths_t, variable, graph_line, selected_country,ISO):
+def draw_singleCountry_Scatter(df, variable, graph_line, selected_country,ISO):
     '''
     Function to generate and plot a scatterplot for confirmed/deaths with linear or log scale for the selected countries
     '''
-    #FIXME: ancora da controllare e correggere
     fig = go.Figure()
-    if variable == 'confirmed':
-        label_max, text_label_max = ticks_log(df_confirmed_t, selected_country)
-        for country in selected_country:
-            try:
-                ISO_legend = ISO['alpha-3'].loc[ISO['name'] == country].to_list()[0]
-            except:
-                ISO_legend = country
-            if graph_line == 'Log':
-                y = df_confirmed_t.loc[df_confirmed_t[country] >= 1].copy()
-                x = [x for x in range(len(y))]
-                fig.add_trace(go.Scatter(x =  x, y = y[country],
-                                    mode='lines+markers',
-                                    name=ISO_legend,
-                                    line=dict(width=3), marker = dict(size = 3, line = dict(width = 1,color = 'DarkSlateGrey')), hoverinfo = "text",
-                                    hovertext = [f"Country/Region: {country}, ({ISO_legend}) <br>Confirmed: {y.iloc[indice][country]:,} <br>Days: {x[indice]}" for indice in range(len(y))]))
-                fig.update_yaxes(tickvals = label_max, ticktext = text_label_max)
-            else:
-                x = df_confirmed_t.index
-                fig.add_trace(go.Scatter(x =  x, y = df_confirmed_t[country],
-                                    mode='lines+markers',
-                                    name=ISO_legend,
-                                    line=dict(width=3), marker = dict(size = 3, line = dict(width = 1,color = 'DarkSlateGrey')), hoverinfo = "text",
-                                    hovertext = [f"Country/Region: {country}, ({ISO_legend}) <br>Confirmed: {df_confirmed_t.iloc[indice][country]:,} <br>Date: {str(x[indice])[:10]}" for indice in range(len(df_confirmed_t))]))
-                fig.update_xaxes(tickformat = '%d %B (%a)<br>%Y')
-                fig.update_yaxes(tickformat = ',')
-        fig.update_layout(title= 'Total confirmed cases')
-    elif variable == 'deaths':
-        label_max, text_label_max = ticks_log(df_deaths_t, selected_country)
-        for country in selected_country:
-            try:
-                ISO_legend = ISO['alpha-3'].loc[ISO['name'] == country].to_list()[0]
-            except:
-                ISO_legend = country
-            if graph_line == 'Log':
-                y = df_deaths_t.loc[df_deaths_t[country] >= 1].copy()
-                x = [x for x in range(len(y))]
-                fig.add_trace(go.Scatter(x =  x, y = y[country],
-                                    mode='lines+markers',
-                                    name=ISO_legend,
-                                    line=dict(width=3), marker = dict(size = 3, line = dict(width = 1,color = 'DarkSlateGrey')), hoverinfo = "text",
-                                    hovertext = [f"Country/Region: {country}, ({ISO_legend}) <br>Deaths: {y.iloc[indice][country]:,} <br>Days: {x[indice]}" for indice in range(len(y))]))
-                fig.update_yaxes(tickvals = label_max, ticktext = text_label_max)
-            else:
-                x = df_deaths_t.index
-                fig.add_trace(go.Scatter(x =  x, y = df_deaths_t[country],
-                                    mode='lines+markers',
-                                    name=ISO_legend,
-                                    line=dict(width=3), marker = dict(size = 3, line = dict(width = 1,color = 'DarkSlateGrey')), hoverinfo = "text",
-                                    hovertext = [f"Country/Region: {country}, ({ISO_legend}) <br>Deaths: {df_deaths_t.iloc[indice][country]:,} <br>Date: {str(x[indice])[:10]}" for indice in range(len(df_deaths_t))]))
-                fig.update_xaxes(tickformat = '%d %B (%a)<br>%Y')
-                fig.update_yaxes(tickformat = ',')
-        fig.update_layout(title= 'Total deaths')
+    label_max, text_label_max = ticks_log(df, selected_country)
+    for country in selected_country:
+        try:
+            ISO_legend = ISO['alpha-3'].loc[ISO['name'] == country].to_list()[0]
+        except:
+            ISO_legend = country
+        if graph_line == 'Log':
+            y = df.loc[df[country] >= 1].copy()
+            x = [x for x in range(len(y))]
+            fig.add_trace(go.Scatter(x =  x, y = y[country],
+                                mode='lines+markers',
+                                name=ISO_legend,
+                                line=dict(width=3), marker = dict(size = 3, line = dict(width = 1,color = 'DarkSlateGrey')), hoverinfo = "text",
+                                hovertext = [f"Country/Region: {country}, ({ISO_legend}) <br>{variable}: {y.iloc[indice][country]:,} <br>Days: {x[indice]}" for indice in range(len(y))]))
+            fig.update_yaxes(tickvals = label_max, ticktext = text_label_max)
+        else:
+            x = df.index
+            fig.add_trace(go.Scatter(x =  x, y = df[country],
+                                mode='lines+markers',
+                                name=ISO_legend,
+                                line=dict(width=3), marker = dict(size = 3, line = dict(width = 1,color = 'DarkSlateGrey')), hoverinfo = "text",
+                                hovertext = [f"Country/Region: {country}, ({ISO_legend}) <br>{variable}: {df.iloc[indice][country]:,} <br>Date: {str(x[indice])[:10]}" for indice in range(len(df))]))
+            fig.update_xaxes(tickformat = '%d %B (%a)<br>%Y')
+            fig.update_yaxes(tickformat = ',')
+    fig.update_layout(title= f'Total {variable}')
 
     fig.update_layout(
         hovermode='closest',
@@ -148,7 +120,6 @@ def draw_mortality_fatality(df_confirmed_t, df_deaths_t, pop_t, variable, x_grap
     Function to generate and plot a scatterplot for mortality rate/Share of infected population/Growth rate confirmed cases/Growth rate deaths
     with date or days scale for the selected countries
     '''
-    #FIXME: ancora da controllare e correggere
     fig = go.Figure()
     if x_graph == 'Date':
         if variable == 'Mortality rate':
@@ -296,69 +267,39 @@ def draw_mortality_fatality(df_confirmed_t, df_deaths_t, pop_t, variable, x_grap
 
     return fig
 
-def draw_singleCountry_Epicurve(df_confirmed_t, df_deaths_t, df_policy_index, df_epic_confirmed, df_epic_days_confirmed, df_epic_deaths, df_epic_days_deaths, variable, plot, selected_country,ISO):
+def draw_singleCountry_Epicurve(df, df_policy_index, df_epic, df_epic_days, variable, plot, selected_country,ISO):
     '''
     Function to generate and plot a scatterplot for Epidemic curve and policy index for confirmed/deaths for the selected countries
     '''
-    #FIXME: ancora da controllare e correggere
     fig = go.Figure()
     if plot == 'Epidemic curves':
-        if variable == 'confirmed':
-            for country in selected_country:
-                try:
-                    ISO_legend = ISO['alpha-3'].loc[ISO['name'] == country].to_list()[0]
-                except:
-                    ISO_legend = country
-                fig.add_trace(go.Scatter(x =  df_epic_days_confirmed[country], y = df_epic_confirmed[country],
-                                    mode='lines+markers',
-                                    name=ISO_legend,
-                                    line=dict(width=3), marker = dict(size = 3, line = dict(width = 1,color = 'DarkSlateGrey')), connectgaps = True, hoverinfo = "text",
-                                    hovertext = [f"Country/Region: {country} <br>Confirmed: {df_confirmed_t.iloc[indice][country]:,} <br>3-day MA of ln % of total cases: {np.exp(df_epic_confirmed.iloc[indice][country]):.3f}% <br>Days: {df_epic_days_confirmed.iloc[indice][country]} <br>Date: {df_epic_confirmed.reset_index().iloc[indice]['index'].date()}" for indice in range(len(df_confirmed_t))]))
-            fig.update_layout(title = 'Epidemic curve confirmed cases')
-            fig.update_yaxes(tickvals = [-6.9, -4.6, -2.3, 0, 2.30258], ticktext = [f'{np.exp(-6.9):.3f}%', f'{np.exp(-4.6):.3f}%', f'{np.exp(-2.3):.3f}%', f'{np.exp(0):.3f}%', f'{np.exp(2.30258):.3f}%'])
-        else:
-            for country in selected_country:
-                try:
-                    ISO_legend = ISO['alpha-3'].loc[ISO['name'] == country].to_list()[0]
-                except:
-                    ISO_legend = country
-                fig.add_trace(go.Scatter(x =  df_epic_days_deaths[country], y = df_epic_deaths[country],
-                                    mode='lines+markers',
-                                    name=ISO_legend,
-                                    line=dict(width=3), marker = dict(size = 3, line = dict(width = 1,color = 'DarkSlateGrey')), connectgaps = True, hoverinfo = "text",
-                                    hovertext = [f"Country/Region: {country} <br>Deaths: {df_deaths_t.iloc[indice][country]:,} <br>3-day MA of ln % of total deaths: {np.exp(df_epic_deaths.iloc[indice][country]):.3f}% <br>Days: {df_epic_days_deaths.iloc[indice][country]} <br>Date: {df_epic_deaths.reset_index().iloc[indice]['index'].date()}" for indice in range(len(df_confirmed_t))]))
-            fig.update_layout(title= 'Epidemic curve deaths')
-            fig.update_yaxes(tickvals = [-6.9, -4.6, -2.3, 0, 2.30258], ticktext = [f'{np.exp(-6.9):.3f}%', f'{np.exp(-4.6):.3f}%', f'{np.exp(-2.3):.3f}%', f'{np.exp(0):.3f}%', f'{np.exp(2.30258):.3f}%'])
+        for country in selected_country:
+            try:
+                ISO_legend = ISO['alpha-3'].loc[ISO['name'] == country].to_list()[0]
+            except:
+                ISO_legend = country
+            fig.add_trace(go.Scatter(x =  df_epic_days[country], y = df_epic[country],
+                                mode='lines+markers',
+                                name=ISO_legend,
+                                line=dict(width=3), marker = dict(size = 3, line = dict(width = 1,color = 'DarkSlateGrey')), connectgaps = True, hoverinfo = "text",
+                                hovertext = [f"Country/Region: {country} <br>{variable}: {df.iloc[indice][country]:,} <br>3-day MA of ln % of total cases: {np.exp(df_epic.iloc[indice][country]):.3f}% <br>Days: {df_epic_days.iloc[indice][country]} <br>Date: {df_epic.reset_index().iloc[indice]['index'].date()}" for indice in range(len(df))]))
+        fig.update_layout(title = f'Epidemic curve for {variable}')
+        fig.update_yaxes(tickvals = [-6.9, -4.6, -2.3, 0, 2.30258], ticktext = [f'{np.exp(-6.9):.3f}%', f'{np.exp(-4.6):.3f}%', f'{np.exp(-2.3):.3f}%', f'{np.exp(0):.3f}%', f'{np.exp(2.30258):.3f}%'])
     if plot == 'Stringency index':
-        if variable == 'confirmed':
-            label_max, text_label_max = ticks_log(df_confirmed_t, selected_country)
-            for country in selected_country:
-                try:
-                    ISO_legend = ISO['alpha-3'].loc[ISO['name'] == country].to_list()[0]
-                except:
-                    ISO_legend = country
-                fig.add_trace(go.Scatter(x =  df_confirmed_t[country], y = df_policy_index[country],
-                                    mode='lines+markers',
-                                    name=ISO_legend,
-                                    line=dict(width=3), marker = dict(size = 3, line = dict(width = 1,color = 'DarkSlateGrey')), hoverinfo = "text",
-                                    hovertext = [f"Country/Region: {country} <br>Confirmed: {df_confirmed_t.iloc[indice][country]:,} <br>Stringency index: {df_policy_index.iloc[indice][country]:,} <br>Date: {df_confirmed_t.reset_index().iloc[indice]['index'].date()}" for indice in range(len(df_confirmed_t))]))
-            fig.update_layout(title= 'Stringency index confirmed cases', xaxis = {'type': 'log'})
-            fig.update_xaxes(tickvals = label_max, ticktext = text_label_max)
-        else:
-            label_max, text_label_max = ticks_log(df_deaths_t, selected_country)
-            for country in selected_country:
-                try:
-                    ISO_legend = ISO['alpha-3'].loc[ISO['name'] == country].to_list()[0]
-                except:
-                    ISO_legend = country
-                fig.add_trace(go.Scatter(x =  df_deaths_t[country], y = df_policy_index[country],
-                                    mode='lines+markers',
-                                    name=ISO_legend,
-                                    line=dict(width=3), marker = dict(size = 3, line = dict(width = 1,color = 'DarkSlateGrey')), hoverinfo = "text",
-                                    hovertext = [f"Country/Region: {country} <br>Deaths: {df_deaths_t.iloc[indice][country]:,}  <br>Stringency index: {df_policy_index.iloc[indice][country]:,} <br>Date: {df_deaths_t.reset_index().iloc[indice]['index'].date()}" for indice in range(len(df_deaths_t))]))
-            fig.update_layout(title= 'Stringency index deaths', xaxis = {'type': 'log'})
-            fig.update_xaxes(tickvals = label_max, ticktext = text_label_max)
-
+        label_max, text_label_max = ticks_log(df, selected_country)
+        for country in selected_country:
+            try:
+                ISO_legend = ISO['alpha-3'].loc[ISO['name'] == country].to_list()[0]
+            except:
+                ISO_legend = country
+            fig.add_trace(go.Scatter(x =  df[country], y = df_policy_index[country],
+                                mode='lines+markers',
+                                name=ISO_legend,
+                                line=dict(width=3), marker = dict(size = 3, line = dict(width = 1,color = 'DarkSlateGrey')), hoverinfo = "text",
+                                hovertext = [f"Country/Region: {country} <br>{variable}: {df.iloc[indice][country]:,} <br>Stringency index: {df_policy_index.iloc[indice][country]:,} <br>Date: {df.reset_index().iloc[indice]['index'].date()}" for indice in range(len(df))]))
+        fig.update_layout(title= f'Stringency index {variable}', xaxis = {'type': 'log'})
+        fig.update_xaxes(tickvals = label_max, ticktext = text_label_max)
+        
     fig.update_layout(
         hovermode='closest',
         legend=dict(
