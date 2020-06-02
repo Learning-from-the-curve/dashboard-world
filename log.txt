@@ -226,3 +226,12 @@
 [02/06/2020 03:34:35] new countries added:
 {'Haiti'}
 [02/06/2020 03:34:35] new date added: {20200602}
+[02/06/2020 11:24:59] --- CONFIRMED CASES FILE CHECK
+[02/06/2020 11:24:59] no new countries added
+[02/06/2020 11:24:59] no new date added
+[02/06/2020 11:24:59] --- DEATHS FILE CHECK
+[02/06/2020 11:24:59] no new countries added
+[02/06/2020 11:24:59] no new date added
+[02/06/2020 11:24:59] --- POLICY FILE CHECK
+[02/06/2020 11:24:59] no new countries added
+[02/06/2020 11:24:59] no new date added
