@@ -216,3 +216,40 @@
 [01/06/2020 11:31:24] --- POLICY FILE CHECK
 [01/06/2020 11:31:24] no new countries added
 [01/06/2020 11:31:24] no new date added
+[02/06/2020 03:34:35] --- CONFIRMED CASES FILE CHECK
+[02/06/2020 03:34:35] no new countries added
+[02/06/2020 03:34:35] new date added: {'6/1/20'}
+[02/06/2020 03:34:35] --- DEATHS FILE CHECK
+[02/06/2020 03:34:35] no new countries added
+[02/06/2020 03:34:35] new date added: {'6/1/20'}
+[02/06/2020 03:34:35] --- POLICY FILE CHECK
+[02/06/2020 03:34:35] new countries added:
+{'Haiti'}
+[02/06/2020 03:34:35] new date added: {20200602}
+[02/06/2020 11:24:59] --- CONFIRMED CASES FILE CHECK
+[02/06/2020 11:24:59] no new countries added
+[02/06/2020 11:24:59] no new date added
+[02/06/2020 11:24:59] --- DEATHS FILE CHECK
+[02/06/2020 11:24:59] no new countries added
+[02/06/2020 11:24:59] no new date added
+[02/06/2020 11:24:59] --- POLICY FILE CHECK
+[02/06/2020 11:24:59] no new countries added
+[02/06/2020 11:24:59] no new date added
+[02/06/2020 11:31:57] --- CONFIRMED CASES FILE CHECK
+[02/06/2020 11:31:57] no new countries added
+[02/06/2020 11:31:57] no new date added
+[02/06/2020 11:31:57] --- DEATHS FILE CHECK
+[02/06/2020 11:31:57] no new countries added
+[02/06/2020 11:31:57] no new date added
+[02/06/2020 11:31:57] --- POLICY FILE CHECK
+[02/06/2020 11:31:57] no new countries added
+[02/06/2020 11:31:57] no new date added
+[03/06/2020 03:34:12] --- CONFIRMED CASES FILE CHECK
+[03/06/2020 03:34:12] no new countries added
+[03/06/2020 03:34:12] new date added: {'6/2/20'}
+[03/06/2020 03:34:12] --- DEATHS FILE CHECK
+[03/06/2020 03:34:12] no new countries added
+[03/06/2020 03:34:12] new date added: {'6/2/20'}
+[03/06/2020 03:34:12] --- POLICY FILE CHECK
+[03/06/2020 03:34:12] no new countries added
+[03/06/2020 03:34:12] no new date added
