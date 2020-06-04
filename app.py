@@ -383,10 +383,39 @@ app.layout = html.Div([ #Main Container
 
 
     #Second Row 363
-    html.Div([
+    dbc.Row([
 
-        #Col6 Middle
-        html.Div([
+        #Col2 Left
+        dbc.Col([
+            html.Div([
+                dbc.Tabs([
+                    dbc.Tab(tab_confirmed_left, label="Cases"),
+                    dbc.Tab(tab_deaths_left, label="Deaths"),
+                ],
+                className="nav-justified"
+                ),
+            ],
+            className="card my-2 shadow",
+            id="worldStats",
+            ),
+            html.Div([
+                dbc.Tabs([
+                    dbc.Tab(tab_confirmed_increase_left, label="Daily cases"),
+                    dbc.Tab(tab_deaths_increase_left, label="Daily deaths")
+                ],
+                className="nav-justified"
+                ),
+            ],
+            className="card my-2 shadow",
+            id="worldStats_daily",
+            )
+        ],
+        #className="col-md-3 order-md-1"
+        lg = 3, xs = 12
+        ),
+
+    #Col6 Middle
+        dbc.Col([
             #Map, Title
             html.Div([
                 html.H3(
@@ -414,39 +443,12 @@ app.layout = html.Div([ #Main Container
             className='my-2 shadow'
             ),
         ],
-        className="col-md-6 order-md-2"
-        ),
-
-        #Col2 Left
-        html.Div([
-            html.Div([
-                dbc.Tabs([
-                    dbc.Tab(tab_confirmed_left, label="Cases"),
-                    dbc.Tab(tab_deaths_left, label="Deaths"),
-                ],
-                className="nav-justified"
-                ),
-            ],
-            className="card my-2 shadow",
-            id="worldStats",
-            ),
-            html.Div([
-                dbc.Tabs([
-                    dbc.Tab(tab_confirmed_increase_left, label="Daily cases"),
-                    dbc.Tab(tab_deaths_increase_left, label="Daily deaths")
-                ],
-                className="nav-justified"
-                ),
-            ],
-            className="card my-2 shadow",
-            id="worldStats_daily",
-            )
-        ],
-        className="col-md-3 order-md-1"
+        #className="col-md-6 order-md-2"
+        lg = 6, xs = 12
         ),
 
         #Col2 Right
-        html.Div([
+        dbc.Col([
             html.Div([
                 dbc.Tabs([
                     dbc.Tab(tab_right, label="Country statistics" + u"\U0001F6C8"),
@@ -469,7 +471,8 @@ app.layout = html.Div([ #Main Container
                 style= {'opacity': '0.9'}
             ),
         ],
-        className="col-md-3 order-md-3",
+        #className="col-md-3 order-md-3",
+        lg = 3, xs = 12
         ),
         
     ],
