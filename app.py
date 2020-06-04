@@ -275,9 +275,9 @@ app.layout = html.Div([ #Main Container
     className="d-flex justify-content-md-between my-2"
     ),
     
-    #First Row CARDS 3333
-    html.Div([
-        html.Div([
+      #First Row CARDS 3333
+    dbc.Row([
+        dbc.Col([
             #Card 1
             html.Div([
                 # Card 1 body
@@ -299,9 +299,10 @@ app.layout = html.Div([ #Main Container
             className='card my-2 text-center shadow'
             ),
         ],
-        className="col-md-3"
+        #className="col-md-3"
+        lg = 3, xs = 12
         ),
-        html.Div([
+        dbc.Col([
             #Card 2
             html.Div([
                 # Card 2 body
@@ -323,9 +324,10 @@ app.layout = html.Div([ #Main Container
             className='card my-2 text-center shadow'
             ),
         ],
-        className="col-md-3"
+        #className="col-md-3"
+        lg = 3, xs = 12
         ),
-        html.Div([
+        dbc.Col([
             #Card 3
             html.Div([
                 # Card 3 body
@@ -347,9 +349,10 @@ app.layout = html.Div([ #Main Container
             className='card my-2 text-center shadow'
             ),
         ],
-        className="col-md-3"
+        #className="col-md-3"
+        lg = 3, xs = 12
         ),        
-        html.Div([
+        dbc.Col([
             #Card 4
             html.Div([
                 # Card 4 body
@@ -371,11 +374,13 @@ app.layout = html.Div([ #Main Container
             className='card my-2 text-center shadow'
             ),
         ],
-        className="col-md-3"
+        #className="col-md-3"
+        lg = 3, xs = 12
         ),
     ],
-    className="row"
+    #className="row"
     ),
+
 
     #Second Row 363
     html.Div([
