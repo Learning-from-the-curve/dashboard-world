@@ -272,3 +272,12 @@
 [04/06/2020 03:34:15] new countries added:
 {'Cambodia'}
 [04/06/2020 03:34:15] new date added: {20200604}
+[04/06/2020 11:27:17] --- CONFIRMED CASES FILE CHECK
+[04/06/2020 11:27:17] no new countries added
+[04/06/2020 11:27:17] no new date added
+[04/06/2020 11:27:17] --- DEATHS FILE CHECK
+[04/06/2020 11:27:17] no new countries added
+[04/06/2020 11:27:17] no new date added
+[04/06/2020 11:27:17] --- POLICY FILE CHECK
+[04/06/2020 11:27:17] no new countries added
+[04/06/2020 11:27:17] no new date added
