@@ -35,6 +35,8 @@ flask_app = app.server
 
 flask_app.config["SCOUT_NAME"] = "COVID-19 - World dashboard"
 
+config = {'displayModeBar': False}
+
 #for heroku to run correctly
 server = app.server
 
@@ -107,7 +109,12 @@ tab_confirmed_left = dbc.Card(
             html.Li([
                 html.Div([
                     html.H5([
-                        dbc.ListGroupItem([f'{country}, {df_left_list_confirmed_t[country]:,}'], className="border-top-0 border-left-0 border-right-0") for country in df_left_list_confirmed_t.index
+                        dbc.ListGroupItem([
+                            html.Span([f'{country} '], className = "spanCountryName"),
+                            html.Span([f'{df_left_list_confirmed_t[country]:,}'], className = "spanConfirmed") 
+                        ], 
+                        className="border-top-0 border-left-0 border-right-0"
+                        ) for country in df_left_list_confirmed_t.index
                     ],
                     ),
                 ],
@@ -119,9 +126,8 @@ tab_confirmed_left = dbc.Card(
         ],
         className='list-unstyled'
         ),
-    ],
-    style={ "height": "280px" },
-    className="overflow-auto"
+    ],  
+    className="tabcard overflow-auto"
     ),
 className="border-0",
 )
@@ -133,7 +139,12 @@ tab_deaths_left = dbc.Card(
             html.Li([
                 html.Div([
                     html.H5([
-                        dbc.ListGroupItem([f'{country}, {df_left_list_deaths_t[country]:,}'], className="border-top-0 border-left-0 border-right-0") for country in df_left_list_deaths_t.index
+                        dbc.ListGroupItem([
+                            html.Span([f'{country} '], className = "spanCountryName"),
+                            html.Span([f'{df_left_list_deaths_t[country]:,}'], className = "spanDeaths"),
+                        ], 
+                        className="border-top-0 border-left-0 border-right-0"
+                        ) for country in df_left_list_deaths_t.index
                     ],
                     ),
                 ],
@@ -146,8 +157,8 @@ tab_deaths_left = dbc.Card(
         className='list-unstyled'
         ),
     ],
-    style={ "height": "280px" },
-    className="overflow-auto"
+     
+    className="tabcard overflow-auto"
     ),
 className="border-0",
 )
@@ -159,7 +170,12 @@ tab_confirmed_increase_left = dbc.Card(
             html.Li([
                 html.Div([
                     html.H5([
-                        dbc.ListGroupItem([f'{country}, {df_left_list_daily_confirmed_increase.iloc[0][country]:,}'], className="border-top-0 border-left-0 border-right-0") for country in list(df_left_list_daily_confirmed_increase)
+                        dbc.ListGroupItem([
+                            html.Span([f'{country} '], className = "spanCountryName"),
+                            html.Span([f'{df_left_list_daily_confirmed_increase.iloc[0][country]:,}'], className = "spanConfirmed"),
+                        ], 
+                        className="border-top-0 border-left-0 border-right-0"
+                        ) for country in list(df_left_list_daily_confirmed_increase)
                     ],
                     ),
                 ],
@@ -172,8 +188,8 @@ tab_confirmed_increase_left = dbc.Card(
         className='list-unstyled'
         ),
     ],
-    style={ "height": "280px" },
-    className="overflow-auto"
+     
+    className="tabcard overflow-auto"
     ),
 className="border-0",
 )
@@ -185,7 +201,12 @@ tab_deaths_increase_left = dbc.Card(
             html.Li([
                 html.Div([
                     html.H5([
-                        dbc.ListGroupItem([f'{country}, {df_left_list_daily_deaths_increase.iloc[0][country]:,}'], className="border-top-0 border-left-0 border-right-0") for country in list(df_left_list_daily_deaths_increase)
+                        dbc.ListGroupItem([
+                            html.Span([f'{country} '], className = "spanCountryName"),
+                            html.Span([f'{df_left_list_daily_deaths_increase.iloc[0][country]:,}'], className = "spanDeaths"),
+                        ],
+                        className="border-top-0 border-left-0 border-right-0"
+                        ) for country in list(df_left_list_daily_deaths_increase)
                     ],
                     ),
                 ],
@@ -198,8 +219,8 @@ tab_deaths_increase_left = dbc.Card(
         className='list-unstyled'
         ),
     ],
-    style={ "height": "280px" },
-    className="overflow-auto"
+     
+    className="tabcard overflow-auto"
     ),
 className="border-0",
 )
@@ -234,18 +255,17 @@ Please, report any bug at the following contact address: learningfromthecurve.in
 ############################
 
 app.layout = html.Div([ #Main Container   
+    html.Div([
     #Header TITLE
     html.Div([
         #Info Modal Button LEFT
-        dbc.Button("Relevant info", id="open-centered-left", className="button"),
+        dbc.Button("Relevant info", id="open-centered-left", className="btn shadow"),
         dbc.Modal(
             [
                 dbc.ModalHeader("Relevant information"),
                 dbc.ModalBody(children = markdown_relevant_info),
                 dbc.ModalFooter(
-                    dbc.Button(
-                        "Close", id="close-centered-left", className="ml-auto"
-                    )
+                    dbc.Button("Close", id="close-centered-left", className="ml-auto")
                 ),
             ],
             id="modal-centered-left",
@@ -257,7 +277,7 @@ app.layout = html.Div([ #Main Container
             className="text-center",
         ),
         #Info Modal Button RIGHT
-        dbc.Button("Datasets info", id="open-centered-right", className="button"),
+        dbc.Button("Datasets info", id="open-centered-right", className="btn shadow"),
         dbc.Modal(
             [
                 dbc.ModalHeader("Information on datasets used"),
@@ -272,7 +292,7 @@ app.layout = html.Div([ #Main Container
             centered=True,
         ),
     ],
-    className="d-flex justify-content-md-between my-2"
+    className="topRow d-flex justify-content-md-between mb-2"
     ),
     
       #First Row CARDS 3333
@@ -329,11 +349,9 @@ app.layout = html.Div([ #Main Container
         ],
         lg = 3, xs = 12
         ),     
-    ],
-    #className="row"
-    ),
-
-
+        ],
+        className = "midRow d-flex"
+        ),
     #Second Row 363
     dbc.Row([
         #Col2 Left
@@ -346,7 +364,7 @@ app.layout = html.Div([ #Main Container
                 className="nav-justified"
                 ),
             ],
-            className="card my-2",
+            className="card my-2 shadow",
             id="worldStats",
             ),
             dbc.Card([
@@ -357,36 +375,22 @@ app.layout = html.Div([ #Main Container
                 className="nav-justified"
                 ),
             ],
-            className="card my-2",
+            className="card my-2 shadow",
             id="worldStats_daily",
             )
         ],
-        lg = 3, xs = 12
+        #align = "stretch",
+        lg = 3, md = 12 
         ),
 
     #Col6 Middle
         dbc.Col([
-            #Map, Title
-            html.Div([
-                html.H3(
-                    children='World Map',
-                    style={},
-                    className='text-center'
-                ),
-                html.P(
-                    children='by number of confirmed cases',
-                    style={},
-                    className='text-center'
-                ),
-            ],
-            className='my-2 mx-auto'
-            ),
             #Map, Table
             html.Div([
                 html.Div([
-                    dcc.Graph(id='global_map', figure = gen_map(map_data = map_data))
+                    dcc.Graph(figure = gen_map(map_data = map_data),config= config)
                 ],
-                className='',
+                #className=' h-100',
                 id="worldMap",
                 ),
             ],
@@ -399,7 +403,7 @@ app.layout = html.Div([ #Main Container
 
         #Col2 Right
         dbc.Col([
-            html.Div([
+            dbc.Card([
                 dbc.Tabs([
                     dbc.Tab(dbc.Card(id ='selected-countries-tab'), label="Country statistics"),
                 ],
@@ -407,7 +411,7 @@ app.layout = html.Div([ #Main Container
                 id = 'info_tab_right'
                 )
             ],
-            className="card my-2 shadow",
+            className="my-2 shadow",
             id="countriesStats",
             ),
             dbc.Tooltip(children = [
@@ -421,14 +425,18 @@ app.layout = html.Div([ #Main Container
                 style= {'opacity': '0.9'}
             ),
         ],
-        #className="col-md-3 order-md-3",
+        #className= "h-100",
         lg = 3, xs = 12
         ),
-        
     ],
-    #className="row"
+    className = "botRow d-flex"
+    )
+    ],
+    className="container-fluid cf py-2"
     ),
-#Country select Dropdown
+
+    html.Div([
+    #Country select Dropdown
     html.Div(
             [make_item(available_indicators, top_4)], className="accordion sticky-top"
     ),
@@ -474,7 +482,7 @@ app.layout = html.Div([ #Main Container
         dbc.Col([
             html.Div([
                 html.Div([
-                    dcc.Graph(id='line-graph-confirmed',)
+                    dcc.Graph(id='line-graph-confirmed',config=config)
                 ],
                 className='p-1'
                 ),
@@ -488,7 +496,7 @@ app.layout = html.Div([ #Main Container
             #Line Graph Deaths
             html.Div([
                 html.Div([
-                    dcc.Graph(id='line-graph-deaths',)
+                    dcc.Graph(id='line-graph-deaths',config=config)
                 ],
                 className='p-1'
                 ),
@@ -536,7 +544,7 @@ app.layout = html.Div([ #Main Container
         dbc.Col([
             html.Div([
                 html.Div([
-                    dcc.Graph(id='line-graph-epicurve',)
+                    dcc.Graph(id='line-graph-epicurve',config=config)
                 ],
                 className='p-1'
                 ),
@@ -550,7 +558,7 @@ app.layout = html.Div([ #Main Container
             #Line Graph Policy
             html.Div([
                 html.Div([
-                    dcc.Graph(id='line-graph-policy',)
+                    dcc.Graph(id='line-graph-policy',config=config)
                 ],
                 className='p-1'
                 ),
@@ -622,7 +630,7 @@ app.layout = html.Div([ #Main Container
             #Line Graph Multiple
             html.Div([
                 html.Div([
-                    dcc.Graph(id='line-graph-multiple',)
+                    dcc.Graph(id='line-graph-multiple',config=config)
                 ],
                 className='p-1'
                 ),
@@ -636,8 +644,13 @@ app.layout = html.Div([ #Main Container
     ], 
     justify="center"
     ),
+
+    ],
+    className="container-fluid"
+    )
+
 ],
-className="container-fluid"
+#className = "my-0"
 )
 
 # draw the two graphs under the map for confirmed cases and deaths
@@ -717,8 +730,7 @@ def tab_right_countries(dropdown):
         className='list-unstyled'
         ),
     ],
-    style={ "height": "615px" },
-    className="overflow-auto"
+    className="tabr overflow-auto"
     )
 
 # open/close the left modal

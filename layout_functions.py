@@ -32,7 +32,8 @@ def gen_map(map_data):
     '''
     wrong_values= sum(n < 1 for n in list(map_data['Confirmed']))
     if wrong_values > 0:
-        write_log('***cannot compute the log of '.upper() + str(wrong_values) + 'values***')
+        pass
+        #write_log('***cannot compute the log of '.upper() + str(wrong_values) + 'values***')
     z_value = np.log(list(map_data['Confirmed']))
     #mapbox_access_token = 'pk.eyJ1IjoiZmVkZWdhbGwiLCJhIjoiY2s5azJwaW80MDQxeTNkcWh4bGhjeTN2NyJ9.twKWO-W5wPLX6m9OfrpZCw'
     return {
@@ -47,17 +48,20 @@ def gen_map(map_data):
             'showscale' : False
         },
         ],
-        "layout": dict(
-            autoscale = True,
-            height=550,
-            titlefont=dict(size='14'),
-            margin=dict(
-                l=0,
-                r=0,
-                b=0,
-                t=0
-            ),            
-        ),
+        "layout":{
+            'height': 660,
+            'title': {
+                'xanchor' :"center",
+                'text':"World Map",
+                'font':{
+                    'size': 36
+                }
+                },
+            'margin': {
+                'l':0,
+                'r':0,
+            }
+        }            
     }
 
 def draw_singleCountry_Scatter(df, variable, graph_line, selected_country,ISO):
