@@ -384,7 +384,6 @@ app.layout = html.Div([ #Main Container
 
     #Second Row 363
     dbc.Row([
-
         #Col2 Left
         dbc.Col([
             html.Div([
@@ -479,137 +478,139 @@ app.layout = html.Div([ #Main Container
     className="row"
     ),
 #Country select Dropdown
-        html.Div(
-                [make_item(available_indicators, top_4)], className="accordion sticky-top"
-        ),
-
-dbc.Row([
-    dbc.Col([
-        html.Div([
-            html.Div([
-                dbc.Label("Scale:", html_for="graph-line"),
-                dbc.RadioItems(
-                        id='graph-line',
-                        options=[{'label': i, 'value': i} for i in ['Linear', 'Log']],
-                        value='Linear',
-                        labelStyle={},
-                        className='',
-                        inline=True
-                ),
-                dbc.Tooltip(children = [
-                    html.P([
-                        "Switch between linear and logarithmic scale for the plots reporting the number of confirmed cases and deaths for each selected country."
-                    ],),
-                    html.P([
-                        "When displaying the logarithmic scale, the horizontal axis reports the count from the day of the first confirmed case (or death)."
-                    ],),],
-                    target="graph-line",
-                    style= {'opacity': '0.9'}
-                ),
-            ],
-            className='card-body text-center'
-            ),
-        ],
-        className='card my-2 shadow'
-        ),
-    ],
-    width =12
-    )
-], justify="center"),
-
-#Line Graph Confirmed
-dbc.Row([
-    dbc.Col([
-        html.Div([
-            html.Div([
-                dcc.Graph(id='line-graph-confirmed',)
-            ],
-            className='p-1'
-            ),
-        ],
-        className='card my-2 shadow'
-        ),
-    ],
-    lg = 6, md = 12
+    html.Div(
+            [make_item(available_indicators, top_4)], className="accordion sticky-top"
     ),
-    dbc.Col([
-        #Line Graph Deaths
-        html.Div([
+
+    dbc.Row([
+        dbc.Col([
             html.Div([
-                dcc.Graph(id='line-graph-deaths',)
-            ],
-            className='p-1'
-            ),
-        ],
-        style={},
-        className='card my-2 shadow'
-        ),
-    ],
-    lg = 6, md = 12
-    )
-]),
-            #Variable Dropdown Epicurve / Policy
-            html.Div([
-                html.H4(
-                    children='Epidemic curve and policy index',
-                    style={"textDecoration": "underline", "cursor": "pointer"},
-                    className='text-center my-2',
-                    id = 'epidemic_and_policy_variables'
-                ),
-                dbc.Tooltip(children = [
-                    html.P([
-                        'Epidemic curve: Reports the fraction of cases or deaths out of the total numbers up until today. For each selected country the date with the largest 3-day MA of the log of percentage of total cases or deaths is considered as day 0, defined also as the "turning point".'
-                    ],),
-                    html.P([
-                        "Stringency Index: This index ranges between 0 (no policy) to 100 (maximum measures) and combines 13 indicators of government responses, including school closures, travel bans, and fiscal or monetary measures."
-                    ],),],
-                    target="epidemic_and_policy_variables",
-                    style= {'opacity': '0.9'}
-                ),
                 html.Div([
-                    dcc.Dropdown(
-                        id='variable-dropdown-epic',
-                        options=[{'label': i, 'value': i} for i in ['Epidemic curves', 'Stringency index']],
-                        multi=False,
-                        value = 'Epidemic curves',
+                    dbc.Label("Scale:", html_for="graph-line"),
+                    dbc.RadioItems(
+                            id='graph-line',
+                            options=[{'label': i, 'value': i} for i in ['Linear', 'Log']],
+                            value='Linear',
+                            labelStyle={},
+                            className='',
+                            inline=True
+                    ),
+                    dbc.Tooltip(children = [
+                        html.P([
+                            "Switch between linear and logarithmic scale for the plots reporting the number of confirmed cases and deaths for each selected country."
+                        ],),
+                        html.P([
+                            "When displaying the logarithmic scale, the horizontal axis reports the count from the day of the first confirmed case (or death)."
+                        ],),],
+                        target="graph-line",
+                        style= {'opacity': '0.9'}
                     ),
                 ],
-                className="card-body text-center"
-                )
+                className='card-body text-center'
+                ),
             ],
             className='card my-2 shadow'
             ),
-#Line Graph Epidemic curves
-dbc.Row([
-    dbc.Col([
-        html.Div([
-            html.Div([
-                dcc.Graph(id='line-graph-epicurve',)
-            ],
-            className='p-1'
-            ),
         ],
-        className='card my-2 shadow'
-        ),
-    ],
-    lg = 6, md = 12
+        width =12
+        )
+    ], 
+    justify="center"
     ),
-    dbc.Col([
-        #Line Graph Policy
-        html.Div([
+
+#Line Graph Confirmed
+    dbc.Row([
+        dbc.Col([
             html.Div([
-                dcc.Graph(id='line-graph-policy',)
+                html.Div([
+                    dcc.Graph(id='line-graph-confirmed',)
+                ],
+                className='p-1'
+                ),
             ],
-            className='p-1'
+            className='card my-2 shadow'
             ),
         ],
-        style={},
-        className='card my-2 shadow'
+        lg = 6, md = 12
         ),
+        dbc.Col([
+            #Line Graph Deaths
+            html.Div([
+                html.Div([
+                    dcc.Graph(id='line-graph-deaths',)
+                ],
+                className='p-1'
+                ),
+            ],
+            style={},
+            className='card my-2 shadow'
+            ),
+        ],
+        lg = 6, md = 12
+        )
+    ]),
+    #Variable Dropdown Epicurve / Policy
+    html.Div([
+        html.H4(
+            children='Epidemic curve and policy index',
+            style={"textDecoration": "underline", "cursor": "pointer"},
+            className='text-center my-2',
+            id = 'epidemic_and_policy_variables'
+        ),
+        dbc.Tooltip(children = [
+            html.P([
+                'Epidemic curve: Reports the fraction of cases or deaths out of the total numbers up until today. For each selected country the date with the largest 3-day MA of the log of percentage of total cases or deaths is considered as day 0, defined also as the "turning point".'
+            ],),
+            html.P([
+                "Stringency Index: This index ranges between 0 (no policy) to 100 (maximum measures) and combines 13 indicators of government responses, including school closures, travel bans, and fiscal or monetary measures."
+            ],),],
+            target="epidemic_and_policy_variables",
+            style= {'opacity': '0.9'}
+        ),
+        html.Div([
+            dcc.Dropdown(
+                id='variable-dropdown-epic',
+                options=[{'label': i, 'value': i} for i in ['Epidemic curves', 'Stringency index']],
+                multi=False,
+                value = 'Epidemic curves',
+            ),
+        ],
+        className="card-body text-center"
+        )
     ],
-    lg = 6, md = 12
-    )
-]),
+    className='card my-2 shadow'
+    ),
+    #Line Graph Epidemic curves
+    dbc.Row([
+        dbc.Col([
+            html.Div([
+                html.Div([
+                    dcc.Graph(id='line-graph-epicurve',)
+                ],
+                className='p-1'
+                ),
+            ],
+            className='card my-2 shadow'
+            ),
+        ],
+        lg = 6, md = 12
+        ),
+        dbc.Col([
+            #Line Graph Policy
+            html.Div([
+                html.Div([
+                    dcc.Graph(id='line-graph-policy',)
+                ],
+                className='p-1'
+                ),
+            ],
+            style={},
+            className='card my-2 shadow'
+            ),
+        ],
+        lg = 6, md = 12
+        )
+    ]),
     dbc.Row([
         dbc.Col([
             #Variable Dropdown Fatality
@@ -681,10 +682,9 @@ dbc.Row([
         ],
         lg = 6, md = 12
         )
-    ], justify="center"),
-    #Bottom fixed NavBar
-    #nav,
-
+    ], 
+    justify="center"
+    ),
 ],
 className="container-fluid"
 )
