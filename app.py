@@ -471,14 +471,11 @@ app.layout = html.Div([ #Main Container
     className="row"
     ),
 #Country select Dropdown
-dbc.Row([
-    dbc.Col([
         html.Div(
                 [make_item(available_indicators, top_4)], className="accordion sticky-top"
         ),
-    ],
-    width =11
-    ),
+
+dbc.Row([
     dbc.Col([
         html.Div([
             html.Div([
@@ -508,9 +505,9 @@ dbc.Row([
         className='card my-2 shadow'
         ),
     ],
-    width =1
+    width =12
     )
-]),
+], justify="center"),
 
 #Line Graph Confirmed
 dbc.Row([
@@ -525,7 +522,7 @@ dbc.Row([
         className='card my-2 shadow'
         ),
     ],
-    width =6, sm = 12
+    lg = 6, md = 12
     ),
     dbc.Col([
         #Line Graph Deaths
@@ -540,7 +537,7 @@ dbc.Row([
         className='card my-2 shadow'
         ),
     ],
-    width =6, sm = 12
+    lg = 6, md = 12
     )
 ]),
             #Variable Dropdown Epicurve / Policy
@@ -587,7 +584,7 @@ dbc.Row([
         className='card my-2 shadow'
         ),
     ],
-    width =6
+    lg = 6, md = 12
     ),
     dbc.Col([
         #Line Graph Policy
@@ -602,9 +599,11 @@ dbc.Row([
         className='card my-2 shadow'
         ),
     ],
-    width =6
+    lg = 6, md = 12
     )
 ]),
+    dbc.Row([
+        dbc.Col([
             #Variable Dropdown Fatality
             html.Div([
                 html.H4(
@@ -671,6 +670,10 @@ dbc.Row([
             style={},
             className='card my-2 shadow'
             ),
+        ],
+        lg = 6, md = 12
+        )
+    ], justify="center"),
     #Bottom fixed NavBar
     #nav,
 
