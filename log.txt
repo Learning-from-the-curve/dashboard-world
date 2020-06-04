@@ -253,3 +253,22 @@
 [03/06/2020 03:34:12] --- POLICY FILE CHECK
 [03/06/2020 03:34:12] no new countries added
 [03/06/2020 03:34:12] no new date added
+[03/06/2020 11:31:51] --- CONFIRMED CASES FILE CHECK
+[03/06/2020 11:31:51] no new countries added
+[03/06/2020 11:31:51] no new date added
+[03/06/2020 11:31:51] --- DEATHS FILE CHECK
+[03/06/2020 11:31:51] no new countries added
+[03/06/2020 11:31:51] no new date added
+[03/06/2020 11:31:51] --- POLICY FILE CHECK
+[03/06/2020 11:31:51] no new countries added
+[03/06/2020 11:31:51] new date added: {20200603}
+[04/06/2020 03:34:15] --- CONFIRMED CASES FILE CHECK
+[04/06/2020 03:34:15] no new countries added
+[04/06/2020 03:34:15] new date added: {'6/3/20'}
+[04/06/2020 03:34:15] --- DEATHS FILE CHECK
+[04/06/2020 03:34:15] no new countries added
+[04/06/2020 03:34:15] new date added: {'6/3/20'}
+[04/06/2020 03:34:15] --- POLICY FILE CHECK
+[04/06/2020 03:34:15] new countries added:
+{'Cambodia'}
+[04/06/2020 03:34:15] new date added: {20200604}
