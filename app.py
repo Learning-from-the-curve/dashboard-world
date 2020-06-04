@@ -120,7 +120,7 @@ tab_confirmed_left = dbc.Card(
         className='list-unstyled'
         ),
     ],
-    style={ "height": "275px" },
+    style={ "height": "280px" },
     className="overflow-auto"
     ),
 className="border-0",
@@ -146,7 +146,7 @@ tab_deaths_left = dbc.Card(
         className='list-unstyled'
         ),
     ],
-    style={ "height": "275px" },
+    style={ "height": "280px" },
     className="overflow-auto"
     ),
 className="border-0",
@@ -172,7 +172,7 @@ tab_confirmed_increase_left = dbc.Card(
         className='list-unstyled'
         ),
     ],
-    style={ "height": "275px" },
+    style={ "height": "280px" },
     className="overflow-auto"
     ),
 className="border-0",
@@ -198,14 +198,14 @@ tab_deaths_increase_left = dbc.Card(
         className='list-unstyled'
         ),
     ],
-    style={ "height": "275px" },
+    style={ "height": "280px" },
     className="overflow-auto"
     ),
 className="border-0",
 )
 
 #tab_right
-tab_right = dbc.Card(id ='selected-countries-tab')
+#tab_right = dbc.Card(id ='selected-countries-tab')
 
 markdown_data_info = dcc.Markdown('''
 The dashboard is updated daily following new daily releases of data from the data sources listed below.
@@ -237,7 +237,7 @@ app.layout = html.Div([ #Main Container
     #Header TITLE
     html.Div([
         #Info Modal Button LEFT
-        dbc.Button("Relevant info", id="open-centered-left", className="btn-sm"),
+        dbc.Button("Relevant info", id="open-centered-left", className="button"),
         dbc.Modal(
             [
                 dbc.ModalHeader("Relevant information"),
@@ -257,7 +257,7 @@ app.layout = html.Div([ #Main Container
             className="text-center",
         ),
         #Info Modal Button RIGHT
-        dbc.Button("Datasets info", id="open-centered-right", className="btn-sm"),
+        dbc.Button("Datasets info", id="open-centered-right", className="button"),
         dbc.Modal(
             [
                 dbc.ModalHeader("Information on datasets used"),
@@ -279,104 +279,56 @@ app.layout = html.Div([ #Main Container
     dbc.Row([
         dbc.Col([
             #Card 1
-            html.Div([
+            dbc.Card([
                 # Card 1 body
-                html.Div([
-                    html.H4(
-                        children='Global Cases: ',
-                        className='card-title'
-                    ),
-                    html.H4(f"{df_world.iloc[0, -1]:,d}",
-                        className='card-text'
-                    ),
-                    html.P('New daily confirmed cases: ' + f"{daily_confirmed_world:,d}",
-                        className='card-text'
-                    ),
-                ],
-                className="card-body"
-                )
-            ],
-            className='card my-2 text-center shadow'
+                html.H4(children='Global Cases: '),
+                html.H2(f"{df_world.iloc[0, -1]:,d}"),
+                html.P('New daily confirmed cases: ' + f"{daily_confirmed_world:,d}"),
+               ],
+            className='cards'
             ),
         ],
-        #className="col-md-3"
         lg = 3, xs = 12
-        ),
+        ),     
         dbc.Col([
             #Card 2
-            html.Div([
+            dbc.Card([
                 # Card 2 body
-                html.Div([
-                    html.H4(
-                        children='Global Deaths: ',
-                        className='card-title'
-                    ),
-                    html.H4(f"{df_world.iloc[1, -1]:,d}",
-                        className='card-text'
-                    ),
-                    html.P('New daily confirmed deaths: ' + f"{daily_deaths_world:,d}",
-                        className='card-text'
-                    ),
-                ],
-                className="card-body"
-                )
+                    html.H4(children='Global Deaths: '),
+                    html.H2(f"{df_world.iloc[1, -1]:,d}"),
+                    html.P('New daily confirmed deaths: ' + f"{daily_deaths_world:,d}"),
             ],
-            className='card my-2 text-center shadow'
+            className='cards'
             ),
         ],
-        #className="col-md-3"
         lg = 3, xs = 12
-        ),
+        ),   
         dbc.Col([
             #Card 3
-            html.Div([
+            dbc.Card([
                 # Card 3 body
-                html.Div([
-                    html.H4(
-                        children='EU28 Cases: ',
-                        className='card-title'
-                    ),
-                    html.H4(f"{df_EU28.iloc[0, -1]:,d}",
-                        className='card-text'
-                    ),
-                    html.P('New daily confirmed cases: ' + f"{daily_confirmed_EU28:,d}",
-                        className='card-text'
-                    ),
-                ],
-                className="card-body"
-                )
+                html.H4(children='EU28 Cases: '),
+                html.H2(f"{df_EU28.iloc[0, -1]:,d}"),
+                html.P('New daily confirmed cases: ' + f"{daily_confirmed_EU28:,d}"),
             ],
-            className='card my-2 text-center shadow'
+            className='cards'
             ),
         ],
-        #className="col-md-3"
         lg = 3, xs = 12
         ),        
         dbc.Col([
             #Card 4
-            html.Div([
+            dbc.Card([
                 # Card 4 body
-                html.Div([
-                    html.H4(
-                        children='EU28 Deaths: ',
-                        className='card-title'
-                    ),
-                    html.H4(f"{df_EU28.iloc[1, -1]:,d}",
-                        className='card-text'
-                    ),
-                    html.P('New daily confirmed deaths: ' + f"{daily_deaths_EU28:,d}",
-                        className='card-text'
-                    ),
-                ],
-                className="card-body"
-                )
-            ],
-            className='card my-2 text-center shadow'
+                html.H4(children='EU28 Deaths: '),
+                html.H2(f"{df_EU28.iloc[1, -1]:,d}"),
+                html.P('New daily confirmed deaths: ' + f"{daily_deaths_EU28:,d}"),
+             ],
+            className='cards'
             ),
         ],
-        #className="col-md-3"
         lg = 3, xs = 12
-        ),
+        ),     
     ],
     #className="row"
     ),
@@ -386,7 +338,7 @@ app.layout = html.Div([ #Main Container
     dbc.Row([
         #Col2 Left
         dbc.Col([
-            html.Div([
+            dbc.Card([
                 dbc.Tabs([
                     dbc.Tab(tab_confirmed_left, label="Cases"),
                     dbc.Tab(tab_deaths_left, label="Deaths"),
@@ -394,10 +346,10 @@ app.layout = html.Div([ #Main Container
                 className="nav-justified"
                 ),
             ],
-            className="card my-2 shadow",
+            className="card my-2",
             id="worldStats",
             ),
-            html.Div([
+            dbc.Card([
                 dbc.Tabs([
                     dbc.Tab(tab_confirmed_increase_left, label="Daily cases"),
                     dbc.Tab(tab_deaths_increase_left, label="Daily deaths")
@@ -405,11 +357,10 @@ app.layout = html.Div([ #Main Container
                 className="nav-justified"
                 ),
             ],
-            className="card my-2 shadow",
+            className="card my-2",
             id="worldStats_daily",
             )
         ],
-        #className="col-md-3 order-md-1"
         lg = 3, xs = 12
         ),
 
@@ -450,7 +401,7 @@ app.layout = html.Div([ #Main Container
         dbc.Col([
             html.Div([
                 dbc.Tabs([
-                    dbc.Tab(tab_right, label="Country statistics" + u"\U0001F6C8"),
+                    dbc.Tab(dbc.Card(id ='selected-countries-tab'), label="Country statistics"),
                 ],
                 className="nav-justified",
                 id = 'info_tab_right'
@@ -475,7 +426,7 @@ app.layout = html.Div([ #Main Container
         ),
         
     ],
-    className="row"
+    #className="row"
     ),
 #Country select Dropdown
     html.Div(
@@ -766,7 +717,7 @@ def tab_right_countries(dropdown):
         className='list-unstyled'
         ),
     ],
-    style={ "height": "600px" },
+    style={ "height": "615px" },
     className="overflow-auto"
     )
 
