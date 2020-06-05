@@ -250,8 +250,8 @@ app.layout = html.Div([ #Main Container
         #dbc.Button("Relevant info", id="open-centered-left", className="btn "),
         dbc.ButtonGroup(
             [
-                dbc.Button("Home", href="https://www.learningfromthecurve.net/", external_link=True, className="py-3"),
-                dbc.Button("Dashboards", href="https://www.learningfromthecurve.net/Dashboards/", external_link=True, className="py-3"),
+                dbc.Button("Home", href="https://www.learningfromthecurve.net/", external_link=True, className="py-2"),
+                dbc.Button("Dashboards", href="https://www.learningfromthecurve.net/Dashboards/", external_link=True, className="py-2"),
             ],
             vertical=True,
             size="sm",
@@ -265,8 +265,8 @@ app.layout = html.Div([ #Main Container
         #dbc.Button("Datasets info", id="open-centered-right", className="btn "),
         dbc.ButtonGroup(
             [
-                dbc.Button("Info", id="open-centered-left", className="py-3"),
-                dbc.Button("Datasets", id="open-centered-right", className="py-3"),
+                dbc.Button("Info", id="open-centered-left", className="py-2"),
+                dbc.Button("Datasets", id="open-centered-right", className="py-2"),
             ],
             vertical=True,
             size="sm",
