@@ -247,17 +247,11 @@ app.layout = html.Div([ #Main Container
     #Header TITLE
     html.Div([
         #Info Modal Button LEFT
-        dbc.Button("Relevant info", id="open-centered-left", className="btn "),
-        dbc.Modal(
+        #dbc.Button("Relevant info", id="open-centered-left", className="btn "),
+        dbc.ButtonGroup(
             [
-                dbc.ModalHeader("Relevant information"),
-                dbc.ModalBody(children = markdown_relevant_info),
-                dbc.ModalFooter(
-                    dbc.Button("Close", id="close-centered-left", className="ml-auto")
-                ),
-            ],
-            id="modal-centered-left",
-            centered=True,
+            dbc.Button("HOME", href="https://www.learningfromthecurve.net/", external_link=True, className="btn "),
+            dbc.Button("Dashboards", href="https://www.learningfromthecurve.net/Dashboards/", external_link=True, className="btn "),],
         ),
         #H1 Title
         html.H1(
@@ -265,7 +259,12 @@ app.layout = html.Div([ #Main Container
             className="text-center",
         ),
         #Info Modal Button RIGHT
-        dbc.Button("Datasets info", id="open-centered-right", className="btn "),
+        #dbc.Button("Datasets info", id="open-centered-right", className="btn "),
+        dbc.ButtonGroup(
+            [
+            dbc.Button("Relevant info", id="open-centered-left", className="btn "),
+            dbc.Button("Datasets info", id="open-centered-right", className="btn "),],
+        ),
         dbc.Modal(
             [
                 dbc.ModalHeader("Information on datasets used"),
@@ -277,6 +276,17 @@ app.layout = html.Div([ #Main Container
                 ),
             ],
             id="modal-centered-right",
+            centered=True,
+        ),
+        dbc.Modal(
+            [
+                dbc.ModalHeader("Relevant information"),
+                dbc.ModalBody(children = markdown_relevant_info),
+                dbc.ModalFooter(
+                    dbc.Button("Close", id="close-centered-left", className="ml-auto")
+                ),
+            ],
+            id="modal-centered-left",
             centered=True,
         ),
     ],
