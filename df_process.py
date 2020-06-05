@@ -77,9 +77,9 @@ else:
     write_log('new countries added:\n' + str(deaths_country_diff))
     df_deaths = df_deaths_backup
 
-if len(confirmed_date_diff) > 1:
+if len(deaths_date_diff) > 1:
     write_log('multiple new dates added: ' + str(deaths_date_diff))
-elif len(confirmed_date_diff) == 1:
+elif len(deaths_date_diff) == 1:
     write_log('new date added: ' + str(deaths_date_diff))
 else:
     write_log('no new date added')
