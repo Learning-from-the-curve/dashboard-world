@@ -10,14 +10,9 @@ import dash_html_components as html
 import dash_bootstrap_components as dbc
 import dash_table as dt
 from dash.dependencies import Input, Output, State
-
-import dash_bootstrap_components as dbc
 # Custom functions
 from layout_functions import gen_map, draw_singleCountry_Scatter, draw_mortality_fatality, draw_singleCountry_Epicurve, make_item, list_item
 from pickle_functions import unpicklify
-path_input = Path.cwd() / 'input'
-Path.mkdir(path_input, exist_ok = True)
-#path_policy = Path.cwd() / 'input' / 'policy.csv'
 
 #####################################################################################################################################
 # Boostrap CSS and font awesome . Option 1) Run from codepen directly Option 2) Copy css file to assets folder and run locally
@@ -30,10 +25,7 @@ app = dash.Dash(__name__, external_stylesheets = external_stylesheets)
 
 app.title = 'COVID-19 - World dashboard'
 
-app.config.suppress_callback_exceptions = True
 flask_app = app.server
-
-flask_app.config["SCOUT_NAME"] = "COVID-19 - World dashboard"
 
 config = {'displayModeBar': False}
 
