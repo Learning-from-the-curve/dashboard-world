@@ -332,8 +332,8 @@ def draw_singleCountry_Epicurve(df, df_policy_index, df_epic, df_epic_days, vari
     )
     fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='#5AC7C1')
     fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='#5AC7C1')
-    fig.update_yaxes(zeroline=True, zerolinewidth=1, zerolinecolor='#5AC7C1')
-    fig.update_xaxes(zeroline=True, zerolinewidth=1, zerolinecolor='#5AC7C1')
+    fig.update_yaxes(zeroline=True, zerolinewidth=1, zerolinecolor='black')
+    fig.update_xaxes(zeroline=True, zerolinewidth=1, zerolinecolor='black')
 
 
     return fig

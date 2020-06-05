@@ -440,10 +440,10 @@ app.layout = html.Div([ #Main Container
     ),
 
     html.Div([
-    #Country select Dropdown
-    html.Div(
-            [make_item(available_indicators, top_4)], className="accordion sticky-top"
-    ),
+        #Country select Dropdown
+        html.Div(
+                [make_item(available_indicators, top_4)], className="accordion sticky-top"
+        ),
 
     dbc.Row([
         dbc.Col([
