@@ -627,7 +627,7 @@ app.layout = html.Div([ #Main Container
             className='card my-2 '
             ),
         ],
-        lg = 6, md = 12
+        lg = 12
         )
     ], 
     justify="center"
@@ -697,6 +697,7 @@ def tab_right_countries(dropdown):
                 html.Div([
                         dbc.ListGroupItem([
                             dbc.ListGroupItemHeading(f'{country}:'),
+                            html.Hr(),
                             dbc.ListGroupItemText(f'Confirmed cases: {df_tab_right.iloc[0][country]:,}'),
                             dbc.ListGroupItemText(f'Deaths: {df_tab_right.iloc[1][country]:,}'),
                             list_item('Mortality rate: ', float('%.2f'%(df_tab_right.iloc[2][country]*100)), '%'),
@@ -707,7 +708,7 @@ def tab_right_countries(dropdown):
                             list_item('Date of 1st confirmed death: ', df_tab_right.iloc[7][country], ''),
                             list_item('Stringency Index: ', df_tab_right.iloc[8][country], ''),
                             dbc.ListGroupItemText(f'Population in 2019: {df_tab_right.iloc[9][country]:,}'),
-                            ], className="items border-top-0 border-left-0 border-right-0") for country in dropdown
+                            ], className="items") for country in dropdown
                 ],
                 className='media-body border-0'
                 ),
