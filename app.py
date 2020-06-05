@@ -250,11 +250,14 @@ app.layout = html.Div([ #Main Container
         #dbc.Button("Relevant info", id="open-centered-left", className="btn "),
         dbc.ButtonGroup(
             [
-            dbc.Button("HOME", href="https://www.learningfromthecurve.net/", external_link=True, className="btn "),
-            dbc.Button("Dashboards", href="https://www.learningfromthecurve.net/Dashboards/", external_link=True, className="btn "),],
+                dbc.Button("Home", href="https://www.learningfromthecurve.net/", external_link=True, className="py-3"),
+                dbc.Button("Dashboards", href="https://www.learningfromthecurve.net/Dashboards/", external_link=True, className="py-3"),
+            ],
+            vertical=True,
+            size="sm",
         ),
-        #H1 Title
-        html.H1(
+        #H2 Title
+        html.H2(
             children='COVID-19 Dashboard',
             className="text-center",
         ),
@@ -262,8 +265,11 @@ app.layout = html.Div([ #Main Container
         #dbc.Button("Datasets info", id="open-centered-right", className="btn "),
         dbc.ButtonGroup(
             [
-            dbc.Button("Relevant info", id="open-centered-left", className="btn "),
-            dbc.Button("Datasets info", id="open-centered-right", className="btn "),],
+                dbc.Button("Info", id="open-centered-left", className="py-3"),
+                dbc.Button("Datasets", id="open-centered-right", className="py-3"),
+            ],
+            vertical=True,
+            size="sm",
         ),
         dbc.Modal(
             [
@@ -290,7 +296,7 @@ app.layout = html.Div([ #Main Container
             centered=True,
         ),
     ],
-    className="topRow d-flex justify-content-md-between mb-2"
+    className="topRow d-flex justify-content-between align-items-center mb-2"
     ),
     
       #First Row CARDS 3333
