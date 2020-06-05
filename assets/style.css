@@ -109,10 +109,29 @@ h2.deaths{
 .spanConfirmed{
     color: #1EA674; 
 }
-select { 
-    background: #5AC7C1; 
 
-} 
+.Select-menu-outer{
+    background-color: #5AC7C1;
+    color: #2c3e50;
+}
+/*
+.Select-clear-zone{
+    background-color: #5AC7C1;
+    color: #2c3e50;
+}
+.Select-clear{
+    background-color: #5AC7C1;
+    color: #2c3e50;
+}
+.Select-arrow-zone{
+    background-color: #5AC7C1;
+    color: #2c3e50;
+}
+.Select-arrow{
+    background-color: #5AC7C1;
+    color: #2c3e50;
+}
+*/
 .Select-control {
     background-color: #5AC7C1;
     border-radius: 4px;
@@ -126,12 +145,10 @@ select {
 }
 
 .Select--multi .Select-value {
+    background-color: #5AC7C1;
     color: #2c3e50;
 }
-.select-items {
-    background-color: #5AC7C1;
 
-}
 h1, h3, h4, h5, h6 {
     font-family: Helvetica, sans-serif;
     font-weight: bold;
