@@ -108,20 +108,17 @@ tab_confirmed_left = dbc.Card(
         html.Ul([
             html.Li([
                 html.Div([
-                    html.H5([
                         dbc.ListGroupItem([
                             html.Span([f'{country} '], className = "spanCountryName"),
                             html.Span([f'{df_left_list_confirmed_t[country]:,}'], className = "spanConfirmed") 
                         ], 
-                        className="border-top-0 border-left-0 border-right-0"
+                        className="items"
                         ) for country in df_left_list_confirmed_t.index
-                    ],
-                    ),
                 ],
-                className='media-body border-0'
+                className='media-body'
                 ),
             ],
-            className='media border-0'
+            className='media'
             ),   
         ],
         className='list-unstyled'
@@ -138,20 +135,17 @@ tab_deaths_left = dbc.Card(
         html.Ul([
             html.Li([
                 html.Div([
-                    html.H5([
                         dbc.ListGroupItem([
                             html.Span([f'{country} '], className = "spanCountryName"),
                             html.Span([f'{df_left_list_deaths_t[country]:,}'], className = "spanDeaths"),
                         ], 
-                        className="border-top-0 border-left-0 border-right-0"
+                        className="items"
                         ) for country in df_left_list_deaths_t.index
-                    ],
-                    ),
                 ],
-                className='media-body border-0'
+                className='media-body'
                 ),
             ],
-            className='media border-0'
+            className='media'
             ),   
         ],
         className='list-unstyled'
@@ -169,20 +163,17 @@ tab_confirmed_increase_left = dbc.Card(
         html.Ul([
             html.Li([
                 html.Div([
-                    html.H5([
                         dbc.ListGroupItem([
                             html.Span([f'{country} '], className = "spanCountryName"),
                             html.Span([f'{df_left_list_daily_confirmed_increase.iloc[0][country]:,}'], className = "spanConfirmed"),
                         ], 
-                        className="border-top-0 border-left-0 border-right-0"
+                        className="items"
                         ) for country in list(df_left_list_daily_confirmed_increase)
-                    ],
-                    ),
                 ],
-                className='media-body border-0'
+                className='media-body'
                 ),
             ],
-            className='media border-0'
+            className='media'
             ),   
         ],
         className='list-unstyled'
@@ -200,20 +191,17 @@ tab_deaths_increase_left = dbc.Card(
         html.Ul([
             html.Li([
                 html.Div([
-                    html.H5([
                         dbc.ListGroupItem([
                             html.Span([f'{country} '], className = "spanCountryName"),
                             html.Span([f'{df_left_list_daily_deaths_increase.iloc[0][country]:,}'], className = "spanDeaths"),
                         ],
-                        className="border-top-0 border-left-0 border-right-0"
+                        className="items"
                         ) for country in list(df_left_list_daily_deaths_increase)
-                    ],
-                    ),
                 ],
-                className='media-body border-0'
+                className='media-body'
                 ),
             ],
-            className='media border-0'
+            className='media'
             ),   
         ],
         className='list-unstyled'
@@ -259,7 +247,7 @@ app.layout = html.Div([ #Main Container
     #Header TITLE
     html.Div([
         #Info Modal Button LEFT
-        dbc.Button("Relevant info", id="open-centered-left", className="btn shadow"),
+        dbc.Button("Relevant info", id="open-centered-left", className="btn "),
         dbc.Modal(
             [
                 dbc.ModalHeader("Relevant information"),
@@ -277,7 +265,7 @@ app.layout = html.Div([ #Main Container
             className="text-center",
         ),
         #Info Modal Button RIGHT
-        dbc.Button("Datasets info", id="open-centered-right", className="btn shadow"),
+        dbc.Button("Datasets info", id="open-centered-right", className="btn "),
         dbc.Modal(
             [
                 dbc.ModalHeader("Information on datasets used"),
@@ -305,7 +293,7 @@ app.layout = html.Div([ #Main Container
                 html.H2(f"{df_world.iloc[0, -1]:,d}"),
                 html.P('New daily confirmed cases: ' + f"{daily_confirmed_world:,d}"),
                ],
-            className='cards'
+            className='cards cases'
             ),
         ],
         lg = 3, xs = 12
@@ -318,7 +306,7 @@ app.layout = html.Div([ #Main Container
                     html.H2(f"{df_world.iloc[1, -1]:,d}"),
                     html.P('New daily confirmed deaths: ' + f"{daily_deaths_world:,d}"),
             ],
-            className='cards'
+            className='cards deaths'
             ),
         ],
         lg = 3, xs = 12
@@ -331,7 +319,7 @@ app.layout = html.Div([ #Main Container
                 html.H2(f"{df_EU28.iloc[0, -1]:,d}"),
                 html.P('New daily confirmed cases: ' + f"{daily_confirmed_EU28:,d}"),
             ],
-            className='cards'
+            className='cards cases'
             ),
         ],
         lg = 3, xs = 12
@@ -344,7 +332,7 @@ app.layout = html.Div([ #Main Container
                 html.H2(f"{df_EU28.iloc[1, -1]:,d}"),
                 html.P('New daily confirmed deaths: ' + f"{daily_deaths_EU28:,d}"),
              ],
-            className='cards'
+            className='cards deaths'
             ),
         ],
         lg = 3, xs = 12
@@ -364,7 +352,7 @@ app.layout = html.Div([ #Main Container
                 className="nav-justified"
                 ),
             ],
-            className="card my-2 shadow",
+            className="card my-2 ",
             id="worldStats",
             ),
             dbc.Card([
@@ -375,7 +363,7 @@ app.layout = html.Div([ #Main Container
                 className="nav-justified"
                 ),
             ],
-            className="card my-2 shadow",
+            className="card my-2 ",
             id="worldStats_daily",
             )
         ],
@@ -394,7 +382,7 @@ app.layout = html.Div([ #Main Container
                 id="worldMap",
                 ),
             ],
-            className='my-2 shadow'
+            className='my-2 '
             ),
         ],
         #className="col-md-6 order-md-2"
@@ -411,7 +399,7 @@ app.layout = html.Div([ #Main Container
                 id = 'info_tab_right'
                 )
             ],
-            className="my-2 shadow",
+            className="items my-2 ",
             id="countriesStats",
             ),
             dbc.Tooltip(children = [
@@ -468,7 +456,7 @@ app.layout = html.Div([ #Main Container
                 className='card-body text-center'
                 ),
             ],
-            className='card my-2 shadow'
+            className='card my-2 '
             ),
         ],
         width =12
@@ -487,7 +475,7 @@ app.layout = html.Div([ #Main Container
                 className='p-1'
                 ),
             ],
-            className='card my-2 shadow'
+            className='card my-2 '
             ),
         ],
         lg = 6, md = 12
@@ -502,7 +490,7 @@ app.layout = html.Div([ #Main Container
                 ),
             ],
             style={},
-            className='card my-2 shadow'
+            className='card my-2 '
             ),
         ],
         lg = 6, md = 12
@@ -537,7 +525,7 @@ app.layout = html.Div([ #Main Container
         className="card-body text-center"
         )
     ],
-    className='card my-2 shadow'
+    className='card my-2 '
     ),
     #Line Graph Epidemic curves
     dbc.Row([
@@ -549,7 +537,7 @@ app.layout = html.Div([ #Main Container
                 className='p-1'
                 ),
             ],
-            className='card my-2 shadow'
+            className='card my-2 '
             ),
         ],
         lg = 6, md = 12
@@ -564,7 +552,7 @@ app.layout = html.Div([ #Main Container
                 ),
             ],
             style={},
-            className='card my-2 shadow'
+            className='card my-2 '
             ),
         ],
         lg = 6, md = 12
@@ -625,7 +613,7 @@ app.layout = html.Div([ #Main Container
                 className ='card-body text-center'
                 ),
             ],
-            className='card my-2 shadow'
+            className='card my-2 '
             ),
             #Line Graph Multiple
             html.Div([
@@ -636,7 +624,7 @@ app.layout = html.Div([ #Main Container
                 ),
             ],
             style={},
-            className='card my-2 shadow'
+            className='card my-2 '
             ),
         ],
         lg = 6, md = 12
@@ -719,7 +707,7 @@ def tab_right_countries(dropdown):
                             list_item('Date of 1st confirmed death: ', df_tab_right.iloc[7][country], ''),
                             list_item('Stringency Index: ', df_tab_right.iloc[8][country], ''),
                             dbc.ListGroupItemText(f'Population in 2019: {df_tab_right.iloc[9][country]:,}'),
-                            ], className="border-top-0 border-left-0 border-right-0") for country in dropdown
+                            ], className="items border-top-0 border-left-0 border-right-0") for country in dropdown
                 ],
                 className='media-body border-0'
                 ),

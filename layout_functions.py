@@ -49,12 +49,18 @@ def gen_map(map_data):
         },
         ],
         "layout":{
+            'geo':{
+                'bgcolor' : '#2c3e50'
+            },
+            'paper_bgcolor': '#2c3e50',
             'height': 660,
             'title': {
                 'xanchor' :"center",
                 'text':"World Map",
                 'font':{
-                    'size': 36
+                    'size': 36,
+                    'family' : 'Helvetica',
+                    'color' : '#4DDDDD'
                 }
                 },
             'margin': {
@@ -111,10 +117,11 @@ def draw_singleCountry_Scatter(df, variable, graph_line, selected_country,ISO):
         margin=dict(l=0, r=0, t=65, b=0),
         #height=350,
         yaxis = {'type': 'linear' if graph_line == 'Linear' else 'log'},
-        plot_bgcolor = "white",
+        plot_bgcolor = '#2c3e50',
+        paper_bgcolor = '#5AC7C1',
     )
-    fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='lightgrey')
-    fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='lightgrey')
+    fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='#5AC7C1')
+    fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='#5AC7C1')
     fig.update_yaxes(zeroline=True, zerolinewidth=2, zerolinecolor='black')
 
     return fig
@@ -261,12 +268,13 @@ def draw_mortality_fatality(df_confirmed_t, df_deaths_t, pop_t, variable, x_grap
             #y=-0.4,
             #orientation="h"
         ),
-        plot_bgcolor='white',
+        plot_bgcolor='#2c3e50',
+        paper_bgcolor = '#5AC7C1',
         margin=dict(l=0, r=0, t=65, b=0),
         #height=350
     )
-    fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='lightgrey')
-    fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='lightgrey')
+    fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='#5AC7C1')
+    fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='#5AC7C1')
     fig.update_yaxes(zeroline=True, zerolinewidth=2, zerolinecolor='black')
 
     return fig
@@ -317,14 +325,15 @@ def draw_singleCountry_Epicurve(df, df_policy_index, df_epic, df_epic_days, vari
             #y=-0.4,
             #orientation="h"
         ),
-        plot_bgcolor = 'white',
+        plot_bgcolor = '#2c3e50',
+        paper_bgcolor = '#5AC7C1',
         margin=dict(l=0, r=0, t=65, b=0),
         #height=350
     )
-    fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='lightgrey')
-    fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='lightgrey')
-    fig.update_yaxes(zeroline=True, zerolinewidth=1, zerolinecolor='lightgrey')
-    fig.update_xaxes(zeroline=True, zerolinewidth=1, zerolinecolor='black')
+    fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='#5AC7C1')
+    fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='#5AC7C1')
+    fig.update_yaxes(zeroline=True, zerolinewidth=1, zerolinecolor='#5AC7C1')
+    fig.update_xaxes(zeroline=True, zerolinewidth=1, zerolinecolor='#5AC7C1')
 
 
     return fig
