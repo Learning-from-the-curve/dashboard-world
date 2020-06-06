@@ -117,11 +117,11 @@ def draw_singleCountry_Scatter(df, variable, graph_line, selected_country,ISO):
         margin=dict(l=0, r=0, t=65, b=0),
         #height=350,
         yaxis = {'type': 'linear' if graph_line == 'Linear' else 'log'},
-        plot_bgcolor = '#2c3e50',
-        paper_bgcolor = '#5AC7C1',
+        plot_bgcolor = 'white',
+        paper_bgcolor = 'white',
     )
-    fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='#5AC7C1')
-    fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='#5AC7C1')
+    fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='lightgrey')
+    fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='lightgrey')
     fig.update_yaxes(zeroline=True, zerolinewidth=2, zerolinecolor='black')
 
     return fig
@@ -150,7 +150,7 @@ def draw_mortality_fatality(df_confirmed_t, df_deaths_t, pop_t, variable, x_grap
                                         line=dict(width=3), marker = dict(size = 3, line = dict(width = 1,color = 'DarkSlateGrey')), hoverinfo = "text",
                                         hovertext = [f"Country/Region: {country}, ({ISO_legend}) <br>Mortality rate: {y.iloc[indice]*100:.4f}% <br>Deaths: {df_deaths_t.iloc[indice][country]:,} <br>Date: {df_deaths_t.reset_index().iloc[indice]['index'].date()}" for indice in range(len(df_deaths_t))]))
                 fig.update_layout(title= 'Mortality rate', yaxis = {'tickformat': '.4%'})
-        elif variable == 'Share of infected population':
+        elif variable == 'Infection rate':
             for country in selected_country:
                 try:
                     ISO_legend = ISO['alpha-3'].loc[ISO['name'] == country].to_list()[0]
@@ -161,8 +161,8 @@ def draw_mortality_fatality(df_confirmed_t, df_deaths_t, pop_t, variable, x_grap
                                         mode='lines+markers',
                                         name=ISO_legend,
                                         line=dict(width=3), marker = dict(size = 3, line = dict(width = 1,color = 'DarkSlateGrey')), hoverinfo = "text",
-                                        hovertext = [f"Country/Region: {country}, ({ISO_legend}) <br>Share of infected population: {y.iloc[indice]*100:.2f}% <br>Confirmed: {df_confirmed_t.iloc[indice][country]:,} <br>Population: {pop_t[country][0]:,} <br>Date: {df_confirmed_t.reset_index().iloc[indice]['index'].date()}" for indice in range(len(df_confirmed_t))]))
-            fig.update_layout(title= 'Share of infected population', yaxis = {'tickformat': '.2%'})
+                                        hovertext = [f"Country/Region: {country}, ({ISO_legend}) <br>Infection rate: {y.iloc[indice]*100:.2f}% <br>Confirmed: {df_confirmed_t.iloc[indice][country]:,} <br>Population: {pop_t[country][0]:,} <br>Date: {df_confirmed_t.reset_index().iloc[indice]['index'].date()}" for indice in range(len(df_confirmed_t))]))
+            fig.update_layout(title= 'Infection rate', yaxis = {'tickformat': '.2%'})
         elif variable == 'Growth rate confirmed cases':
             df_confirmed_GR = growth_rate(df_confirmed_t, 4)
             for country in selected_country:
@@ -206,7 +206,7 @@ def draw_mortality_fatality(df_confirmed_t, df_deaths_t, pop_t, variable, x_grap
                                         line=dict(width=3), marker = dict(size = 3, line = dict(width = 1,color = 'DarkSlateGrey')), hoverinfo = "text",
                                         hovertext = [f"Country/Region: {country}, ({ISO_legend}) <br>Mortality rate: {y.iloc[indice]*100:.4f}% <br>Deaths: {temp_deaths.iloc[indice][country]:,} <br>Date: {temp_deaths.reset_index().iloc[indice]['index'].date()} <br>Days: {x[indice]}" for indice in range(len(temp_deaths))]))
             fig.update_layout(title= 'Mortality rate', yaxis = {'tickformat': '.4%'})
-        elif variable == 'Share of infected population':
+        elif variable == 'Infection rate':
             for country in selected_country:
                 try:
                     ISO_legend = ISO['alpha-3'].loc[ISO['name'] == country].to_list()[0]
@@ -219,8 +219,8 @@ def draw_mortality_fatality(df_confirmed_t, df_deaths_t, pop_t, variable, x_grap
                                         mode='lines+markers',
                                         name=ISO_legend,
                                         line=dict(width=3), marker = dict(size = 3, line = dict(width = 1,color = 'DarkSlateGrey')), hoverinfo = "text",
-                                        hovertext = [f"Country/Region: {country}, ({ISO_legend}) <br>Share of infected population: {y.iloc[indice]*100:.2f}% <br>Confirmed: {temp_confirmed.iloc[indice][country]:,} <br>Population: {pop_t[country][0]:,} <br>Date: {temp_confirmed.reset_index().iloc[indice]['index'].date()} <br>Days: {x[indice]}" for indice in range(len(temp_confirmed))]))
-            fig.update_layout(title= 'Share of infected population', yaxis = {'tickformat': '.2%'})
+                                        hovertext = [f"Country/Region: {country}, ({ISO_legend}) <br>Infection rate: {y.iloc[indice]*100:.2f}% <br>Confirmed: {temp_confirmed.iloc[indice][country]:,} <br>Population: {pop_t[country][0]:,} <br>Date: {temp_confirmed.reset_index().iloc[indice]['index'].date()} <br>Days: {x[indice]}" for indice in range(len(temp_confirmed))]))
+            fig.update_layout(title= 'Infection rate', yaxis = {'tickformat': '.2%'})
         elif variable == 'Growth rate confirmed cases':
             for country in selected_country:
                 try:
@@ -268,13 +268,13 @@ def draw_mortality_fatality(df_confirmed_t, df_deaths_t, pop_t, variable, x_grap
             #y=-0.4,
             #orientation="h"
         ),
-        plot_bgcolor='#2c3e50',
-        paper_bgcolor = '#5AC7C1',
+        plot_bgcolor='white',
+        paper_bgcolor = 'white',
         margin=dict(l=0, r=0, t=65, b=0),
         #height=350
     )
-    fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='#5AC7C1')
-    fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='#5AC7C1')
+    fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='lightgrey')
+    fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='lightgrey')
     fig.update_yaxes(zeroline=True, zerolinewidth=2, zerolinecolor='black')
 
     return fig
@@ -297,7 +297,7 @@ def draw_singleCountry_Epicurve(df, df_policy_index, df_epic, df_epic_days, vari
                                 hovertext = [f"Country/Region: {country} <br>{variable}: {df.iloc[indice][country]:,} <br>3-day MA of ln % of total cases: {np.exp(df_epic.iloc[indice][country]):.3f}% <br>Days: {df_epic_days.iloc[indice][country]} <br>Date: {df_epic.reset_index().iloc[indice]['index'].date()}" for indice in range(len(df))]))
         fig.update_layout(title = f'Epidemic curve for {variable}')
         fig.update_yaxes(tickvals = [-6.9, -4.6, -2.3, 0, 2.30258], ticktext = [f'{np.exp(-6.9):.3f}%', f'{np.exp(-4.6):.3f}%', f'{np.exp(-2.3):.3f}%', f'{np.exp(0):.3f}%', f'{np.exp(2.30258):.3f}%'])
-    if plot == 'Stringency index':
+    if plot == 'Policy index':
         label_max, text_label_max = ticks_log(df, selected_country)
         for country in selected_country:
             try:
@@ -308,8 +308,8 @@ def draw_singleCountry_Epicurve(df, df_policy_index, df_epic, df_epic_days, vari
                                 mode='lines+markers',
                                 name=ISO_legend,
                                 line=dict(width=3), marker = dict(size = 3, line = dict(width = 1,color = 'DarkSlateGrey')), hoverinfo = "text",
-                                hovertext = [f"Country/Region: {country} <br>{variable}: {df.iloc[indice][country]:,} <br>Stringency index: {df_policy_index.iloc[indice][country]:,} <br>Date: {df.reset_index().iloc[indice]['index'].date()}" for indice in range(len(df))]))
-        fig.update_layout(title= f'Stringency index {variable}', xaxis = {'type': 'log'})
+                                hovertext = [f"Country/Region: {country} <br>{variable}: {df.iloc[indice][country]:,} <br>Policy index: {df_policy_index.iloc[indice][country]:,} <br>Date: {df.reset_index().iloc[indice]['index'].date()}" for indice in range(len(df))]))
+        fig.update_layout(title= f'Policy index {variable}', xaxis = {'type': 'log'})
         fig.update_xaxes(tickvals = label_max, ticktext = text_label_max)
         
     fig.update_layout(
@@ -325,15 +325,15 @@ def draw_singleCountry_Epicurve(df, df_policy_index, df_epic, df_epic_days, vari
             #y=-0.4,
             #orientation="h"
         ),
-        plot_bgcolor = '#2c3e50',
-        paper_bgcolor = '#5AC7C1',
+        plot_bgcolor = 'white',
+        paper_bgcolor = 'white',
         margin=dict(l=0, r=0, t=65, b=0),
         #height=350
     )
-    fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='#5AC7C1')
-    fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='#5AC7C1')
-    fig.update_yaxes(zeroline=True, zerolinewidth=1, zerolinecolor='#5AC7C1')
-    fig.update_xaxes(zeroline=True, zerolinewidth=1, zerolinecolor='#5AC7C1')
+    fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='lightgrey')
+    fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='lightgrey')
+    fig.update_yaxes(zeroline=True, zerolinewidth=1, zerolinecolor='black')
+    fig.update_xaxes(zeroline=True, zerolinewidth=1, zerolinecolor='black')
 
 
     return fig

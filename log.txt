@@ -318,3 +318,21 @@
 [06/06/2020 03:34:17] new countries added:
 {'Eritrea'}
 [06/06/2020 03:34:17] new date added: {20200606}
+[06/06/2020 13:15:06] --- CONFIRMED CASES FILE CHECK
+[06/06/2020 13:15:06] no new countries added
+[06/06/2020 13:15:06] no new date added
+[06/06/2020 13:15:06] --- DEATHS FILE CHECK
+[06/06/2020 13:15:06] no new countries added
+[06/06/2020 13:15:06] no new date added
+[06/06/2020 13:15:06] --- POLICY FILE CHECK
+[06/06/2020 13:15:06] no new countries added
+[06/06/2020 13:15:06] no new date added
+[06/06/2020 13:16:14] --- CONFIRMED CASES FILE CHECK
+[06/06/2020 13:16:14] no new countries added
+[06/06/2020 13:16:14] no new date added
+[06/06/2020 13:16:14] --- DEATHS FILE CHECK
+[06/06/2020 13:16:14] no new countries added
+[06/06/2020 13:16:14] no new date added
+[06/06/2020 13:16:14] --- POLICY FILE CHECK
+[06/06/2020 13:16:14] no new countries added
+[06/06/2020 13:16:14] no new date added

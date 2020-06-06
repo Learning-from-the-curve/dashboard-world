@@ -519,7 +519,7 @@ app.layout = html.Div([ #Main Container
                 'Epidemic curve: Reports the fraction of cases or deaths out of the total numbers up until today. For each selected country the date with the largest 3-day MA of the log of percentage of total cases or deaths is considered as day 0, defined also as the "turning point".'
             ],),
             html.P([
-                "Stringency Index: This index ranges between 0 (no policy) to 100 (maximum measures) and combines 13 indicators of government responses, including school closures, travel bans, and fiscal or monetary measures."
+                "Policy Index: This index ranges between 0 (no policy) to 100 (maximum measures) and combines 13 indicators of government responses, including school closures, travel bans, and fiscal or monetary measures."
             ],),],
             target="epidemic_and_policy_variables",
             style= {'opacity': '0.9'}
@@ -527,7 +527,7 @@ app.layout = html.Div([ #Main Container
         html.Div([
             dcc.Dropdown(
                 id='variable-dropdown-epic',
-                options=[{'label': i, 'value': i} for i in ['Epidemic curves', 'Stringency index']],
+                options=[{'label': i, 'value': i} for i in ['Epidemic curves', 'Policy index']],
                 multi=False,
                 value = 'Epidemic curves',
             ),
@@ -583,7 +583,7 @@ app.layout = html.Div([ #Main Container
                         "Mortality rate: Share of deaths out of population in 2019 for each selected country."
                     ],),
                     html.P([
-                        "Share of infected population: Share of confirmed cases out of population in 2019 for each selected country."
+                        "Infection rate: Share of confirmed cases out of population in 2019 for each selected country."
                     ],),
                     html.P([
                         "Growth rate confirmed cases (deaths): Day-to-day percentage changes in confirmed cases or deaths. We take a 3-day simple moving average to account for fluctuations."
@@ -711,12 +711,12 @@ def tab_right_countries(dropdown):
                             dbc.ListGroupItemText(f'Confirmed cases: {df_tab_right.iloc[0][country]:,}'),
                             dbc.ListGroupItemText(f'Deaths: {df_tab_right.iloc[1][country]:,}'),
                             list_item('Mortality rate: ', float('%.2f'%(df_tab_right.iloc[2][country]*100)), '%'),
-                            dbc.ListGroupItemText(f'Share of infected population: {df_tab_right.iloc[3][country]*100:.2f}%'),
+                            dbc.ListGroupItemText(f'Infection rate: {df_tab_right.iloc[3][country]*100:.2f}%'),
                             dbc.ListGroupItemText(f'Share out of global confirmed cases: {df_tab_right.iloc[4][country]*100:.4f}%'),
                             list_item('Share out of global deaths: ', float('%.4f'%(df_tab_right.iloc[5][country]*100)), '%'),
                             dbc.ListGroupItemText(f'Date of 1st confirmed case: {df_tab_right.iloc[6][country]}'),
                             list_item('Date of 1st confirmed death: ', df_tab_right.iloc[7][country], ''),
-                            list_item('Stringency Index: ', df_tab_right.iloc[8][country], ''),
+                            list_item('Policy Index: ', df_tab_right.iloc[8][country], ''),
                             dbc.ListGroupItemText(f'Population in 2019: {df_tab_right.iloc[9][country]:,}'),
                             ], className="items") for country in dropdown
                 ],

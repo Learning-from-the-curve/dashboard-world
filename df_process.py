@@ -265,7 +265,7 @@ df_confirmed_t['EU28'] = df_EU28_t['confirmed']
 df_deaths_t['EU28'] = df_EU28_t['deaths']
 
 # set the variable names for the dropdown manu used for to choose variables
-available_variables = ['Mortality rate', 'Share of infected population', 'Growth rate confirmed cases', 'Growth rate deaths']
+available_variables = ['Mortality rate', 'Infection rate', 'Growth rate confirmed cases', 'Growth rate deaths']
 
 # Part to adjust data for plots with Stringency Index
 df_policy = df_policy[['CountryName', 'Date', 'StringencyIndexForDisplay']]
@@ -341,9 +341,9 @@ for country in list(df_confirmed_t):
     else:
         df_tab_right.at['Mortality rate', country] = np.nan
     if pop_t[country][0] != 0:
-        df_tab_right.at['Share of population infected', country] = (df_confirmed_t.iloc[-1][country])/(pop_t[country][0])
+        df_tab_right.at['Infection rate', country] = (df_confirmed_t.iloc[-1][country])/(pop_t[country][0])
     else:
-        df_tab_right.at['Share of population infected', country] = np.nan
+        df_tab_right.at['Infection rate', country] = np.nan
     if df_confirmed_t.iloc[-1]['World'] > 0:
         df_tab_right.at['Share of global confirmed cases', country] = (df_confirmed_t.iloc[-1][country]/df_confirmed_t.iloc[-1]['World'])
     else:
