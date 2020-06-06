@@ -308,3 +308,13 @@
 [05/06/2020 11:31:29] --- POLICY FILE CHECK
 [05/06/2020 11:31:29] no new countries added
 [05/06/2020 11:31:29] no new date added
+[06/06/2020 03:34:17] --- CONFIRMED CASES FILE CHECK
+[06/06/2020 03:34:17] no new countries added
+[06/06/2020 03:34:17] new date added: {'6/5/20'}
+[06/06/2020 03:34:17] --- DEATHS FILE CHECK
+[06/06/2020 03:34:17] no new countries added
+[06/06/2020 03:34:17] new date added: {'6/5/20'}
+[06/06/2020 03:34:17] --- POLICY FILE CHECK
+[06/06/2020 03:34:17] new countries added:
+{'Eritrea'}
+[06/06/2020 03:34:17] new date added: {20200606}
