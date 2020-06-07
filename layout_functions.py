@@ -50,9 +50,9 @@ def gen_map(map_data):
         ],
         "layout":{
             'geo':{
-                'bgcolor' : '#2c3e50'
+                'bgcolor' : '#f3e8da'
             },
-            'paper_bgcolor': '#2c3e50',
+            'paper_bgcolor': '#f3e8da',
             'height': 660,
             'title': {
                 'xanchor' :"center",
