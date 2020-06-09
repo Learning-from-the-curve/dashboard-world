@@ -400,3 +400,22 @@
 [09/06/2020 03:34:33] new countries added:
 {'Gibraltar', 'Vanuatu'}
 [09/06/2020 03:34:33] new date added: {20200609}
+[09/06/2020 11:23:09] --- CONFIRMED CASES FILE CHECK
+[09/06/2020 11:23:09] no new countries added
+[09/06/2020 11:23:09] new date added: {'6/8/20'}
+[09/06/2020 11:23:09] --- DEATHS FILE CHECK
+[09/06/2020 11:23:09] no new countries added
+[09/06/2020 11:23:09] new date added: {'6/8/20'}
+[09/06/2020 11:23:09] --- POLICY FILE CHECK
+[09/06/2020 11:23:09] new countries added:
+{'Vanuatu', 'Fiji', 'Gibraltar'}
+[09/06/2020 11:23:09] new date added: {20200609}
+[09/06/2020 11:25:32] --- CONFIRMED CASES FILE CHECK
+[09/06/2020 11:25:32] no new countries added
+[09/06/2020 11:25:32] no new date added
+[09/06/2020 11:25:32] --- DEATHS FILE CHECK
+[09/06/2020 11:25:32] no new countries added
+[09/06/2020 11:25:32] no new date added
+[09/06/2020 11:25:32] --- POLICY FILE CHECK
+[09/06/2020 11:25:32] no new countries added
+[09/06/2020 11:25:32] no new date added

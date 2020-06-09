@@ -561,7 +561,6 @@ app.layout = html.Div([ #Main Container
                 className='p-1'
                 ),
             ],
-            style={},
             className='card my-2 '
             ),
         ],
