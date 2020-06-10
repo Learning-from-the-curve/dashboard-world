@@ -218,7 +218,7 @@ The dashboard is updated daily following new daily releases of data from the dat
 * Data on confirmed cases and deaths from the [GitHub repository of the Johns Hopkins University](https://github.com/CSSEGISandData/COVID-19)
 
 **Other data:**
-* Geojson for countries in the world from [https://github.com/datasets/geo-countries/blob/master/data/countries.geojson](https://github.com/datasets/geo-countries/blob/master/data/countries.geojson).
+* Geojson for countries in the world from [https://github.com/datasets/geo-countries/blob/master/data/countries.geojson](https://github.com/datasets/geo-countries/blob/master/data/countries.geojson){:target="_top"}.
 * Country population data from [UN](https://population.un.org/wpp/Download/Standard/CSV).
 * Countries' ISO codes from [https://raw.githubusercontent.com/lukes/ISO-3166-Countries-with-Regional-Codes/master/all/all.csv](https://raw.githubusercontent.com/lukes/ISO-3166-Countries-with-Regional-Codes/master/all/all.csv).
 ''')
@@ -244,8 +244,8 @@ app.layout = html.Div([ #Main Container
         #dbc.Button("Relevant info", id="open-centered-left", className="btn "),
         dbc.ButtonGroup(
             [
-                dbc.Button("Home", href="https://www.learningfromthecurve.net/", external_link=True, className="py-2"),
-                dbc.Button("Dashboards", href="https://www.learningfromthecurve.net/Dashboards/", external_link=True, className="py-2"),
+                dbc.Button("Home", href="https://www.learningfromthecurve.net/", target="_top", external_link=True, className="py-2"),
+                dbc.Button("Dashboards", href="https://www.learningfromthecurve.net/Dashboards/", target="_top", external_link=True, className="py-2"),
             ],
             vertical=True,
             size="sm",
