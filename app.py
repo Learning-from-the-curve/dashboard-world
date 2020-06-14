@@ -207,29 +207,43 @@ tab_deaths_increase_left = dbc.Card(
 className="border-0",
 )
 
-#tab_right
-#tab_right = dbc.Card(id ='selected-countries-tab')
 
-markdown_data_info = dcc.Markdown('''
-The dashboard is updated daily following new daily releases of data from the data sources listed below.
+markdown_relevant_info = html.Div([
+    html.P([
+        "We focus on this dashboard on the global COVID-19 pandemic. This dashboard is part of a larger set of dashboards available ",
+        dcc.Link('on our website', href='https://www.learningfromthecurve.net/dashboards/', target="_top"),
+    ]),
+    html.P([
+        "Articles by members of the Learning from the Curve team reporting daily information on COVID-19 are available ",
+        dcc.Link('here', href='https://www.learningfromthecurve.net/commentaries/', target="_top"),
+    ]),
+    html.P([
+        "Please, report any bug at the following contact address: ",
+        dcc.Link('learningfromthecurve.info@gmail.com', href='mailto:learningfromthecurve.info@gmail.com'),
+    ]),
+])
 
-**Data source daily updated:**
-* Policy measures from [Oxford COVID-19 Government Response Tracker](https://www.bsg.ox.ac.uk/research/research-projects/oxford-covid-19-government-response-tracker).
-* Data on confirmed cases and deaths from the [GitHub repository of the Johns Hopkins University](https://github.com/CSSEGISandData/COVID-19)
+markdown_data_info = html.Div([
+    html.P([
+        "The dashboard is updated daily following new daily releases of data from the data sources listed below.",
+    ]),
+    html.P([
+        "Data source daily updated:",
+        html.Ul([
+            html.Li(dcc.Link('Policy measures from Oxford COVID-19 Government Response Tracker', href='https://www.bsg.ox.ac.uk/research/research-projects/oxford-covid-19-government-response-tracker', target="_blank"),),
+            html.Li(dcc.Link('Data on confirmed cases and deaths from the Johns Hopkins University', href='https://github.com/CSSEGISandData/COVID-19', target="_blank"),),
+        ])
+    ]),
+    html.P([
+        "Other data:",
+        html.Ul([
+            html.Li(dcc.Link('Geojson', href='https://github.com/datasets/geo-countries/blob/master/data/countries.geojson', target="_blank"),),
+            html.Li(dcc.Link('Country population data from UN', href='https://population.un.org/wpp/Download/Standard/CSV', target="_blank"),),
+            html.Li(dcc.Link("Countries' ISO codes", href='https://raw.githubusercontent.com/lukes/ISO-3166-Countries-with-Regional-Codes/master/all/all.csv', target="_blank"),),
+        ])
+    ]),
+])
 
-**Other data:**
-* Geojson for countries in the world from [https://github.com/datasets/geo-countries/blob/master/data/countries.geojson](https://github.com/datasets/geo-countries/blob/master/data/countries.geojson).
-* Country population data from [UN](https://population.un.org/wpp/Download/Standard/CSV).
-* Countries' ISO codes from [https://raw.githubusercontent.com/lukes/ISO-3166-Countries-with-Regional-Codes/master/all/all.csv](https://raw.githubusercontent.com/lukes/ISO-3166-Countries-with-Regional-Codes/master/all/all.csv).
-''')
-
-markdown_relevant_info = dcc.Markdown('''
-We focus on this dashboard on the global COVID-19 pandemic. This dashboard is part of a larger set of dashboards available [on our website](https://www.learningfromthecurve.net/dashboards/).
-
-Articles by members of the Learning from the Curve team reporting daily information on COVID-19 are available [here](https://www.learningfromthecurve.net/commentaries/).
-
-Please, report any bug at the following contact address: learningfromthecurve.info@gmail.com.
-''')
 
 
 ############################
