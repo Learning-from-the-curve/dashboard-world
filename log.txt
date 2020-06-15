@@ -528,3 +528,12 @@
 [15/06/2020 03:34:31] new countries added:
 {'Latvia'}
 [15/06/2020 03:34:31] new date added: {20200615}
+[15/06/2020 11:31:35] --- CONFIRMED CASES FILE CHECK
+[15/06/2020 11:31:35] no new countries added
+[15/06/2020 11:31:35] no new date added
+[15/06/2020 11:31:35] --- DEATHS FILE CHECK
+[15/06/2020 11:31:35] no new countries added
+[15/06/2020 11:31:35] no new date added
+[15/06/2020 11:31:35] --- POLICY FILE CHECK
+[15/06/2020 11:31:35] no new countries added
+[15/06/2020 11:31:35] no new date added
