@@ -557,3 +557,12 @@
 [16/06/2020 11:31:29] new countries added:
 {'Togo'}
 [16/06/2020 11:31:29] new date added: {20200616}
+[17/06/2020 03:34:32] --- CONFIRMED CASES FILE CHECK
+[17/06/2020 03:34:32] no new countries added
+[17/06/2020 03:34:32] no new date added
+[17/06/2020 03:34:32] --- DEATHS FILE CHECK
+[17/06/2020 03:34:32] no new countries added
+[17/06/2020 03:34:32] no new date added
+[17/06/2020 03:34:32] --- POLICY FILE CHECK
+[17/06/2020 03:34:32] no new countries added
+[17/06/2020 03:34:32] new date added: {20200617}
