@@ -584,3 +584,12 @@
 [18/06/2020 03:34:15] --- POLICY FILE CHECK
 [18/06/2020 03:34:15] no new countries added
 [18/06/2020 03:34:15] new date added: {20200618}
+[18/06/2020 11:31:22] --- CONFIRMED CASES FILE CHECK
+[18/06/2020 11:31:22] no new countries added
+[18/06/2020 11:31:22] new date added: {'6/17/20'}
+[18/06/2020 11:31:22] --- DEATHS FILE CHECK
+[18/06/2020 11:31:22] no new countries added
+[18/06/2020 11:31:22] new date added: {'6/17/20'}
+[18/06/2020 11:31:22] --- POLICY FILE CHECK
+[18/06/2020 11:31:22] no new countries added
+[18/06/2020 11:31:22] no new date added
