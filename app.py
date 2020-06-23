@@ -251,7 +251,6 @@ markdown_data_info = html.Div([
 ############################
 
 app.layout = html.Div([ #Main Container   
-    html.Div([
     #Header TITLE
     html.Div([
         #Info Modal Button LEFT
@@ -442,12 +441,7 @@ app.layout = html.Div([ #Main Container
         ),
     ],
     className = "botRow d-flex"
-    )
-    ],
-    className="container-fluid cf py-2"
     ),
-
-    html.Div([
     #Country select Dropdown
     html.Div(
             [make_item(available_indicators, top_4)], className="accordion sticky-top"
@@ -656,12 +650,8 @@ app.layout = html.Div([ #Main Container
     justify="center"
     ),
 
-    ],
-    className="container-fluid"
-    )
-
 ],
-#className = "my-0"
+className="container-fluid cf py-2"
 )
 
 # draw the two graphs under the map for confirmed cases and deaths
