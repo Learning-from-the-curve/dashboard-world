@@ -809,3 +809,12 @@
 [30/06/2020 11:31:26] --- POLICY FILE CHECK
 [30/06/2020 11:31:26] no new countries added
 [30/06/2020 11:31:26] no new date added
+[01/07/2020 03:34:29] --- CONFIRMED CASES FILE CHECK
+[01/07/2020 03:34:29] no new countries added
+[01/07/2020 03:34:29] no new date added
+[01/07/2020 03:34:29] --- DEATHS FILE CHECK
+[01/07/2020 03:34:29] no new countries added
+[01/07/2020 03:34:29] no new date added
+[01/07/2020 03:34:29] --- POLICY FILE CHECK
+[01/07/2020 03:34:29] no new countries added
+[01/07/2020 03:34:29] new date added: {20200701}
