@@ -926,3 +926,12 @@
 [07/07/2020 03:34:20] --- POLICY FILE CHECK
 [07/07/2020 03:34:20] no new countries added
 [07/07/2020 03:34:20] new date added: {20200707}
+[07/07/2020 11:31:32] --- CONFIRMED CASES FILE CHECK
+[07/07/2020 11:31:32] no new countries added
+[07/07/2020 11:31:32] new date added: {'7/6/20'}
+[07/07/2020 11:31:32] --- DEATHS FILE CHECK
+[07/07/2020 11:31:32] no new countries added
+[07/07/2020 11:31:32] new date added: {'7/6/20'}
+[07/07/2020 11:31:32] --- POLICY FILE CHECK
+[07/07/2020 11:31:32] no new countries added
+[07/07/2020 11:31:32] no new date added
