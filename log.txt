@@ -971,3 +971,12 @@
 [09/07/2020 11:31:38] --- POLICY FILE CHECK
 [09/07/2020 11:31:38] no new countries added
 [09/07/2020 11:31:38] no new date added
+[10/07/2020 03:34:07] --- CONFIRMED CASES FILE CHECK
+[10/07/2020 03:34:07] no new countries added
+[10/07/2020 03:34:07] no new date added
+[10/07/2020 03:34:07] --- DEATHS FILE CHECK
+[10/07/2020 03:34:07] no new countries added
+[10/07/2020 03:34:07] no new date added
+[10/07/2020 03:34:07] --- POLICY FILE CHECK
+[10/07/2020 03:34:07] no new countries added
+[10/07/2020 03:34:07] new date added: {20200710}
