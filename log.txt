@@ -1052,3 +1052,12 @@
 [14/07/2020 03:34:31] --- POLICY FILE CHECK
 [14/07/2020 03:34:31] no new countries added
 [14/07/2020 03:34:31] new date added: {20200714}
+[14/07/2020 11:31:25] --- CONFIRMED CASES FILE CHECK
+[14/07/2020 11:31:25] no new countries added
+[14/07/2020 11:31:25] new date added: {'7/13/20'}
+[14/07/2020 11:31:25] --- DEATHS FILE CHECK
+[14/07/2020 11:31:25] no new countries added
+[14/07/2020 11:31:25] new date added: {'7/13/20'}
+[14/07/2020 11:31:25] --- POLICY FILE CHECK
+[14/07/2020 11:31:25] no new countries added
+[14/07/2020 11:31:25] no new date added
