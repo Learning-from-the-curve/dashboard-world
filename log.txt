@@ -1214,3 +1214,12 @@
 [23/07/2020 03:34:13] --- POLICY FILE CHECK
 [23/07/2020 03:34:13] no new countries added
 [23/07/2020 03:34:13] new date added: {20200723}
+[23/07/2020 11:32:08] --- CONFIRMED CASES FILE CHECK
+[23/07/2020 11:32:08] no new countries added
+[23/07/2020 11:32:08] new date added: {'7/22/20'}
+[23/07/2020 11:32:08] --- DEATHS FILE CHECK
+[23/07/2020 11:32:08] no new countries added
+[23/07/2020 11:32:08] new date added: {'7/22/20'}
+[23/07/2020 11:32:08] --- POLICY FILE CHECK
+[23/07/2020 11:32:08] no new countries added
+[23/07/2020 11:32:08] no new date added
