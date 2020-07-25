@@ -1241,3 +1241,12 @@
 [24/07/2020 11:31:36] --- POLICY FILE CHECK
 [24/07/2020 11:31:36] no new countries added
 [24/07/2020 11:31:36] no new date added
+[25/07/2020 03:34:18] --- CONFIRMED CASES FILE CHECK
+[25/07/2020 03:34:18] no new countries added
+[25/07/2020 03:34:18] no new date added
+[25/07/2020 03:34:18] --- DEATHS FILE CHECK
+[25/07/2020 03:34:18] no new countries added
+[25/07/2020 03:34:18] no new date added
+[25/07/2020 03:34:18] --- POLICY FILE CHECK
+[25/07/2020 03:34:18] no new countries added
+[25/07/2020 03:34:18] new date added: {20200725}
