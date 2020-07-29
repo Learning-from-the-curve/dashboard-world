@@ -1323,3 +1323,13 @@
 [29/07/2020 03:34:25] new countries added:
 {'Anguilla'}
 [29/07/2020 03:34:25] new date added: {20200729}
+[29/07/2020 11:31:26] --- CONFIRMED CASES FILE CHECK
+[29/07/2020 11:31:26] no new countries added
+[29/07/2020 11:31:26] new date added: {'7/28/20'}
+[29/07/2020 11:31:26] --- DEATHS FILE CHECK
+[29/07/2020 11:31:26] no new countries added
+[29/07/2020 11:31:26] new date added: {'7/28/20'}
+[29/07/2020 11:31:26] --- POLICY FILE CHECK
+[29/07/2020 11:31:26] new countries added:
+{'Anguilla'}
+[29/07/2020 11:31:26] new date added: {20200729}
