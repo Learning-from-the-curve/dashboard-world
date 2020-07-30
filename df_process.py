@@ -44,7 +44,7 @@ new_df_deaths = df_confirmed[['Province/State','Country/Region']]
 df_policy = pd.read_csv(url_policy)
 new_names_df_policy = set(df_policy['CountryName'])
 new_dates_df_policy = set(df_policy['Date'])
-
+'''
 #compute difference of rows and columns
 confirmed_country_diff = new_df_confirmed[~new_df_confirmed.apply(tuple,1).isin(old_df_confirmed.apply(tuple,1))]
 confirmed_date_diff = set(df_confirmed.columns).symmetric_difference(set(df_confirmed_backup.columns))
@@ -98,7 +98,7 @@ elif len(policy_date_diff) == 1:
     write_log('new date added: ' + str(policy_date_diff))
 else:
     write_log('no new date added')
-
+'''
 df_confirmed.to_csv(path_confirmed, index = None)
 df_deaths.to_csv(path_deaths, index = None)
 df_policy.to_csv(path_policy, index = None)
@@ -296,8 +296,8 @@ df_policy['Date'] = pd.to_datetime(df_policy['Date'], format='%Y-%m-%d')
 
 df_policy_index = df_confirmed_t.copy().astype('float64')
 
-#print(list(df_confirmed_t))
-#print(set(df_policy['name']))
+print(list(df_confirmed_t))
+print(set(df_policy['name']))
 #store the countries without policy index
 countries_w_o_policy = []
 for i in list(df_confirmed_t):
@@ -305,15 +305,15 @@ for i in list(df_confirmed_t):
         countries_w_o_policy.append(i)
     df_policy_index[i] = np.nan
 #
-#print(countries_w_o_policy)
+print(countries_w_o_policy)
 #
 #store the countries without policy index
-#countries_w_policy = []
-#for i in set(df_policy['name']):
-#    if i not in list(df_confirmed_t):
-#        countries_w_policy.append(i)
+countries_w_policy = []
+for i in set(df_policy['name']):
+    if i not in list(df_confirmed_t):
+        countries_w_policy.append(i)
 #
-#print(countries_w_policy)
+print(countries_w_policy)
 
 # Missing Spain data for May 2 
 # fill the gaps for consistency and create the df for the stringency index
