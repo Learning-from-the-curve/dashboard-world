@@ -863,3 +863,483 @@
 [03/07/2020 11:31:26] --- POLICY FILE CHECK
 [03/07/2020 11:31:26] no new countries added
 [03/07/2020 11:31:26] no new date added
+[04/07/2020 03:34:36] --- CONFIRMED CASES FILE CHECK
+[04/07/2020 03:34:36] no new countries added
+[04/07/2020 03:34:36] no new date added
+[04/07/2020 03:34:36] --- DEATHS FILE CHECK
+[04/07/2020 03:34:36] no new countries added
+[04/07/2020 03:34:36] no new date added
+[04/07/2020 03:34:36] --- POLICY FILE CHECK
+[04/07/2020 03:34:36] no new countries added
+[04/07/2020 03:34:36] no new date added
+[04/07/2020 11:31:40] --- CONFIRMED CASES FILE CHECK
+[04/07/2020 11:31:40] no new countries added
+[04/07/2020 11:31:40] new date added: {'7/3/20'}
+[04/07/2020 11:31:40] --- DEATHS FILE CHECK
+[04/07/2020 11:31:40] no new countries added
+[04/07/2020 11:31:40] new date added: {'7/3/20'}
+[04/07/2020 11:31:40] --- POLICY FILE CHECK
+[04/07/2020 11:31:40] no new countries added
+[04/07/2020 11:31:40] new date added: {20200704}
+[05/07/2020 03:34:40] --- CONFIRMED CASES FILE CHECK
+[05/07/2020 03:34:40] no new countries added
+[05/07/2020 03:34:40] no new date added
+[05/07/2020 03:34:40] --- DEATHS FILE CHECK
+[05/07/2020 03:34:40] no new countries added
+[05/07/2020 03:34:40] no new date added
+[05/07/2020 03:34:40] --- POLICY FILE CHECK
+[05/07/2020 03:34:40] no new countries added
+[05/07/2020 03:34:40] no new date added
+[05/07/2020 11:31:39] --- CONFIRMED CASES FILE CHECK
+[05/07/2020 11:31:39] no new countries added
+[05/07/2020 11:31:39] new date added: {'7/4/20'}
+[05/07/2020 11:31:39] --- DEATHS FILE CHECK
+[05/07/2020 11:31:39] no new countries added
+[05/07/2020 11:31:39] new date added: {'7/4/20'}
+[05/07/2020 11:31:39] --- POLICY FILE CHECK
+[05/07/2020 11:31:39] no new countries added
+[05/07/2020 11:31:39] new date added: {20200705}
+[06/07/2020 03:34:58] --- CONFIRMED CASES FILE CHECK
+[06/07/2020 03:34:58] no new countries added
+[06/07/2020 03:34:58] no new date added
+[06/07/2020 03:34:58] --- DEATHS FILE CHECK
+[06/07/2020 03:34:58] no new countries added
+[06/07/2020 03:34:58] no new date added
+[06/07/2020 03:34:58] --- POLICY FILE CHECK
+[06/07/2020 03:34:58] no new countries added
+[06/07/2020 03:34:58] new date added: {20200706}
+[06/07/2020 11:31:29] --- CONFIRMED CASES FILE CHECK
+[06/07/2020 11:31:29] no new countries added
+[06/07/2020 11:31:29] new date added: {'7/5/20'}
+[06/07/2020 11:31:29] --- DEATHS FILE CHECK
+[06/07/2020 11:31:29] no new countries added
+[06/07/2020 11:31:29] new date added: {'7/5/20'}
+[06/07/2020 11:31:29] --- POLICY FILE CHECK
+[06/07/2020 11:31:29] no new countries added
+[06/07/2020 11:31:29] no new date added
+[07/07/2020 03:34:20] --- CONFIRMED CASES FILE CHECK
+[07/07/2020 03:34:20] no new countries added
+[07/07/2020 03:34:20] no new date added
+[07/07/2020 03:34:20] --- DEATHS FILE CHECK
+[07/07/2020 03:34:20] no new countries added
+[07/07/2020 03:34:20] no new date added
+[07/07/2020 03:34:20] --- POLICY FILE CHECK
+[07/07/2020 03:34:20] no new countries added
+[07/07/2020 03:34:20] new date added: {20200707}
+[07/07/2020 11:31:32] --- CONFIRMED CASES FILE CHECK
+[07/07/2020 11:31:32] no new countries added
+[07/07/2020 11:31:32] new date added: {'7/6/20'}
+[07/07/2020 11:31:32] --- DEATHS FILE CHECK
+[07/07/2020 11:31:32] no new countries added
+[07/07/2020 11:31:32] new date added: {'7/6/20'}
+[07/07/2020 11:31:32] --- POLICY FILE CHECK
+[07/07/2020 11:31:32] no new countries added
+[07/07/2020 11:31:32] no new date added
+[08/07/2020 03:34:20] --- CONFIRMED CASES FILE CHECK
+[08/07/2020 03:34:20] no new countries added
+[08/07/2020 03:34:20] no new date added
+[08/07/2020 03:34:20] --- DEATHS FILE CHECK
+[08/07/2020 03:34:20] no new countries added
+[08/07/2020 03:34:20] no new date added
+[08/07/2020 03:34:20] --- POLICY FILE CHECK
+[08/07/2020 03:34:20] no new countries added
+[08/07/2020 03:34:20] new date added: {20200708}
+[08/07/2020 11:31:29] --- CONFIRMED CASES FILE CHECK
+[08/07/2020 11:31:29] no new countries added
+[08/07/2020 11:31:29] new date added: {'7/7/20'}
+[08/07/2020 11:31:29] --- DEATHS FILE CHECK
+[08/07/2020 11:31:29] no new countries added
+[08/07/2020 11:31:29] new date added: {'7/7/20'}
+[08/07/2020 11:31:29] --- POLICY FILE CHECK
+[08/07/2020 11:31:29] no new countries added
+[08/07/2020 11:31:29] no new date added
+[09/07/2020 03:34:23] --- CONFIRMED CASES FILE CHECK
+[09/07/2020 03:34:23] no new countries added
+[09/07/2020 03:34:23] no new date added
+[09/07/2020 03:34:23] --- DEATHS FILE CHECK
+[09/07/2020 03:34:23] no new countries added
+[09/07/2020 03:34:23] no new date added
+[09/07/2020 03:34:23] --- POLICY FILE CHECK
+[09/07/2020 03:34:23] no new countries added
+[09/07/2020 03:34:23] new date added: {20200709}
+[09/07/2020 11:31:38] --- CONFIRMED CASES FILE CHECK
+[09/07/2020 11:31:38] no new countries added
+[09/07/2020 11:31:38] new date added: {'7/8/20'}
+[09/07/2020 11:31:38] --- DEATHS FILE CHECK
+[09/07/2020 11:31:38] no new countries added
+[09/07/2020 11:31:38] new date added: {'7/8/20'}
+[09/07/2020 11:31:38] --- POLICY FILE CHECK
+[09/07/2020 11:31:38] no new countries added
+[09/07/2020 11:31:38] no new date added
+[10/07/2020 03:34:07] --- CONFIRMED CASES FILE CHECK
+[10/07/2020 03:34:07] no new countries added
+[10/07/2020 03:34:07] no new date added
+[10/07/2020 03:34:07] --- DEATHS FILE CHECK
+[10/07/2020 03:34:07] no new countries added
+[10/07/2020 03:34:07] no new date added
+[10/07/2020 03:34:07] --- POLICY FILE CHECK
+[10/07/2020 03:34:07] no new countries added
+[10/07/2020 03:34:07] new date added: {20200710}
+[10/07/2020 11:31:20] --- CONFIRMED CASES FILE CHECK
+[10/07/2020 11:31:20] no new countries added
+[10/07/2020 11:31:20] new date added: {'7/9/20'}
+[10/07/2020 11:31:20] --- DEATHS FILE CHECK
+[10/07/2020 11:31:20] no new countries added
+[10/07/2020 11:31:20] new date added: {'7/9/20'}
+[10/07/2020 11:31:20] --- POLICY FILE CHECK
+[10/07/2020 11:31:20] no new countries added
+[10/07/2020 11:31:20] no new date added
+[11/07/2020 03:34:32] --- CONFIRMED CASES FILE CHECK
+[11/07/2020 03:34:32] no new countries added
+[11/07/2020 03:34:32] no new date added
+[11/07/2020 03:34:32] --- DEATHS FILE CHECK
+[11/07/2020 03:34:32] no new countries added
+[11/07/2020 03:34:32] no new date added
+[11/07/2020 03:34:32] --- POLICY FILE CHECK
+[11/07/2020 03:34:32] no new countries added
+[11/07/2020 03:34:32] new date added: {20200711}
+[11/07/2020 11:31:14] --- CONFIRMED CASES FILE CHECK
+[11/07/2020 11:31:14] no new countries added
+[11/07/2020 11:31:14] new date added: {'7/10/20'}
+[11/07/2020 11:31:14] --- DEATHS FILE CHECK
+[11/07/2020 11:31:14] no new countries added
+[11/07/2020 11:31:14] new date added: {'7/10/20'}
+[11/07/2020 11:31:14] --- POLICY FILE CHECK
+[11/07/2020 11:31:14] no new countries added
+[11/07/2020 11:31:14] no new date added
+[12/07/2020 03:35:31] --- CONFIRMED CASES FILE CHECK
+[12/07/2020 03:35:31] no new countries added
+[12/07/2020 03:35:31] no new date added
+[12/07/2020 03:35:31] --- DEATHS FILE CHECK
+[12/07/2020 03:35:31] no new countries added
+[12/07/2020 03:35:31] no new date added
+[12/07/2020 03:35:31] --- POLICY FILE CHECK
+[12/07/2020 03:35:31] no new countries added
+[12/07/2020 03:35:31] new date added: {20200712}
+[12/07/2020 11:31:32] --- CONFIRMED CASES FILE CHECK
+[12/07/2020 11:31:32] no new countries added
+[12/07/2020 11:31:32] new date added: {'7/11/20'}
+[12/07/2020 11:31:32] --- DEATHS FILE CHECK
+[12/07/2020 11:31:32] no new countries added
+[12/07/2020 11:31:32] new date added: {'7/11/20'}
+[12/07/2020 11:31:32] --- POLICY FILE CHECK
+[12/07/2020 11:31:32] no new countries added
+[12/07/2020 11:31:32] no new date added
+[13/07/2020 03:34:10] --- CONFIRMED CASES FILE CHECK
+[13/07/2020 03:34:10] no new countries added
+[13/07/2020 03:34:10] no new date added
+[13/07/2020 03:34:10] --- DEATHS FILE CHECK
+[13/07/2020 03:34:10] no new countries added
+[13/07/2020 03:34:10] no new date added
+[13/07/2020 03:34:10] --- POLICY FILE CHECK
+[13/07/2020 03:34:10] no new countries added
+[13/07/2020 03:34:10] new date added: {20200713}
+[13/07/2020 11:31:49] --- CONFIRMED CASES FILE CHECK
+[13/07/2020 11:31:49] no new countries added
+[13/07/2020 11:31:49] new date added: {'7/12/20'}
+[13/07/2020 11:31:49] --- DEATHS FILE CHECK
+[13/07/2020 11:31:49] no new countries added
+[13/07/2020 11:31:49] new date added: {'7/12/20'}
+[13/07/2020 11:31:49] --- POLICY FILE CHECK
+[13/07/2020 11:31:49] no new countries added
+[13/07/2020 11:31:49] no new date added
+[14/07/2020 03:34:31] --- CONFIRMED CASES FILE CHECK
+[14/07/2020 03:34:31] no new countries added
+[14/07/2020 03:34:31] no new date added
+[14/07/2020 03:34:31] --- DEATHS FILE CHECK
+[14/07/2020 03:34:31] no new countries added
+[14/07/2020 03:34:31] no new date added
+[14/07/2020 03:34:31] --- POLICY FILE CHECK
+[14/07/2020 03:34:31] no new countries added
+[14/07/2020 03:34:31] new date added: {20200714}
+[14/07/2020 11:31:25] --- CONFIRMED CASES FILE CHECK
+[14/07/2020 11:31:25] no new countries added
+[14/07/2020 11:31:25] new date added: {'7/13/20'}
+[14/07/2020 11:31:25] --- DEATHS FILE CHECK
+[14/07/2020 11:31:25] no new countries added
+[14/07/2020 11:31:25] new date added: {'7/13/20'}
+[14/07/2020 11:31:25] --- POLICY FILE CHECK
+[14/07/2020 11:31:25] no new countries added
+[14/07/2020 11:31:25] no new date added
+[15/07/2020 03:34:23] --- CONFIRMED CASES FILE CHECK
+[15/07/2020 03:34:23] no new countries added
+[15/07/2020 03:34:23] no new date added
+[15/07/2020 03:34:23] --- DEATHS FILE CHECK
+[15/07/2020 03:34:23] no new countries added
+[15/07/2020 03:34:23] no new date added
+[15/07/2020 03:34:23] --- POLICY FILE CHECK
+[15/07/2020 03:34:23] no new countries added
+[15/07/2020 03:34:23] new date added: {20200715}
+[15/07/2020 11:31:36] --- CONFIRMED CASES FILE CHECK
+[15/07/2020 11:31:36] no new countries added
+[15/07/2020 11:31:36] new date added: {'7/14/20'}
+[15/07/2020 11:31:36] --- DEATHS FILE CHECK
+[15/07/2020 11:31:36] no new countries added
+[15/07/2020 11:31:36] new date added: {'7/14/20'}
+[15/07/2020 11:31:36] --- POLICY FILE CHECK
+[15/07/2020 11:31:36] no new countries added
+[15/07/2020 11:31:36] no new date added
+[16/07/2020 03:34:04] --- CONFIRMED CASES FILE CHECK
+[16/07/2020 03:34:04] no new countries added
+[16/07/2020 03:34:04] no new date added
+[16/07/2020 03:34:04] --- DEATHS FILE CHECK
+[16/07/2020 03:34:04] no new countries added
+[16/07/2020 03:34:04] no new date added
+[16/07/2020 03:34:04] --- POLICY FILE CHECK
+[16/07/2020 03:34:04] no new countries added
+[16/07/2020 03:34:04] new date added: {20200716}
+[16/07/2020 11:31:25] --- CONFIRMED CASES FILE CHECK
+[16/07/2020 11:31:25] no new countries added
+[16/07/2020 11:31:25] new date added: {'7/15/20'}
+[16/07/2020 11:31:25] --- DEATHS FILE CHECK
+[16/07/2020 11:31:25] no new countries added
+[16/07/2020 11:31:25] new date added: {'7/15/20'}
+[16/07/2020 11:31:25] --- POLICY FILE CHECK
+[16/07/2020 11:31:25] no new countries added
+[16/07/2020 11:31:25] no new date added
+[17/07/2020 03:34:10] --- CONFIRMED CASES FILE CHECK
+[17/07/2020 03:34:10] no new countries added
+[17/07/2020 03:34:10] no new date added
+[17/07/2020 03:34:10] --- DEATHS FILE CHECK
+[17/07/2020 03:34:10] no new countries added
+[17/07/2020 03:34:10] no new date added
+[17/07/2020 03:34:10] --- POLICY FILE CHECK
+[17/07/2020 03:34:10] no new countries added
+[17/07/2020 03:34:10] new date added: {20200717}
+[17/07/2020 11:31:42] --- CONFIRMED CASES FILE CHECK
+[17/07/2020 11:31:42] no new countries added
+[17/07/2020 11:31:42] new date added: {'7/16/20'}
+[17/07/2020 11:31:42] --- DEATHS FILE CHECK
+[17/07/2020 11:31:42] no new countries added
+[17/07/2020 11:31:42] new date added: {'7/16/20'}
+[17/07/2020 11:31:42] --- POLICY FILE CHECK
+[17/07/2020 11:31:42] no new countries added
+[17/07/2020 11:31:42] no new date added
+[18/07/2020 03:34:06] --- CONFIRMED CASES FILE CHECK
+[18/07/2020 03:34:06] no new countries added
+[18/07/2020 03:34:06] no new date added
+[18/07/2020 03:34:06] --- DEATHS FILE CHECK
+[18/07/2020 03:34:06] no new countries added
+[18/07/2020 03:34:06] no new date added
+[18/07/2020 03:34:06] --- POLICY FILE CHECK
+[18/07/2020 03:34:06] no new countries added
+[18/07/2020 03:34:06] new date added: {20200718}
+[18/07/2020 11:31:33] --- CONFIRMED CASES FILE CHECK
+[18/07/2020 11:31:33] no new countries added
+[18/07/2020 11:31:33] new date added: {'7/17/20'}
+[18/07/2020 11:31:33] --- DEATHS FILE CHECK
+[18/07/2020 11:31:33] no new countries added
+[18/07/2020 11:31:33] new date added: {'7/17/20'}
+[18/07/2020 11:31:33] --- POLICY FILE CHECK
+[18/07/2020 11:31:33] no new countries added
+[18/07/2020 11:31:33] no new date added
+[19/07/2020 03:34:18] --- CONFIRMED CASES FILE CHECK
+[19/07/2020 03:34:18] no new countries added
+[19/07/2020 03:34:18] no new date added
+[19/07/2020 03:34:18] --- DEATHS FILE CHECK
+[19/07/2020 03:34:18] no new countries added
+[19/07/2020 03:34:18] no new date added
+[19/07/2020 03:34:18] --- POLICY FILE CHECK
+[19/07/2020 03:34:18] no new countries added
+[19/07/2020 03:34:18] new date added: {20200719}
+[19/07/2020 11:31:49] --- CONFIRMED CASES FILE CHECK
+[19/07/2020 11:31:49] no new countries added
+[19/07/2020 11:31:49] new date added: {'7/18/20'}
+[19/07/2020 11:31:49] --- DEATHS FILE CHECK
+[19/07/2020 11:31:49] no new countries added
+[19/07/2020 11:31:49] new date added: {'7/18/20'}
+[19/07/2020 11:31:49] --- POLICY FILE CHECK
+[19/07/2020 11:31:49] no new countries added
+[19/07/2020 11:31:49] no new date added
+[20/07/2020 03:34:29] --- CONFIRMED CASES FILE CHECK
+[20/07/2020 03:34:29] no new countries added
+[20/07/2020 03:34:29] no new date added
+[20/07/2020 03:34:29] --- DEATHS FILE CHECK
+[20/07/2020 03:34:29] no new countries added
+[20/07/2020 03:34:29] no new date added
+[20/07/2020 03:34:29] --- POLICY FILE CHECK
+[20/07/2020 03:34:29] no new countries added
+[20/07/2020 03:34:29] new date added: {20200720}
+[20/07/2020 11:31:32] --- CONFIRMED CASES FILE CHECK
+[20/07/2020 11:31:32] no new countries added
+[20/07/2020 11:31:32] new date added: {'7/19/20'}
+[20/07/2020 11:31:32] --- DEATHS FILE CHECK
+[20/07/2020 11:31:32] no new countries added
+[20/07/2020 11:31:32] new date added: {'7/19/20'}
+[20/07/2020 11:31:32] --- POLICY FILE CHECK
+[20/07/2020 11:31:32] no new countries added
+[20/07/2020 11:31:32] no new date added
+[21/07/2020 03:35:18] --- CONFIRMED CASES FILE CHECK
+[21/07/2020 03:35:18] no new countries added
+[21/07/2020 03:35:18] no new date added
+[21/07/2020 03:35:18] --- DEATHS FILE CHECK
+[21/07/2020 03:35:18] no new countries added
+[21/07/2020 03:35:18] no new date added
+[21/07/2020 03:35:18] --- POLICY FILE CHECK
+[21/07/2020 03:35:18] no new countries added
+[21/07/2020 03:35:18] new date added: {20200721}
+[21/07/2020 11:31:44] --- CONFIRMED CASES FILE CHECK
+[21/07/2020 11:31:44] no new countries added
+[21/07/2020 11:31:44] new date added: {'7/20/20'}
+[21/07/2020 11:31:44] --- DEATHS FILE CHECK
+[21/07/2020 11:31:44] no new countries added
+[21/07/2020 11:31:44] new date added: {'7/20/20'}
+[21/07/2020 11:31:44] --- POLICY FILE CHECK
+[21/07/2020 11:31:44] no new countries added
+[21/07/2020 11:31:44] no new date added
+[22/07/2020 03:34:24] --- CONFIRMED CASES FILE CHECK
+[22/07/2020 03:34:24] no new countries added
+[22/07/2020 03:34:24] no new date added
+[22/07/2020 03:34:24] --- DEATHS FILE CHECK
+[22/07/2020 03:34:24] no new countries added
+[22/07/2020 03:34:24] no new date added
+[22/07/2020 03:34:24] --- POLICY FILE CHECK
+[22/07/2020 03:34:24] no new countries added
+[22/07/2020 03:34:24] new date added: {20200722}
+[22/07/2020 11:31:24] --- CONFIRMED CASES FILE CHECK
+[22/07/2020 11:31:24] no new countries added
+[22/07/2020 11:31:24] new date added: {'7/21/20'}
+[22/07/2020 11:31:24] --- DEATHS FILE CHECK
+[22/07/2020 11:31:24] no new countries added
+[22/07/2020 11:31:24] new date added: {'7/21/20'}
+[22/07/2020 11:31:24] --- POLICY FILE CHECK
+[22/07/2020 11:31:24] no new countries added
+[22/07/2020 11:31:24] no new date added
+[23/07/2020 03:34:13] --- CONFIRMED CASES FILE CHECK
+[23/07/2020 03:34:13] no new countries added
+[23/07/2020 03:34:13] no new date added
+[23/07/2020 03:34:13] --- DEATHS FILE CHECK
+[23/07/2020 03:34:13] no new countries added
+[23/07/2020 03:34:13] no new date added
+[23/07/2020 03:34:13] --- POLICY FILE CHECK
+[23/07/2020 03:34:13] no new countries added
+[23/07/2020 03:34:13] new date added: {20200723}
+[23/07/2020 11:32:08] --- CONFIRMED CASES FILE CHECK
+[23/07/2020 11:32:08] no new countries added
+[23/07/2020 11:32:08] new date added: {'7/22/20'}
+[23/07/2020 11:32:08] --- DEATHS FILE CHECK
+[23/07/2020 11:32:08] no new countries added
+[23/07/2020 11:32:08] new date added: {'7/22/20'}
+[23/07/2020 11:32:08] --- POLICY FILE CHECK
+[23/07/2020 11:32:08] no new countries added
+[23/07/2020 11:32:08] no new date added
+[24/07/2020 03:34:07] --- CONFIRMED CASES FILE CHECK
+[24/07/2020 03:34:07] no new countries added
+[24/07/2020 03:34:07] no new date added
+[24/07/2020 03:34:07] --- DEATHS FILE CHECK
+[24/07/2020 03:34:07] no new countries added
+[24/07/2020 03:34:07] no new date added
+[24/07/2020 03:34:07] --- POLICY FILE CHECK
+[24/07/2020 03:34:07] no new countries added
+[24/07/2020 03:34:07] new date added: {20200724}
+[24/07/2020 11:31:36] --- CONFIRMED CASES FILE CHECK
+[24/07/2020 11:31:36] no new countries added
+[24/07/2020 11:31:36] new date added: {'7/23/20'}
+[24/07/2020 11:31:36] --- DEATHS FILE CHECK
+[24/07/2020 11:31:36] no new countries added
+[24/07/2020 11:31:36] new date added: {'7/23/20'}
+[24/07/2020 11:31:36] --- POLICY FILE CHECK
+[24/07/2020 11:31:36] no new countries added
+[24/07/2020 11:31:36] no new date added
+[25/07/2020 03:34:18] --- CONFIRMED CASES FILE CHECK
+[25/07/2020 03:34:18] no new countries added
+[25/07/2020 03:34:18] no new date added
+[25/07/2020 03:34:18] --- DEATHS FILE CHECK
+[25/07/2020 03:34:18] no new countries added
+[25/07/2020 03:34:18] no new date added
+[25/07/2020 03:34:18] --- POLICY FILE CHECK
+[25/07/2020 03:34:18] no new countries added
+[25/07/2020 03:34:18] new date added: {20200725}
+[25/07/2020 11:31:38] --- CONFIRMED CASES FILE CHECK
+[25/07/2020 11:31:38] no new countries added
+[25/07/2020 11:31:38] new date added: {'7/24/20'}
+[25/07/2020 11:31:38] --- DEATHS FILE CHECK
+[25/07/2020 11:31:38] no new countries added
+[25/07/2020 11:31:38] new date added: {'7/24/20'}
+[25/07/2020 11:31:38] --- POLICY FILE CHECK
+[25/07/2020 11:31:38] no new countries added
+[25/07/2020 11:31:38] no new date added
+[26/07/2020 03:34:20] --- CONFIRMED CASES FILE CHECK
+[26/07/2020 03:34:20] no new countries added
+[26/07/2020 03:34:20] no new date added
+[26/07/2020 03:34:20] --- DEATHS FILE CHECK
+[26/07/2020 03:34:20] no new countries added
+[26/07/2020 03:34:20] no new date added
+[26/07/2020 03:34:20] --- POLICY FILE CHECK
+[26/07/2020 03:34:20] no new countries added
+[26/07/2020 03:34:20] new date added: {20200726}
+[26/07/2020 11:31:16] --- CONFIRMED CASES FILE CHECK
+[26/07/2020 11:31:16] no new countries added
+[26/07/2020 11:31:16] new date added: {'7/25/20'}
+[26/07/2020 11:31:16] --- DEATHS FILE CHECK
+[26/07/2020 11:31:16] no new countries added
+[26/07/2020 11:31:16] new date added: {'7/25/20'}
+[26/07/2020 11:31:16] --- POLICY FILE CHECK
+[26/07/2020 11:31:16] no new countries added
+[26/07/2020 11:31:16] no new date added
+[27/07/2020 03:34:18] --- CONFIRMED CASES FILE CHECK
+[27/07/2020 03:34:18] no new countries added
+[27/07/2020 03:34:18] no new date added
+[27/07/2020 03:34:18] --- DEATHS FILE CHECK
+[27/07/2020 03:34:18] no new countries added
+[27/07/2020 03:34:18] no new date added
+[27/07/2020 03:34:18] --- POLICY FILE CHECK
+[27/07/2020 03:34:18] no new countries added
+[27/07/2020 03:34:18] new date added: {20200727}
+[27/07/2020 11:31:49] --- CONFIRMED CASES FILE CHECK
+[27/07/2020 11:31:49] no new countries added
+[27/07/2020 11:31:49] new date added: {'7/26/20'}
+[27/07/2020 11:31:49] --- DEATHS FILE CHECK
+[27/07/2020 11:31:49] no new countries added
+[27/07/2020 11:31:49] new date added: {'7/26/20'}
+[27/07/2020 11:31:49] --- POLICY FILE CHECK
+[27/07/2020 11:31:49] no new countries added
+[27/07/2020 11:31:49] no new date added
+[28/07/2020 03:34:37] --- CONFIRMED CASES FILE CHECK
+[28/07/2020 03:34:37] no new countries added
+[28/07/2020 03:34:37] no new date added
+[28/07/2020 03:34:37] --- DEATHS FILE CHECK
+[28/07/2020 03:34:37] no new countries added
+[28/07/2020 03:34:37] no new date added
+[28/07/2020 03:34:37] --- POLICY FILE CHECK
+[28/07/2020 03:34:37] no new countries added
+[28/07/2020 03:34:37] new date added: {20200728}
+[28/07/2020 11:31:41] --- CONFIRMED CASES FILE CHECK
+[28/07/2020 11:31:41] no new countries added
+[28/07/2020 11:31:41] new date added: {'7/27/20'}
+[28/07/2020 11:31:41] --- DEATHS FILE CHECK
+[28/07/2020 11:31:41] no new countries added
+[28/07/2020 11:31:41] new date added: {'7/27/20'}
+[28/07/2020 11:31:41] --- POLICY FILE CHECK
+[28/07/2020 11:31:41] no new countries added
+[28/07/2020 11:31:41] no new date added
+[29/07/2020 03:34:25] --- CONFIRMED CASES FILE CHECK
+[29/07/2020 03:34:25] no new countries added
+[29/07/2020 03:34:25] no new date added
+[29/07/2020 03:34:25] --- DEATHS FILE CHECK
+[29/07/2020 03:34:25] no new countries added
+[29/07/2020 03:34:25] no new date added
+[29/07/2020 03:34:25] --- POLICY FILE CHECK
+[29/07/2020 03:34:25] new countries added:
+{'Anguilla'}
+[29/07/2020 03:34:25] new date added: {20200729}
+[29/07/2020 11:31:26] --- CONFIRMED CASES FILE CHECK
+[29/07/2020 11:31:26] no new countries added
+[29/07/2020 11:31:26] new date added: {'7/28/20'}
+[29/07/2020 11:31:26] --- DEATHS FILE CHECK
+[29/07/2020 11:31:26] no new countries added
+[29/07/2020 11:31:26] new date added: {'7/28/20'}
+[29/07/2020 11:31:26] --- POLICY FILE CHECK
+[29/07/2020 11:31:26] new countries added:
+{'Anguilla'}
+[29/07/2020 11:31:26] new date added: {20200729}
+[30/07/2020 03:34:13] --- CONFIRMED CASES FILE CHECK
+[30/07/2020 03:34:13] no new countries added
+[30/07/2020 03:34:13] no new date added
+[30/07/2020 03:34:13] --- DEATHS FILE CHECK
+[30/07/2020 03:34:13] no new countries added
+[30/07/2020 03:34:13] no new date added
+[30/07/2020 03:34:13] --- POLICY FILE CHECK
+[30/07/2020 03:34:13] new countries added:
+{'Anguilla'}
+[30/07/2020 03:34:13] multiple new dates added: {20200729, 20200730}
