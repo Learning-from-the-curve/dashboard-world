@@ -1507,3 +1507,12 @@
 [07/08/2020 11:31:28] new countries added:
 {'British Virgin Islands'}
 [07/08/2020 11:31:28] no new date added
+[07/08/2020 21:05:06] --- CONFIRMED CASES FILE CHECK
+[07/08/2020 21:05:06] no new countries added
+[07/08/2020 21:05:06] no new date added
+[07/08/2020 21:05:06] --- DEATHS FILE CHECK
+[07/08/2020 21:05:06] no new countries added
+[07/08/2020 21:05:06] no new date added
+[07/08/2020 21:05:06] --- POLICY FILE CHECK
+[07/08/2020 21:05:06] no new countries added
+[07/08/2020 21:05:06] no new date added
