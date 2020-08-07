@@ -1497,3 +1497,13 @@
 [07/08/2020 03:34:40] --- POLICY FILE CHECK
 [07/08/2020 03:34:40] no new countries added
 [07/08/2020 03:34:40] new date added: {20200807}
+[07/08/2020 11:31:28] --- CONFIRMED CASES FILE CHECK
+[07/08/2020 11:31:28] no new countries added
+[07/08/2020 11:31:28] new date added: {'8/6/20'}
+[07/08/2020 11:31:28] --- DEATHS FILE CHECK
+[07/08/2020 11:31:28] no new countries added
+[07/08/2020 11:31:28] new date added: {'8/6/20'}
+[07/08/2020 11:31:28] --- POLICY FILE CHECK
+[07/08/2020 11:31:28] new countries added:
+{'British Virgin Islands'}
+[07/08/2020 11:31:28] no new date added
