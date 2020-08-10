@@ -37,11 +37,11 @@ df_policy_backup = pd.read_csv(path_policy)
 old_names_df_policy = set(df_policy_backup['CountryName'])
 old_dates_df_policy = set(df_policy_backup['Date'])
 #load new data
-df_confirmed = pd.read_csv(url_confirmed)
+df_confirmed = pd.read_csv(url_confirmed, error_bad_lines=False)
 new_df_confirmed = df_confirmed[['Province/State','Country/Region']]
-df_deaths = pd.read_csv(url_deaths)
+df_deaths = pd.read_csv(url_deaths, error_bad_lines=False)
 new_df_deaths = df_confirmed[['Province/State','Country/Region']]
-df_policy = pd.read_csv(url_policy)
+df_policy = pd.read_csv(url_policy, error_bad_lines=False)
 new_names_df_policy = set(df_policy['CountryName'])
 new_dates_df_policy = set(df_policy['Date'])
 
