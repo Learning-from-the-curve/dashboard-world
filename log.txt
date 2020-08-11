@@ -1580,3 +1580,12 @@
 [11/08/2020 03:34:30] new countries added:
 {'Montserrat', 'Turks and Caicos Islands', 'Pitcairn Islands'}
 [11/08/2020 03:34:30] new date added: {20200811}
+[11/08/2020 11:59:23] --- CONFIRMED CASES FILE CHECK
+[11/08/2020 11:59:23] no new countries added
+[11/08/2020 11:59:23] no new date added
+[11/08/2020 11:59:23] --- DEATHS FILE CHECK
+[11/08/2020 11:59:23] no new countries added
+[11/08/2020 11:59:23] no new date added
+[11/08/2020 11:59:23] --- POLICY FILE CHECK
+[11/08/2020 11:59:23] no new countries added
+[11/08/2020 11:59:23] no new date added
