@@ -1589,3 +1589,12 @@
 [11/08/2020 11:59:23] --- POLICY FILE CHECK
 [11/08/2020 11:59:23] no new countries added
 [11/08/2020 11:59:23] no new date added
+[11/08/2020 11:31:17] --- CONFIRMED CASES FILE CHECK
+[11/08/2020 11:31:17] no new countries added
+[11/08/2020 11:31:17] no new date added
+[11/08/2020 11:31:17] --- DEATHS FILE CHECK
+[11/08/2020 11:31:17] no new countries added
+[11/08/2020 11:31:17] no new date added
+[11/08/2020 11:31:17] --- POLICY FILE CHECK
+[11/08/2020 11:31:17] no new countries added
+[11/08/2020 11:31:17] no new date added
