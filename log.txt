@@ -1607,3 +1607,42 @@
 [12/08/2020 03:34:28] --- POLICY FILE CHECK
 [12/08/2020 03:34:28] no new countries added
 [12/08/2020 03:34:28] new date added: {20200812}
+[12/08/2020 11:31:34] --- CONFIRMED CASES FILE CHECK
+[12/08/2020 11:31:34] new countries added:
+    Province/State Country/Region
+266      Flevoland    Netherlands
+267      Friesland    Netherlands
+268      Groningen    Netherlands
+269  Noord-Holland    Netherlands
+270   Zuid-Holland    Netherlands
+271  Hong Kong SAR          China
+272     Overijssel    Netherlands
+273        Utrecht    Netherlands
+274  Noord-Brabant    Netherlands
+275     Gelderland    Netherlands
+276        Limburg    Netherlands
+277        Zeeland    Netherlands
+278      Macau SAR          China
+279        Drenthe    Netherlands
+[12/08/2020 11:31:34] new date added: {'8/11/20'}
+[12/08/2020 11:31:34] --- DEATHS FILE CHECK
+[12/08/2020 11:31:34] new countries added:
+    Province/State Country/Region
+266      Flevoland    Netherlands
+267      Friesland    Netherlands
+268      Groningen    Netherlands
+269  Noord-Holland    Netherlands
+270   Zuid-Holland    Netherlands
+271  Hong Kong SAR          China
+272     Overijssel    Netherlands
+273        Utrecht    Netherlands
+274  Noord-Brabant    Netherlands
+275     Gelderland    Netherlands
+276        Limburg    Netherlands
+277        Zeeland    Netherlands
+278      Macau SAR          China
+279        Drenthe    Netherlands
+[12/08/2020 11:31:34] new date added: {'8/11/20'}
+[12/08/2020 11:31:34] --- POLICY FILE CHECK
+[12/08/2020 11:31:34] no new countries added
+[12/08/2020 11:31:34] no new date added
