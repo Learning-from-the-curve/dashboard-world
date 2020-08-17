@@ -1727,3 +1727,12 @@
 [17/08/2020 03:34:38] --- POLICY FILE CHECK
 [17/08/2020 03:34:38] no new countries added
 [17/08/2020 03:34:38] new date added: {20200817}
+[17/08/2020 11:31:26] --- CONFIRMED CASES FILE CHECK
+[17/08/2020 11:31:26] no new countries added
+[17/08/2020 11:31:26] new date added: {'8/16/20'}
+[17/08/2020 11:31:26] --- DEATHS FILE CHECK
+[17/08/2020 11:31:26] no new countries added
+[17/08/2020 11:31:26] new date added: {'8/16/20'}
+[17/08/2020 11:31:26] --- POLICY FILE CHECK
+[17/08/2020 11:31:26] no new countries added
+[17/08/2020 11:31:26] no new date added
