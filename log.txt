@@ -1844,3 +1844,12 @@
 [23/08/2020 11:31:30] --- POLICY FILE CHECK
 [23/08/2020 11:31:30] no new countries added
 [23/08/2020 11:31:30] no new date added
+[24/08/2020 03:34:40] --- CONFIRMED CASES FILE CHECK
+[24/08/2020 03:34:40] no new countries added
+[24/08/2020 03:34:40] no new date added
+[24/08/2020 03:34:40] --- DEATHS FILE CHECK
+[24/08/2020 03:34:40] no new countries added
+[24/08/2020 03:34:40] no new date added
+[24/08/2020 03:34:40] --- POLICY FILE CHECK
+[24/08/2020 03:34:40] no new countries added
+[24/08/2020 03:34:40] new date added: {20200824}
