@@ -1907,3 +1907,12 @@
 [27/08/2020 03:34:27] --- POLICY FILE CHECK
 [27/08/2020 03:34:27] no new countries added
 [27/08/2020 03:34:27] new date added: {20200827}
+[27/08/2020 11:31:17] --- CONFIRMED CASES FILE CHECK
+[27/08/2020 11:31:17] no new countries added
+[27/08/2020 11:31:17] new date added: {'8/26/20'}
+[27/08/2020 11:31:17] --- DEATHS FILE CHECK
+[27/08/2020 11:31:17] no new countries added
+[27/08/2020 11:31:17] new date added: {'8/26/20'}
+[27/08/2020 11:31:17] --- POLICY FILE CHECK
+[27/08/2020 11:31:17] no new countries added
+[27/08/2020 11:31:17] no new date added
