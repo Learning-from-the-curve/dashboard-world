@@ -1952,3 +1952,12 @@
 [29/08/2020 11:31:19] --- POLICY FILE CHECK
 [29/08/2020 11:31:19] no new countries added
 [29/08/2020 11:31:19] no new date added
+[30/08/2020 03:34:22] --- CONFIRMED CASES FILE CHECK
+[30/08/2020 03:34:22] no new countries added
+[30/08/2020 03:34:22] no new date added
+[30/08/2020 03:34:22] --- DEATHS FILE CHECK
+[30/08/2020 03:34:22] no new countries added
+[30/08/2020 03:34:22] no new date added
+[30/08/2020 03:34:22] --- POLICY FILE CHECK
+[30/08/2020 03:34:22] no new countries added
+[30/08/2020 03:34:22] new date added: {20200830}
