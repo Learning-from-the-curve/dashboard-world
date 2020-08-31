@@ -1970,3 +1970,12 @@
 [30/08/2020 11:31:29] --- POLICY FILE CHECK
 [30/08/2020 11:31:29] no new countries added
 [30/08/2020 11:31:29] no new date added
+[31/08/2020 03:34:10] --- CONFIRMED CASES FILE CHECK
+[31/08/2020 03:34:10] no new countries added
+[31/08/2020 03:34:10] no new date added
+[31/08/2020 03:34:10] --- DEATHS FILE CHECK
+[31/08/2020 03:34:10] no new countries added
+[31/08/2020 03:34:10] no new date added
+[31/08/2020 03:34:10] --- POLICY FILE CHECK
+[31/08/2020 03:34:10] no new countries added
+[31/08/2020 03:34:10] new date added: {20200831}
