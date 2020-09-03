@@ -2024,3 +2024,12 @@
 [02/09/2020 11:31:28] --- POLICY FILE CHECK
 [02/09/2020 11:31:28] no new countries added
 [02/09/2020 11:31:28] no new date added
+[03/09/2020 03:34:47] --- CONFIRMED CASES FILE CHECK
+[03/09/2020 03:34:47] no new countries added
+[03/09/2020 03:34:47] no new date added
+[03/09/2020 03:34:47] --- DEATHS FILE CHECK
+[03/09/2020 03:34:47] no new countries added
+[03/09/2020 03:34:47] no new date added
+[03/09/2020 03:34:47] --- POLICY FILE CHECK
+[03/09/2020 03:34:47] no new countries added
+[03/09/2020 03:34:47] new date added: {20200903}
