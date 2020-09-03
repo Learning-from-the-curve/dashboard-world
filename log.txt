@@ -2033,3 +2033,12 @@
 [03/09/2020 03:34:47] --- POLICY FILE CHECK
 [03/09/2020 03:34:47] no new countries added
 [03/09/2020 03:34:47] new date added: {20200903}
+[03/09/2020 11:31:35] --- CONFIRMED CASES FILE CHECK
+[03/09/2020 11:31:35] no new countries added
+[03/09/2020 11:31:35] new date added: {'9/2/20'}
+[03/09/2020 11:31:35] --- DEATHS FILE CHECK
+[03/09/2020 11:31:35] no new countries added
+[03/09/2020 11:31:35] new date added: {'9/2/20'}
+[03/09/2020 11:31:35] --- POLICY FILE CHECK
+[03/09/2020 11:31:35] no new countries added
+[03/09/2020 11:31:35] no new date added
