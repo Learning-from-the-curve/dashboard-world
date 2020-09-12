@@ -2186,3 +2186,12 @@
 [11/09/2020 11:31:20] --- POLICY FILE CHECK
 [11/09/2020 11:31:20] no new countries added
 [11/09/2020 11:31:20] no new date added
+[12/09/2020 03:35:33] --- CONFIRMED CASES FILE CHECK
+[12/09/2020 03:35:33] no new countries added
+[12/09/2020 03:35:33] no new date added
+[12/09/2020 03:35:33] --- DEATHS FILE CHECK
+[12/09/2020 03:35:33] no new countries added
+[12/09/2020 03:35:33] no new date added
+[12/09/2020 03:35:33] --- POLICY FILE CHECK
+[12/09/2020 03:35:33] no new countries added
+[12/09/2020 03:35:33] new date added: {20200912}
