@@ -2195,3 +2195,12 @@
 [12/09/2020 03:35:33] --- POLICY FILE CHECK
 [12/09/2020 03:35:33] no new countries added
 [12/09/2020 03:35:33] new date added: {20200912}
+[12/09/2020 11:31:41] --- CONFIRMED CASES FILE CHECK
+[12/09/2020 11:31:41] no new countries added
+[12/09/2020 11:31:41] new date added: {'9/11/20'}
+[12/09/2020 11:31:41] --- DEATHS FILE CHECK
+[12/09/2020 11:31:41] no new countries added
+[12/09/2020 11:31:41] new date added: {'9/11/20'}
+[12/09/2020 11:31:41] --- POLICY FILE CHECK
+[12/09/2020 11:31:41] no new countries added
+[12/09/2020 11:31:41] no new date added
