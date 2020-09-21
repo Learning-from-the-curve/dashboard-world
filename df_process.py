@@ -42,8 +42,9 @@ new_df_confirmed = df_confirmed[['Province/State','Country/Region']]
 df_deaths = pd.read_csv(url_deaths, error_bad_lines=False)
 new_df_deaths = df_confirmed[['Province/State','Country/Region']]
 df_policy = pd.read_csv(url_policy, error_bad_lines=False)
-new_names_df_policy = set(df_policy['CountryName'])
-new_dates_df_policy = set(df_policy['Date'])
+new_names_df_policy = set(df_policy['countryname'])
+new_dates_df_policy = set(df_policy['date'])
+
 
 #compute difference of rows and columns
 confirmed_country_diff = new_df_confirmed[~new_df_confirmed.apply(tuple,1).isin(old_df_confirmed.apply(tuple,1))]
@@ -268,8 +269,8 @@ df_deaths_t['EU28'] = df_EU28_t['deaths']
 available_variables = ['Mortality rate', 'Infection rate', 'Growth rate confirmed cases', 'Growth rate deaths']
 
 # Part to adjust data for plots with Stringency Index
-df_policy = df_policy[['CountryName', 'Date', 'StringencyIndexForDisplay']]
-
+df_policy = df_policy[['countryname', 'date', 'stringencyindexfordisplay']]
+df_policy.columns = ['CountryName', 'Date', 'StringencyIndexForDisplay']
 # List with first 4 countries by cases
 top_4 = df_confirmed.sort_values(by=df_confirmed.columns[-1], ascending = False)['Country/Region'].head(4).to_list()
 
@@ -308,11 +309,11 @@ for i in list(df_confirmed_t):
 #print(countries_w_o_policy)
 #
 #store the countries without policy index
-#countries_w_policy = []
-#for i in set(df_policy['name']):
-#    if i not in list(df_confirmed_t):
-#        countries_w_policy.append(i)
-#
+countries_w_policy = []
+for i in set(df_policy['name']):
+    if i not in list(df_confirmed_t):
+        countries_w_policy.append(i)
+
 #print(countries_w_policy)
 
 # Missing Spain data for May 2 
