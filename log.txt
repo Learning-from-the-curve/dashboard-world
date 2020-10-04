@@ -2564,3 +2564,12 @@
 [03/10/2020 11:31:36] --- POLICY FILE CHECK
 [03/10/2020 11:31:36] no new countries added
 [03/10/2020 11:31:36] no new date added
+[04/10/2020 03:34:52] --- CONFIRMED CASES FILE CHECK
+[04/10/2020 03:34:52] no new countries added
+[04/10/2020 03:34:52] no new date added
+[04/10/2020 03:34:52] --- DEATHS FILE CHECK
+[04/10/2020 03:34:52] no new countries added
+[04/10/2020 03:34:52] no new date added
+[04/10/2020 03:34:52] --- POLICY FILE CHECK
+[04/10/2020 03:34:52] no new countries added
+[04/10/2020 03:34:52] new date added: {20201004}
