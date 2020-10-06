@@ -2600,3 +2600,13 @@
 [05/10/2020 11:31:47] --- POLICY FILE CHECK
 [05/10/2020 11:31:47] no new countries added
 [05/10/2020 11:31:47] no new date added
+[06/10/2020 03:35:18] --- CONFIRMED CASES FILE CHECK
+[06/10/2020 03:35:18] no new countries added
+[06/10/2020 03:35:18] no new date added
+[06/10/2020 03:35:18] --- DEATHS FILE CHECK
+[06/10/2020 03:35:18] no new countries added
+[06/10/2020 03:35:18] no new date added
+[06/10/2020 03:35:18] --- POLICY FILE CHECK
+[06/10/2020 03:35:18] new countries added:
+{'United States Virgin Islands'}
+[06/10/2020 03:35:18] new date added: {20201006}
