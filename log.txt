@@ -2650,3 +2650,13 @@
 [08/10/2020 03:35:17] new countries added:
 {'United States Virgin Islands'}
 [08/10/2020 03:35:17] multiple new dates added: {20201006, 20201007, 20201008}
+[08/10/2020 11:31:32] --- CONFIRMED CASES FILE CHECK
+[08/10/2020 11:31:32] no new countries added
+[08/10/2020 11:31:32] new date added: {'10/7/20'}
+[08/10/2020 11:31:32] --- DEATHS FILE CHECK
+[08/10/2020 11:31:32] no new countries added
+[08/10/2020 11:31:32] new date added: {'10/7/20'}
+[08/10/2020 11:31:32] --- POLICY FILE CHECK
+[08/10/2020 11:31:32] new countries added:
+{'United States Virgin Islands'}
+[08/10/2020 11:31:32] multiple new dates added: {20201006, 20201007, 20201008}
