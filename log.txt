@@ -2741,3 +2741,13 @@
 [12/10/2020 11:31:29] --- POLICY FILE CHECK
 [12/10/2020 11:31:29] no new countries added
 [12/10/2020 11:31:29] no new date added
+[13/10/2020 03:36:55] --- CONFIRMED CASES FILE CHECK
+[13/10/2020 03:36:55] no new countries added
+[13/10/2020 03:36:55] no new date added
+[13/10/2020 03:36:55] --- DEATHS FILE CHECK
+[13/10/2020 03:36:55] no new countries added
+[13/10/2020 03:36:55] no new date added
+[13/10/2020 03:36:55] --- POLICY FILE CHECK
+[13/10/2020 03:36:55] new countries added:
+{'Comoros'}
+[13/10/2020 03:36:55] new date added: {20201013}
