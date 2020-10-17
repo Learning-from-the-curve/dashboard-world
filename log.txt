@@ -2863,3 +2863,17 @@
 [17/10/2020 03:39:22] new countries added:
 {'Comoros'}
 [17/10/2020 03:39:22] multiple new dates added: {20201013, 20201014, 20201015, 20201016, 20201017}
+[17/10/2020 11:32:04] --- CONFIRMED CASES FILE CHECK
+[17/10/2020 11:32:04] new countries added:
+    Province/State   Country/Region
+223            NaN  Solomon Islands
+[17/10/2020 11:32:04] multiple new dates added: {'10/15/20', '10/13/20', '10/16/20', '10/12/20', '10/14/20'}
+[17/10/2020 11:32:04] --- DEATHS FILE CHECK
+[17/10/2020 11:32:04] new countries added:
+    Province/State   Country/Region
+223            NaN  Solomon Islands
+[17/10/2020 11:32:04] multiple new dates added: {'10/15/20', '10/13/20', '10/16/20', '10/12/20', '10/14/20'}
+[17/10/2020 11:32:04] --- POLICY FILE CHECK
+[17/10/2020 11:32:04] new countries added:
+{'Comoros'}
+[17/10/2020 11:32:04] multiple new dates added: {20201013, 20201014, 20201015, 20201016, 20201017}
