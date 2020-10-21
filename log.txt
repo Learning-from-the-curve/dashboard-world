@@ -2989,3 +2989,12 @@
 [21/10/2020 11:32:44] new countries added:
 {'Comoros'}
 [21/10/2020 11:32:44] multiple new dates added: {20201013, 20201014, 20201015, 20201016, 20201017, 20201018, 20201019, 20201020, 20201021}
+[21/10/2020 22:43:27] --- CONFIRMED CASES FILE CHECK
+[21/10/2020 22:43:27] no new countries added
+[21/10/2020 22:43:27] no new date added
+[21/10/2020 22:43:27] --- DEATHS FILE CHECK
+[21/10/2020 22:43:27] no new countries added
+[21/10/2020 22:43:27] no new date added
+[21/10/2020 22:43:27] --- POLICY FILE CHECK
+[21/10/2020 22:43:27] no new countries added
+[21/10/2020 22:43:27] no new date added
