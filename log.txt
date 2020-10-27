@@ -3088,3 +3088,12 @@
 [26/10/2020 11:34:03] --- POLICY FILE CHECK
 [26/10/2020 11:34:03] no new countries added
 [26/10/2020 11:34:03] no new date added
+[27/10/2020 03:40:03] --- CONFIRMED CASES FILE CHECK
+[27/10/2020 03:40:03] no new countries added
+[27/10/2020 03:40:03] no new date added
+[27/10/2020 03:40:03] --- DEATHS FILE CHECK
+[27/10/2020 03:40:03] no new countries added
+[27/10/2020 03:40:03] no new date added
+[27/10/2020 03:40:03] --- POLICY FILE CHECK
+[27/10/2020 03:40:03] no new countries added
+[27/10/2020 03:40:03] new date added: {20201027}
