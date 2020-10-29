@@ -3133,3 +3133,16 @@
 [29/10/2020 03:41:23] --- POLICY FILE CHECK
 [29/10/2020 03:41:23] no new countries added
 [29/10/2020 03:41:23] new date added: {20201029}
+[29/10/2020 11:35:23] --- CONFIRMED CASES FILE CHECK
+[29/10/2020 11:35:23] new countries added:
+    Province/State    Country/Region
+175            NaN  Marshall Islands
+[29/10/2020 11:35:23] new date added: {'10/28/20'}
+[29/10/2020 11:35:23] --- DEATHS FILE CHECK
+[29/10/2020 11:35:23] new countries added:
+    Province/State    Country/Region
+175            NaN  Marshall Islands
+[29/10/2020 11:35:23] new date added: {'10/28/20'}
+[29/10/2020 11:35:23] --- POLICY FILE CHECK
+[29/10/2020 11:35:23] no new countries added
+[29/10/2020 11:35:23] no new date added
