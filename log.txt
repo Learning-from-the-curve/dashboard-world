@@ -3172,3 +3172,12 @@
 [30/10/2020 11:31:19] --- POLICY FILE CHECK
 [30/10/2020 11:31:19] no new countries added
 [30/10/2020 11:31:19] no new date added
+[30/10/2020 16:00:07] --- CONFIRMED CASES FILE CHECK
+[30/10/2020 16:00:07] no new countries added
+[30/10/2020 16:00:07] no new date added
+[30/10/2020 16:00:07] --- DEATHS FILE CHECK
+[30/10/2020 16:00:07] no new countries added
+[30/10/2020 16:00:07] no new date added
+[30/10/2020 16:00:07] --- POLICY FILE CHECK
+[30/10/2020 16:00:07] no new countries added
+[30/10/2020 16:00:07] no new date added
