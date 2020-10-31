@@ -3181,3 +3181,12 @@
 [30/10/2020 16:00:07] --- POLICY FILE CHECK
 [30/10/2020 16:00:07] no new countries added
 [30/10/2020 16:00:07] no new date added
+[31/10/2020 03:34:53] --- CONFIRMED CASES FILE CHECK
+[31/10/2020 03:34:53] no new countries added
+[31/10/2020 03:34:53] no new date added
+[31/10/2020 03:34:53] --- DEATHS FILE CHECK
+[31/10/2020 03:34:53] no new countries added
+[31/10/2020 03:34:53] no new date added
+[31/10/2020 03:34:53] --- POLICY FILE CHECK
+[31/10/2020 03:34:53] no new countries added
+[31/10/2020 03:34:53] new date added: {20201031}
