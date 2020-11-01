@@ -3199,3 +3199,12 @@
 [31/10/2020 11:31:18] --- POLICY FILE CHECK
 [31/10/2020 11:31:18] no new countries added
 [31/10/2020 11:31:18] no new date added
+[01/11/2020 03:34:59] --- CONFIRMED CASES FILE CHECK
+[01/11/2020 03:34:59] no new countries added
+[01/11/2020 03:34:59] no new date added
+[01/11/2020 03:34:59] --- DEATHS FILE CHECK
+[01/11/2020 03:34:59] no new countries added
+[01/11/2020 03:34:59] no new date added
+[01/11/2020 03:34:59] --- POLICY FILE CHECK
+[01/11/2020 03:34:59] no new countries added
+[01/11/2020 03:34:59] new date added: {20201101}
