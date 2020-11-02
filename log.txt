@@ -3226,3 +3226,12 @@
 [02/11/2020 03:34:52] --- POLICY FILE CHECK
 [02/11/2020 03:34:52] no new countries added
 [02/11/2020 03:34:52] new date added: {20201102}
+[02/11/2020 11:32:04] --- CONFIRMED CASES FILE CHECK
+[02/11/2020 11:32:04] no new countries added
+[02/11/2020 11:32:04] new date added: {'11/1/20'}
+[02/11/2020 11:32:04] --- DEATHS FILE CHECK
+[02/11/2020 11:32:04] no new countries added
+[02/11/2020 11:32:04] new date added: {'11/1/20'}
+[02/11/2020 11:32:04] --- POLICY FILE CHECK
+[02/11/2020 11:32:04] no new countries added
+[02/11/2020 11:32:04] no new date added
