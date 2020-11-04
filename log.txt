@@ -3262,3 +3262,16 @@
 [04/11/2020 03:35:14] --- POLICY FILE CHECK
 [04/11/2020 03:35:14] no new countries added
 [04/11/2020 03:35:14] new date added: {20201104}
+[04/11/2020 11:31:23] --- CONFIRMED CASES FILE CHECK
+[04/11/2020 11:31:23] new countries added:
+    Province/State Country/Region
+268            NaN            NaN
+[04/11/2020 11:31:23] new date added: {'11/3/20'}
+[04/11/2020 11:31:23] --- DEATHS FILE CHECK
+[04/11/2020 11:31:23] new countries added:
+    Province/State Country/Region
+268            NaN            NaN
+[04/11/2020 11:31:23] new date added: {'11/3/20'}
+[04/11/2020 11:31:23] --- POLICY FILE CHECK
+[04/11/2020 11:31:23] no new countries added
+[04/11/2020 11:31:23] no new date added
