@@ -3253,3 +3253,12 @@
 [03/11/2020 11:31:33] --- POLICY FILE CHECK
 [03/11/2020 11:31:33] no new countries added
 [03/11/2020 11:31:33] no new date added
+[04/11/2020 03:35:14] --- CONFIRMED CASES FILE CHECK
+[04/11/2020 03:35:14] no new countries added
+[04/11/2020 03:35:14] no new date added
+[04/11/2020 03:35:14] --- DEATHS FILE CHECK
+[04/11/2020 03:35:14] no new countries added
+[04/11/2020 03:35:14] no new date added
+[04/11/2020 03:35:14] --- POLICY FILE CHECK
+[04/11/2020 03:35:14] no new countries added
+[04/11/2020 03:35:14] new date added: {20201104}
