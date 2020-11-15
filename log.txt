@@ -3496,3 +3496,17 @@
 [15/11/2020 03:35:26] --- POLICY FILE CHECK
 [15/11/2020 03:35:26] no new countries added
 [15/11/2020 03:35:26] new date added: {20201115}
+[15/11/2020 11:31:32] --- CONFIRMED CASES FILE CHECK
+[15/11/2020 11:31:32] new countries added:
+    Province/State Country/Region
+261            NaN        Vanuatu
+[15/11/2020 11:31:32] multiple new dates added: {'11/11/20', '11/13/20', '11/14/20', '11/10/20', '11/12/20'}
+[15/11/2020 11:31:32] --- DEATHS FILE CHECK
+[15/11/2020 11:31:32] new countries added:
+    Province/State Country/Region
+261            NaN        Vanuatu
+[15/11/2020 11:31:32] multiple new dates added: {'11/11/20', '11/13/20', '11/14/20', '11/10/20', '11/12/20'}
+[15/11/2020 11:31:32] --- POLICY FILE CHECK
+[15/11/2020 11:31:32] new countries added:
+{'Monaco'}
+[15/11/2020 11:31:32] no new date added
