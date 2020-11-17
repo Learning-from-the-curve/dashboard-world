@@ -3552,3 +3552,17 @@
 [17/11/2020 03:35:46] new countries added:
 {'Bahamas', 'Monaco'}
 [17/11/2020 03:35:46] multiple new dates added: {20201116, 20201117}
+[17/11/2020 11:31:20] --- CONFIRMED CASES FILE CHECK
+[17/11/2020 11:31:20] new countries added:
+    Province/State Country/Region
+261            NaN        Vanuatu
+[17/11/2020 11:31:20] multiple new dates added: {'11/16/20', '11/14/20', '11/11/20', '11/12/20', '11/15/20', '11/10/20', '11/13/20'}
+[17/11/2020 11:31:20] --- DEATHS FILE CHECK
+[17/11/2020 11:31:20] new countries added:
+    Province/State Country/Region
+261            NaN        Vanuatu
+[17/11/2020 11:31:20] multiple new dates added: {'11/16/20', '11/14/20', '11/11/20', '11/12/20', '11/15/20', '11/10/20', '11/13/20'}
+[17/11/2020 11:31:20] --- POLICY FILE CHECK
+[17/11/2020 11:31:20] new countries added:
+{'Bahamas', 'Monaco'}
+[17/11/2020 11:31:20] multiple new dates added: {20201116, 20201117}
