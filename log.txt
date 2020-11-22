@@ -3692,3 +3692,17 @@
 [22/11/2020 03:42:16] new countries added:
 {'Pitcairn Islands', 'Falkland Islands', 'Turks and Caicos Islands', 'Bahamas', 'British Virgin Islands', 'Anguilla', 'Cayman Islands', 'Monaco', 'Montserrat', 'Gibraltar'}
 [22/11/2020 03:42:16] multiple new dates added: {20201116, 20201117, 20201118, 20201119, 20201120, 20201121, 20201122}
+[22/11/2020 11:31:35] --- CONFIRMED CASES FILE CHECK
+[22/11/2020 11:31:35] new countries added:
+    Province/State Country/Region
+261            NaN        Vanuatu
+[22/11/2020 11:31:35] multiple new dates added: {'11/11/20', '11/10/20', '11/15/20', '11/21/20', '11/16/20', '11/17/20', '11/13/20', '11/12/20', '11/14/20', '11/18/20', '11/19/20', '11/20/20'}
+[22/11/2020 11:31:35] --- DEATHS FILE CHECK
+[22/11/2020 11:31:35] new countries added:
+    Province/State Country/Region
+261            NaN        Vanuatu
+[22/11/2020 11:31:35] multiple new dates added: {'11/11/20', '11/10/20', '11/15/20', '11/21/20', '11/16/20', '11/17/20', '11/13/20', '11/12/20', '11/14/20', '11/18/20', '11/19/20', '11/20/20'}
+[22/11/2020 11:31:35] --- POLICY FILE CHECK
+[22/11/2020 11:31:35] new countries added:
+{'Faeroe Islands', 'Pitcairn Islands', 'Cayman Islands', 'Falkland Islands', 'Gibraltar', 'British Virgin Islands', 'Bahamas', 'Anguilla', 'Turks and Caicos Islands', 'Monaco', 'Montserrat'}
+[22/11/2020 11:31:35] multiple new dates added: {20201116, 20201117, 20201118, 20201119, 20201120, 20201121, 20201122}
