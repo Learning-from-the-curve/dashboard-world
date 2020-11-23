@@ -3720,3 +3720,12 @@
 [23/11/2020 03:35:28] new countries added:
 {'Faeroe Islands', 'Gibraltar', 'Anguilla', 'Bahamas', 'Cayman Islands', 'Monaco', 'Turks and Caicos Islands', 'British Virgin Islands', 'Pitcairn Islands', 'Falkland Islands', 'Montserrat'}
 [23/11/2020 03:35:28] multiple new dates added: {20201116, 20201117, 20201118, 20201119, 20201120, 20201121, 20201122, 20201123}
+[23/11/2020 12:23:00] --- CONFIRMED CASES FILE CHECK
+[23/11/2020 12:23:00] no new countries added
+[23/11/2020 12:23:00] no new date added
+[23/11/2020 12:23:00] --- DEATHS FILE CHECK
+[23/11/2020 12:23:00] no new countries added
+[23/11/2020 12:23:00] no new date added
+[23/11/2020 12:23:00] --- POLICY FILE CHECK
+[23/11/2020 12:23:00] no new countries added
+[23/11/2020 12:23:00] no new date added

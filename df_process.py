@@ -60,7 +60,7 @@ if confirmed_country_diff.empty:
     write_log('no new countries added')
 else:
     write_log('new countries added:\n' + str(confirmed_country_diff))
-    df_confirmed = df_confirmed_backup
+    #df_confirmed = df_confirmed_backup
 
 if len(confirmed_date_diff) > 1:
     write_log('multiple new dates added: ' + str(confirmed_date_diff))
@@ -75,7 +75,7 @@ if deaths_country_diff.empty:
     write_log('no new countries added')
 else:
     write_log('new countries added:\n' + str(deaths_country_diff))
-    df_deaths = df_deaths_backup
+    #df_deaths = df_deaths_backup
 
 if len(deaths_date_diff) > 1:
     write_log('multiple new dates added: ' + str(deaths_date_diff))
@@ -90,7 +90,7 @@ if not bool(policy_country_diff):
     write_log('no new countries added')
 else:
     write_log('new countries added:\n' + str(policy_country_diff))
-    df_policy = df_policy_backup
+    #df_policy = df_policy_backup
 
 if len(policy_date_diff) > 1:
     write_log('multiple new dates added: ' + str(policy_date_diff))
