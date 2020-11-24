@@ -3747,3 +3747,16 @@
 [24/11/2020 03:35:43] --- POLICY FILE CHECK
 [24/11/2020 03:35:43] no new countries added
 [24/11/2020 03:35:43] new date added: {20201124}
+[24/11/2020 11:31:29] --- CONFIRMED CASES FILE CHECK
+[24/11/2020 11:31:29] new countries added:
+   Province/State Country/Region
+48        Nunavut         Canada
+[24/11/2020 11:31:29] new date added: {'11/23/20'}
+[24/11/2020 11:31:29] --- DEATHS FILE CHECK
+[24/11/2020 11:31:29] new countries added:
+   Province/State Country/Region
+48        Nunavut         Canada
+[24/11/2020 11:31:29] new date added: {'11/23/20'}
+[24/11/2020 11:31:29] --- POLICY FILE CHECK
+[24/11/2020 11:31:29] no new countries added
+[24/11/2020 11:31:29] no new date added
