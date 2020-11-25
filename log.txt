@@ -3769,3 +3769,16 @@
 [25/11/2020 03:35:41] --- POLICY FILE CHECK
 [25/11/2020 03:35:41] no new countries added
 [25/11/2020 03:35:41] new date added: {20201125}
+[25/11/2020 11:31:29] --- CONFIRMED CASES FILE CHECK
+[25/11/2020 11:31:29] new countries added:
+            Province/State Country/Region
+52  Repatriated Travellers         Canada
+[25/11/2020 11:31:29] new date added: {'11/24/20'}
+[25/11/2020 11:31:29] --- DEATHS FILE CHECK
+[25/11/2020 11:31:29] new countries added:
+            Province/State Country/Region
+52  Repatriated Travellers         Canada
+[25/11/2020 11:31:29] new date added: {'11/24/20'}
+[25/11/2020 11:31:29] --- POLICY FILE CHECK
+[25/11/2020 11:31:29] no new countries added
+[25/11/2020 11:31:29] no new date added
