@@ -3827,3 +3827,12 @@
 [28/11/2020 03:36:55] --- POLICY FILE CHECK
 [28/11/2020 03:36:55] no new countries added
 [28/11/2020 03:36:55] new date added: {20201128}
+[28/11/2020 11:31:42] --- CONFIRMED CASES FILE CHECK
+[28/11/2020 11:31:42] no new countries added
+[28/11/2020 11:31:42] new date added: {'11/27/20'}
+[28/11/2020 11:31:42] --- DEATHS FILE CHECK
+[28/11/2020 11:31:42] no new countries added
+[28/11/2020 11:31:42] new date added: {'11/27/20'}
+[28/11/2020 11:31:42] --- POLICY FILE CHECK
+[28/11/2020 11:31:42] no new countries added
+[28/11/2020 11:31:42] no new date added
