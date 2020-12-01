@@ -3872,3 +3872,12 @@
 [30/11/2020 11:31:19] --- POLICY FILE CHECK
 [30/11/2020 11:31:19] no new countries added
 [30/11/2020 11:31:19] no new date added
+[01/12/2020 03:39:12] --- CONFIRMED CASES FILE CHECK
+[01/12/2020 03:39:12] no new countries added
+[01/12/2020 03:39:12] no new date added
+[01/12/2020 03:39:12] --- DEATHS FILE CHECK
+[01/12/2020 03:39:12] no new countries added
+[01/12/2020 03:39:12] no new date added
+[01/12/2020 03:39:12] --- POLICY FILE CHECK
+[01/12/2020 03:39:12] no new countries added
+[01/12/2020 03:39:12] new date added: {20201201}
