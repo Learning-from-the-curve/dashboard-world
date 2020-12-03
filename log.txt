@@ -3917,3 +3917,12 @@
 [03/12/2020 03:39:22] --- POLICY FILE CHECK
 [03/12/2020 03:39:22] no new countries added
 [03/12/2020 03:39:22] new date added: {20201203}
+[03/12/2020 11:32:41] --- CONFIRMED CASES FILE CHECK
+[03/12/2020 11:32:41] no new countries added
+[03/12/2020 11:32:41] new date added: {'12/2/20'}
+[03/12/2020 11:32:41] --- DEATHS FILE CHECK
+[03/12/2020 11:32:41] no new countries added
+[03/12/2020 11:32:41] new date added: {'12/2/20'}
+[03/12/2020 11:32:41] --- POLICY FILE CHECK
+[03/12/2020 11:32:41] no new countries added
+[03/12/2020 11:32:41] no new date added
