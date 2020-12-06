@@ -3971,3 +3971,12 @@
 [06/12/2020 03:40:51] --- POLICY FILE CHECK
 [06/12/2020 03:40:51] no new countries added
 [06/12/2020 03:40:51] new date added: {20201206}
+[06/12/2020 11:34:36] --- CONFIRMED CASES FILE CHECK
+[06/12/2020 11:34:36] no new countries added
+[06/12/2020 11:34:36] new date added: {'12/5/20'}
+[06/12/2020 11:34:36] --- DEATHS FILE CHECK
+[06/12/2020 11:34:36] no new countries added
+[06/12/2020 11:34:36] new date added: {'12/5/20'}
+[06/12/2020 11:34:36] --- POLICY FILE CHECK
+[06/12/2020 11:34:36] no new countries added
+[06/12/2020 11:34:36] no new date added
