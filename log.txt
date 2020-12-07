@@ -3980,3 +3980,12 @@
 [06/12/2020 11:34:36] --- POLICY FILE CHECK
 [06/12/2020 11:34:36] no new countries added
 [06/12/2020 11:34:36] no new date added
+[07/12/2020 03:42:23] --- CONFIRMED CASES FILE CHECK
+[07/12/2020 03:42:23] no new countries added
+[07/12/2020 03:42:23] no new date added
+[07/12/2020 03:42:23] --- DEATHS FILE CHECK
+[07/12/2020 03:42:23] no new countries added
+[07/12/2020 03:42:23] no new date added
+[07/12/2020 03:42:23] --- POLICY FILE CHECK
+[07/12/2020 03:42:23] no new countries added
+[07/12/2020 03:42:23] new date added: {20201207}
