@@ -3998,3 +3998,16 @@
 [07/12/2020 11:33:32] --- POLICY FILE CHECK
 [07/12/2020 11:33:32] no new countries added
 [07/12/2020 11:33:32] no new date added
+[08/12/2020 03:42:01] --- CONFIRMED CASES FILE CHECK
+[08/12/2020 03:42:01] new countries added:
+    Province/State Country/Region
+216            NaN          Samoa
+[08/12/2020 03:42:01] no new date added
+[08/12/2020 03:42:01] --- DEATHS FILE CHECK
+[08/12/2020 03:42:01] new countries added:
+    Province/State Country/Region
+216            NaN          Samoa
+[08/12/2020 03:42:01] no new date added
+[08/12/2020 03:42:01] --- POLICY FILE CHECK
+[08/12/2020 03:42:01] no new countries added
+[08/12/2020 03:42:01] new date added: {20201208}
