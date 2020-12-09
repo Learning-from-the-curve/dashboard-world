@@ -4029,3 +4029,12 @@
 [09/12/2020 03:42:26] --- POLICY FILE CHECK
 [09/12/2020 03:42:26] no new countries added
 [09/12/2020 03:42:26] new date added: {20201209}
+[09/12/2020 11:34:08] --- CONFIRMED CASES FILE CHECK
+[09/12/2020 11:34:08] no new countries added
+[09/12/2020 11:34:08] new date added: {'12/8/20'}
+[09/12/2020 11:34:08] --- DEATHS FILE CHECK
+[09/12/2020 11:34:08] no new countries added
+[09/12/2020 11:34:08] new date added: {'12/8/20'}
+[09/12/2020 11:34:08] --- POLICY FILE CHECK
+[09/12/2020 11:34:08] no new countries added
+[09/12/2020 11:34:08] no new date added
