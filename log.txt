@@ -4065,3 +4065,12 @@
 [11/12/2020 03:43:29] --- POLICY FILE CHECK
 [11/12/2020 03:43:29] no new countries added
 [11/12/2020 03:43:29] new date added: {20201211}
+[11/12/2020 11:36:35] --- CONFIRMED CASES FILE CHECK
+[11/12/2020 11:36:35] no new countries added
+[11/12/2020 11:36:35] new date added: {'12/10/20'}
+[11/12/2020 11:36:35] --- DEATHS FILE CHECK
+[11/12/2020 11:36:35] no new countries added
+[11/12/2020 11:36:35] new date added: {'12/10/20'}
+[11/12/2020 11:36:35] --- POLICY FILE CHECK
+[11/12/2020 11:36:35] no new countries added
+[11/12/2020 11:36:35] no new date added
