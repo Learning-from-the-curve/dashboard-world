@@ -4074,3 +4074,12 @@
 [11/12/2020 11:36:35] --- POLICY FILE CHECK
 [11/12/2020 11:36:35] no new countries added
 [11/12/2020 11:36:35] no new date added
+[12/12/2020 03:43:52] --- CONFIRMED CASES FILE CHECK
+[12/12/2020 03:43:52] no new countries added
+[12/12/2020 03:43:52] no new date added
+[12/12/2020 03:43:52] --- DEATHS FILE CHECK
+[12/12/2020 03:43:52] no new countries added
+[12/12/2020 03:43:52] no new date added
+[12/12/2020 03:43:52] --- POLICY FILE CHECK
+[12/12/2020 03:43:52] no new countries added
+[12/12/2020 03:43:52] new date added: {20201212}
