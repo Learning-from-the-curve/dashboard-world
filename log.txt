@@ -4120,3 +4120,12 @@
 [14/12/2020 03:44:35] --- POLICY FILE CHECK
 [14/12/2020 03:44:35] no new countries added
 [14/12/2020 03:44:35] new date added: {20201214}
+[14/12/2020 11:37:38] --- CONFIRMED CASES FILE CHECK
+[14/12/2020 11:37:38] no new countries added
+[14/12/2020 11:37:38] new date added: {'12/13/20'}
+[14/12/2020 11:37:38] --- DEATHS FILE CHECK
+[14/12/2020 11:37:38] no new countries added
+[14/12/2020 11:37:38] new date added: {'12/13/20'}
+[14/12/2020 11:37:38] --- POLICY FILE CHECK
+[14/12/2020 11:37:38] no new countries added
+[14/12/2020 11:37:38] no new date added
