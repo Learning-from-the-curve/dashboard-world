@@ -4156,3 +4156,13 @@
 [16/12/2020 03:45:35] --- POLICY FILE CHECK
 [16/12/2020 03:45:35] no new countries added
 [16/12/2020 03:45:35] multiple new dates added: {20201215, 20201216}
+[16/12/2020 11:36:20] --- CONFIRMED CASES FILE CHECK
+[16/12/2020 11:36:20] no new countries added
+[16/12/2020 11:36:20] new date added: {'12/15/20'}
+[16/12/2020 11:36:20] --- DEATHS FILE CHECK
+[16/12/2020 11:36:20] no new countries added
+[16/12/2020 11:36:20] new date added: {'12/15/20'}
+[16/12/2020 11:36:20] --- POLICY FILE CHECK
+[16/12/2020 11:36:20] new countries added:
+{'Malta'}
+[16/12/2020 11:36:20] no new date added
