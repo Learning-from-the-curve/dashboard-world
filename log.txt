@@ -4166,3 +4166,12 @@
 [16/12/2020 11:36:20] new countries added:
 {'Malta'}
 [16/12/2020 11:36:20] no new date added
+[17/12/2020 03:45:32] --- CONFIRMED CASES FILE CHECK
+[17/12/2020 03:45:32] no new countries added
+[17/12/2020 03:45:32] no new date added
+[17/12/2020 03:45:32] --- DEATHS FILE CHECK
+[17/12/2020 03:45:32] no new countries added
+[17/12/2020 03:45:32] no new date added
+[17/12/2020 03:45:32] --- POLICY FILE CHECK
+[17/12/2020 03:45:32] no new countries added
+[17/12/2020 03:45:32] new date added: {20201217}
