@@ -4193,3 +4193,12 @@
 [18/12/2020 03:47:16] --- POLICY FILE CHECK
 [18/12/2020 03:47:16] no new countries added
 [18/12/2020 03:47:16] new date added: {20201218}
+[18/12/2020 11:38:46] --- CONFIRMED CASES FILE CHECK
+[18/12/2020 11:38:46] no new countries added
+[18/12/2020 11:38:46] new date added: {'12/17/20'}
+[18/12/2020 11:38:46] --- DEATHS FILE CHECK
+[18/12/2020 11:38:46] no new countries added
+[18/12/2020 11:38:46] new date added: {'12/17/20'}
+[18/12/2020 11:38:46] --- POLICY FILE CHECK
+[18/12/2020 11:38:46] no new countries added
+[18/12/2020 11:38:46] no new date added
