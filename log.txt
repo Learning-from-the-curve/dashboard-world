@@ -4238,3 +4238,12 @@
 [20/12/2020 11:47:02] --- POLICY FILE CHECK
 [20/12/2020 11:47:02] no new countries added
 [20/12/2020 11:47:02] no new date added
+[21/12/2020 03:49:53] --- CONFIRMED CASES FILE CHECK
+[21/12/2020 03:49:53] no new countries added
+[21/12/2020 03:49:53] no new date added
+[21/12/2020 03:49:53] --- DEATHS FILE CHECK
+[21/12/2020 03:49:53] no new countries added
+[21/12/2020 03:49:53] no new date added
+[21/12/2020 03:49:53] --- POLICY FILE CHECK
+[21/12/2020 03:49:53] no new countries added
+[21/12/2020 03:49:53] new date added: {20201221}
