@@ -4319,3 +4319,12 @@
 [25/12/2020 03:53:35] --- POLICY FILE CHECK
 [25/12/2020 03:53:35] no new countries added
 [25/12/2020 03:53:35] new date added: {20201225}
+[25/12/2020 11:39:30] --- CONFIRMED CASES FILE CHECK
+[25/12/2020 11:39:30] no new countries added
+[25/12/2020 11:39:30] new date added: {'12/24/20'}
+[25/12/2020 11:39:30] --- DEATHS FILE CHECK
+[25/12/2020 11:39:30] no new countries added
+[25/12/2020 11:39:30] new date added: {'12/24/20'}
+[25/12/2020 11:39:30] --- POLICY FILE CHECK
+[25/12/2020 11:39:30] no new countries added
+[25/12/2020 11:39:30] no new date added
