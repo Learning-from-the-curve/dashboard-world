@@ -4328,3 +4328,12 @@
 [25/12/2020 11:39:30] --- POLICY FILE CHECK
 [25/12/2020 11:39:30] no new countries added
 [25/12/2020 11:39:30] no new date added
+[26/12/2020 03:53:54] --- CONFIRMED CASES FILE CHECK
+[26/12/2020 03:53:54] no new countries added
+[26/12/2020 03:53:54] no new date added
+[26/12/2020 03:53:54] --- DEATHS FILE CHECK
+[26/12/2020 03:53:54] no new countries added
+[26/12/2020 03:53:54] no new date added
+[26/12/2020 03:53:54] --- POLICY FILE CHECK
+[26/12/2020 03:53:54] no new countries added
+[26/12/2020 03:53:54] new date added: {20201226}
