@@ -4409,3 +4409,12 @@
 [30/12/2020 03:58:17] --- POLICY FILE CHECK
 [30/12/2020 03:58:17] no new countries added
 [30/12/2020 03:58:17] new date added: {20201230}
+[30/12/2020 11:44:22] --- CONFIRMED CASES FILE CHECK
+[30/12/2020 11:44:22] no new countries added
+[30/12/2020 11:44:22] new date added: {'12/29/20'}
+[30/12/2020 11:44:22] --- DEATHS FILE CHECK
+[30/12/2020 11:44:22] no new countries added
+[30/12/2020 11:44:22] new date added: {'12/29/20'}
+[30/12/2020 11:44:22] --- POLICY FILE CHECK
+[30/12/2020 11:44:22] no new countries added
+[30/12/2020 11:44:22] no new date added
