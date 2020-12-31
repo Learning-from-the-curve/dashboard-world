@@ -4427,3 +4427,12 @@
 [31/12/2020 04:00:52] --- POLICY FILE CHECK
 [31/12/2020 04:00:52] no new countries added
 [31/12/2020 04:00:52] new date added: {20201231}
+[31/12/2020 11:48:30] --- CONFIRMED CASES FILE CHECK
+[31/12/2020 11:48:30] no new countries added
+[31/12/2020 11:48:30] new date added: {'12/30/20'}
+[31/12/2020 11:48:30] --- DEATHS FILE CHECK
+[31/12/2020 11:48:30] no new countries added
+[31/12/2020 11:48:30] new date added: {'12/30/20'}
+[31/12/2020 11:48:30] --- POLICY FILE CHECK
+[31/12/2020 11:48:30] no new countries added
+[31/12/2020 11:48:30] no new date added
