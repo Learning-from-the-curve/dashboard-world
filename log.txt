@@ -4418,3 +4418,12 @@
 [30/12/2020 11:44:22] --- POLICY FILE CHECK
 [30/12/2020 11:44:22] no new countries added
 [30/12/2020 11:44:22] no new date added
+[31/12/2020 04:00:52] --- CONFIRMED CASES FILE CHECK
+[31/12/2020 04:00:52] no new countries added
+[31/12/2020 04:00:52] no new date added
+[31/12/2020 04:00:52] --- DEATHS FILE CHECK
+[31/12/2020 04:00:52] no new countries added
+[31/12/2020 04:00:52] no new date added
+[31/12/2020 04:00:52] --- POLICY FILE CHECK
+[31/12/2020 04:00:52] no new countries added
+[31/12/2020 04:00:52] new date added: {20201231}
