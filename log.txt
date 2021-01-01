@@ -4445,3 +4445,12 @@
 [01/01/2021 04:01:38] --- POLICY FILE CHECK
 [01/01/2021 04:01:38] no new countries added
 [01/01/2021 04:01:38] new date added: {20210101}
+[01/01/2021 11:46:55] --- CONFIRMED CASES FILE CHECK
+[01/01/2021 11:46:55] no new countries added
+[01/01/2021 11:46:55] new date added: {'12/31/20'}
+[01/01/2021 11:46:55] --- DEATHS FILE CHECK
+[01/01/2021 11:46:55] no new countries added
+[01/01/2021 11:46:55] new date added: {'12/31/20'}
+[01/01/2021 11:46:55] --- POLICY FILE CHECK
+[01/01/2021 11:46:55] no new countries added
+[01/01/2021 11:46:55] no new date added
