@@ -4499,3 +4499,16 @@
 [04/01/2021 04:06:27] --- POLICY FILE CHECK
 [04/01/2021 04:06:27] no new countries added
 [04/01/2021 04:06:27] multiple new dates added: {20210103, 20210104}
+[04/01/2021 11:50:03] --- CONFIRMED CASES FILE CHECK
+[04/01/2021 11:50:03] new countries added:
+        Province/State Country/Region
+128  Wallis and Futuna         France
+[04/01/2021 11:50:03] new date added: {'1/3/21'}
+[04/01/2021 11:50:03] --- DEATHS FILE CHECK
+[04/01/2021 11:50:03] new countries added:
+        Province/State Country/Region
+128  Wallis and Futuna         France
+[04/01/2021 11:50:03] new date added: {'1/3/21'}
+[04/01/2021 11:50:03] --- POLICY FILE CHECK
+[04/01/2021 11:50:03] no new countries added
+[04/01/2021 11:50:03] no new date added
