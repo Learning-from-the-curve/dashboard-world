@@ -4521,3 +4521,12 @@
 [05/01/2021 04:07:26] --- POLICY FILE CHECK
 [05/01/2021 04:07:26] no new countries added
 [05/01/2021 04:07:26] new date added: {20210105}
+[05/01/2021 11:50:51] --- CONFIRMED CASES FILE CHECK
+[05/01/2021 11:50:51] no new countries added
+[05/01/2021 11:50:51] new date added: {'1/4/21'}
+[05/01/2021 11:50:51] --- DEATHS FILE CHECK
+[05/01/2021 11:50:51] no new countries added
+[05/01/2021 11:50:51] new date added: {'1/4/21'}
+[05/01/2021 11:50:51] --- POLICY FILE CHECK
+[05/01/2021 11:50:51] no new countries added
+[05/01/2021 11:50:51] no new date added
