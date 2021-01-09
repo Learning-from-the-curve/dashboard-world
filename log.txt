@@ -4584,3 +4584,12 @@
 [08/01/2021 11:52:54] --- POLICY FILE CHECK
 [08/01/2021 11:52:54] no new countries added
 [08/01/2021 11:52:54] no new date added
+[09/01/2021 04:14:08] --- CONFIRMED CASES FILE CHECK
+[09/01/2021 04:14:08] no new countries added
+[09/01/2021 04:14:08] no new date added
+[09/01/2021 04:14:08] --- DEATHS FILE CHECK
+[09/01/2021 04:14:08] no new countries added
+[09/01/2021 04:14:08] no new date added
+[09/01/2021 04:14:08] --- POLICY FILE CHECK
+[09/01/2021 04:14:08] no new countries added
+[09/01/2021 04:14:08] new date added: {20210109}
