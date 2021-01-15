@@ -4692,3 +4692,12 @@
 [14/01/2021 12:10:22] --- POLICY FILE CHECK
 [14/01/2021 12:10:22] no new countries added
 [14/01/2021 12:10:22] no new date added
+[15/01/2021 04:12:52] --- CONFIRMED CASES FILE CHECK
+[15/01/2021 04:12:52] no new countries added
+[15/01/2021 04:12:52] no new date added
+[15/01/2021 04:12:52] --- DEATHS FILE CHECK
+[15/01/2021 04:12:52] no new countries added
+[15/01/2021 04:12:52] no new date added
+[15/01/2021 04:12:52] --- POLICY FILE CHECK
+[15/01/2021 04:12:52] no new countries added
+[15/01/2021 04:12:52] new date added: {20210115}
