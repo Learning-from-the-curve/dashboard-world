@@ -4737,3 +4737,12 @@
 [17/01/2021 04:13:43] --- POLICY FILE CHECK
 [17/01/2021 04:13:43] no new countries added
 [17/01/2021 04:13:43] new date added: {20210117}
+[17/01/2021 12:06:56] --- CONFIRMED CASES FILE CHECK
+[17/01/2021 12:06:56] no new countries added
+[17/01/2021 12:06:56] new date added: {'1/16/21'}
+[17/01/2021 12:06:56] --- DEATHS FILE CHECK
+[17/01/2021 12:06:56] no new countries added
+[17/01/2021 12:06:56] new date added: {'1/16/21'}
+[17/01/2021 12:06:56] --- POLICY FILE CHECK
+[17/01/2021 12:06:56] no new countries added
+[17/01/2021 12:06:56] no new date added
