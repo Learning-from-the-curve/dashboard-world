@@ -4746,3 +4746,13 @@
 [17/01/2021 12:06:56] --- POLICY FILE CHECK
 [17/01/2021 12:06:56] no new countries added
 [17/01/2021 12:06:56] no new date added
+[18/01/2021 04:13:31] --- CONFIRMED CASES FILE CHECK
+[18/01/2021 04:13:31] no new countries added
+[18/01/2021 04:13:31] no new date added
+[18/01/2021 04:13:31] --- DEATHS FILE CHECK
+[18/01/2021 04:13:31] no new countries added
+[18/01/2021 04:13:31] no new date added
+[18/01/2021 04:13:31] --- POLICY FILE CHECK
+[18/01/2021 04:13:31] new countries added:
+{'Kiribati'}
+[18/01/2021 04:13:31] new date added: {20210118}
