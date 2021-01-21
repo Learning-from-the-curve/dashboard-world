@@ -4801,3 +4801,12 @@
 [20/01/2021 12:08:40] --- POLICY FILE CHECK
 [20/01/2021 12:08:40] no new countries added
 [20/01/2021 12:08:40] no new date added
+[21/01/2021 04:16:30] --- CONFIRMED CASES FILE CHECK
+[21/01/2021 04:16:30] no new countries added
+[21/01/2021 04:16:30] no new date added
+[21/01/2021 04:16:30] --- DEATHS FILE CHECK
+[21/01/2021 04:16:30] no new countries added
+[21/01/2021 04:16:30] no new date added
+[21/01/2021 04:16:30] --- POLICY FILE CHECK
+[21/01/2021 04:16:30] no new countries added
+[21/01/2021 04:16:30] new date added: {20210121}
