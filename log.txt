@@ -4810,3 +4810,12 @@
 [21/01/2021 04:16:30] --- POLICY FILE CHECK
 [21/01/2021 04:16:30] no new countries added
 [21/01/2021 04:16:30] new date added: {20210121}
+[21/01/2021 12:08:07] --- CONFIRMED CASES FILE CHECK
+[21/01/2021 12:08:07] no new countries added
+[21/01/2021 12:08:07] new date added: {'1/20/21'}
+[21/01/2021 12:08:07] --- DEATHS FILE CHECK
+[21/01/2021 12:08:07] no new countries added
+[21/01/2021 12:08:07] new date added: {'1/20/21'}
+[21/01/2021 12:08:07] --- POLICY FILE CHECK
+[21/01/2021 12:08:07] no new countries added
+[21/01/2021 12:08:07] no new date added
