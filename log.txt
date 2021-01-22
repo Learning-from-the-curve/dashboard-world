@@ -4828,3 +4828,16 @@
 [22/01/2021 04:15:52] --- POLICY FILE CHECK
 [22/01/2021 04:15:52] no new countries added
 [22/01/2021 04:15:52] new date added: {20210122}
+[22/01/2021 12:07:46] --- CONFIRMED CASES FILE CHECK
+[22/01/2021 12:07:46] new countries added:
+    Province/State Country/Region
+182            NaN     Micronesia
+[22/01/2021 12:07:46] new date added: {'1/21/21'}
+[22/01/2021 12:07:46] --- DEATHS FILE CHECK
+[22/01/2021 12:07:46] new countries added:
+    Province/State Country/Region
+182            NaN     Micronesia
+[22/01/2021 12:07:46] new date added: {'1/21/21'}
+[22/01/2021 12:07:46] --- POLICY FILE CHECK
+[22/01/2021 12:07:46] no new countries added
+[22/01/2021 12:07:46] no new date added
