@@ -4877,3 +4877,12 @@
 [24/01/2021 12:07:16] --- POLICY FILE CHECK
 [24/01/2021 12:07:16] no new countries added
 [24/01/2021 12:07:16] no new date added
+[25/01/2021 04:17:24] --- CONFIRMED CASES FILE CHECK
+[25/01/2021 04:17:24] no new countries added
+[25/01/2021 04:17:24] no new date added
+[25/01/2021 04:17:24] --- DEATHS FILE CHECK
+[25/01/2021 04:17:24] no new countries added
+[25/01/2021 04:17:24] no new date added
+[25/01/2021 04:17:24] --- POLICY FILE CHECK
+[25/01/2021 04:17:24] no new countries added
+[25/01/2021 04:17:24] new date added: {20210125}
