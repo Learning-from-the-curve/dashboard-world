@@ -4940,3 +4940,12 @@
 [28/01/2021 03:53:43] --- POLICY FILE CHECK
 [28/01/2021 03:53:43] no new countries added
 [28/01/2021 03:53:43] multiple new dates added: {20210126, 20210127, 20210128}
+[28/01/2021 11:39:44] --- CONFIRMED CASES FILE CHECK
+[28/01/2021 11:39:44] no new countries added
+[28/01/2021 11:39:44] new date added: {'1/27/21'}
+[28/01/2021 11:39:44] --- DEATHS FILE CHECK
+[28/01/2021 11:39:44] no new countries added
+[28/01/2021 11:39:44] new date added: {'1/27/21'}
+[28/01/2021 11:39:44] --- POLICY FILE CHECK
+[28/01/2021 11:39:44] no new countries added
+[28/01/2021 11:39:44] no new date added
