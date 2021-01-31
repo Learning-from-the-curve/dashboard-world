@@ -4994,3 +4994,12 @@
 [31/01/2021 03:53:45] --- POLICY FILE CHECK
 [31/01/2021 03:53:45] no new countries added
 [31/01/2021 03:53:45] new date added: {20210131}
+[31/01/2021 11:39:49] --- CONFIRMED CASES FILE CHECK
+[31/01/2021 11:39:49] no new countries added
+[31/01/2021 11:39:49] new date added: {'1/30/21'}
+[31/01/2021 11:39:49] --- DEATHS FILE CHECK
+[31/01/2021 11:39:49] no new countries added
+[31/01/2021 11:39:49] new date added: {'1/30/21'}
+[31/01/2021 11:39:49] --- POLICY FILE CHECK
+[31/01/2021 11:39:49] no new countries added
+[31/01/2021 11:39:49] no new date added
