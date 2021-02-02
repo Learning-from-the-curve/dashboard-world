@@ -5030,3 +5030,12 @@
 [02/02/2021 03:55:13] --- POLICY FILE CHECK
 [02/02/2021 03:55:13] no new countries added
 [02/02/2021 03:55:13] new date added: {20210202}
+[02/02/2021 11:45:30] --- CONFIRMED CASES FILE CHECK
+[02/02/2021 11:45:30] no new countries added
+[02/02/2021 11:45:30] new date added: {'2/1/21'}
+[02/02/2021 11:45:30] --- DEATHS FILE CHECK
+[02/02/2021 11:45:30] no new countries added
+[02/02/2021 11:45:30] new date added: {'2/1/21'}
+[02/02/2021 11:45:30] --- POLICY FILE CHECK
+[02/02/2021 11:45:30] no new countries added
+[02/02/2021 11:45:30] no new date added
