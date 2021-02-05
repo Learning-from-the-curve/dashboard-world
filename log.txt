@@ -5075,3 +5075,12 @@
 [04/02/2021 11:43:23] --- POLICY FILE CHECK
 [04/02/2021 11:43:23] no new countries added
 [04/02/2021 11:43:23] no new date added
+[05/02/2021 03:42:45] --- CONFIRMED CASES FILE CHECK
+[05/02/2021 03:42:45] no new countries added
+[05/02/2021 03:42:45] no new date added
+[05/02/2021 03:42:45] --- DEATHS FILE CHECK
+[05/02/2021 03:42:45] no new countries added
+[05/02/2021 03:42:45] no new date added
+[05/02/2021 03:42:45] --- POLICY FILE CHECK
+[05/02/2021 03:42:45] no new countries added
+[05/02/2021 03:42:45] new date added: {20210205}
