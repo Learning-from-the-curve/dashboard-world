@@ -5210,3 +5210,12 @@
 [12/02/2021 03:43:13] --- POLICY FILE CHECK
 [12/02/2021 03:43:13] no new countries added
 [12/02/2021 03:43:13] new date added: {20210212}
+[12/02/2021 11:33:52] --- CONFIRMED CASES FILE CHECK
+[12/02/2021 11:33:52] no new countries added
+[12/02/2021 11:33:52] new date added: {'2/11/21'}
+[12/02/2021 11:33:52] --- DEATHS FILE CHECK
+[12/02/2021 11:33:52] no new countries added
+[12/02/2021 11:33:52] new date added: {'2/11/21'}
+[12/02/2021 11:33:52] --- POLICY FILE CHECK
+[12/02/2021 11:33:52] no new countries added
+[12/02/2021 11:33:52] no new date added
