@@ -5219,3 +5219,12 @@
 [12/02/2021 11:33:52] --- POLICY FILE CHECK
 [12/02/2021 11:33:52] no new countries added
 [12/02/2021 11:33:52] no new date added
+[13/02/2021 03:43:06] --- CONFIRMED CASES FILE CHECK
+[13/02/2021 03:43:06] no new countries added
+[13/02/2021 03:43:06] no new date added
+[13/02/2021 03:43:06] --- DEATHS FILE CHECK
+[13/02/2021 03:43:06] no new countries added
+[13/02/2021 03:43:06] no new date added
+[13/02/2021 03:43:06] --- POLICY FILE CHECK
+[13/02/2021 03:43:06] no new countries added
+[13/02/2021 03:43:06] new date added: {20210213}
