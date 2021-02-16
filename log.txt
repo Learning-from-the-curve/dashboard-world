@@ -5273,3 +5273,12 @@
 [15/02/2021 11:36:58] --- POLICY FILE CHECK
 [15/02/2021 11:36:58] no new countries added
 [15/02/2021 11:36:58] no new date added
+[16/02/2021 03:43:37] --- CONFIRMED CASES FILE CHECK
+[16/02/2021 03:43:37] no new countries added
+[16/02/2021 03:43:37] no new date added
+[16/02/2021 03:43:37] --- DEATHS FILE CHECK
+[16/02/2021 03:43:37] no new countries added
+[16/02/2021 03:43:37] no new date added
+[16/02/2021 03:43:37] --- POLICY FILE CHECK
+[16/02/2021 03:43:37] no new countries added
+[16/02/2021 03:43:37] new date added: {20210216}
