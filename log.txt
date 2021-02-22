@@ -5390,3 +5390,12 @@
 [22/02/2021 03:44:09] --- POLICY FILE CHECK
 [22/02/2021 03:44:09] no new countries added
 [22/02/2021 03:44:09] new date added: {20210222}
+[22/02/2021 11:34:40] --- CONFIRMED CASES FILE CHECK
+[22/02/2021 11:34:40] no new countries added
+[22/02/2021 11:34:40] new date added: {'2/21/21'}
+[22/02/2021 11:34:40] --- DEATHS FILE CHECK
+[22/02/2021 11:34:40] no new countries added
+[22/02/2021 11:34:40] new date added: {'2/21/21'}
+[22/02/2021 11:34:40] --- POLICY FILE CHECK
+[22/02/2021 11:34:40] no new countries added
+[22/02/2021 11:34:40] no new date added
