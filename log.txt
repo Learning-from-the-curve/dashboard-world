@@ -5408,3 +5408,13 @@
 [23/02/2021 03:44:37] --- POLICY FILE CHECK
 [23/02/2021 03:44:37] no new countries added
 [23/02/2021 03:44:37] new date added: {20210223}
+[23/02/2021 11:34:44] --- CONFIRMED CASES FILE CHECK
+[23/02/2021 11:34:44] no new countries added
+[23/02/2021 11:34:44] new date added: {'2/22/21'}
+[23/02/2021 11:34:44] --- DEATHS FILE CHECK
+[23/02/2021 11:34:44] no new countries added
+[23/02/2021 11:34:44] new date added: {'2/22/21'}
+[23/02/2021 11:34:44] --- POLICY FILE CHECK
+[23/02/2021 11:34:44] new countries added:
+{'Liechtenstein'}
+[23/02/2021 11:34:44] no new date added
