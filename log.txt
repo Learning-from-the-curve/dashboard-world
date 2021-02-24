@@ -5418,3 +5418,12 @@
 [23/02/2021 11:34:44] new countries added:
 {'Liechtenstein'}
 [23/02/2021 11:34:44] no new date added
+[24/02/2021 03:44:40] --- CONFIRMED CASES FILE CHECK
+[24/02/2021 03:44:40] no new countries added
+[24/02/2021 03:44:40] no new date added
+[24/02/2021 03:44:40] --- DEATHS FILE CHECK
+[24/02/2021 03:44:40] no new countries added
+[24/02/2021 03:44:40] no new date added
+[24/02/2021 03:44:40] --- POLICY FILE CHECK
+[24/02/2021 03:44:40] no new countries added
+[24/02/2021 03:44:40] new date added: {20210224}
