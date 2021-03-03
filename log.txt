@@ -5557,3 +5557,12 @@
 [03/03/2021 03:40:23] --- POLICY FILE CHECK
 [03/03/2021 03:40:23] no new countries added
 [03/03/2021 03:40:23] new date added: {20210303}
+[03/03/2021 11:35:11] --- CONFIRMED CASES FILE CHECK
+[03/03/2021 11:35:11] no new countries added
+[03/03/2021 11:35:11] new date added: {'3/2/21'}
+[03/03/2021 11:35:11] --- DEATHS FILE CHECK
+[03/03/2021 11:35:11] no new countries added
+[03/03/2021 11:35:11] new date added: {'3/2/21'}
+[03/03/2021 11:35:11] --- POLICY FILE CHECK
+[03/03/2021 11:35:11] no new countries added
+[03/03/2021 11:35:11] no new date added
