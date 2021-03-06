@@ -5611,3 +5611,12 @@
 [06/03/2021 03:45:38] --- POLICY FILE CHECK
 [06/03/2021 03:45:38] no new countries added
 [06/03/2021 03:45:38] new date added: {20210306}
+[06/03/2021 11:35:49] --- CONFIRMED CASES FILE CHECK
+[06/03/2021 11:35:49] no new countries added
+[06/03/2021 11:35:49] new date added: {'3/5/21'}
+[06/03/2021 11:35:49] --- DEATHS FILE CHECK
+[06/03/2021 11:35:49] no new countries added
+[06/03/2021 11:35:49] new date added: {'3/5/21'}
+[06/03/2021 11:35:49] --- POLICY FILE CHECK
+[06/03/2021 11:35:49] no new countries added
+[06/03/2021 11:35:49] no new date added
