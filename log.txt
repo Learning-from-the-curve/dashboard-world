@@ -5602,3 +5602,12 @@
 [05/03/2021 11:35:50] --- POLICY FILE CHECK
 [05/03/2021 11:35:50] no new countries added
 [05/03/2021 11:35:50] no new date added
+[06/03/2021 03:45:38] --- CONFIRMED CASES FILE CHECK
+[06/03/2021 03:45:38] no new countries added
+[06/03/2021 03:45:38] no new date added
+[06/03/2021 03:45:38] --- DEATHS FILE CHECK
+[06/03/2021 03:45:38] no new countries added
+[06/03/2021 03:45:38] no new date added
+[06/03/2021 03:45:38] --- POLICY FILE CHECK
+[06/03/2021 03:45:38] no new countries added
+[06/03/2021 03:45:38] new date added: {20210306}
