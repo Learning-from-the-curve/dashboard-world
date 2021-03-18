@@ -5818,3 +5818,12 @@
 [17/03/2021 11:36:47] --- POLICY FILE CHECK
 [17/03/2021 11:36:47] no new countries added
 [17/03/2021 11:36:47] no new date added
+[18/03/2021 03:46:04] --- CONFIRMED CASES FILE CHECK
+[18/03/2021 03:46:04] no new countries added
+[18/03/2021 03:46:04] no new date added
+[18/03/2021 03:46:04] --- DEATHS FILE CHECK
+[18/03/2021 03:46:04] no new countries added
+[18/03/2021 03:46:04] no new date added
+[18/03/2021 03:46:04] --- POLICY FILE CHECK
+[18/03/2021 03:46:04] no new countries added
+[18/03/2021 03:46:04] new date added: {20210318}
