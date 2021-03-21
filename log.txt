@@ -5881,3 +5881,12 @@
 [21/03/2021 03:46:57] --- POLICY FILE CHECK
 [21/03/2021 03:46:57] no new countries added
 [21/03/2021 03:46:57] new date added: {20210321}
+[21/03/2021 11:41:58] --- CONFIRMED CASES FILE CHECK
+[21/03/2021 11:41:58] no new countries added
+[21/03/2021 11:41:58] new date added: {'3/20/21'}
+[21/03/2021 11:41:58] --- DEATHS FILE CHECK
+[21/03/2021 11:41:58] no new countries added
+[21/03/2021 11:41:58] new date added: {'3/20/21'}
+[21/03/2021 11:41:58] --- POLICY FILE CHECK
+[21/03/2021 11:41:58] no new countries added
+[21/03/2021 11:41:58] no new date added
