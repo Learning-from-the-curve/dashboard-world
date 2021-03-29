@@ -6016,3 +6016,12 @@
 [28/03/2021 11:39:19] --- POLICY FILE CHECK
 [28/03/2021 11:39:19] no new countries added
 [28/03/2021 11:39:19] no new date added
+[29/03/2021 03:53:19] --- CONFIRMED CASES FILE CHECK
+[29/03/2021 03:53:19] no new countries added
+[29/03/2021 03:53:19] no new date added
+[29/03/2021 03:53:19] --- DEATHS FILE CHECK
+[29/03/2021 03:53:19] no new countries added
+[29/03/2021 03:53:19] no new date added
+[29/03/2021 03:53:19] --- POLICY FILE CHECK
+[29/03/2021 03:53:19] no new countries added
+[29/03/2021 03:53:19] new date added: {20210329}
