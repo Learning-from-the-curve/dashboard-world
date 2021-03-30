@@ -6034,3 +6034,12 @@
 [29/03/2021 11:39:16] --- POLICY FILE CHECK
 [29/03/2021 11:39:16] no new countries added
 [29/03/2021 11:39:16] no new date added
+[30/03/2021 03:51:57] --- CONFIRMED CASES FILE CHECK
+[30/03/2021 03:51:57] no new countries added
+[30/03/2021 03:51:57] no new date added
+[30/03/2021 03:51:57] --- DEATHS FILE CHECK
+[30/03/2021 03:51:57] no new countries added
+[30/03/2021 03:51:57] no new date added
+[30/03/2021 03:51:57] --- POLICY FILE CHECK
+[30/03/2021 03:51:57] no new countries added
+[30/03/2021 03:51:57] new date added: {20210330}
