@@ -6043,3 +6043,12 @@
 [30/03/2021 03:51:57] --- POLICY FILE CHECK
 [30/03/2021 03:51:57] no new countries added
 [30/03/2021 03:51:57] new date added: {20210330}
+[30/03/2021 11:39:31] --- CONFIRMED CASES FILE CHECK
+[30/03/2021 11:39:31] no new countries added
+[30/03/2021 11:39:31] new date added: {'3/29/21'}
+[30/03/2021 11:39:31] --- DEATHS FILE CHECK
+[30/03/2021 11:39:31] no new countries added
+[30/03/2021 11:39:31] new date added: {'3/29/21'}
+[30/03/2021 11:39:31] --- POLICY FILE CHECK
+[30/03/2021 11:39:31] no new countries added
+[30/03/2021 11:39:31] no new date added
