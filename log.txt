@@ -6061,3 +6061,12 @@
 [31/03/2021 03:52:25] --- POLICY FILE CHECK
 [31/03/2021 03:52:25] no new countries added
 [31/03/2021 03:52:25] new date added: {20210331}
+[31/03/2021 11:39:29] --- CONFIRMED CASES FILE CHECK
+[31/03/2021 11:39:29] no new countries added
+[31/03/2021 11:39:29] new date added: {'3/30/21'}
+[31/03/2021 11:39:29] --- DEATHS FILE CHECK
+[31/03/2021 11:39:29] no new countries added
+[31/03/2021 11:39:29] new date added: {'3/30/21'}
+[31/03/2021 11:39:29] --- POLICY FILE CHECK
+[31/03/2021 11:39:29] no new countries added
+[31/03/2021 11:39:29] no new date added
