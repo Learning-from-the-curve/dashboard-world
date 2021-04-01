@@ -6070,3 +6070,12 @@
 [31/03/2021 11:39:29] --- POLICY FILE CHECK
 [31/03/2021 11:39:29] no new countries added
 [31/03/2021 11:39:29] no new date added
+[01/04/2021 03:53:31] --- CONFIRMED CASES FILE CHECK
+[01/04/2021 03:53:31] no new countries added
+[01/04/2021 03:53:31] no new date added
+[01/04/2021 03:53:31] --- DEATHS FILE CHECK
+[01/04/2021 03:53:31] no new countries added
+[01/04/2021 03:53:31] no new date added
+[01/04/2021 03:53:31] --- POLICY FILE CHECK
+[01/04/2021 03:53:31] no new countries added
+[01/04/2021 03:53:31] new date added: {20210401}
