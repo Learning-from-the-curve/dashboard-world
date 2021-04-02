@@ -6088,3 +6088,12 @@
 [01/04/2021 11:39:40] --- POLICY FILE CHECK
 [01/04/2021 11:39:40] no new countries added
 [01/04/2021 11:39:40] no new date added
+[02/04/2021 03:55:34] --- CONFIRMED CASES FILE CHECK
+[02/04/2021 03:55:34] no new countries added
+[02/04/2021 03:55:34] no new date added
+[02/04/2021 03:55:34] --- DEATHS FILE CHECK
+[02/04/2021 03:55:34] no new countries added
+[02/04/2021 03:55:34] no new date added
+[02/04/2021 03:55:34] --- POLICY FILE CHECK
+[02/04/2021 03:55:34] no new countries added
+[02/04/2021 03:55:34] no new date added
