@@ -6115,3 +6115,12 @@
 [03/04/2021 03:52:42] --- POLICY FILE CHECK
 [03/04/2021 03:52:42] no new countries added
 [03/04/2021 03:52:42] new date added: {20210403}
+[03/04/2021 11:39:14] --- CONFIRMED CASES FILE CHECK
+[03/04/2021 11:39:14] no new countries added
+[03/04/2021 11:39:14] new date added: {'4/2/21'}
+[03/04/2021 11:39:14] --- DEATHS FILE CHECK
+[03/04/2021 11:39:14] no new countries added
+[03/04/2021 11:39:14] new date added: {'4/2/21'}
+[03/04/2021 11:39:14] --- POLICY FILE CHECK
+[03/04/2021 11:39:14] no new countries added
+[03/04/2021 11:39:14] no new date added
