@@ -6133,3 +6133,12 @@
 [04/04/2021 03:53:28] --- POLICY FILE CHECK
 [04/04/2021 03:53:28] no new countries added
 [04/04/2021 03:53:28] new date added: {20210404}
+[04/04/2021 11:39:34] --- CONFIRMED CASES FILE CHECK
+[04/04/2021 11:39:34] no new countries added
+[04/04/2021 11:39:34] new date added: {'4/3/21'}
+[04/04/2021 11:39:34] --- DEATHS FILE CHECK
+[04/04/2021 11:39:34] no new countries added
+[04/04/2021 11:39:34] new date added: {'4/3/21'}
+[04/04/2021 11:39:34] --- POLICY FILE CHECK
+[04/04/2021 11:39:34] no new countries added
+[04/04/2021 11:39:34] no new date added
