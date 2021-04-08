@@ -6205,3 +6205,12 @@
 [08/04/2021 03:54:40] --- POLICY FILE CHECK
 [08/04/2021 03:54:40] no new countries added
 [08/04/2021 03:54:40] new date added: {20210408}
+[08/04/2021 11:39:27] --- CONFIRMED CASES FILE CHECK
+[08/04/2021 11:39:27] no new countries added
+[08/04/2021 11:39:27] new date added: {'4/7/21'}
+[08/04/2021 11:39:27] --- DEATHS FILE CHECK
+[08/04/2021 11:39:27] no new countries added
+[08/04/2021 11:39:27] new date added: {'4/7/21'}
+[08/04/2021 11:39:27] --- POLICY FILE CHECK
+[08/04/2021 11:39:27] no new countries added
+[08/04/2021 11:39:27] no new date added
