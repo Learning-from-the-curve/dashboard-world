@@ -6259,3 +6259,12 @@
 [11/04/2021 03:52:33] --- POLICY FILE CHECK
 [11/04/2021 03:52:33] no new countries added
 [11/04/2021 03:52:33] new date added: {20210411}
+[11/04/2021 11:39:08] --- CONFIRMED CASES FILE CHECK
+[11/04/2021 11:39:08] no new countries added
+[11/04/2021 11:39:08] new date added: {'4/10/21'}
+[11/04/2021 11:39:08] --- DEATHS FILE CHECK
+[11/04/2021 11:39:08] no new countries added
+[11/04/2021 11:39:08] new date added: {'4/10/21'}
+[11/04/2021 11:39:08] --- POLICY FILE CHECK
+[11/04/2021 11:39:08] no new countries added
+[11/04/2021 11:39:08] no new date added
