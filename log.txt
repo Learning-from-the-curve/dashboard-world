@@ -6403,3 +6403,12 @@
 [19/04/2021 03:52:25] --- POLICY FILE CHECK
 [19/04/2021 03:52:25] no new countries added
 [19/04/2021 03:52:25] new date added: {20210419}
+[19/04/2021 11:38:49] --- CONFIRMED CASES FILE CHECK
+[19/04/2021 11:38:49] no new countries added
+[19/04/2021 11:38:49] new date added: {'4/18/21'}
+[19/04/2021 11:38:49] --- DEATHS FILE CHECK
+[19/04/2021 11:38:49] no new countries added
+[19/04/2021 11:38:49] new date added: {'4/18/21'}
+[19/04/2021 11:38:49] --- POLICY FILE CHECK
+[19/04/2021 11:38:49] no new countries added
+[19/04/2021 11:38:49] no new date added
