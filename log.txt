@@ -6430,3 +6430,12 @@
 [20/04/2021 11:39:00] --- POLICY FILE CHECK
 [20/04/2021 11:39:00] no new countries added
 [20/04/2021 11:39:00] no new date added
+[21/04/2021 03:52:00] --- CONFIRMED CASES FILE CHECK
+[21/04/2021 03:52:00] no new countries added
+[21/04/2021 03:52:00] no new date added
+[21/04/2021 03:52:00] --- DEATHS FILE CHECK
+[21/04/2021 03:52:00] no new countries added
+[21/04/2021 03:52:00] no new date added
+[21/04/2021 03:52:00] --- POLICY FILE CHECK
+[21/04/2021 03:52:00] no new countries added
+[21/04/2021 03:52:00] new date added: {20210421}
