@@ -6466,3 +6466,16 @@
 [22/04/2021 11:39:18] --- POLICY FILE CHECK
 [22/04/2021 11:39:18] no new countries added
 [22/04/2021 11:39:18] no new date added
+[23/04/2021 03:53:12] --- CONFIRMED CASES FILE CHECK
+[23/04/2021 03:53:12] new countries added:
+   Province/State Country/Region
+91        Unknown          China
+[23/04/2021 03:53:12] no new date added
+[23/04/2021 03:53:12] --- DEATHS FILE CHECK
+[23/04/2021 03:53:12] new countries added:
+   Province/State Country/Region
+91        Unknown          China
+[23/04/2021 03:53:12] no new date added
+[23/04/2021 03:53:12] --- POLICY FILE CHECK
+[23/04/2021 03:53:12] no new countries added
+[23/04/2021 03:53:12] new date added: {20210423}
