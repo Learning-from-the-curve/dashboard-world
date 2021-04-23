@@ -6479,3 +6479,12 @@
 [23/04/2021 03:53:12] --- POLICY FILE CHECK
 [23/04/2021 03:53:12] no new countries added
 [23/04/2021 03:53:12] new date added: {20210423}
+[23/04/2021 11:39:35] --- CONFIRMED CASES FILE CHECK
+[23/04/2021 11:39:35] no new countries added
+[23/04/2021 11:39:35] new date added: {'4/22/21'}
+[23/04/2021 11:39:35] --- DEATHS FILE CHECK
+[23/04/2021 11:39:35] no new countries added
+[23/04/2021 11:39:35] new date added: {'4/22/21'}
+[23/04/2021 11:39:35] --- POLICY FILE CHECK
+[23/04/2021 11:39:35] no new countries added
+[23/04/2021 11:39:35] no new date added
