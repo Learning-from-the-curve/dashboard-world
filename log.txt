@@ -6542,3 +6542,12 @@
 [26/04/2021 11:39:48] --- POLICY FILE CHECK
 [26/04/2021 11:39:48] no new countries added
 [26/04/2021 11:39:48] no new date added
+[27/04/2021 03:51:47] --- CONFIRMED CASES FILE CHECK
+[27/04/2021 03:51:47] no new countries added
+[27/04/2021 03:51:47] no new date added
+[27/04/2021 03:51:47] --- DEATHS FILE CHECK
+[27/04/2021 03:51:47] no new countries added
+[27/04/2021 03:51:47] no new date added
+[27/04/2021 03:51:47] --- POLICY FILE CHECK
+[27/04/2021 03:51:47] no new countries added
+[27/04/2021 03:51:47] new date added: {20210427}
