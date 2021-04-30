@@ -6605,3 +6605,12 @@
 [30/04/2021 03:51:51] --- POLICY FILE CHECK
 [30/04/2021 03:51:51] no new countries added
 [30/04/2021 03:51:51] new date added: {20210430}
+[30/04/2021 11:38:39] --- CONFIRMED CASES FILE CHECK
+[30/04/2021 11:38:39] no new countries added
+[30/04/2021 11:38:39] new date added: {'4/29/21'}
+[30/04/2021 11:38:39] --- DEATHS FILE CHECK
+[30/04/2021 11:38:39] no new countries added
+[30/04/2021 11:38:39] new date added: {'4/29/21'}
+[30/04/2021 11:38:39] --- POLICY FILE CHECK
+[30/04/2021 11:38:39] no new countries added
+[30/04/2021 11:38:39] no new date added
