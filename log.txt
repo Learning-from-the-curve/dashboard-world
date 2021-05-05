@@ -6695,3 +6695,12 @@
 [05/05/2021 03:50:05] --- POLICY FILE CHECK
 [05/05/2021 03:50:05] no new countries added
 [05/05/2021 03:50:05] new date added: {20210505}
+[05/05/2021 11:37:44] --- CONFIRMED CASES FILE CHECK
+[05/05/2021 11:37:44] no new countries added
+[05/05/2021 11:37:44] new date added: {'5/4/21'}
+[05/05/2021 11:37:44] --- DEATHS FILE CHECK
+[05/05/2021 11:37:44] no new countries added
+[05/05/2021 11:37:44] new date added: {'5/4/21'}
+[05/05/2021 11:37:44] --- POLICY FILE CHECK
+[05/05/2021 11:37:44] no new countries added
+[05/05/2021 11:37:44] no new date added
