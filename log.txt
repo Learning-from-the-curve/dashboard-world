@@ -6821,3 +6821,12 @@
 [12/05/2021 03:56:53] --- POLICY FILE CHECK
 [12/05/2021 03:56:53] no new countries added
 [12/05/2021 03:56:53] new date added: {20210512}
+[12/05/2021 11:39:06] --- CONFIRMED CASES FILE CHECK
+[12/05/2021 11:39:06] no new countries added
+[12/05/2021 11:39:06] new date added: {'5/11/21'}
+[12/05/2021 11:39:06] --- DEATHS FILE CHECK
+[12/05/2021 11:39:06] no new countries added
+[12/05/2021 11:39:06] new date added: {'5/11/21'}
+[12/05/2021 11:39:06] --- POLICY FILE CHECK
+[12/05/2021 11:39:06] no new countries added
+[12/05/2021 11:39:06] no new date added
