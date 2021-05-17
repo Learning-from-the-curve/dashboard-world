@@ -6902,3 +6902,12 @@
 [17/05/2021 04:00:57] --- POLICY FILE CHECK
 [17/05/2021 04:00:57] no new countries added
 [17/05/2021 04:00:57] multiple new dates added: {20210516, 20210517}
+[17/05/2021 12:37:49] --- CONFIRMED CASES FILE CHECK
+[17/05/2021 12:37:49] no new countries added
+[17/05/2021 12:37:49] new date added: {'5/16/21'}
+[17/05/2021 12:37:49] --- DEATHS FILE CHECK
+[17/05/2021 12:37:49] no new countries added
+[17/05/2021 12:37:49] new date added: {'5/16/21'}
+[17/05/2021 12:37:49] --- POLICY FILE CHECK
+[17/05/2021 12:37:49] no new countries added
+[17/05/2021 12:37:49] no new date added
