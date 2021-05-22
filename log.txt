@@ -7001,3 +7001,12 @@
 [22/05/2021 04:01:45] --- POLICY FILE CHECK
 [22/05/2021 04:01:45] no new countries added
 [22/05/2021 04:01:45] new date added: {20210522}
+[22/05/2021 11:39:16] --- CONFIRMED CASES FILE CHECK
+[22/05/2021 11:39:16] no new countries added
+[22/05/2021 11:39:16] new date added: {'5/21/21'}
+[22/05/2021 11:39:16] --- DEATHS FILE CHECK
+[22/05/2021 11:39:16] no new countries added
+[22/05/2021 11:39:16] new date added: {'5/21/21'}
+[22/05/2021 11:39:16] --- POLICY FILE CHECK
+[22/05/2021 11:39:16] no new countries added
+[22/05/2021 11:39:16] no new date added
