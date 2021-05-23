@@ -7019,3 +7019,12 @@
 [23/05/2021 04:09:59] --- POLICY FILE CHECK
 [23/05/2021 04:09:59] no new countries added
 [23/05/2021 04:09:59] new date added: {20210523}
+[23/05/2021 11:38:56] --- CONFIRMED CASES FILE CHECK
+[23/05/2021 11:38:56] no new countries added
+[23/05/2021 11:38:56] new date added: {'5/22/21'}
+[23/05/2021 11:38:56] --- DEATHS FILE CHECK
+[23/05/2021 11:38:56] no new countries added
+[23/05/2021 11:38:56] new date added: {'5/22/21'}
+[23/05/2021 11:38:56] --- POLICY FILE CHECK
+[23/05/2021 11:38:56] no new countries added
+[23/05/2021 11:38:56] no new date added
