@@ -7028,3 +7028,12 @@
 [23/05/2021 11:38:56] --- POLICY FILE CHECK
 [23/05/2021 11:38:56] no new countries added
 [23/05/2021 11:38:56] no new date added
+[24/05/2021 04:08:08] --- CONFIRMED CASES FILE CHECK
+[24/05/2021 04:08:08] no new countries added
+[24/05/2021 04:08:08] no new date added
+[24/05/2021 04:08:08] --- DEATHS FILE CHECK
+[24/05/2021 04:08:08] no new countries added
+[24/05/2021 04:08:08] no new date added
+[24/05/2021 04:08:08] --- POLICY FILE CHECK
+[24/05/2021 04:08:08] no new countries added
+[24/05/2021 04:08:08] new date added: {20210524}
