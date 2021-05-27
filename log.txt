@@ -7091,3 +7091,12 @@
 [27/05/2021 04:37:05] --- POLICY FILE CHECK
 [27/05/2021 04:37:05] no new countries added
 [27/05/2021 04:37:05] new date added: {20210527}
+[27/05/2021 12:00:32] --- CONFIRMED CASES FILE CHECK
+[27/05/2021 12:00:32] no new countries added
+[27/05/2021 12:00:32] new date added: {'5/26/21'}
+[27/05/2021 12:00:32] --- DEATHS FILE CHECK
+[27/05/2021 12:00:32] no new countries added
+[27/05/2021 12:00:32] new date added: {'5/26/21'}
+[27/05/2021 12:00:32] --- POLICY FILE CHECK
+[27/05/2021 12:00:32] no new countries added
+[27/05/2021 12:00:32] no new date added
