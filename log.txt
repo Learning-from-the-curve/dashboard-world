@@ -7100,3 +7100,16 @@
 [27/05/2021 12:00:32] --- POLICY FILE CHECK
 [27/05/2021 12:00:32] no new countries added
 [27/05/2021 12:00:32] no new date added
+[28/05/2021 05:06:30] --- CONFIRMED CASES FILE CHECK
+[28/05/2021 05:06:30] new countries added:
+    Province/State Country/Region
+159            NaN       Kiribati
+[28/05/2021 05:06:30] new date added: {'5/27/21'}
+[28/05/2021 05:06:30] --- DEATHS FILE CHECK
+[28/05/2021 05:06:30] new countries added:
+    Province/State Country/Region
+159            NaN       Kiribati
+[28/05/2021 05:06:30] new date added: {'5/27/21'}
+[28/05/2021 05:06:30] --- POLICY FILE CHECK
+[28/05/2021 05:06:30] no new countries added
+[28/05/2021 05:06:30] new date added: {20210528}
