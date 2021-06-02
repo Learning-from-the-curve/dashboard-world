@@ -7194,3 +7194,12 @@
 [01/06/2021 12:18:52] --- POLICY FILE CHECK
 [01/06/2021 12:18:52] no new countries added
 [01/06/2021 12:18:52] no new date added
+[02/06/2021 05:51:01] --- CONFIRMED CASES FILE CHECK
+[02/06/2021 05:51:01] no new countries added
+[02/06/2021 05:51:01] new date added: {'6/1/21'}
+[02/06/2021 05:51:01] --- DEATHS FILE CHECK
+[02/06/2021 05:51:01] no new countries added
+[02/06/2021 05:51:01] new date added: {'6/1/21'}
+[02/06/2021 05:51:01] --- POLICY FILE CHECK
+[02/06/2021 05:51:01] no new countries added
+[02/06/2021 05:51:01] new date added: {20210602}
