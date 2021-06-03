@@ -7221,3 +7221,12 @@
 [03/06/2021 05:28:12] --- POLICY FILE CHECK
 [03/06/2021 05:28:12] no new countries added
 [03/06/2021 05:28:12] new date added: {20210603}
+[03/06/2021 12:08:00] --- CONFIRMED CASES FILE CHECK
+[03/06/2021 12:08:00] no new countries added
+[03/06/2021 12:08:00] no new date added
+[03/06/2021 12:08:00] --- DEATHS FILE CHECK
+[03/06/2021 12:08:00] no new countries added
+[03/06/2021 12:08:00] no new date added
+[03/06/2021 12:08:00] --- POLICY FILE CHECK
+[03/06/2021 12:08:00] no new countries added
+[03/06/2021 12:08:00] no new date added
