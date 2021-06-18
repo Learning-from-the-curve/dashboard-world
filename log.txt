@@ -7482,3 +7482,18 @@
 [17/06/2021 11:31:39] --- POLICY FILE CHECK
 [17/06/2021 11:31:39] no new countries added
 [17/06/2021 11:31:39] no new date added
+[18/06/2021 03:51:03] --- CONFIRMED CASES FILE CHECK
+[18/06/2021 03:51:03] new countries added:
+    Province/State Country/Region
+199   Cook Islands    New Zealand
+206            NaN          Palau
+[18/06/2021 03:51:03] no new date added
+[18/06/2021 03:51:03] --- DEATHS FILE CHECK
+[18/06/2021 03:51:03] new countries added:
+    Province/State Country/Region
+199   Cook Islands    New Zealand
+206            NaN          Palau
+[18/06/2021 03:51:03] no new date added
+[18/06/2021 03:51:03] --- POLICY FILE CHECK
+[18/06/2021 03:51:03] no new countries added
+[18/06/2021 03:51:03] new date added: {20210618}
