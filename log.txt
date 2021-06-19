@@ -7515,3 +7515,12 @@
 [19/06/2021 03:49:27] --- POLICY FILE CHECK
 [19/06/2021 03:49:27] no new countries added
 [19/06/2021 03:49:27] new date added: {20210619}
+[19/06/2021 11:33:57] --- CONFIRMED CASES FILE CHECK
+[19/06/2021 11:33:57] no new countries added
+[19/06/2021 11:33:57] new date added: {'6/18/21'}
+[19/06/2021 11:33:57] --- DEATHS FILE CHECK
+[19/06/2021 11:33:57] no new countries added
+[19/06/2021 11:33:57] new date added: {'6/18/21'}
+[19/06/2021 11:33:57] --- POLICY FILE CHECK
+[19/06/2021 11:33:57] no new countries added
+[19/06/2021 11:33:57] no new date added
