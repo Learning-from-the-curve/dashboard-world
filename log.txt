@@ -7672,3 +7672,12 @@
 [27/06/2021 11:31:49] --- POLICY FILE CHECK
 [27/06/2021 11:31:49] no new countries added
 [27/06/2021 11:31:49] no new date added
+[28/06/2021 03:45:54] --- CONFIRMED CASES FILE CHECK
+[28/06/2021 03:45:54] no new countries added
+[28/06/2021 03:45:54] no new date added
+[28/06/2021 03:45:54] --- DEATHS FILE CHECK
+[28/06/2021 03:45:54] no new countries added
+[28/06/2021 03:45:54] no new date added
+[28/06/2021 03:45:54] --- POLICY FILE CHECK
+[28/06/2021 03:45:54] no new countries added
+[28/06/2021 03:45:54] new date added: {20210628}
