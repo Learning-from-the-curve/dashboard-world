@@ -7726,3 +7726,12 @@
 [30/06/2021 11:31:51] --- POLICY FILE CHECK
 [30/06/2021 11:31:51] no new countries added
 [30/06/2021 11:31:51] no new date added
+[01/07/2021 03:45:09] --- CONFIRMED CASES FILE CHECK
+[01/07/2021 03:45:09] no new countries added
+[01/07/2021 03:45:09] no new date added
+[01/07/2021 03:45:09] --- DEATHS FILE CHECK
+[01/07/2021 03:45:09] no new countries added
+[01/07/2021 03:45:09] no new date added
+[01/07/2021 03:45:09] --- POLICY FILE CHECK
+[01/07/2021 03:45:09] no new countries added
+[01/07/2021 03:45:09] new date added: {20210701}
