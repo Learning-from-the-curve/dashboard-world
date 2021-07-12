@@ -7933,3 +7933,12 @@
 [12/07/2021 03:45:03] --- POLICY FILE CHECK
 [12/07/2021 03:45:03] no new countries added
 [12/07/2021 03:45:03] new date added: {20210712}
+[12/07/2021 11:32:10] --- CONFIRMED CASES FILE CHECK
+[12/07/2021 11:32:10] no new countries added
+[12/07/2021 11:32:10] new date added: {'7/11/21'}
+[12/07/2021 11:32:10] --- DEATHS FILE CHECK
+[12/07/2021 11:32:10] no new countries added
+[12/07/2021 11:32:10] new date added: {'7/11/21'}
+[12/07/2021 11:32:10] --- POLICY FILE CHECK
+[12/07/2021 11:32:10] no new countries added
+[12/07/2021 11:32:10] no new date added
