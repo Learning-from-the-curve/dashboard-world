@@ -8023,3 +8023,12 @@
 [17/07/2021 03:44:32] --- POLICY FILE CHECK
 [17/07/2021 03:44:32] no new countries added
 [17/07/2021 03:44:32] new date added: {20210717}
+[17/07/2021 11:32:04] --- CONFIRMED CASES FILE CHECK
+[17/07/2021 11:32:04] no new countries added
+[17/07/2021 11:32:04] new date added: {'7/16/21'}
+[17/07/2021 11:32:04] --- DEATHS FILE CHECK
+[17/07/2021 11:32:04] no new countries added
+[17/07/2021 11:32:04] new date added: {'7/16/21'}
+[17/07/2021 11:32:04] --- POLICY FILE CHECK
+[17/07/2021 11:32:04] no new countries added
+[17/07/2021 11:32:04] no new date added
