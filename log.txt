@@ -8041,3 +8041,12 @@
 [18/07/2021 03:44:41] --- POLICY FILE CHECK
 [18/07/2021 03:44:41] no new countries added
 [18/07/2021 03:44:41] new date added: {20210718}
+[18/07/2021 11:31:57] --- CONFIRMED CASES FILE CHECK
+[18/07/2021 11:31:57] no new countries added
+[18/07/2021 11:31:57] new date added: {'7/17/21'}
+[18/07/2021 11:31:57] --- DEATHS FILE CHECK
+[18/07/2021 11:31:57] no new countries added
+[18/07/2021 11:31:57] new date added: {'7/17/21'}
+[18/07/2021 11:31:57] --- POLICY FILE CHECK
+[18/07/2021 11:31:57] no new countries added
+[18/07/2021 11:31:57] no new date added
