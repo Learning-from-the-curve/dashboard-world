@@ -8059,3 +8059,12 @@
 [19/07/2021 03:45:09] --- POLICY FILE CHECK
 [19/07/2021 03:45:09] no new countries added
 [19/07/2021 03:45:09] new date added: {20210719}
+[19/07/2021 11:31:52] --- CONFIRMED CASES FILE CHECK
+[19/07/2021 11:31:52] no new countries added
+[19/07/2021 11:31:52] new date added: {'7/18/21'}
+[19/07/2021 11:31:52] --- DEATHS FILE CHECK
+[19/07/2021 11:31:52] no new countries added
+[19/07/2021 11:31:52] new date added: {'7/18/21'}
+[19/07/2021 11:31:52] --- POLICY FILE CHECK
+[19/07/2021 11:31:52] no new countries added
+[19/07/2021 11:31:52] no new date added
