@@ -8068,3 +8068,12 @@
 [19/07/2021 11:31:52] --- POLICY FILE CHECK
 [19/07/2021 11:31:52] no new countries added
 [19/07/2021 11:31:52] no new date added
+[20/07/2021 03:45:03] --- CONFIRMED CASES FILE CHECK
+[20/07/2021 03:45:03] no new countries added
+[20/07/2021 03:45:03] no new date added
+[20/07/2021 03:45:03] --- DEATHS FILE CHECK
+[20/07/2021 03:45:03] no new countries added
+[20/07/2021 03:45:03] no new date added
+[20/07/2021 03:45:03] --- POLICY FILE CHECK
+[20/07/2021 03:45:03] no new countries added
+[20/07/2021 03:45:03] new date added: {20210720}
