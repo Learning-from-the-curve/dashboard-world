@@ -8077,3 +8077,12 @@
 [20/07/2021 03:45:03] --- POLICY FILE CHECK
 [20/07/2021 03:45:03] no new countries added
 [20/07/2021 03:45:03] new date added: {20210720}
+[20/07/2021 11:32:01] --- CONFIRMED CASES FILE CHECK
+[20/07/2021 11:32:01] no new countries added
+[20/07/2021 11:32:01] new date added: {'7/19/21'}
+[20/07/2021 11:32:01] --- DEATHS FILE CHECK
+[20/07/2021 11:32:01] no new countries added
+[20/07/2021 11:32:01] new date added: {'7/19/21'}
+[20/07/2021 11:32:01] --- POLICY FILE CHECK
+[20/07/2021 11:32:01] no new countries added
+[20/07/2021 11:32:01] no new date added
