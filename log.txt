@@ -8140,3 +8140,12 @@
 [23/07/2021 11:32:00] --- POLICY FILE CHECK
 [23/07/2021 11:32:00] no new countries added
 [23/07/2021 11:32:00] no new date added
+[24/07/2021 03:44:43] --- CONFIRMED CASES FILE CHECK
+[24/07/2021 03:44:43] no new countries added
+[24/07/2021 03:44:43] no new date added
+[24/07/2021 03:44:43] --- DEATHS FILE CHECK
+[24/07/2021 03:44:43] no new countries added
+[24/07/2021 03:44:43] no new date added
+[24/07/2021 03:44:43] --- POLICY FILE CHECK
+[24/07/2021 03:44:43] no new countries added
+[24/07/2021 03:44:43] new date added: {20210724}
