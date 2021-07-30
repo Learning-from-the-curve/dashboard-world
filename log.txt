@@ -8248,3 +8248,12 @@
 [29/07/2021 11:31:48] --- POLICY FILE CHECK
 [29/07/2021 11:31:48] no new countries added
 [29/07/2021 11:31:48] no new date added
+[30/07/2021 03:44:42] --- CONFIRMED CASES FILE CHECK
+[30/07/2021 03:44:42] no new countries added
+[30/07/2021 03:44:42] no new date added
+[30/07/2021 03:44:42] --- DEATHS FILE CHECK
+[30/07/2021 03:44:42] no new countries added
+[30/07/2021 03:44:42] no new date added
+[30/07/2021 03:44:42] --- POLICY FILE CHECK
+[30/07/2021 03:44:42] no new countries added
+[30/07/2021 03:44:42] new date added: {20210730}
