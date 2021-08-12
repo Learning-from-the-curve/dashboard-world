@@ -8491,3 +8491,12 @@
 [12/08/2021 03:43:44] --- POLICY FILE CHECK
 [12/08/2021 03:43:44] no new countries added
 [12/08/2021 03:43:44] new date added: {20210812}
+[12/08/2021 11:32:17] --- CONFIRMED CASES FILE CHECK
+[12/08/2021 11:32:17] no new countries added
+[12/08/2021 11:32:17] new date added: {'8/11/21'}
+[12/08/2021 11:32:17] --- DEATHS FILE CHECK
+[12/08/2021 11:32:17] no new countries added
+[12/08/2021 11:32:17] new date added: {'8/11/21'}
+[12/08/2021 11:32:17] --- POLICY FILE CHECK
+[12/08/2021 11:32:17] no new countries added
+[12/08/2021 11:32:17] no new date added
