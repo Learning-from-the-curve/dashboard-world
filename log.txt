@@ -8509,3 +8509,12 @@
 [13/08/2021 03:43:28] --- POLICY FILE CHECK
 [13/08/2021 03:43:28] no new countries added
 [13/08/2021 03:43:28] new date added: {20210813}
+[13/08/2021 11:31:50] --- CONFIRMED CASES FILE CHECK
+[13/08/2021 11:31:50] no new countries added
+[13/08/2021 11:31:50] new date added: {'8/12/21'}
+[13/08/2021 11:31:50] --- DEATHS FILE CHECK
+[13/08/2021 11:31:50] no new countries added
+[13/08/2021 11:31:50] new date added: {'8/12/21'}
+[13/08/2021 11:31:50] --- POLICY FILE CHECK
+[13/08/2021 11:31:50] no new countries added
+[13/08/2021 11:31:50] no new date added
