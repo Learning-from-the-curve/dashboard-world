@@ -8626,3 +8626,12 @@
 [19/08/2021 11:31:56] --- POLICY FILE CHECK
 [19/08/2021 11:31:56] no new countries added
 [19/08/2021 11:31:56] no new date added
+[20/08/2021 03:43:14] --- CONFIRMED CASES FILE CHECK
+[20/08/2021 03:43:14] no new countries added
+[20/08/2021 03:43:14] no new date added
+[20/08/2021 03:43:14] --- DEATHS FILE CHECK
+[20/08/2021 03:43:14] no new countries added
+[20/08/2021 03:43:14] no new date added
+[20/08/2021 03:43:14] --- POLICY FILE CHECK
+[20/08/2021 03:43:14] no new countries added
+[20/08/2021 03:43:14] new date added: {20210820}
