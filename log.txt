@@ -8662,3 +8662,12 @@
 [21/08/2021 11:31:59] --- POLICY FILE CHECK
 [21/08/2021 11:31:59] no new countries added
 [21/08/2021 11:31:59] no new date added
+[22/08/2021 03:44:15] --- CONFIRMED CASES FILE CHECK
+[22/08/2021 03:44:15] no new countries added
+[22/08/2021 03:44:15] no new date added
+[22/08/2021 03:44:15] --- DEATHS FILE CHECK
+[22/08/2021 03:44:15] no new countries added
+[22/08/2021 03:44:15] no new date added
+[22/08/2021 03:44:15] --- POLICY FILE CHECK
+[22/08/2021 03:44:15] no new countries added
+[22/08/2021 03:44:15] new date added: {20210822}
