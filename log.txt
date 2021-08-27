@@ -8761,3 +8761,12 @@
 [27/08/2021 03:41:30] --- POLICY FILE CHECK
 [27/08/2021 03:41:30] no new countries added
 [27/08/2021 03:41:30] new date added: {20210827}
+[27/08/2021 11:31:51] --- CONFIRMED CASES FILE CHECK
+[27/08/2021 11:31:51] no new countries added
+[27/08/2021 11:31:51] new date added: {'8/26/21'}
+[27/08/2021 11:31:51] --- DEATHS FILE CHECK
+[27/08/2021 11:31:51] no new countries added
+[27/08/2021 11:31:51] new date added: {'8/26/21'}
+[27/08/2021 11:31:51] --- POLICY FILE CHECK
+[27/08/2021 11:31:51] no new countries added
+[27/08/2021 11:31:51] no new date added
