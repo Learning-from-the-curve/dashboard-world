@@ -8806,3 +8806,12 @@
 [29/08/2021 11:31:54] --- POLICY FILE CHECK
 [29/08/2021 11:31:54] no new countries added
 [29/08/2021 11:31:54] no new date added
+[30/08/2021 03:41:55] --- CONFIRMED CASES FILE CHECK
+[30/08/2021 03:41:55] no new countries added
+[30/08/2021 03:41:55] no new date added
+[30/08/2021 03:41:55] --- DEATHS FILE CHECK
+[30/08/2021 03:41:55] no new countries added
+[30/08/2021 03:41:55] no new date added
+[30/08/2021 03:41:55] --- POLICY FILE CHECK
+[30/08/2021 03:41:55] no new countries added
+[30/08/2021 03:41:55] new date added: {20210830}
