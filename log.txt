@@ -8860,3 +8860,12 @@
 [01/09/2021 11:31:48] --- POLICY FILE CHECK
 [01/09/2021 11:31:48] no new countries added
 [01/09/2021 11:31:48] no new date added
+[02/09/2021 03:41:06] --- CONFIRMED CASES FILE CHECK
+[02/09/2021 03:41:06] no new countries added
+[02/09/2021 03:41:06] no new date added
+[02/09/2021 03:41:06] --- DEATHS FILE CHECK
+[02/09/2021 03:41:06] no new countries added
+[02/09/2021 03:41:06] no new date added
+[02/09/2021 03:41:06] --- POLICY FILE CHECK
+[02/09/2021 03:41:06] no new countries added
+[02/09/2021 03:41:06] new date added: {20210902}
