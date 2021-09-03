@@ -8887,3 +8887,12 @@
 [03/09/2021 03:42:11] --- POLICY FILE CHECK
 [03/09/2021 03:42:11] no new countries added
 [03/09/2021 03:42:11] new date added: {20210903}
+[03/09/2021 11:31:45] --- CONFIRMED CASES FILE CHECK
+[03/09/2021 11:31:45] no new countries added
+[03/09/2021 11:31:45] new date added: {'9/2/21'}
+[03/09/2021 11:31:45] --- DEATHS FILE CHECK
+[03/09/2021 11:31:45] no new countries added
+[03/09/2021 11:31:45] new date added: {'9/2/21'}
+[03/09/2021 11:31:45] --- POLICY FILE CHECK
+[03/09/2021 11:31:45] no new countries added
+[03/09/2021 11:31:45] no new date added
