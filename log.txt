@@ -8995,3 +8995,12 @@
 [09/09/2021 03:42:08] --- POLICY FILE CHECK
 [09/09/2021 03:42:08] no new countries added
 [09/09/2021 03:42:08] new date added: {20210909}
+[09/09/2021 11:32:00] --- CONFIRMED CASES FILE CHECK
+[09/09/2021 11:32:00] no new countries added
+[09/09/2021 11:32:00] new date added: {'9/8/21'}
+[09/09/2021 11:32:00] --- DEATHS FILE CHECK
+[09/09/2021 11:32:00] no new countries added
+[09/09/2021 11:32:00] new date added: {'9/8/21'}
+[09/09/2021 11:32:00] --- POLICY FILE CHECK
+[09/09/2021 11:32:00] no new countries added
+[09/09/2021 11:32:00] no new date added
