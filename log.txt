@@ -9004,3 +9004,12 @@
 [09/09/2021 11:32:00] --- POLICY FILE CHECK
 [09/09/2021 11:32:00] no new countries added
 [09/09/2021 11:32:00] no new date added
+[10/09/2021 03:41:59] --- CONFIRMED CASES FILE CHECK
+[10/09/2021 03:41:59] no new countries added
+[10/09/2021 03:41:59] no new date added
+[10/09/2021 03:41:59] --- DEATHS FILE CHECK
+[10/09/2021 03:41:59] no new countries added
+[10/09/2021 03:41:59] no new date added
+[10/09/2021 03:41:59] --- POLICY FILE CHECK
+[10/09/2021 03:41:59] no new countries added
+[10/09/2021 03:41:59] new date added: {20210910}
