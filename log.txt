@@ -9022,3 +9022,12 @@
 [10/09/2021 11:32:08] --- POLICY FILE CHECK
 [10/09/2021 11:32:08] no new countries added
 [10/09/2021 11:32:08] no new date added
+[11/09/2021 03:41:32] --- CONFIRMED CASES FILE CHECK
+[11/09/2021 03:41:32] no new countries added
+[11/09/2021 03:41:32] no new date added
+[11/09/2021 03:41:32] --- DEATHS FILE CHECK
+[11/09/2021 03:41:32] no new countries added
+[11/09/2021 03:41:32] no new date added
+[11/09/2021 03:41:32] --- POLICY FILE CHECK
+[11/09/2021 03:41:32] no new countries added
+[11/09/2021 03:41:32] no new date added
