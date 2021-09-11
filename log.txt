@@ -9031,3 +9031,12 @@
 [11/09/2021 03:41:32] --- POLICY FILE CHECK
 [11/09/2021 03:41:32] no new countries added
 [11/09/2021 03:41:32] no new date added
+[11/09/2021 11:31:52] --- CONFIRMED CASES FILE CHECK
+[11/09/2021 11:31:52] no new countries added
+[11/09/2021 11:31:52] new date added: {'9/10/21'}
+[11/09/2021 11:31:52] --- DEATHS FILE CHECK
+[11/09/2021 11:31:52] no new countries added
+[11/09/2021 11:31:52] new date added: {'9/10/21'}
+[11/09/2021 11:31:52] --- POLICY FILE CHECK
+[11/09/2021 11:31:52] no new countries added
+[11/09/2021 11:31:52] no new date added
