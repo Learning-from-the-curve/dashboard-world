@@ -9049,3 +9049,12 @@
 [12/09/2021 03:41:09] --- POLICY FILE CHECK
 [12/09/2021 03:41:09] no new countries added
 [12/09/2021 03:41:09] no new date added
+[12/09/2021 11:32:02] --- CONFIRMED CASES FILE CHECK
+[12/09/2021 11:32:02] no new countries added
+[12/09/2021 11:32:02] new date added: {'9/11/21'}
+[12/09/2021 11:32:02] --- DEATHS FILE CHECK
+[12/09/2021 11:32:02] no new countries added
+[12/09/2021 11:32:02] new date added: {'9/11/21'}
+[12/09/2021 11:32:02] --- POLICY FILE CHECK
+[12/09/2021 11:32:02] no new countries added
+[12/09/2021 11:32:02] no new date added
