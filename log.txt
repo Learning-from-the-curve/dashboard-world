@@ -9040,3 +9040,12 @@
 [11/09/2021 11:31:52] --- POLICY FILE CHECK
 [11/09/2021 11:31:52] no new countries added
 [11/09/2021 11:31:52] no new date added
+[12/09/2021 03:41:09] --- CONFIRMED CASES FILE CHECK
+[12/09/2021 03:41:09] no new countries added
+[12/09/2021 03:41:09] no new date added
+[12/09/2021 03:41:09] --- DEATHS FILE CHECK
+[12/09/2021 03:41:09] no new countries added
+[12/09/2021 03:41:09] no new date added
+[12/09/2021 03:41:09] --- POLICY FILE CHECK
+[12/09/2021 03:41:09] no new countries added
+[12/09/2021 03:41:09] no new date added
