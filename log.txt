@@ -9085,3 +9085,12 @@
 [14/09/2021 03:41:34] --- POLICY FILE CHECK
 [14/09/2021 03:41:34] no new countries added
 [14/09/2021 03:41:34] no new date added
+[14/09/2021 11:32:23] --- CONFIRMED CASES FILE CHECK
+[14/09/2021 11:32:23] no new countries added
+[14/09/2021 11:32:23] new date added: {'9/13/21'}
+[14/09/2021 11:32:23] --- DEATHS FILE CHECK
+[14/09/2021 11:32:23] no new countries added
+[14/09/2021 11:32:23] new date added: {'9/13/21'}
+[14/09/2021 11:32:23] --- POLICY FILE CHECK
+[14/09/2021 11:32:23] no new countries added
+[14/09/2021 11:32:23] multiple new dates added: {20210911, 20210912, 20210913, 20210914}
