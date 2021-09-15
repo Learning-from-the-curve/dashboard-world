@@ -9094,3 +9094,12 @@
 [14/09/2021 11:32:23] --- POLICY FILE CHECK
 [14/09/2021 11:32:23] no new countries added
 [14/09/2021 11:32:23] multiple new dates added: {20210911, 20210912, 20210913, 20210914}
+[15/09/2021 03:41:36] --- CONFIRMED CASES FILE CHECK
+[15/09/2021 03:41:36] no new countries added
+[15/09/2021 03:41:36] no new date added
+[15/09/2021 03:41:36] --- DEATHS FILE CHECK
+[15/09/2021 03:41:36] no new countries added
+[15/09/2021 03:41:36] no new date added
+[15/09/2021 03:41:36] --- POLICY FILE CHECK
+[15/09/2021 03:41:36] no new countries added
+[15/09/2021 03:41:36] new date added: {20210915}
