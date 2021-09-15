@@ -9103,3 +9103,12 @@
 [15/09/2021 03:41:36] --- POLICY FILE CHECK
 [15/09/2021 03:41:36] no new countries added
 [15/09/2021 03:41:36] new date added: {20210915}
+[15/09/2021 11:32:08] --- CONFIRMED CASES FILE CHECK
+[15/09/2021 11:32:08] no new countries added
+[15/09/2021 11:32:08] new date added: {'9/14/21'}
+[15/09/2021 11:32:08] --- DEATHS FILE CHECK
+[15/09/2021 11:32:08] no new countries added
+[15/09/2021 11:32:08] new date added: {'9/14/21'}
+[15/09/2021 11:32:08] --- POLICY FILE CHECK
+[15/09/2021 11:32:08] no new countries added
+[15/09/2021 11:32:08] no new date added
