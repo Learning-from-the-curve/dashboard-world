@@ -9112,3 +9112,12 @@
 [15/09/2021 11:32:08] --- POLICY FILE CHECK
 [15/09/2021 11:32:08] no new countries added
 [15/09/2021 11:32:08] no new date added
+[16/09/2021 03:41:41] --- CONFIRMED CASES FILE CHECK
+[16/09/2021 03:41:41] no new countries added
+[16/09/2021 03:41:41] no new date added
+[16/09/2021 03:41:41] --- DEATHS FILE CHECK
+[16/09/2021 03:41:41] no new countries added
+[16/09/2021 03:41:41] no new date added
+[16/09/2021 03:41:41] --- POLICY FILE CHECK
+[16/09/2021 03:41:41] no new countries added
+[16/09/2021 03:41:41] new date added: {20210916}
