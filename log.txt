@@ -9121,3 +9121,12 @@
 [16/09/2021 03:41:41] --- POLICY FILE CHECK
 [16/09/2021 03:41:41] no new countries added
 [16/09/2021 03:41:41] new date added: {20210916}
+[16/09/2021 11:32:01] --- CONFIRMED CASES FILE CHECK
+[16/09/2021 11:32:01] no new countries added
+[16/09/2021 11:32:01] new date added: {'9/15/21'}
+[16/09/2021 11:32:01] --- DEATHS FILE CHECK
+[16/09/2021 11:32:01] no new countries added
+[16/09/2021 11:32:01] new date added: {'9/15/21'}
+[16/09/2021 11:32:01] --- POLICY FILE CHECK
+[16/09/2021 11:32:01] no new countries added
+[16/09/2021 11:32:01] no new date added
