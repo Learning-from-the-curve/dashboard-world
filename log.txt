@@ -9157,3 +9157,12 @@
 [18/09/2021 03:41:26] --- POLICY FILE CHECK
 [18/09/2021 03:41:26] no new countries added
 [18/09/2021 03:41:26] new date added: {20210918}
+[18/09/2021 11:32:06] --- CONFIRMED CASES FILE CHECK
+[18/09/2021 11:32:06] no new countries added
+[18/09/2021 11:32:06] new date added: {'9/17/21'}
+[18/09/2021 11:32:06] --- DEATHS FILE CHECK
+[18/09/2021 11:32:06] no new countries added
+[18/09/2021 11:32:06] new date added: {'9/17/21'}
+[18/09/2021 11:32:06] --- POLICY FILE CHECK
+[18/09/2021 11:32:06] no new countries added
+[18/09/2021 11:32:06] no new date added
