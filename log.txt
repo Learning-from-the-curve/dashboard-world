@@ -9148,3 +9148,12 @@
 [17/09/2021 11:32:04] --- POLICY FILE CHECK
 [17/09/2021 11:32:04] no new countries added
 [17/09/2021 11:32:04] no new date added
+[18/09/2021 03:41:26] --- CONFIRMED CASES FILE CHECK
+[18/09/2021 03:41:26] no new countries added
+[18/09/2021 03:41:26] no new date added
+[18/09/2021 03:41:26] --- DEATHS FILE CHECK
+[18/09/2021 03:41:26] no new countries added
+[18/09/2021 03:41:26] no new date added
+[18/09/2021 03:41:26] --- POLICY FILE CHECK
+[18/09/2021 03:41:26] no new countries added
+[18/09/2021 03:41:26] new date added: {20210918}
