@@ -9166,3 +9166,12 @@
 [18/09/2021 11:32:06] --- POLICY FILE CHECK
 [18/09/2021 11:32:06] no new countries added
 [18/09/2021 11:32:06] no new date added
+[19/09/2021 03:41:10] --- CONFIRMED CASES FILE CHECK
+[19/09/2021 03:41:10] no new countries added
+[19/09/2021 03:41:10] no new date added
+[19/09/2021 03:41:10] --- DEATHS FILE CHECK
+[19/09/2021 03:41:10] no new countries added
+[19/09/2021 03:41:10] no new date added
+[19/09/2021 03:41:10] --- POLICY FILE CHECK
+[19/09/2021 03:41:10] no new countries added
+[19/09/2021 03:41:10] new date added: {20210919}
