@@ -9184,3 +9184,12 @@
 [19/09/2021 11:31:54] --- POLICY FILE CHECK
 [19/09/2021 11:31:54] no new countries added
 [19/09/2021 11:31:54] no new date added
+[20/09/2021 03:41:45] --- CONFIRMED CASES FILE CHECK
+[20/09/2021 03:41:45] no new countries added
+[20/09/2021 03:41:45] no new date added
+[20/09/2021 03:41:45] --- DEATHS FILE CHECK
+[20/09/2021 03:41:45] no new countries added
+[20/09/2021 03:41:45] no new date added
+[20/09/2021 03:41:45] --- POLICY FILE CHECK
+[20/09/2021 03:41:45] no new countries added
+[20/09/2021 03:41:45] new date added: {20210920}
