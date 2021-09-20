@@ -9193,3 +9193,12 @@
 [20/09/2021 03:41:45] --- POLICY FILE CHECK
 [20/09/2021 03:41:45] no new countries added
 [20/09/2021 03:41:45] new date added: {20210920}
+[20/09/2021 11:31:57] --- CONFIRMED CASES FILE CHECK
+[20/09/2021 11:31:57] no new countries added
+[20/09/2021 11:31:57] new date added: {'9/19/21'}
+[20/09/2021 11:31:57] --- DEATHS FILE CHECK
+[20/09/2021 11:31:57] no new countries added
+[20/09/2021 11:31:57] new date added: {'9/19/21'}
+[20/09/2021 11:31:57] --- POLICY FILE CHECK
+[20/09/2021 11:31:57] no new countries added
+[20/09/2021 11:31:57] no new date added
