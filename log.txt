@@ -9229,3 +9229,12 @@
 [22/09/2021 03:41:56] --- POLICY FILE CHECK
 [22/09/2021 03:41:56] no new countries added
 [22/09/2021 03:41:56] new date added: {20210922}
+[22/09/2021 11:31:47] --- CONFIRMED CASES FILE CHECK
+[22/09/2021 11:31:47] no new countries added
+[22/09/2021 11:31:47] new date added: {'9/21/21'}
+[22/09/2021 11:31:47] --- DEATHS FILE CHECK
+[22/09/2021 11:31:47] no new countries added
+[22/09/2021 11:31:47] new date added: {'9/21/21'}
+[22/09/2021 11:31:47] --- POLICY FILE CHECK
+[22/09/2021 11:31:47] no new countries added
+[22/09/2021 11:31:47] no new date added
