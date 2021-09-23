@@ -9238,3 +9238,12 @@
 [22/09/2021 11:31:47] --- POLICY FILE CHECK
 [22/09/2021 11:31:47] no new countries added
 [22/09/2021 11:31:47] no new date added
+[23/09/2021 03:42:02] --- CONFIRMED CASES FILE CHECK
+[23/09/2021 03:42:02] no new countries added
+[23/09/2021 03:42:02] no new date added
+[23/09/2021 03:42:02] --- DEATHS FILE CHECK
+[23/09/2021 03:42:02] no new countries added
+[23/09/2021 03:42:02] no new date added
+[23/09/2021 03:42:02] --- POLICY FILE CHECK
+[23/09/2021 03:42:02] no new countries added
+[23/09/2021 03:42:02] new date added: {20210923}
