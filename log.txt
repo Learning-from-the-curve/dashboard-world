@@ -9256,3 +9256,12 @@
 [23/09/2021 11:31:55] --- POLICY FILE CHECK
 [23/09/2021 11:31:55] no new countries added
 [23/09/2021 11:31:55] no new date added
+[24/09/2021 03:41:52] --- CONFIRMED CASES FILE CHECK
+[24/09/2021 03:41:52] no new countries added
+[24/09/2021 03:41:52] no new date added
+[24/09/2021 03:41:52] --- DEATHS FILE CHECK
+[24/09/2021 03:41:52] no new countries added
+[24/09/2021 03:41:52] no new date added
+[24/09/2021 03:41:52] --- POLICY FILE CHECK
+[24/09/2021 03:41:52] no new countries added
+[24/09/2021 03:41:52] new date added: {20210924}
