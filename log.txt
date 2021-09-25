@@ -9283,3 +9283,12 @@
 [25/09/2021 03:41:35] --- POLICY FILE CHECK
 [25/09/2021 03:41:35] no new countries added
 [25/09/2021 03:41:35] new date added: {20210925}
+[25/09/2021 11:32:03] --- CONFIRMED CASES FILE CHECK
+[25/09/2021 11:32:03] no new countries added
+[25/09/2021 11:32:03] new date added: {'9/24/21'}
+[25/09/2021 11:32:03] --- DEATHS FILE CHECK
+[25/09/2021 11:32:03] no new countries added
+[25/09/2021 11:32:03] new date added: {'9/24/21'}
+[25/09/2021 11:32:03] --- POLICY FILE CHECK
+[25/09/2021 11:32:03] no new countries added
+[25/09/2021 11:32:03] no new date added
