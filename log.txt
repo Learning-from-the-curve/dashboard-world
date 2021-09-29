@@ -9355,3 +9355,12 @@
 [29/09/2021 03:42:05] --- POLICY FILE CHECK
 [29/09/2021 03:42:05] no new countries added
 [29/09/2021 03:42:05] new date added: {20210929}
+[29/09/2021 11:32:07] --- CONFIRMED CASES FILE CHECK
+[29/09/2021 11:32:07] no new countries added
+[29/09/2021 11:32:07] new date added: {'9/28/21'}
+[29/09/2021 11:32:07] --- DEATHS FILE CHECK
+[29/09/2021 11:32:07] no new countries added
+[29/09/2021 11:32:07] new date added: {'9/28/21'}
+[29/09/2021 11:32:07] --- POLICY FILE CHECK
+[29/09/2021 11:32:07] no new countries added
+[29/09/2021 11:32:07] no new date added
