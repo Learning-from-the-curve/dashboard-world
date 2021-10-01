@@ -9391,3 +9391,12 @@
 [01/10/2021 03:42:03] --- POLICY FILE CHECK
 [01/10/2021 03:42:03] no new countries added
 [01/10/2021 03:42:03] new date added: {20211001}
+[01/10/2021 11:32:07] --- CONFIRMED CASES FILE CHECK
+[01/10/2021 11:32:07] no new countries added
+[01/10/2021 11:32:07] new date added: {'9/30/21'}
+[01/10/2021 11:32:07] --- DEATHS FILE CHECK
+[01/10/2021 11:32:07] no new countries added
+[01/10/2021 11:32:07] new date added: {'9/30/21'}
+[01/10/2021 11:32:07] --- POLICY FILE CHECK
+[01/10/2021 11:32:07] no new countries added
+[01/10/2021 11:32:07] no new date added
