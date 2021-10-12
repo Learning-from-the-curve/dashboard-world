@@ -9580,3 +9580,12 @@
 [11/10/2021 11:31:55] --- POLICY FILE CHECK
 [11/10/2021 11:31:55] no new countries added
 [11/10/2021 11:31:55] no new date added
+[12/10/2021 03:41:43] --- CONFIRMED CASES FILE CHECK
+[12/10/2021 03:41:43] no new countries added
+[12/10/2021 03:41:43] no new date added
+[12/10/2021 03:41:43] --- DEATHS FILE CHECK
+[12/10/2021 03:41:43] no new countries added
+[12/10/2021 03:41:43] no new date added
+[12/10/2021 03:41:43] --- POLICY FILE CHECK
+[12/10/2021 03:41:43] no new countries added
+[12/10/2021 03:41:43] new date added: {20211012}
