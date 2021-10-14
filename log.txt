@@ -9616,3 +9616,12 @@
 [13/10/2021 11:31:59] --- POLICY FILE CHECK
 [13/10/2021 11:31:59] no new countries added
 [13/10/2021 11:31:59] no new date added
+[14/10/2021 03:41:40] --- CONFIRMED CASES FILE CHECK
+[14/10/2021 03:41:40] no new countries added
+[14/10/2021 03:41:40] no new date added
+[14/10/2021 03:41:40] --- DEATHS FILE CHECK
+[14/10/2021 03:41:40] no new countries added
+[14/10/2021 03:41:40] no new date added
+[14/10/2021 03:41:40] --- POLICY FILE CHECK
+[14/10/2021 03:41:40] no new countries added
+[14/10/2021 03:41:40] new date added: {20211014}
