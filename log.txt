@@ -9679,3 +9679,12 @@
 [17/10/2021 03:41:37] --- POLICY FILE CHECK
 [17/10/2021 03:41:37] no new countries added
 [17/10/2021 03:41:37] new date added: {20211017}
+[17/10/2021 11:32:12] --- CONFIRMED CASES FILE CHECK
+[17/10/2021 11:32:12] no new countries added
+[17/10/2021 11:32:12] new date added: {'10/16/21'}
+[17/10/2021 11:32:12] --- DEATHS FILE CHECK
+[17/10/2021 11:32:12] no new countries added
+[17/10/2021 11:32:12] new date added: {'10/16/21'}
+[17/10/2021 11:32:12] --- POLICY FILE CHECK
+[17/10/2021 11:32:12] no new countries added
+[17/10/2021 11:32:12] no new date added
