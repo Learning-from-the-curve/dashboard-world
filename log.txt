@@ -9670,3 +9670,12 @@
 [16/10/2021 11:31:43] --- POLICY FILE CHECK
 [16/10/2021 11:31:43] no new countries added
 [16/10/2021 11:31:43] no new date added
+[17/10/2021 03:41:37] --- CONFIRMED CASES FILE CHECK
+[17/10/2021 03:41:37] no new countries added
+[17/10/2021 03:41:37] no new date added
+[17/10/2021 03:41:37] --- DEATHS FILE CHECK
+[17/10/2021 03:41:37] no new countries added
+[17/10/2021 03:41:37] no new date added
+[17/10/2021 03:41:37] --- POLICY FILE CHECK
+[17/10/2021 03:41:37] no new countries added
+[17/10/2021 03:41:37] new date added: {20211017}
