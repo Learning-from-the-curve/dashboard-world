@@ -9733,3 +9733,12 @@
 [20/10/2021 03:41:58] --- POLICY FILE CHECK
 [20/10/2021 03:41:58] no new countries added
 [20/10/2021 03:41:58] new date added: {20211020}
+[20/10/2021 11:31:59] --- CONFIRMED CASES FILE CHECK
+[20/10/2021 11:31:59] no new countries added
+[20/10/2021 11:31:59] new date added: {'10/19/21'}
+[20/10/2021 11:31:59] --- DEATHS FILE CHECK
+[20/10/2021 11:31:59] no new countries added
+[20/10/2021 11:31:59] new date added: {'10/19/21'}
+[20/10/2021 11:31:59] --- POLICY FILE CHECK
+[20/10/2021 11:31:59] no new countries added
+[20/10/2021 11:31:59] no new date added
