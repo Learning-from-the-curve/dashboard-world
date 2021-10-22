@@ -9769,3 +9769,12 @@
 [22/10/2021 03:42:03] --- POLICY FILE CHECK
 [22/10/2021 03:42:03] no new countries added
 [22/10/2021 03:42:03] new date added: {20211022}
+[22/10/2021 11:31:58] --- CONFIRMED CASES FILE CHECK
+[22/10/2021 11:31:58] no new countries added
+[22/10/2021 11:31:58] new date added: {'10/21/21'}
+[22/10/2021 11:31:58] --- DEATHS FILE CHECK
+[22/10/2021 11:31:58] no new countries added
+[22/10/2021 11:31:58] new date added: {'10/21/21'}
+[22/10/2021 11:31:58] --- POLICY FILE CHECK
+[22/10/2021 11:31:58] no new countries added
+[22/10/2021 11:31:58] no new date added
