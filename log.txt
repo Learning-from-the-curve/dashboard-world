@@ -9787,3 +9787,12 @@
 [23/10/2021 03:41:58] --- POLICY FILE CHECK
 [23/10/2021 03:41:58] no new countries added
 [23/10/2021 03:41:58] new date added: {20211023}
+[23/10/2021 11:32:01] --- CONFIRMED CASES FILE CHECK
+[23/10/2021 11:32:01] no new countries added
+[23/10/2021 11:32:01] new date added: {'10/22/21'}
+[23/10/2021 11:32:01] --- DEATHS FILE CHECK
+[23/10/2021 11:32:01] no new countries added
+[23/10/2021 11:32:01] new date added: {'10/22/21'}
+[23/10/2021 11:32:01] --- POLICY FILE CHECK
+[23/10/2021 11:32:01] no new countries added
+[23/10/2021 11:32:01] no new date added
