@@ -9805,3 +9805,12 @@
 [24/10/2021 03:41:55] --- POLICY FILE CHECK
 [24/10/2021 03:41:55] no new countries added
 [24/10/2021 03:41:55] new date added: {20211024}
+[24/10/2021 11:32:05] --- CONFIRMED CASES FILE CHECK
+[24/10/2021 11:32:05] no new countries added
+[24/10/2021 11:32:05] new date added: {'10/23/21'}
+[24/10/2021 11:32:05] --- DEATHS FILE CHECK
+[24/10/2021 11:32:05] no new countries added
+[24/10/2021 11:32:05] new date added: {'10/23/21'}
+[24/10/2021 11:32:05] --- POLICY FILE CHECK
+[24/10/2021 11:32:05] no new countries added
+[24/10/2021 11:32:05] no new date added
