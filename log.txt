@@ -9823,3 +9823,12 @@
 [25/10/2021 03:42:33] --- POLICY FILE CHECK
 [25/10/2021 03:42:33] no new countries added
 [25/10/2021 03:42:33] new date added: {20211025}
+[25/10/2021 11:32:11] --- CONFIRMED CASES FILE CHECK
+[25/10/2021 11:32:11] no new countries added
+[25/10/2021 11:32:11] new date added: {'10/24/21'}
+[25/10/2021 11:32:11] --- DEATHS FILE CHECK
+[25/10/2021 11:32:11] no new countries added
+[25/10/2021 11:32:11] new date added: {'10/24/21'}
+[25/10/2021 11:32:11] --- POLICY FILE CHECK
+[25/10/2021 11:32:11] no new countries added
+[25/10/2021 11:32:11] no new date added
