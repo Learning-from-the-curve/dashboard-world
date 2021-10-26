@@ -9841,3 +9841,12 @@
 [26/10/2021 03:42:16] --- POLICY FILE CHECK
 [26/10/2021 03:42:16] no new countries added
 [26/10/2021 03:42:16] new date added: {20211026}
+[26/10/2021 11:32:08] --- CONFIRMED CASES FILE CHECK
+[26/10/2021 11:32:08] no new countries added
+[26/10/2021 11:32:08] new date added: {'10/25/21'}
+[26/10/2021 11:32:08] --- DEATHS FILE CHECK
+[26/10/2021 11:32:08] no new countries added
+[26/10/2021 11:32:08] new date added: {'10/25/21'}
+[26/10/2021 11:32:08] --- POLICY FILE CHECK
+[26/10/2021 11:32:08] no new countries added
+[26/10/2021 11:32:08] no new date added
