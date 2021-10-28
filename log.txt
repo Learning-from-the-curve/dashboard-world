@@ -9868,3 +9868,12 @@
 [27/10/2021 11:31:45] --- POLICY FILE CHECK
 [27/10/2021 11:31:45] no new countries added
 [27/10/2021 11:31:45] no new date added
+[28/10/2021 03:42:27] --- CONFIRMED CASES FILE CHECK
+[28/10/2021 03:42:27] no new countries added
+[28/10/2021 03:42:27] no new date added
+[28/10/2021 03:42:27] --- DEATHS FILE CHECK
+[28/10/2021 03:42:27] no new countries added
+[28/10/2021 03:42:27] no new date added
+[28/10/2021 03:42:27] --- POLICY FILE CHECK
+[28/10/2021 03:42:27] no new countries added
+[28/10/2021 03:42:27] new date added: {20211028}
