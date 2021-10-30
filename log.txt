@@ -9913,3 +9913,12 @@
 [30/10/2021 03:42:19] --- POLICY FILE CHECK
 [30/10/2021 03:42:19] no new countries added
 [30/10/2021 03:42:19] new date added: {20211030}
+[30/10/2021 11:32:08] --- CONFIRMED CASES FILE CHECK
+[30/10/2021 11:32:08] no new countries added
+[30/10/2021 11:32:08] new date added: {'10/29/21'}
+[30/10/2021 11:32:08] --- DEATHS FILE CHECK
+[30/10/2021 11:32:08] no new countries added
+[30/10/2021 11:32:08] new date added: {'10/29/21'}
+[30/10/2021 11:32:08] --- POLICY FILE CHECK
+[30/10/2021 11:32:08] no new countries added
+[30/10/2021 11:32:08] no new date added
