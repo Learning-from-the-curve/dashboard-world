@@ -9971,3 +9971,12 @@
 [02/11/2021 03:42:30] --- POLICY FILE CHECK
 [02/11/2021 03:42:30] no new countries added
 [02/11/2021 03:42:30] new date added: {20211102}
+[02/11/2021 11:31:56] --- CONFIRMED CASES FILE CHECK
+[02/11/2021 11:31:56] no new countries added
+[02/11/2021 11:31:56] new date added: {'11/1/21'}
+[02/11/2021 11:31:56] --- DEATHS FILE CHECK
+[02/11/2021 11:31:56] no new countries added
+[02/11/2021 11:31:56] new date added: {'11/1/21'}
+[02/11/2021 11:31:56] --- POLICY FILE CHECK
+[02/11/2021 11:31:56] no new countries added
+[02/11/2021 11:31:56] no new date added
