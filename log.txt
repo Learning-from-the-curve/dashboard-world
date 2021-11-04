@@ -10007,3 +10007,12 @@
 [04/11/2021 03:42:28] --- POLICY FILE CHECK
 [04/11/2021 03:42:28] no new countries added
 [04/11/2021 03:42:28] new date added: {20211104}
+[04/11/2021 11:32:05] --- CONFIRMED CASES FILE CHECK
+[04/11/2021 11:32:05] no new countries added
+[04/11/2021 11:32:05] new date added: {'11/3/21'}
+[04/11/2021 11:32:05] --- DEATHS FILE CHECK
+[04/11/2021 11:32:05] no new countries added
+[04/11/2021 11:32:05] new date added: {'11/3/21'}
+[04/11/2021 11:32:05] --- POLICY FILE CHECK
+[04/11/2021 11:32:05] no new countries added
+[04/11/2021 11:32:05] no new date added
