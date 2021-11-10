@@ -10115,3 +10115,12 @@
 [10/11/2021 03:42:41] --- POLICY FILE CHECK
 [10/11/2021 03:42:41] no new countries added
 [10/11/2021 03:42:41] new date added: {20211110}
+[10/11/2021 11:32:01] --- CONFIRMED CASES FILE CHECK
+[10/11/2021 11:32:01] no new countries added
+[10/11/2021 11:32:01] new date added: {'11/9/21'}
+[10/11/2021 11:32:01] --- DEATHS FILE CHECK
+[10/11/2021 11:32:01] no new countries added
+[10/11/2021 11:32:01] new date added: {'11/9/21'}
+[10/11/2021 11:32:01] --- POLICY FILE CHECK
+[10/11/2021 11:32:01] no new countries added
+[10/11/2021 11:32:01] no new date added
