@@ -10187,3 +10187,12 @@
 [14/11/2021 03:42:07] --- POLICY FILE CHECK
 [14/11/2021 03:42:07] no new countries added
 [14/11/2021 03:42:07] new date added: {20211114}
+[14/11/2021 11:32:13] --- CONFIRMED CASES FILE CHECK
+[14/11/2021 11:32:13] no new countries added
+[14/11/2021 11:32:13] new date added: {'11/13/21'}
+[14/11/2021 11:32:13] --- DEATHS FILE CHECK
+[14/11/2021 11:32:13] no new countries added
+[14/11/2021 11:32:13] new date added: {'11/13/21'}
+[14/11/2021 11:32:13] --- POLICY FILE CHECK
+[14/11/2021 11:32:13] no new countries added
+[14/11/2021 11:32:13] no new date added
