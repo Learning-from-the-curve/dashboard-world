@@ -10295,3 +10295,12 @@
 [20/11/2021 11:32:16] --- POLICY FILE CHECK
 [20/11/2021 11:32:16] no new countries added
 [20/11/2021 11:32:16] no new date added
+[21/11/2021 03:42:22] --- CONFIRMED CASES FILE CHECK
+[21/11/2021 03:42:22] no new countries added
+[21/11/2021 03:42:22] no new date added
+[21/11/2021 03:42:22] --- DEATHS FILE CHECK
+[21/11/2021 03:42:22] no new countries added
+[21/11/2021 03:42:22] no new date added
+[21/11/2021 03:42:22] --- POLICY FILE CHECK
+[21/11/2021 03:42:22] no new countries added
+[21/11/2021 03:42:22] new date added: {20211121}
