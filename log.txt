@@ -10340,3 +10340,12 @@
 [23/11/2021 03:42:16] --- POLICY FILE CHECK
 [23/11/2021 03:42:16] no new countries added
 [23/11/2021 03:42:16] new date added: {20211123}
+[23/11/2021 11:32:10] --- CONFIRMED CASES FILE CHECK
+[23/11/2021 11:32:10] no new countries added
+[23/11/2021 11:32:10] new date added: {'11/22/21'}
+[23/11/2021 11:32:10] --- DEATHS FILE CHECK
+[23/11/2021 11:32:10] no new countries added
+[23/11/2021 11:32:10] new date added: {'11/22/21'}
+[23/11/2021 11:32:10] --- POLICY FILE CHECK
+[23/11/2021 11:32:10] no new countries added
+[23/11/2021 11:32:10] no new date added
