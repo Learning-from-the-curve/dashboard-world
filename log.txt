@@ -10376,3 +10376,12 @@
 [25/11/2021 03:42:49] --- POLICY FILE CHECK
 [25/11/2021 03:42:49] no new countries added
 [25/11/2021 03:42:49] new date added: {20211125}
+[25/11/2021 11:32:06] --- CONFIRMED CASES FILE CHECK
+[25/11/2021 11:32:06] no new countries added
+[25/11/2021 11:32:06] new date added: {'11/24/21'}
+[25/11/2021 11:32:06] --- DEATHS FILE CHECK
+[25/11/2021 11:32:06] no new countries added
+[25/11/2021 11:32:06] new date added: {'11/24/21'}
+[25/11/2021 11:32:06] --- POLICY FILE CHECK
+[25/11/2021 11:32:06] no new countries added
+[25/11/2021 11:32:06] no new date added
