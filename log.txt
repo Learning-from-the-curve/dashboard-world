@@ -10430,3 +10430,12 @@
 [28/11/2021 03:42:24] --- POLICY FILE CHECK
 [28/11/2021 03:42:24] no new countries added
 [28/11/2021 03:42:24] new date added: {20211128}
+[28/11/2021 11:32:00] --- CONFIRMED CASES FILE CHECK
+[28/11/2021 11:32:00] no new countries added
+[28/11/2021 11:32:00] new date added: {'11/27/21'}
+[28/11/2021 11:32:00] --- DEATHS FILE CHECK
+[28/11/2021 11:32:00] no new countries added
+[28/11/2021 11:32:00] new date added: {'11/27/21'}
+[28/11/2021 11:32:00] --- POLICY FILE CHECK
+[28/11/2021 11:32:00] no new countries added
+[28/11/2021 11:32:00] no new date added
