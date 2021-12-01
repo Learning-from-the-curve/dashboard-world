@@ -10484,3 +10484,12 @@
 [01/12/2021 03:43:02] --- POLICY FILE CHECK
 [01/12/2021 03:43:02] no new countries added
 [01/12/2021 03:43:02] new date added: {20211201}
+[01/12/2021 11:32:35] --- CONFIRMED CASES FILE CHECK
+[01/12/2021 11:32:35] no new countries added
+[01/12/2021 11:32:35] new date added: {'11/30/21'}
+[01/12/2021 11:32:35] --- DEATHS FILE CHECK
+[01/12/2021 11:32:35] no new countries added
+[01/12/2021 11:32:35] new date added: {'11/30/21'}
+[01/12/2021 11:32:35] --- POLICY FILE CHECK
+[01/12/2021 11:32:35] no new countries added
+[01/12/2021 11:32:35] no new date added
