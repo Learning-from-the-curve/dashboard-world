@@ -10529,3 +10529,12 @@
 [03/12/2021 11:31:58] --- POLICY FILE CHECK
 [03/12/2021 11:31:58] no new countries added
 [03/12/2021 11:31:58] no new date added
+[04/12/2021 03:43:45] --- CONFIRMED CASES FILE CHECK
+[04/12/2021 03:43:45] no new countries added
+[04/12/2021 03:43:45] no new date added
+[04/12/2021 03:43:45] --- DEATHS FILE CHECK
+[04/12/2021 03:43:45] no new countries added
+[04/12/2021 03:43:45] no new date added
+[04/12/2021 03:43:45] --- POLICY FILE CHECK
+[04/12/2021 03:43:45] no new countries added
+[04/12/2021 03:43:45] new date added: {20211204}
