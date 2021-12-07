@@ -10583,3 +10583,12 @@
 [06/12/2021 11:32:08] --- POLICY FILE CHECK
 [06/12/2021 11:32:08] no new countries added
 [06/12/2021 11:32:08] no new date added
+[07/12/2021 03:43:44] --- CONFIRMED CASES FILE CHECK
+[07/12/2021 03:43:44] no new countries added
+[07/12/2021 03:43:44] no new date added
+[07/12/2021 03:43:44] --- DEATHS FILE CHECK
+[07/12/2021 03:43:44] no new countries added
+[07/12/2021 03:43:44] no new date added
+[07/12/2021 03:43:44] --- POLICY FILE CHECK
+[07/12/2021 03:43:44] no new countries added
+[07/12/2021 03:43:44] new date added: {20211207}
