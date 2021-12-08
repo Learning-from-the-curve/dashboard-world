@@ -10610,3 +10610,12 @@
 [08/12/2021 03:43:07] --- POLICY FILE CHECK
 [08/12/2021 03:43:07] no new countries added
 [08/12/2021 03:43:07] new date added: {20211208}
+[08/12/2021 11:32:27] --- CONFIRMED CASES FILE CHECK
+[08/12/2021 11:32:27] no new countries added
+[08/12/2021 11:32:27] new date added: {'12/7/21'}
+[08/12/2021 11:32:27] --- DEATHS FILE CHECK
+[08/12/2021 11:32:27] no new countries added
+[08/12/2021 11:32:27] new date added: {'12/7/21'}
+[08/12/2021 11:32:27] --- POLICY FILE CHECK
+[08/12/2021 11:32:27] no new countries added
+[08/12/2021 11:32:27] no new date added
