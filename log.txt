@@ -10601,3 +10601,12 @@
 [07/12/2021 11:34:47] --- POLICY FILE CHECK
 [07/12/2021 11:34:47] no new countries added
 [07/12/2021 11:34:47] no new date added
+[08/12/2021 03:43:07] --- CONFIRMED CASES FILE CHECK
+[08/12/2021 03:43:07] no new countries added
+[08/12/2021 03:43:07] no new date added
+[08/12/2021 03:43:07] --- DEATHS FILE CHECK
+[08/12/2021 03:43:07] no new countries added
+[08/12/2021 03:43:07] no new date added
+[08/12/2021 03:43:07] --- POLICY FILE CHECK
+[08/12/2021 03:43:07] no new countries added
+[08/12/2021 03:43:07] new date added: {20211208}
