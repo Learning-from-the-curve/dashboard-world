@@ -10709,3 +10709,12 @@
 [13/12/2021 11:32:15] --- POLICY FILE CHECK
 [13/12/2021 11:32:15] no new countries added
 [13/12/2021 11:32:15] no new date added
+[14/12/2021 03:42:33] --- CONFIRMED CASES FILE CHECK
+[14/12/2021 03:42:33] no new countries added
+[14/12/2021 03:42:33] no new date added
+[14/12/2021 03:42:33] --- DEATHS FILE CHECK
+[14/12/2021 03:42:33] no new countries added
+[14/12/2021 03:42:33] no new date added
+[14/12/2021 03:42:33] --- POLICY FILE CHECK
+[14/12/2021 03:42:33] no new countries added
+[14/12/2021 03:42:33] new date added: {20211214}
