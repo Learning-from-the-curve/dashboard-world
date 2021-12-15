@@ -10736,3 +10736,12 @@
 [15/12/2021 03:42:43] --- POLICY FILE CHECK
 [15/12/2021 03:42:43] no new countries added
 [15/12/2021 03:42:43] new date added: {20211215}
+[15/12/2021 11:32:06] --- CONFIRMED CASES FILE CHECK
+[15/12/2021 11:32:06] no new countries added
+[15/12/2021 11:32:06] new date added: {'12/14/21'}
+[15/12/2021 11:32:06] --- DEATHS FILE CHECK
+[15/12/2021 11:32:06] no new countries added
+[15/12/2021 11:32:06] new date added: {'12/14/21'}
+[15/12/2021 11:32:06] --- POLICY FILE CHECK
+[15/12/2021 11:32:06] no new countries added
+[15/12/2021 11:32:06] no new date added
