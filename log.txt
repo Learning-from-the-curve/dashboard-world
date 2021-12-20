@@ -10826,3 +10826,12 @@
 [20/12/2021 03:43:17] --- POLICY FILE CHECK
 [20/12/2021 03:43:17] no new countries added
 [20/12/2021 03:43:17] new date added: {20211220}
+[20/12/2021 11:32:45] --- CONFIRMED CASES FILE CHECK
+[20/12/2021 11:32:45] no new countries added
+[20/12/2021 11:32:45] new date added: {'12/19/21'}
+[20/12/2021 11:32:45] --- DEATHS FILE CHECK
+[20/12/2021 11:32:45] no new countries added
+[20/12/2021 11:32:45] new date added: {'12/19/21'}
+[20/12/2021 11:32:45] --- POLICY FILE CHECK
+[20/12/2021 11:32:45] no new countries added
+[20/12/2021 11:32:45] no new date added
