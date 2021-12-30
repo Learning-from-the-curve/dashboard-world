@@ -11006,3 +11006,12 @@
 [30/12/2021 03:42:47] --- POLICY FILE CHECK
 [30/12/2021 03:42:47] no new countries added
 [30/12/2021 03:42:47] new date added: {20211230}
+[30/12/2021 11:32:21] --- CONFIRMED CASES FILE CHECK
+[30/12/2021 11:32:21] no new countries added
+[30/12/2021 11:32:21] new date added: {'12/29/21'}
+[30/12/2021 11:32:21] --- DEATHS FILE CHECK
+[30/12/2021 11:32:21] no new countries added
+[30/12/2021 11:32:21] new date added: {'12/29/21'}
+[30/12/2021 11:32:21] --- POLICY FILE CHECK
+[30/12/2021 11:32:21] no new countries added
+[30/12/2021 11:32:21] no new date added
