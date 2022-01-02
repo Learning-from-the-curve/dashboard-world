@@ -11060,3 +11060,12 @@
 [02/01/2022 03:43:33] --- POLICY FILE CHECK
 [02/01/2022 03:43:33] no new countries added
 [02/01/2022 03:43:33] new date added: {20220102}
+[02/01/2022 11:31:47] --- CONFIRMED CASES FILE CHECK
+[02/01/2022 11:31:47] no new countries added
+[02/01/2022 11:31:47] new date added: {'1/1/22'}
+[02/01/2022 11:31:47] --- DEATHS FILE CHECK
+[02/01/2022 11:31:47] no new countries added
+[02/01/2022 11:31:47] new date added: {'1/1/22'}
+[02/01/2022 11:31:47] --- POLICY FILE CHECK
+[02/01/2022 11:31:47] no new countries added
+[02/01/2022 11:31:47] no new date added
