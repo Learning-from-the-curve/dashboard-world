@@ -11141,3 +11141,12 @@
 [06/01/2022 11:33:03] --- POLICY FILE CHECK
 [06/01/2022 11:33:03] no new countries added
 [06/01/2022 11:33:03] no new date added
+[07/01/2022 03:45:20] --- CONFIRMED CASES FILE CHECK
+[07/01/2022 03:45:20] no new countries added
+[07/01/2022 03:45:20] no new date added
+[07/01/2022 03:45:20] --- DEATHS FILE CHECK
+[07/01/2022 03:45:20] no new countries added
+[07/01/2022 03:45:20] no new date added
+[07/01/2022 03:45:20] --- POLICY FILE CHECK
+[07/01/2022 03:45:20] no new countries added
+[07/01/2022 03:45:20] new date added: {20220107}
