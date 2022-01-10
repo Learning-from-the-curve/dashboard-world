@@ -11204,3 +11204,12 @@
 [10/01/2022 03:44:41] --- POLICY FILE CHECK
 [10/01/2022 03:44:41] no new countries added
 [10/01/2022 03:44:41] new date added: {20220110}
+[10/01/2022 11:33:22] --- CONFIRMED CASES FILE CHECK
+[10/01/2022 11:33:22] no new countries added
+[10/01/2022 11:33:22] new date added: {'1/9/22'}
+[10/01/2022 11:33:22] --- DEATHS FILE CHECK
+[10/01/2022 11:33:22] no new countries added
+[10/01/2022 11:33:22] new date added: {'1/9/22'}
+[10/01/2022 11:33:22] --- POLICY FILE CHECK
+[10/01/2022 11:33:22] no new countries added
+[10/01/2022 11:33:22] no new date added
