@@ -11231,3 +11231,12 @@
 [11/01/2022 11:33:04] --- POLICY FILE CHECK
 [11/01/2022 11:33:04] no new countries added
 [11/01/2022 11:33:04] no new date added
+[12/01/2022 03:44:45] --- CONFIRMED CASES FILE CHECK
+[12/01/2022 03:44:45] no new countries added
+[12/01/2022 03:44:45] no new date added
+[12/01/2022 03:44:45] --- DEATHS FILE CHECK
+[12/01/2022 03:44:45] no new countries added
+[12/01/2022 03:44:45] no new date added
+[12/01/2022 03:44:45] --- POLICY FILE CHECK
+[12/01/2022 03:44:45] no new countries added
+[12/01/2022 03:44:45] new date added: {20220112}
