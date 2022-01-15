@@ -11285,3 +11285,12 @@
 [14/01/2022 11:33:15] --- POLICY FILE CHECK
 [14/01/2022 11:33:15] no new countries added
 [14/01/2022 11:33:15] no new date added
+[15/01/2022 03:44:32] --- CONFIRMED CASES FILE CHECK
+[15/01/2022 03:44:32] no new countries added
+[15/01/2022 03:44:32] no new date added
+[15/01/2022 03:44:32] --- DEATHS FILE CHECK
+[15/01/2022 03:44:32] no new countries added
+[15/01/2022 03:44:32] no new date added
+[15/01/2022 03:44:32] --- POLICY FILE CHECK
+[15/01/2022 03:44:32] no new countries added
+[15/01/2022 03:44:32] new date added: {20220115}
