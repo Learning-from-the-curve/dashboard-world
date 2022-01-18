@@ -11348,3 +11348,12 @@
 [18/01/2022 03:44:35] --- POLICY FILE CHECK
 [18/01/2022 03:44:35] no new countries added
 [18/01/2022 03:44:35] new date added: {20220118}
+[18/01/2022 11:33:21] --- CONFIRMED CASES FILE CHECK
+[18/01/2022 11:33:21] no new countries added
+[18/01/2022 11:33:21] new date added: {'1/17/22'}
+[18/01/2022 11:33:21] --- DEATHS FILE CHECK
+[18/01/2022 11:33:21] no new countries added
+[18/01/2022 11:33:21] new date added: {'1/17/22'}
+[18/01/2022 11:33:21] --- POLICY FILE CHECK
+[18/01/2022 11:33:21] no new countries added
+[18/01/2022 11:33:21] no new date added
