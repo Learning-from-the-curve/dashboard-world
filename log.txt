@@ -11555,3 +11555,12 @@
 [30/01/2022 03:38:57] --- POLICY FILE CHECK
 [30/01/2022 03:38:57] no new countries added
 [30/01/2022 03:38:57] new date added: {20220130}
+[30/01/2022 11:31:43] --- CONFIRMED CASES FILE CHECK
+[30/01/2022 11:31:43] no new countries added
+[30/01/2022 11:31:43] new date added: {'1/29/22'}
+[30/01/2022 11:31:43] --- DEATHS FILE CHECK
+[30/01/2022 11:31:43] no new countries added
+[30/01/2022 11:31:43] new date added: {'1/29/22'}
+[30/01/2022 11:31:43] --- POLICY FILE CHECK
+[30/01/2022 11:31:43] no new countries added
+[30/01/2022 11:31:43] no new date added
