@@ -11708,3 +11708,16 @@
 [07/02/2022 11:32:04] --- POLICY FILE CHECK
 [07/02/2022 11:32:04] no new countries added
 [07/02/2022 11:32:04] no new date added
+[08/02/2022 03:39:46] --- CONFIRMED CASES FILE CHECK
+[08/02/2022 03:39:46] new countries added:
+    Province/State        Country/Region
+277            NaN  Winter Olympics 2022
+[08/02/2022 03:39:46] no new date added
+[08/02/2022 03:39:46] --- DEATHS FILE CHECK
+[08/02/2022 03:39:46] new countries added:
+    Province/State        Country/Region
+277            NaN  Winter Olympics 2022
+[08/02/2022 03:39:46] no new date added
+[08/02/2022 03:39:46] --- POLICY FILE CHECK
+[08/02/2022 03:39:46] no new countries added
+[08/02/2022 03:39:46] new date added: {20220208}
