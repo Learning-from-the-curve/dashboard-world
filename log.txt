@@ -11748,3 +11748,16 @@
 [09/02/2022 11:31:43] --- POLICY FILE CHECK
 [09/02/2022 11:31:43] no new countries added
 [09/02/2022 11:31:43] no new date added
+[10/02/2022 03:39:34] --- CONFIRMED CASES FILE CHECK
+[10/02/2022 03:39:34] new countries added:
+  Province/State Country/Region
+0            NaN     Antarctica
+[10/02/2022 03:39:34] no new date added
+[10/02/2022 03:39:34] --- DEATHS FILE CHECK
+[10/02/2022 03:39:34] new countries added:
+  Province/State Country/Region
+0            NaN     Antarctica
+[10/02/2022 03:39:34] no new date added
+[10/02/2022 03:39:34] --- POLICY FILE CHECK
+[10/02/2022 03:39:34] no new countries added
+[10/02/2022 03:39:34] new date added: {20220210}
