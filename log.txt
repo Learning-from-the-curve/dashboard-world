@@ -11860,3 +11860,18 @@
 [15/02/2022 11:32:11] --- POLICY FILE CHECK
 [15/02/2022 11:32:11] no new countries added
 [15/02/2022 11:32:11] no new date added
+[16/02/2022 03:40:40] --- CONFIRMED CASES FILE CHECK
+[16/02/2022 03:40:40] new countries added:
+    Province/State  Country/Region
+267       Guernsey  United Kingdom
+269         Jersey  United Kingdom
+[16/02/2022 03:40:40] no new date added
+[16/02/2022 03:40:40] --- DEATHS FILE CHECK
+[16/02/2022 03:40:40] new countries added:
+    Province/State  Country/Region
+267       Guernsey  United Kingdom
+269         Jersey  United Kingdom
+[16/02/2022 03:40:40] no new date added
+[16/02/2022 03:40:40] --- POLICY FILE CHECK
+[16/02/2022 03:40:40] no new countries added
+[16/02/2022 03:40:40] new date added: {20220216}
