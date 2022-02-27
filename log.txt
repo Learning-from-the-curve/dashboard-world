@@ -12064,3 +12064,12 @@
 [26/02/2022 11:31:52] --- POLICY FILE CHECK
 [26/02/2022 11:31:52] no new countries added
 [26/02/2022 11:31:52] no new date added
+[27/02/2022 03:41:17] --- CONFIRMED CASES FILE CHECK
+[27/02/2022 03:41:17] no new countries added
+[27/02/2022 03:41:17] no new date added
+[27/02/2022 03:41:17] --- DEATHS FILE CHECK
+[27/02/2022 03:41:17] no new countries added
+[27/02/2022 03:41:17] no new date added
+[27/02/2022 03:41:17] --- POLICY FILE CHECK
+[27/02/2022 03:41:17] no new countries added
+[27/02/2022 03:41:17] new date added: {20220227}
