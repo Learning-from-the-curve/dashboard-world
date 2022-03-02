@@ -12127,3 +12127,12 @@
 [02/03/2022 03:41:23] --- POLICY FILE CHECK
 [02/03/2022 03:41:23] no new countries added
 [02/03/2022 03:41:23] new date added: {20220302}
+[02/03/2022 11:31:52] --- CONFIRMED CASES FILE CHECK
+[02/03/2022 11:31:52] no new countries added
+[02/03/2022 11:31:52] new date added: {'3/1/22'}
+[02/03/2022 11:31:52] --- DEATHS FILE CHECK
+[02/03/2022 11:31:52] no new countries added
+[02/03/2022 11:31:52] new date added: {'3/1/22'}
+[02/03/2022 11:31:52] --- POLICY FILE CHECK
+[02/03/2022 11:31:52] no new countries added
+[02/03/2022 11:31:52] no new date added
