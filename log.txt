@@ -12190,3 +12190,12 @@
 [05/03/2022 11:32:55] --- POLICY FILE CHECK
 [05/03/2022 11:32:55] no new countries added
 [05/03/2022 11:32:55] no new date added
+[06/03/2022 03:41:06] --- CONFIRMED CASES FILE CHECK
+[06/03/2022 03:41:06] no new countries added
+[06/03/2022 03:41:06] no new date added
+[06/03/2022 03:41:06] --- DEATHS FILE CHECK
+[06/03/2022 03:41:06] no new countries added
+[06/03/2022 03:41:06] no new date added
+[06/03/2022 03:41:06] --- POLICY FILE CHECK
+[06/03/2022 03:41:06] no new countries added
+[06/03/2022 03:41:06] new date added: {20220306}
