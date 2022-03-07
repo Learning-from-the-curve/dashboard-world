@@ -12208,3 +12208,12 @@
 [06/03/2022 11:31:55] --- POLICY FILE CHECK
 [06/03/2022 11:31:55] no new countries added
 [06/03/2022 11:31:55] no new date added
+[07/03/2022 03:41:41] --- CONFIRMED CASES FILE CHECK
+[07/03/2022 03:41:41] no new countries added
+[07/03/2022 03:41:41] no new date added
+[07/03/2022 03:41:41] --- DEATHS FILE CHECK
+[07/03/2022 03:41:41] no new countries added
+[07/03/2022 03:41:41] no new date added
+[07/03/2022 03:41:41] --- POLICY FILE CHECK
+[07/03/2022 03:41:41] no new countries added
+[07/03/2022 03:41:41] new date added: {20220307}
