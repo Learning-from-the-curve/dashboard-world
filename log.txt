@@ -12226,3 +12226,12 @@
 [07/03/2022 11:32:03] --- POLICY FILE CHECK
 [07/03/2022 11:32:03] no new countries added
 [07/03/2022 11:32:03] no new date added
+[08/03/2022 03:41:29] --- CONFIRMED CASES FILE CHECK
+[08/03/2022 03:41:29] no new countries added
+[08/03/2022 03:41:29] no new date added
+[08/03/2022 03:41:29] --- DEATHS FILE CHECK
+[08/03/2022 03:41:29] no new countries added
+[08/03/2022 03:41:29] no new date added
+[08/03/2022 03:41:29] --- POLICY FILE CHECK
+[08/03/2022 03:41:29] no new countries added
+[08/03/2022 03:41:29] new date added: {20220308}
