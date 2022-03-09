@@ -12253,3 +12253,12 @@
 [09/03/2022 03:41:33] --- POLICY FILE CHECK
 [09/03/2022 03:41:33] no new countries added
 [09/03/2022 03:41:33] new date added: {20220309}
+[09/03/2022 11:31:57] --- CONFIRMED CASES FILE CHECK
+[09/03/2022 11:31:57] no new countries added
+[09/03/2022 11:31:57] new date added: {'3/8/22'}
+[09/03/2022 11:31:57] --- DEATHS FILE CHECK
+[09/03/2022 11:31:57] no new countries added
+[09/03/2022 11:31:57] new date added: {'3/8/22'}
+[09/03/2022 11:31:57] --- POLICY FILE CHECK
+[09/03/2022 11:31:57] no new countries added
+[09/03/2022 11:31:57] no new date added
