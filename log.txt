@@ -12370,3 +12370,12 @@
 [15/03/2022 11:31:47] --- POLICY FILE CHECK
 [15/03/2022 11:31:47] no new countries added
 [15/03/2022 11:31:47] no new date added
+[16/03/2022 03:43:34] --- CONFIRMED CASES FILE CHECK
+[16/03/2022 03:43:34] no new countries added
+[16/03/2022 03:43:34] no new date added
+[16/03/2022 03:43:34] --- DEATHS FILE CHECK
+[16/03/2022 03:43:34] no new countries added
+[16/03/2022 03:43:34] no new date added
+[16/03/2022 03:43:34] --- POLICY FILE CHECK
+[16/03/2022 03:43:34] no new countries added
+[16/03/2022 03:43:34] new date added: {20220316}
