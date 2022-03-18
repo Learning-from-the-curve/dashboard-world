@@ -12406,3 +12406,12 @@
 [17/03/2022 11:31:50] --- POLICY FILE CHECK
 [17/03/2022 11:31:50] no new countries added
 [17/03/2022 11:31:50] no new date added
+[18/03/2022 03:43:27] --- CONFIRMED CASES FILE CHECK
+[18/03/2022 03:43:27] no new countries added
+[18/03/2022 03:43:27] no new date added
+[18/03/2022 03:43:27] --- DEATHS FILE CHECK
+[18/03/2022 03:43:27] no new countries added
+[18/03/2022 03:43:27] no new date added
+[18/03/2022 03:43:27] --- POLICY FILE CHECK
+[18/03/2022 03:43:27] no new countries added
+[18/03/2022 03:43:27] new date added: {20220318}
