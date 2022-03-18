@@ -12415,3 +12415,12 @@
 [18/03/2022 03:43:27] --- POLICY FILE CHECK
 [18/03/2022 03:43:27] no new countries added
 [18/03/2022 03:43:27] new date added: {20220318}
+[18/03/2022 11:32:10] --- CONFIRMED CASES FILE CHECK
+[18/03/2022 11:32:10] no new countries added
+[18/03/2022 11:32:10] new date added: {'3/17/22'}
+[18/03/2022 11:32:10] --- DEATHS FILE CHECK
+[18/03/2022 11:32:10] no new countries added
+[18/03/2022 11:32:10] new date added: {'3/17/22'}
+[18/03/2022 11:32:10] --- POLICY FILE CHECK
+[18/03/2022 11:32:10] no new countries added
+[18/03/2022 11:32:10] no new date added
