@@ -12514,3 +12514,12 @@
 [23/03/2022 11:32:03] --- POLICY FILE CHECK
 [23/03/2022 11:32:03] no new countries added
 [23/03/2022 11:32:03] no new date added
+[24/03/2022 03:45:20] --- CONFIRMED CASES FILE CHECK
+[24/03/2022 03:45:20] no new countries added
+[24/03/2022 03:45:20] no new date added
+[24/03/2022 03:45:20] --- DEATHS FILE CHECK
+[24/03/2022 03:45:20] no new countries added
+[24/03/2022 03:45:20] no new date added
+[24/03/2022 03:45:20] --- POLICY FILE CHECK
+[24/03/2022 03:45:20] no new countries added
+[24/03/2022 03:45:20] new date added: {20220324}
