@@ -12614,3 +12614,12 @@
 [29/03/2022 03:51:34] new countries added:
 {'Grenada'}
 [29/03/2022 03:51:34] new date added: {20220329}
+[29/03/2022 11:43:27] --- CONFIRMED CASES FILE CHECK
+[29/03/2022 11:43:27] no new countries added
+[29/03/2022 11:43:27] new date added: {'3/28/22'}
+[29/03/2022 11:43:27] --- DEATHS FILE CHECK
+[29/03/2022 11:43:27] no new countries added
+[29/03/2022 11:43:27] new date added: {'3/28/22'}
+[29/03/2022 11:43:27] --- POLICY FILE CHECK
+[29/03/2022 11:43:27] no new countries added
+[29/03/2022 11:43:27] no new date added
