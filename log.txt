@@ -12650,3 +12650,12 @@
 [31/03/2022 03:50:14] --- POLICY FILE CHECK
 [31/03/2022 03:50:14] no new countries added
 [31/03/2022 03:50:14] new date added: {20220331}
+[31/03/2022 11:32:07] --- CONFIRMED CASES FILE CHECK
+[31/03/2022 11:32:07] no new countries added
+[31/03/2022 11:32:07] new date added: {'3/30/22'}
+[31/03/2022 11:32:07] --- DEATHS FILE CHECK
+[31/03/2022 11:32:07] no new countries added
+[31/03/2022 11:32:07] new date added: {'3/30/22'}
+[31/03/2022 11:32:07] --- POLICY FILE CHECK
+[31/03/2022 11:32:07] no new countries added
+[31/03/2022 11:32:07] no new date added
