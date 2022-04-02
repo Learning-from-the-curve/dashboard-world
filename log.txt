@@ -12677,3 +12677,12 @@
 [01/04/2022 11:33:13] --- POLICY FILE CHECK
 [01/04/2022 11:33:13] no new countries added
 [01/04/2022 11:33:13] no new date added
+[02/04/2022 03:49:34] --- CONFIRMED CASES FILE CHECK
+[02/04/2022 03:49:34] no new countries added
+[02/04/2022 03:49:34] no new date added
+[02/04/2022 03:49:34] --- DEATHS FILE CHECK
+[02/04/2022 03:49:34] no new countries added
+[02/04/2022 03:49:34] no new date added
+[02/04/2022 03:49:34] --- POLICY FILE CHECK
+[02/04/2022 03:49:34] no new countries added
+[02/04/2022 03:49:34] new date added: {20220402}
