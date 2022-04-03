@@ -12704,3 +12704,12 @@
 [03/04/2022 03:48:30] --- POLICY FILE CHECK
 [03/04/2022 03:48:30] no new countries added
 [03/04/2022 03:48:30] new date added: {20220403}
+[03/04/2022 11:32:11] --- CONFIRMED CASES FILE CHECK
+[03/04/2022 11:32:11] no new countries added
+[03/04/2022 11:32:11] new date added: {'4/2/22'}
+[03/04/2022 11:32:11] --- DEATHS FILE CHECK
+[03/04/2022 11:32:11] no new countries added
+[03/04/2022 11:32:11] new date added: {'4/2/22'}
+[03/04/2022 11:32:11] --- POLICY FILE CHECK
+[03/04/2022 11:32:11] no new countries added
+[03/04/2022 11:32:11] no new date added
