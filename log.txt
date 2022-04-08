@@ -12785,3 +12785,13 @@
 [07/04/2022 11:32:51] --- POLICY FILE CHECK
 [07/04/2022 11:32:51] no new countries added
 [07/04/2022 11:32:51] no new date added
+[08/04/2022 03:53:13] --- CONFIRMED CASES FILE CHECK
+[08/04/2022 03:53:13] no new countries added
+[08/04/2022 03:53:13] no new date added
+[08/04/2022 03:53:13] --- DEATHS FILE CHECK
+[08/04/2022 03:53:13] no new countries added
+[08/04/2022 03:53:13] no new date added
+[08/04/2022 03:53:13] --- POLICY FILE CHECK
+[08/04/2022 03:53:13] new countries added:
+{'Mongolia', 'Moldova', 'Madagascar', 'Liechtenstein', 'Japan', 'Tonga', 'Netherlands', 'Mauritania', 'Papua New Guinea', 'Iceland', 'Malta', 'Iran', 'Serbia', 'Luxembourg', 'Mali', 'Syria', 'Nicaragua', 'Libya', 'Solomon Islands', 'Nigeria', 'Kyrgyz Republic', 'Uganda', 'Namibia', 'Malaysia', 'Laos', 'Ireland', 'Monaco', 'Eswatini', 'Timor-Leste', 'Poland', 'South Sudan', 'Singapore', 'El Salvador', 'Turkmenistan', 'Kuwait', 'Sierra Leone', 'Somalia', 'Sri Lanka', 'Paraguay', 'Lebanon', 'Portugal', 'South Korea', 'Tunisia', 'United States Virgin Islands', 'Kosovo', 'Rwanda', 'Uzbekistan', 'Niger', 'Malawi', 'Jordan', 'San Marino', 'New Zealand', 'Venezuela', 'Pakistan', 'Saudi Arabia', 'Turkey', 'Peru', 'Taiwan', 'Ukraine', 'Sudan', 'Senegal', 'Uruguay', 'Myanmar', 'Israel', 'Kenya', 'Qatar', 'Kiribati', 'Yemen', 'United States', 'Lesotho', 'Jamaica', 'Suriname', 'Mexico', 'Morocco', 'Nepal', 'Tanzania', 'Russia', 'Slovak Republic', 'South Africa', 'Mozambique', 'Tajikistan', 'Vanuatu', 'Slovenia', 'Lithuania', 'Thailand', 'Romania', 'Cambodia', 'Macao', 'Iraq', 'Trinidad and Tobago', 'Italy', 'Mauritius', 'Zimbabwe', 'Zambia', 'Kazakhstan', 'Latvia', 'Oman', 'Seychelles', 'Norway', 'Vietnam', 'Palestine', 'Liberia', 'Sweden', 'Togo', 'Philippines', 'Puerto Rico', 'Chad', 'Panama'}
+[08/04/2022 03:53:13] new date added: {20220408}
