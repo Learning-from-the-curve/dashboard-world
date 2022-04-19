@@ -12985,3 +12985,12 @@
 [18/04/2022 11:32:55] --- POLICY FILE CHECK
 [18/04/2022 11:32:55] no new countries added
 [18/04/2022 11:32:55] no new date added
+[19/04/2022 04:08:42] --- CONFIRMED CASES FILE CHECK
+[19/04/2022 04:08:42] no new countries added
+[19/04/2022 04:08:42] no new date added
+[19/04/2022 04:08:42] --- DEATHS FILE CHECK
+[19/04/2022 04:08:42] no new countries added
+[19/04/2022 04:08:42] no new date added
+[19/04/2022 04:08:42] --- POLICY FILE CHECK
+[19/04/2022 04:08:42] no new countries added
+[19/04/2022 04:08:42] new date added: {20220419}
