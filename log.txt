@@ -13201,3 +13201,12 @@
 [30/04/2022 11:32:16] --- POLICY FILE CHECK
 [30/04/2022 11:32:16] no new countries added
 [30/04/2022 11:32:16] no new date added
+[01/05/2022 04:19:18] --- CONFIRMED CASES FILE CHECK
+[01/05/2022 04:19:18] no new countries added
+[01/05/2022 04:19:18] no new date added
+[01/05/2022 04:19:18] --- DEATHS FILE CHECK
+[01/05/2022 04:19:18] no new countries added
+[01/05/2022 04:19:18] no new date added
+[01/05/2022 04:19:18] --- POLICY FILE CHECK
+[01/05/2022 04:19:18] no new countries added
+[01/05/2022 04:19:18] new date added: {20220501}
