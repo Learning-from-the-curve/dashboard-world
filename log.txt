@@ -13255,3 +13255,12 @@
 [03/05/2022 11:35:19] --- POLICY FILE CHECK
 [03/05/2022 11:35:19] no new countries added
 [03/05/2022 11:35:19] no new date added
+[04/05/2022 04:06:34] --- CONFIRMED CASES FILE CHECK
+[04/05/2022 04:06:34] no new countries added
+[04/05/2022 04:06:34] no new date added
+[04/05/2022 04:06:34] --- DEATHS FILE CHECK
+[04/05/2022 04:06:34] no new countries added
+[04/05/2022 04:06:34] no new date added
+[04/05/2022 04:06:34] --- POLICY FILE CHECK
+[04/05/2022 04:06:34] no new countries added
+[04/05/2022 04:06:34] new date added: {20220504}
