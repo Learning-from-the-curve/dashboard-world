@@ -13462,3 +13462,16 @@
 [15/05/2022 03:58:05] --- POLICY FILE CHECK
 [15/05/2022 03:58:05] no new countries added
 [15/05/2022 03:58:05] new date added: {20220515}
+[15/05/2022 11:33:37] --- CONFIRMED CASES FILE CHECK
+[15/05/2022 11:33:37] new countries added:
+    Province/State Country/Region
+161            NaN   Korea, North
+[15/05/2022 11:33:37] new date added: {'5/14/22'}
+[15/05/2022 11:33:37] --- DEATHS FILE CHECK
+[15/05/2022 11:33:37] new countries added:
+    Province/State Country/Region
+161            NaN   Korea, North
+[15/05/2022 11:33:37] new date added: {'5/14/22'}
+[15/05/2022 11:33:37] --- POLICY FILE CHECK
+[15/05/2022 11:33:37] no new countries added
+[15/05/2022 11:33:37] no new date added
