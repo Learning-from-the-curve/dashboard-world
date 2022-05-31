@@ -13745,3 +13745,12 @@
 [30/05/2022 11:35:50] --- POLICY FILE CHECK
 [30/05/2022 11:35:50] no new countries added
 [30/05/2022 11:35:50] no new date added
+[31/05/2022 04:07:33] --- CONFIRMED CASES FILE CHECK
+[31/05/2022 04:07:33] no new countries added
+[31/05/2022 04:07:33] no new date added
+[31/05/2022 04:07:33] --- DEATHS FILE CHECK
+[31/05/2022 04:07:33] no new countries added
+[31/05/2022 04:07:33] no new date added
+[31/05/2022 04:07:33] --- POLICY FILE CHECK
+[31/05/2022 04:07:33] no new countries added
+[31/05/2022 04:07:33] new date added: {20220531}
