@@ -13880,3 +13880,12 @@
 [07/06/2022 11:33:23] --- POLICY FILE CHECK
 [07/06/2022 11:33:23] no new countries added
 [07/06/2022 11:33:23] no new date added
+[08/06/2022 04:08:07] --- CONFIRMED CASES FILE CHECK
+[08/06/2022 04:08:07] no new countries added
+[08/06/2022 04:08:07] no new date added
+[08/06/2022 04:08:07] --- DEATHS FILE CHECK
+[08/06/2022 04:08:07] no new countries added
+[08/06/2022 04:08:07] no new date added
+[08/06/2022 04:08:07] --- POLICY FILE CHECK
+[08/06/2022 04:08:07] no new countries added
+[08/06/2022 04:08:07] new date added: {20220608}
