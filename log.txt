@@ -14195,3 +14195,12 @@
 [25/06/2022 04:06:27] --- POLICY FILE CHECK
 [25/06/2022 04:06:27] no new countries added
 [25/06/2022 04:06:27] new date added: {20220625}
+[25/06/2022 11:32:11] --- CONFIRMED CASES FILE CHECK
+[25/06/2022 11:32:11] no new countries added
+[25/06/2022 11:32:11] new date added: {'6/24/22'}
+[25/06/2022 11:32:11] --- DEATHS FILE CHECK
+[25/06/2022 11:32:11] no new countries added
+[25/06/2022 11:32:11] new date added: {'6/24/22'}
+[25/06/2022 11:32:11] --- POLICY FILE CHECK
+[25/06/2022 11:32:11] no new countries added
+[25/06/2022 11:32:11] no new date added
