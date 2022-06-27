@@ -14231,3 +14231,12 @@
 [27/06/2022 04:34:16] --- POLICY FILE CHECK
 [27/06/2022 04:34:16] no new countries added
 [27/06/2022 04:34:16] new date added: {20220627}
+[27/06/2022 11:34:06] --- CONFIRMED CASES FILE CHECK
+[27/06/2022 11:34:06] no new countries added
+[27/06/2022 11:34:06] new date added: {'6/26/22'}
+[27/06/2022 11:34:06] --- DEATHS FILE CHECK
+[27/06/2022 11:34:06] no new countries added
+[27/06/2022 11:34:06] new date added: {'6/26/22'}
+[27/06/2022 11:34:06] --- POLICY FILE CHECK
+[27/06/2022 11:34:06] no new countries added
+[27/06/2022 11:34:06] no new date added
