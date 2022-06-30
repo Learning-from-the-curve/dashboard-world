@@ -14285,3 +14285,12 @@
 [30/06/2022 04:20:11] --- POLICY FILE CHECK
 [30/06/2022 04:20:11] no new countries added
 [30/06/2022 04:20:11] new date added: {20220630}
+[30/06/2022 11:33:35] --- CONFIRMED CASES FILE CHECK
+[30/06/2022 11:33:35] no new countries added
+[30/06/2022 11:33:35] new date added: {'6/29/22'}
+[30/06/2022 11:33:35] --- DEATHS FILE CHECK
+[30/06/2022 11:33:35] no new countries added
+[30/06/2022 11:33:35] new date added: {'6/29/22'}
+[30/06/2022 11:33:35] --- POLICY FILE CHECK
+[30/06/2022 11:33:35] no new countries added
+[30/06/2022 11:33:35] no new date added
