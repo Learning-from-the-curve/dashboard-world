@@ -14510,3 +14510,12 @@
 [12/07/2022 11:33:43] --- POLICY FILE CHECK
 [12/07/2022 11:33:43] no new countries added
 [12/07/2022 11:33:43] no new date added
+[13/07/2022 04:19:52] --- CONFIRMED CASES FILE CHECK
+[13/07/2022 04:19:52] no new countries added
+[13/07/2022 04:19:52] no new date added
+[13/07/2022 04:19:52] --- DEATHS FILE CHECK
+[13/07/2022 04:19:52] no new countries added
+[13/07/2022 04:19:52] no new date added
+[13/07/2022 04:19:52] --- POLICY FILE CHECK
+[13/07/2022 04:19:52] no new countries added
+[13/07/2022 04:19:52] new date added: {20220713}
