@@ -14537,3 +14537,12 @@
 [14/07/2022 04:31:20] --- POLICY FILE CHECK
 [14/07/2022 04:31:20] no new countries added
 [14/07/2022 04:31:20] new date added: {20220714}
+[14/07/2022 11:33:07] --- CONFIRMED CASES FILE CHECK
+[14/07/2022 11:33:07] no new countries added
+[14/07/2022 11:33:07] new date added: {'7/13/22'}
+[14/07/2022 11:33:07] --- DEATHS FILE CHECK
+[14/07/2022 11:33:07] no new countries added
+[14/07/2022 11:33:07] new date added: {'7/13/22'}
+[14/07/2022 11:33:07] --- POLICY FILE CHECK
+[14/07/2022 11:33:07] no new countries added
+[14/07/2022 11:33:07] no new date added
